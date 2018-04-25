@@ -100,9 +100,10 @@ The steps below guide you through the process of assigning permissions. Steps 1-
 
       For example, if Group 1 gives access to Property A with the Develop right and Group 2 gives access to Property B with the Publish right, Develop and Publish rights are not combined for Property A and Property B. You can only develop on Property A and publish on Property B.
 
-11. To assign users to be part of your group, open the Users tab, then click Add User.
+11. To assign users to be part of your group, open the Users tab, then click Add User.  
 
-    ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/add-user.png)
+
+    ![](../.gitbook/assets/add-user.png)
 
     Click ... for additional options, such as bulk user operations.
 

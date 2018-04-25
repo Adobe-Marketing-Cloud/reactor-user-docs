@@ -8,11 +8,11 @@ Use this extension to integrate the Experience Cloud ID Service with your proper
 
 This section provides a reference for the options available when configuring the Experience Cloud ID extension.
 
-If the Experience Cloud ID extension is not yet installed, open your property, then click Extensions > Catalog, hover over the Experience Cloud ID extension, and click Install.
+If the Experience Cloud ID extension is not yet installed, open your property, then click Extensions &gt; Catalog, hover over the Experience Cloud ID extension, and click Install.
 
 To configure the extension, open the Extensions tab, hover over the extension, and then click Configure.
 
-![](../images/ext-mcid-config.png)
+![](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/0c5ad5f3fefe4f63b16d7d1297596d7b4fcf783e/images/ext-mcid-config.png)
 
 The following configuration options are available:
 
@@ -26,7 +26,7 @@ Your ID is a 24-character, alphanumeric string followed by @AdobeOrg. If you do 
 
 The Experience Cloud ID does not load if the URL matches any of the specified paths.
 
-(Optional) Enable Regex if this is a regular expression.
+\(Optional\) Enable Regex if this is a regular expression.
 
 Click Add to exclude another path.
 
@@ -48,21 +48,22 @@ Set one or more customer IDs.
 
 **Settings**
 
-1.  Enter the integration code.
+1. Enter the integration code.
 
-    The integration code should contain the value set up as a data source in Audience Manager or Customer Attributes.
+   The integration code should contain the value set up as a data source in Audience Manager or Customer Attributes.
 
-2.  Select a value.
+2. Select a value.
 
-    The value should be a user ID. Data elements are most suitable for dynamic values like IDs from a client-specific internal system.
+   The value should be a user ID. Data elements are most suitable for dynamic values like IDs from a client-specific internal system.
 
-3.  Select an authentication state.
+3. Select an authentication state.
 
-    Available options are:
+   Available options are:
 
-    *   Unknown
-    *   Authenticated
-    *   Logged out
+   * Unknown
+   * Authenticated
+   * Logged out
 
-4.  (Optional) Click Add to set more customer IDs.
-5.  Click Keep Changes.
+4. \(Optional\) Click Add to set more customer IDs.
+5. Click Keep Changes.
+
