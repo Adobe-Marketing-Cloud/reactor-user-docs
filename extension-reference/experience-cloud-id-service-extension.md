@@ -12,7 +12,7 @@ If the Experience Cloud ID extension is not yet installed, open your property, t
 
 To configure the extension, open the Extensions tab, hover over the extension, and then click Configure.
 
-![](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/0c5ad5f3fefe4f63b16d7d1297596d7b4fcf783e/images/ext-mcid-config.png)
+![](../.gitbook/assets/ext-mcid-config.png)
 
 The following configuration options are available:
 
