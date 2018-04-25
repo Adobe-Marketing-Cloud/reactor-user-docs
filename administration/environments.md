@@ -49,7 +49,7 @@ After the environments are created, you are ready to publish.
 
 The embed code is a `<script>` tag that you put on the pages of your site to load and execute the code you build in Launch.
 
-You can choose to have this tag be synchronous or [asynchronous](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/administration/async.md).
+You can choose to have this tag be synchronous or [asynchronous](../administration/async.md).
 
 The embed code is generated for you based on the environment configuration, so the only required action for you is to copy and paste them into your site on the pages where you want Launch to run.
 
@@ -65,7 +65,7 @@ In a synchronous deployment, the embed code consists of two `<script>` tags that
 
 If you load the library asynchronously, the browser continues to load the page, retrieves the Launch library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`. Depending on what's in your Launch library, the switch from sync to async can change the behavior of your rules and other elements, so be sure to thoroughly test any changes.
 
-For more information about asynchronous deployment, see [Asynchronous Deployment of Experience Cloud JavaScript](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/administration/async.md).
+For more information about asynchronous deployment, see [Asynchronous Deployment of Experience Cloud JavaScript](../administration/async.md).
 
 ### Switching embed codes
 

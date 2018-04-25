@@ -4,7 +4,7 @@ Launch is a rule-based system. It looks for user interaction and associated data
 
 Build rules to integrate the data and functionality of marketing and ad tech that unifies disparate products into a single solution.
 
-For an introductory video, see [Rule builder](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/managing-resources/videos.md).
+For an introductory video, see [Rule builder](../managing-resources/videos.md).
 
 Events are where the majority of interactions on sites take place. You can measure and react to these interactions in real-time, without the need for JavaScript.
 
@@ -14,7 +14,7 @@ Events are where the majority of interactions on sites take place. You can measu
 
 You can add more event types. Multiple events are joined with an OR, so the rule's conditions will be evaluated if any of the events are met.
 
-Important: Changes do not take effect until they are [published](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/managing-resources/c_publishing.md).
+Important: Changes do not take effect until they are [published](../managing-resources/c_publishing.md).
 
 ## Events, conditions, and exceptions \(if\)
 
@@ -34,7 +34,7 @@ If a specified event occurs, the conditions and exceptions are evaluated, then t
 
   Specify any exceptions that would keep the rule from firing, even if the events and conditions are met.
 
-The events that are available depend on which extensions are installed. For information about the events in the Core extension, see [Core extension event types](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/managing-resources/c_extension-dtm.md).
+The events that are available depend on which extensions are installed. For information about the events in the Core extension, see [Core extension event types](../managing-resources/c_extension-dtm.md).
 
 Note: DTM provided page load, event-based, and direct call event types. This is no longer true in Launch. Rather than event types, Launch extensions configure different individual events.
 
@@ -70,7 +70,7 @@ Create a rule by specifying what actions occur if a condition is met.
    * Rules that have the same order run in no particular order.
    * Rules are fired in order, but do not necessarily finish in the same order. If Rule A and Rule B share an event, and you assign order so that Rule A comes first, then if Rule A does something asynchronously, there's no guarantee that Rule A finishes before Rule B starts.
 
-     If you want it to run later, give it a number higher than 50. For more information about ordering, see [Rule ordering](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/managing-resources/rules.html#concept_5F5A954B389F4C91BAF66AC6503435E0).
+     If you want it to run later, give it a number higher than 50. For more information about ordering, see [Rule ordering](../managing-resources/rules.html#concept_5F5A954B389F4C91BAF66AC6503435E0).
 
 6. Click the Conditions Add icon, then choose a condition type and configure the properties for your condition. Then Click Keep Changes.
 
@@ -88,11 +88,11 @@ Create a rule by specifying what actions occur if a condition is met.
 
 9. Review your rule, then click Save Rule.
 
-   Later, when you [publish](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/managing-resources/c_publishing.md), you'll add this rule to a library and deploy it.
+   Later, when you [publish](../managing-resources/c_publishing.md), you'll add this rule to a library and deploy it.
 
 When you edit or update an existing rule, a new version of the rule is created, which you can then deploy.
 
-When creating or editing rules, you can save and build to your [active library](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/managing-resources/library.md). This immediately saves your change to your library and executes a build. The status of the build is displayed.
+When creating or editing rules, you can save and build to your [active library](../managing-resources/library.md). This immediately saves your change to your library and executes a build. The status of the build is displayed.
 
 ## Rule ordering
 

@@ -14,7 +14,7 @@ This section contains the following information:
 * [Create a property](companies-and-properties.md#property-create)
 * [Delete a property](companies-and-properties.md#property-delete)
 
-For a video tutorial, see [Creating your first property](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/administration/videos.md).
+For a video tutorial, see [Creating your first property](../administration/videos.md).
 
 ## Companies
 
@@ -115,9 +115,9 @@ Click a property to see an overview of that property. The overview shows any act
 
 Create a property in Launch.
 
-Note: Only a user with sufficient rights can create a property. See [User Management](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/administration/user-management.md).
+Note: Only a user with sufficient rights can create a property. See [User Management](../administration/user-management.md).
 
-Before beginning, review the [Best practices for planning properties](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/administration/properties.md) for properties.
+Before beginning, review the [Best practices for planning properties](../administration/properties.md) for properties.
 
 1. Navigate to your company page, then click Add New Property.
 

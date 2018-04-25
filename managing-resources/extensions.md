@@ -16,11 +16,11 @@ Use the links at the top of the Extensions list to view installed extensions, th
 
 Select an extension, then click Configure to view and change the extension's settings. See [Add a new extension](extensions.md) for information about extension options.
 
-Important: Changes do not take effect until they are [published](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/managing-resources/c_publishing.md).
+Important: Changes do not take effect until they are [published](../managing-resources/c_publishing.md).
 
 By default, Adobe provides extensions that support common integrations. Extensions can be modified with custom configurations. Configurations are provided through the extensions. To create a configuration, click the extension card, then click Add New Configuration.
 
-For a video introduction, see [Extensions](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/managing-resources/videos.md).
+For a video introduction, see [Extensions](../managing-resources/videos.md).
 
 ## Extension catalog
 
@@ -40,7 +40,7 @@ The Extensions page provides three views:
 
 Click Extensions to see all your installed extensions. You can also use the catalog to see a list of all available extensions and which extensions have updates available.
 
-See [Extensions Reference](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/managing-resources/extensions-reference.md) for details about the Adobe-owned extensions.
+See [Extensions Reference](../managing-resources/extensions-reference.md) for details about the Adobe-owned extensions.
 
 ## Add a new extension
 
@@ -73,5 +73,5 @@ Mouse over an installed extension and click Configure.
 
 Note: Some extensions do not require configuration and do not offer configuration options.
 
-Each configurable extension has unique options. Refer to [Extensions Reference](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/managing-resources/extensions-reference.html#concept_2B2AF5D95A3E4389835746C9B34D1297) for information about the options available for each Adobe extension.
+Each configurable extension has unique options. Refer to [Extensions Reference](../managing-resources/extensions-reference.html#concept_2B2AF5D95A3E4389835746C9B34D1297) for information about the options available for each Adobe extension.
 
