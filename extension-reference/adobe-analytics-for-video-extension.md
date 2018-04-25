@@ -15,7 +15,7 @@ After you have included all three of the extensions mentioned above in your Laun
 
 **Configure -** To configure the VA extension, open the Extensions tab, hover over the extension, and then click Configure:
 
-![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/VA%20Launch%20Doc%20-%20Google%20Docs.jpg)
+![](../.gitbook/assets/VA%20Launch%20Doc%20-%20Google%20Docs.jpg)
 
 ### Tracking Server
 

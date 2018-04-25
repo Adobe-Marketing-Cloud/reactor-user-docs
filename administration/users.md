@@ -19,11 +19,11 @@ The steps below guide you through the process of assigning permissions. Steps 1-
 
 1. Sign in to [http://marketing.adobe.com](http://marketing.adobe.com) with your Adobe ID, then choose the organization to use within Launch from the Navigation menu.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/nav-menu.png)
+   ![](../.gitbook/assets/nav-menu.png)
 
 2. Open the solution picker by clicking the 9-dots icon from the navigation menu, then click Administration.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/choose-admin.png)
+   ![](../.gitbook/assets/choose-admin.png)
 
    If you can't see this link, both of the following conditions are true:
 
@@ -36,21 +36,21 @@ The steps below guide you through the process of assigning permissions. Steps 1-
 
 3. Click Launch Admin Console.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/launch-admin-console-button.png)
+   ![](../.gitbook/assets/launch-admin-console-button.png)
 
 4. Click the Launch, by Adobe - %Company Name% card.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/launch-card.png)
+   ![](../.gitbook/assets/launch-card.png)
 
    You can also click Products in the top nav, then select Launch, by Adobe - %Company Name% from the left nav.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/products-select-launch.png)
+   ![](../.gitbook/assets/products-select-launch.png)
 
    If you do not see a Launch, by Adobe card and or if Launch, by Adobe does not appear in this list, then you are not an Org Admin, but you are a Product Admin for other Experience Cloud products. Because you are not an Administrator for Launch, you will need to find an Org Admin who can perform these steps for you or who can make you a Product Admin for Launch.
 
    After you select Launch, a list of product profiles displays. Think of these profiles as permission groups. One profile is created for you and is named Launch - %Company Name%.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/product-profiles.png)
+   ![](../.gitbook/assets/product-profiles.png)
 
 5. Choose to edit this product profile, or create a new one.
 
@@ -59,35 +59,35 @@ The steps below guide you through the process of assigning permissions. Steps 1-
 6. To create a new product profile, click New Profile.
 7. Give your new profile a name and a description, configure whether users should receive emails when they are added or removed from this profile, and then click Done.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/profile-new.png)
+   ![](../.gitbook/assets/profile-new.png)
 
 8. Select the new product profile from the list, then open the Permissions tab. You can assign permissions across two dimensions: Properties and Rights.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/profile-permissions.png)
+   ![](../.gitbook/assets/profile-permissions.png)
 
 9. To assign properties to this group definition, open the Properties section.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/profile-properties-select.png)
+   ![](../.gitbook/assets/profile-properties-select.png)
 
    A list shows your Launch properties.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/profile-properties.png)
+   ![](../.gitbook/assets/profile-properties.png)
 
    By default, new product configurations automatically include properties. This means that all properties \(present and future\) are included in the group definition.
 
    If Auto-include is disabled, all currently available properties are listed on the left. You can move properties into this group definition by clicking Add.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/profile-properties-add.png)
+   ![](../.gitbook/assets/profile-properties-add.png)
 
    Click Save when finished.
 
 10. Assign the rights you want to be part of your group definition. Open the Rights section.
 
-    ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/profile-rights-select.png)
+    ![](../.gitbook/assets/profile-rights-select.png)
 
     Rights are not automatically included. You must assign each right to your profile. You can quickly add all rights to this profile by using the + Add All button or you can assign individual rights by using the individual + buttons. For more information on what permissions are associated with each right, see [Rights details](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/administration/user-management.html#task_674BECF0B97C49A98C746B006CB49F0C). Click Save when finished. If Save is not available, you didn't make any changes and the profile won't give you any rights
 
-    ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/profile-rights.png)
+    ![](../.gitbook/assets/profile-rights.png)
 
     Some important notes:
 
@@ -111,7 +111,7 @@ The steps below guide you through the process of assigning permissions. Steps 1-
 
 12. Search for the user you'd like to add to the group. You can search by name or by email address. This auto-populates from existing users in your Org. Once you have found the user you want, click on their name.
 
-    ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/profile-user.png)
+    ![](../.gitbook/assets/profile-user.png)
 
     Once you've added users, they receive an email letting them know that they now have rights to Launch. They can login to Launch at [https://launch.adobe.com](https://launch.adobe.com).
 
@@ -121,7 +121,7 @@ The steps below guide you through the process of assigning permissions. Steps 1-
 
 * Error loading account. Resolution: Your user does not belong to any Launch product profiles. See the steps above to create a profile and assign rights to it, and to assign a user to a profile.
 
-  ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/profile-error.png)
+  ![](../.gitbook/assets/profile-error.png)
 
 * Grayed-out property button. Resolution: Your user account does not belong to a product configuration that has the Manage Properties right. Double-check steps 9 and on, above.
 

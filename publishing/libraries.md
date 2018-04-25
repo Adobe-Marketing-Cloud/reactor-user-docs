@@ -26,13 +26,13 @@ A library moves between several environments as it makes its way through the pub
 
 2. Click Add New Library.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/library-create.jpg)
+   ![](../.gitbook/assets/library-create.jpg)
 
 3. Name the library.
 4. Assign the library to a Dev environment.
 5. Add a change to the library. To add an item, click Add a Change, then choose the items you want to add. Any item that has been edited or deleted is available to add to the chosen library.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/library-add-change.jpg)
+   ![](../.gitbook/assets/library-add-change.jpg)
 
    You can add the following to your library:
 
@@ -63,7 +63,7 @@ Once a library is created, use the drop down menu for that library to select one
 
   Remove that library from the publishing process.
 
-![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/library-menu.png)
+![](../.gitbook/assets/library-menu.png)
 
 ## Add to a library
 
@@ -93,11 +93,11 @@ To remove something from a library, you must deactivate it and then publish the 
 
 1. Click on a library and select Edit to view library changes. All changes are shown in the Library Contents list.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/library-contents.jpg)
+   ![](../.gitbook/assets/library-contents.jpg)
 
 2. Click a change to view and select a revision.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/library-contents-revision.jpg)
+   ![](../.gitbook/assets/library-contents-revision.jpg)
 
 3. Select whether to show all items or changed items.
 4. Click the revision, then click Select Revision.

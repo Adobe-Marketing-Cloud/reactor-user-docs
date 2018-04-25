@@ -52,13 +52,13 @@ Create a rule by specifying what actions occur if a condition is met.
 
 1. Open the Rules tab, then click Create New Rule.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/rule-create.png)
+   ![](../.gitbook/assets/rule-create.png)
 
 2. Name the rule.
 3. Click the Events Add icon.
 4. Choose your extension and one of the event types available for that extension, then configure the properties for the event. Note: The available event types are defined by the extension.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/rule-event-config.png)
+   ![](../.gitbook/assets/rule-event-config.png)
 
    Some events don't have any properties that need to be configured.
 
@@ -82,7 +82,7 @@ Create a rule by specifying what actions occur if a condition is met.
 
 8. Click the Actions Add icon, then choose your extension and one of the action types available for that extension, configure the properties for the action, then click Keep Changes. Note: The available action types are defined by the extension.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/rule-action-config.jpg)
+   ![](../.gitbook/assets/rule-action-config.jpg)
 
    You can add more event types. Multiple events are joined with an OR, so the rule's conditions will be evaluated if any of the events are met.
 

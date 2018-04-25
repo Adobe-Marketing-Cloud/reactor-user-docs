@@ -10,7 +10,7 @@ If the Adobe Analytics extension is not yet installed, open your property, then 
 
 To configure the extension, open the Extensions tab, hover over the extension, and then click Configure.
 
-![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/ext-analytics-config.png)
+![](../.gitbook/assets/ext-analytics-config.png)
 
 ## Library Management
 

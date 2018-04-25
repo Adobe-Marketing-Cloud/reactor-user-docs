@@ -121,7 +121,7 @@ Before beginning, review the [Best practices for planning properties](https://gi
 
 1. Navigate to your company page, then click Add New Property.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/property-create.jpg)
+   ![](../.gitbook/assets/property-create.jpg)
 
 2. Fill in the fields:
 

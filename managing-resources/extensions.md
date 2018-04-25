@@ -51,7 +51,7 @@ A common use of extensions is to create integrations with other applications. In
 1. From a property's overview page, open the Extensions tab.
 2. Select an extension.
 
-   ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/extensions.png)
+   ![](../.gitbook/assets/extensions.png)
 
    * If the extension exists, select it from the extensions catalog.
    * Mouse over an extension in your list to configure or disable it.

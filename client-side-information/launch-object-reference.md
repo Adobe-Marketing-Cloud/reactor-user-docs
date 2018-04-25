@@ -361,7 +361,7 @@ The example above specifies all three methods in the monitor. When they're calle
 
 If you open the page in Chrome, open the browser console, and click the page, the following appears in the console:
 
-![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/debug.png)
+![](../.gitbook/assets/debug.png)
 
 Additional hooks or additional information might be added to theses handlers as needed.
 

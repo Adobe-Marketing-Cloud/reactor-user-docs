@@ -16,7 +16,7 @@ To configure the extension, open the Extensions tab, hover over the extension, a
 
 Configure your DIL settings. The following configuration options are available:
 
-![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/ext-aam-config.png)
+![](../.gitbook/assets/ext-aam-config.png)
 
 #### DIL Version
 
@@ -66,7 +66,7 @@ Run the custom code configured in the code editor.
 
 Enter the desired code in the Code Editor, then provide a name for the code. This code will become available in the Then portion of the rule builder.
 
-![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/ext-aam-then.png)
+![](../.gitbook/assets/ext-aam-then.png)
 
 You can also add a note with information about the configuration.
 

@@ -4,11 +4,11 @@ When you link your DTM embed code to Launch, you can keep your DTM production em
 
 Before you link your embed code, DTM publishes files to your web host. When a user visits your site in a browser, it requests the file from the server and loads it onto your web page.
 
-![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/dtm_publishing.png)
+![](../.gitbook/assets/dtm_publishing.png)
 
 With linking, you can publish a Launch file, with the same file name, to the same place where DTM is hosting a file. The Launch file overwrites the DTM file, so when visitors browse to your site, they see the Launch file.
 
-![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/launch_publishing.png)
+![](../.gitbook/assets/launch_publishing.png)
 
 Important: If you use this functionality, be aware that when you publish from Launch, Launch overwrites whatever was in the destination already. Likewise, if you publish from DTM, DTM overwrites whatever was there already. You have two systems publishing to the same location. This means you don't have to change the code on your page, but it also means you need to be really careful when you publish.
 
