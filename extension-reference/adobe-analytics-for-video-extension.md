@@ -109,8 +109,6 @@ Channel name property
 
 This module exposes all of the constants from this class: [https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html).
 
-**Implementation**
-
 1. Implemement the shared Media Heartbeat instance as follows:
 
    ```javascript
