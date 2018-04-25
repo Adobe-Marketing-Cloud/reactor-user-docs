@@ -60,7 +60,7 @@ Automate implementations of individual technologies, or a group of technologies.
 
 ### Light, Modular Container tag
 
-The Launch container tag is 60% lighter than DTM and 40% lighter than Google Tag Manager. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact. See [Minification](../build.md).
+The Launch container tag is 60% lighter than DTM and 40% lighter than Google Tag Manager. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact. See [Minification](publishing/builds.md).
 
 ## Other highlights
 

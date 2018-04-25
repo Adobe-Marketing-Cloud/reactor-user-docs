@@ -4,8 +4,8 @@ Use this documentation for information on installing, configuring, and implement
 
 The Adobe Analytics for Video Extension adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension \(VA Extension\) requires two additional extensions:
 
-* [Analytics Extension](../extension-reference/c_extension-analytics.md)
-* [Experience Cloud ID Extension](../extension-reference/c_extension-mcid.md)
+* [Analytics Extension](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-analytics.md)
+* [Experience Cloud ID Extension](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-mcid.md)
 
 After you have included all three of the extensions mentioned above in your Launch project, you must then include custom JavaScript, or build a player-specific extension, to map specific video player API events to the Video Analytics events exposed through the VA Extension.
 
@@ -47,7 +47,7 @@ Preferred debug log output
 
 Enable / Disable sending pings over HTTPS.
 
-Important: The VA Analytics extension requires the presence of the [Adobe Analytics](../extension-reference/c_extension-analytics.md) and [Experience Cloud ID](../extension-reference/c_extension-mcid.md) extensions. Customers must also add these extensions to their extension property and configure them.
+Important: The VA Analytics extension requires the presence of the [Adobe Analytics](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-analytics.md) and [Experience Cloud ID](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-mcid.md) extensions. Customers must also add these extensions to their extension property and configure them.
 
 ## Working With the Shared Modules
 
@@ -145,5 +145,5 @@ This module exposes all of the constants from this class: [https://adobe-marketi
 
 2. Using the Media Heartbeat instance, follow the [VHL SDK JS documentation](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/) and [JS API documentation](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/index.html) to implement video tracking.
 
-Note: **Testing -** For this release, to test your extension you must upload it to [Adobe Launch](../extension-reference/launch.adobe.com), where you have access to all dependent extensions.
+Note: **Testing -** For this release, to test your extension you must upload it to [Adobe Launch](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/launch.adobe.com), where you have access to all dependent extensions.
 

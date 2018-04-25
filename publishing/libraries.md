@@ -68,9 +68,9 @@ Once a library is created, use the drop down menu for that library to select one
 ## Add to a library
 
 1. Install the [extensions](../managing-resources/extensions.md) you want to add.
-2. Create the [data elements](../publishing/data-elements.md) and rules you want to add.
+2. Create the [data elements](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/publishing/data-elements.md) and rules you want to add.
 3. Open the Publishing tab.
-4. Select the [library](../publishing/library.md) you want to change, then click Edit.
+4. Select the [library](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/publishing/library.md) you want to change, then click Edit.
 5. Use the rules, data elements, and extensions buttons to select the items you want to add to the library.
 6. Save.
 
@@ -110,7 +110,7 @@ Libraries encapsulate a set of changes you'd like to make to your deployed code.
 You can save new and existing extensions, rules, and data elements directly to the library you're working on and, if desired, immediately kick off a build. You can also create a new library from the Active Library drop down.
 
 1. [Create a new library](libraries.md#library-create).
-2. Go to [Rules](../publishing/rules.md), [Data Elements](../publishing/data-elements.md), or [Extensions](../publishing/extensions.md).
+2. Go to [Rules](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/publishing/rules.md), [Data Elements](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/publishing/data-elements.md), or [Extensions](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/publishing/extensions.md).
 3. Select your Active Library.
 4. Make your changes, then save and build the library.
 5. Test your changes, and repeat these steps as needed.

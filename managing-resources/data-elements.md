@@ -6,7 +6,7 @@ A single data element is a variable who's value can be mapped to query strings, 
 
 Data Elements &gt; Edit.
 
-Important: Changes do not take effect until they are [published](../managing-resources/c_publishing.md).
+Important: Changes do not take effect until they are [published](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/managing-resources/c_publishing.md).
 
 Use data elements as widely as possible throughout rule creation to consolidate the definition of dynamic data and to improve the efficiency of your tagging process. You define data rules once and then use them in multiple places.
 
@@ -23,7 +23,7 @@ Data elements are populated with data when they are used in rules or when manual
 1. [Create a data element](data-elements.md#data-element-create), if you haven't done so already.
 2. Use the data element in a [rule](rules.md) or a custom script.
 
-For an introductory video, see [Data elements](../managing-resources/videos.md).
+For an introductory video, see [Data elements](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/managing-resources/videos.md).
 
 ## Data element usage
 
@@ -70,7 +70,7 @@ Data elements are the building blocks for rules. Data elements let you create a 
 
 8. Click Save.
 
-When creating or editing elements, you can save and build to your [active library](../managing-resources/library.md). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the Active Library drop down.
+When creating or editing elements, you can save and build to your [active library](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/managing-resources/library.md). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the Active Library drop down.
 
 ## Types of data elements
 

@@ -44,7 +44,7 @@ Another consideration is that Launch has always provided a Page Bottom event typ
 
 ## Loading the Launch embed code asynchronously
 
-Launch provides a toggle to turn on asynchronous loading when creating an embed code when you configure an [environment](../client-side-information/environment-overview.md). You can also configure asynchronous loading yourself:
+Launch provides a toggle to turn on asynchronous loading when creating an embed code when you configure an [environment](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/client-side-information/environment-overview.md). You can also configure asynchronous loading yourself:
 
 1. Add an async attribute to the `<script>` tag to load the script asynchronously.
 

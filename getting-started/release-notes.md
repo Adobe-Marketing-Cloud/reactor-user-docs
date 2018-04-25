@@ -22,7 +22,7 @@
 
 #### Adobe Analytics for Video Extension 1.0.0
 
-The [Adobe Analytics for Video Extension](../getting-started/c_extension-va.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension \(VA Extension\) requires two additional extensions:
+The [Adobe Analytics for Video Extension](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/getting-started/c_extension-va.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension \(VA Extension\) requires two additional extensions:
 
 * Analytics Extension
 * Experience Cloud ID Extension
@@ -54,11 +54,11 @@ Fixed the following issues in the Core extension:
 
 #### Delete resources
 
-You can delete data elements, rules, and extensions. See [Delete Resources](../getting-started/delete.md).
+You can delete data elements, rules, and extensions. See [Delete Resources](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/getting-started/delete.md).
 
 #### Link DTM Embed Code to Launch
 
-When you link your DTM embed code to Launch, you can keep your DTM production embed code on a page, but serve Launch files there instead of DTM. See [Link DTM Embed Code to Launch](../getting-started/embed-code-link.md).
+When you link your DTM embed code to Launch, you can keep your DTM production embed code on a page, but serve Launch files there instead of DTM. See [Link DTM Embed Code to Launch](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/getting-started/embed-code-link.md).
 
 ## March 6, 2018
 
@@ -135,7 +135,7 @@ Important: Launch developers who do not have "-development" or "-staging" in the
 
 #### Rule Ordering
 
-Events in rules can now be assigned an order. When an event is triggered, any rules that use that event are executed in the order defined. Lower numbers run first \(1 comes before 10\). See [Rule ordering](../getting-started/rules.md) for more information.
+Events in rules can now be assigned an order. When an event is triggered, any rules that use that event are executed in the order defined. Lower numbers run first \(1 comes before 10\). See [Rule ordering](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/getting-started/rules.md) for more information.
 
 #### Set Active Library
 
@@ -153,7 +153,7 @@ You can now pass actual objects to the log function and view them as objects in 
 
 * On-page
 
-  The Launch library now includes support for running asynchronously. There are important ramifications for how this changes what happens in your library. You should read the [Async documentation](../getting-started/async.md) before you do anything.
+  The Launch library now includes support for running asynchronously. There are important ramifications for how this changes what happens in your library. You should read the [Async documentation](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/getting-started/async.md) before you do anything.
 
 * Async Toggle on Environments
 

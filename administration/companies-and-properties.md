@@ -14,7 +14,7 @@ This section contains the following information:
 * [Create a property](companies-and-properties.md#property-create)
 * [Delete a property](companies-and-properties.md#property-delete)
 
-For a video tutorial, see [Creating your first property](../administration/videos.md).
+For a video tutorial, see [Creating your first property](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/administration/videos.md).
 
 ## Companies
 
@@ -115,9 +115,9 @@ Click a property to see an overview of that property. The overview shows any act
 
 Create a property in Launch.
 
-Note: Only a user with sufficient rights can create a property. See [User Management](../administration/user-management.md).
+Note: Only a user with sufficient rights can create a property. See [User Management](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/administration/user-management.md).
 
-Before beginning, review the [Best practices for planning properties](../administration/properties.md) for properties.
+Before beginning, review the [Best practices for planning properties](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/administration/properties.md) for properties.
 
 1. Navigate to your company page, then click Add New Property.
 

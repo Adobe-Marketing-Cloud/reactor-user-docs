@@ -85,7 +85,7 @@ The steps below guide you through the process of assigning permissions. Steps 1-
 
     ![](../.gitbook/assets/profile-rights-select.png)
 
-    Rights are not automatically included. You must assign each right to your profile. You can quickly add all rights to this profile by using the + Add All button or you can assign individual rights by using the individual + buttons. For more information on what permissions are associated with each right, see [Rights details](../administration/user-management.html#task_674BECF0B97C49A98C746B006CB49F0C). Click Save when finished. If Save is not available, you didn't make any changes and the profile won't give you any rights
+    Rights are not automatically included. You must assign each right to your profile. You can quickly add all rights to this profile by using the + Add All button or you can assign individual rights by using the individual + buttons. For more information on what permissions are associated with each right, see [Rights details](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/administration/user-management.html#task_674BECF0B97C49A98C746B006CB49F0C). Click Save when finished. If Save is not available, you didn't make any changes and the profile won't give you any rights
 
     ![](../.gitbook/assets/profile-rights.png)
 
