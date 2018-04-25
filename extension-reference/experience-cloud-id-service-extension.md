@@ -42,11 +42,7 @@ This section describes the action types available in the Experience Cloud ID ext
 
 #### Set Customer IDs
 
-**Description**
-
 Set one or more customer IDs.
-
-**Settings**
 
 1. Enter the integration code.
 
