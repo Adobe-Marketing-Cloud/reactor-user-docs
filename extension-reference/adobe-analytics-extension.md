@@ -12,13 +12,13 @@ To configure the extension, open the Extensions tab, hover over the extension, a
 
 ![](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/images/ext-analytics-config.png)
 
-### Library Management
+## Library Management
 
 Select an option from the Library Management section of the configuration page. The following configuration options are available:
 
-#### Manage the library for me
+### Manage the library for me
 
-**Report Suites**
+#### Report Suites
 
 Specify one or more report suites for each of the following environments:
 
@@ -26,31 +26,9 @@ Specify one or more report suites for each of the following environments:
 * Staging
 * Production
 
-#### Use the library already installed on the page
+### Use the library already installed on the page
 
-**Set the following report suites on tracker**
-
-If you select this option, specify one or more report suites for each of the following environments:
-
-* Development
-* Staging
-* Production
-
-**Tracker is accessible on the global variable named**
-
-Specify a global variable.
-
-#### Load the library from a custom URL
-
-**HTTP URL**
-
-Specify the URL where the library is located.
-
-**HTTPS URL**
-
-Specify the URL where the library is located.
-
-**Set the following report suites on tracker**
+#### Set the following report suites on tracker
 
 If you select this option, specify one or more report suites for each of the following environments:
 
@@ -58,19 +36,41 @@ If you select this option, specify one or more report suites for each of the fol
 * Staging
 * Production
 
-**Tracker is accessible on the global variable named**
+#### Tracker is accessible on the global variable named
 
 Specify a global variable.
 
-#### Let me provide custom library code
+### Load the library from a custom URL
 
-**Open Editor**
+#### HTTP URL
+
+Specify the URL where the library is located.
+
+#### HTTPS URL
+
+Specify the URL where the library is located.
+
+#### Set the following report suites on tracker
+
+If you select this option, specify one or more report suites for each of the following environments:
+
+* Development
+* Staging
+* Production
+
+#### Tracker is accessible on the global variable named
+
+Specify a global variable.
+
+### Let me provide custom library code
+
+#### Open Editor
 
 Lets you [insert core AppMeasurement code](https://marketing.adobe.com/resources/help/en_US/sc/implement/dtm/t_appmeasurement-code.html). This code is populated automatically when using the automatic configuration method.
 
 Note: The validator used in the Launch code editor is designed to identify issues with developer-written code. Code that has gone through a minification process--such as the AppMeasurement.js code downloaded from the Code Manager--might be falsely flagged as having issues by the Launch validator, which can usually be ignored.
 
-**Set the following report suites on tracker**
+#### Set the following report suites on tracker
 
 If you select this option, specify one or more report suites for each of the following environments:
 
@@ -78,15 +78,15 @@ If you select this option, specify one or more report suites for each of the fol
 * Staging
 * Production
 
-**Tracker is accessible on the global variable named**
+#### Tracker is accessible on the global variable named
 
 Specify a global variable.
 
-### General
+## General
 
 Select an option from the General section of the configuration page. The following configuration options are available:
 
-#### Enable EU compliance for Adobe Analytics
+### Enable EU compliance for Adobe Analytics
 
 Enables or disables tracking based on the EU privacy cookie.
 
@@ -107,7 +107,7 @@ You must also have a mechanism to set that cookie to true if you want a visitor 
 _satellite.setCookie("sat_track", "true");
 ```
 
-#### Character Set
+### Character Set
 
 Choose the character set used by Analytics.
 
@@ -115,7 +115,7 @@ You can select a preset character set or specify a custom character set.
 
 For more information about character sets, see the [Multi-Byte Character Sets whitepaper](https://marketing.adobe.com/resources/help/en_US/whitepapers/multibyte/multibyte_encodings.html).
 
-#### Currency Code
+### Currency Code
 
 Choose the currency code used by Analytics.
 
@@ -123,19 +123,19 @@ You can select a preset currency code or specify a custom currency code.
 
 For more information about the supported currency codes, see the [Multi-Currency Support whitepaper](https://marketing.adobe.com/resources/help/en_US/whitepapers/currency/currency_codes.html).
 
-#### Tracking Server
+### Tracking Server
 
 The domain at which the image request and cookie is written.
 
 See [trackingServer](https://marketing.adobe.com/resources/help/en_US/sc/implement/trackingServer.html) in the Adobe Analytics Implementation guide.
 
-#### SSL Tracking Server
+### SSL Tracking Server
 
 The domain at which the image request and cookie is written. Used for secure pages. If not defined, SSL data goes to trackingServer.
 
 See [trackingServerSecure](https://marketing.adobe.com/resources/help/en_US/sc/implement/trackingServerSecure.html).
 
-### Global Variables
+## Global Variables
 
 Use this section to set up [eVars and Props](https://marketing.adobe.com/resources/help/en_US/sc/implement/props_eVars.html), and to create hierarchies.
 
@@ -143,27 +143,27 @@ Global variables are variables that are set on the Analytics tracking object whe
 
 If your web application typically sends one beacon per page, this section can help make it simple to set your variables in one place. If your application sends more than one beacon per page \(such as in a single-page application\), and you need to clear your variables and reset them using the same tracking object, it is simpler to rely on rules to set and clear your variables.
 
-### Link Tracking
+## Link Tracking
 
 Select an option from the Link Tracking section of the configuration page. The following configuration options are available:
 
-#### Enable ClickMap
+### Enable ClickMap
 
 [ClickMap](https://marketing.adobe.com/resources/help/en_US/sc/user/clickmap.html) is a plug-in for Internet Explorer and Firefox, and a module of Reports & Analytics.
 
-#### Track download links
+### Track download links
 
 Tracks links to downloadable files on your site.
 
 See [s.trackDownLoadLinks](https://marketing.adobe.com/resources/help/en_US/sc/implement/trackDownloadLinks.html).
 
-#### Download Extensions
+### Download Extensions
 
 If the Track Download Links option is enabled, you can select the extensions of file links that are included in the Downloads Report If your site contains links to files with any of the listed extensions, the URLs of these links will appear in reporting.
 
 See [s.linkDownloadFileTypes](https://marketing.adobe.com/resources/help/en_US/sc/implement/linkDownloadFileTypes.html).
 
-#### Track outbound links
+### Track outbound links
 
 Determines whether any link clicked is an exit link.
 
@@ -187,47 +187,47 @@ You can use one of the following methods to track outbound links from SPA sites:
 
 Note that these two options are mutually exclusive.
 
-#### Keep URL Parameters
+### Keep URL Parameters
 
 Preserves query strings.
 
 See [s.linkLeaveQueryString](https://marketing.adobe.com/resources/help/en_US/sc/implement/linkLeaveQueryString.html).
 
-### Cookies
+## Cookies
 
 Configure field descriptions for the Cookies global settings used for deploying the Adobe Analytics extension. The following configuration options are available:
 
-#### Visitor ID
+### Visitor ID
 
 Unique value that represents a customer in both the online and offline systems.
 
 See [visitorID](https://marketing.adobe.com/resources/help/en_US/sc/implement/visitorID.html).
 
-#### Visitor Namespace
+### Visitor Namespace
 
 Variable to identify the domain with which cookies are set.
 
 See [visitorNamespace](https://marketing.adobe.com/resources/help/en_US/sc/implement/visitorNamespace.html).
 
-#### Domain Periods
+### Domain Periods
 
 The domain on which the Analytics cookie `s_cc` and `s_sq` are set by determining the number of periods in the domain of the page URL. This variable is also used by some plug-ins in determining the correct domain to set the plug-in's cookie.
 
 See [s.cookieDomainPeriods](https://marketing.adobe.com/resources/help/en_US/sc/implement/cookiedomainperiods.html).
 
-#### First-Party Domain Periods
+### First-Party Domain Periods
 
 The `fpCookieDomainPeriods` variable is for cookies set by JavaScript \(`s_sq`, `s_cc`, plug-ins\) that are inherently first-party cookies, even if your implementation uses the third-party 2o7.net or omtrdc.net domains.
 
 See [s.fpCookieDomainPeriods](https://marketing.adobe.com/resources/help/en_US/sc/implement/fpCookieDomainPeriods.html).
 
-#### Cookie Lifetime
+### Cookie Lifetime
 
 Determines the life span of a cookie.
 
 See [s.cookieLifetime](https://marketing.adobe.com/resources/help/en_US/sc/implement/cookielifetime.html).
 
-### Customize Page Code
+## Customize Page Code
 
 Use the editor to customize your page code.
 
@@ -247,11 +247,7 @@ Important: Using a "set variables" action won't send the beacon. You must use th
 
 #### eVars
 
-**Description**
-
 Set one or more [eVars](https://marketing.adobe.com/resources/help/en_US/sc/implement/props_eVars.html).
-
-**Settings**
 
 1. Select an eVar from the dropdown.
 2. Specify whether you want to set the eVar as the value \(Set As\) or copy \(Duplicate From\) another eVar.
@@ -261,11 +257,7 @@ Set one or more [eVars](https://marketing.adobe.com/resources/help/en_US/sc/impl
 
 #### Props
 
-**Description**
-
 Set one or more [props](https://marketing.adobe.com/resources/help/en_US/sc/implement/props_eVars.html).
-
-**Settings**
 
 1. Select a prop from the dropdown.
 2. Specify whether you want to set the prop as the value \(Set As\) or copy \(Duplicate From\) another eVar.
@@ -275,11 +267,7 @@ Set one or more [props](https://marketing.adobe.com/resources/help/en_US/sc/impl
 
 #### Events
 
-**Description**
-
 Set one or more [events](https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-events.html).
-
-**Settings**
 
 1. Select an event from the dropdown.
 2. \(Optional\) Select or specify a data element used for [event serialization](https://marketing.adobe.com/resources/help/en_US/sc/implement/event_serialization_impl.html).
@@ -288,11 +276,7 @@ Set one or more [events](https://marketing.adobe.com/resources/help/en_US/sc/imp
 
 #### Hierarchy
 
-**Description**
-
 Set the Analytics [Hierarchy](https://marketing.adobe.com/resources/help/en_US/reference/hierarchy.html) variable.
-
-**Settings**
 
 Specify each level in the hierarchy.
 
@@ -300,11 +284,7 @@ If desired, configure additional hierarchies.
 
 #### Other information
 
-**Description**
-
 Specify other information used by your pages.
-
-**Settings**
 
 These settings include:
 
@@ -337,13 +317,9 @@ Use the editor to specify your custom page code.
 
 #### Increment a pageview - s.t\(\)
 
-**Description**
-
 Select if you want to increment a pageview.
 
 #### Do not increment a pageview - s.t\(\)
-
-**Description**
 
 Select if you do not want to increment a pageview.
 

@@ -186,9 +186,7 @@ In addition, configure whether the rule is triggered immediately or after a spec
 
 #### pushState or hashchange
 
-Trigger the event if a pushState or hashchange occurs.
-
-**Settings**
+Trigger the event if a `pushState` or `hashchange` occurs.
 
 There are no settings for this event type.
 
@@ -216,7 +214,7 @@ There are no settings for this event type.
 
 Trigger the event if the user reaches the bottom of the page
 
-There are no settings for this event type.
+There are no settings for this option.
 
 ### Options
 
@@ -255,12 +253,12 @@ This section describes the condition types available in the Core extension.
 
 Event condition types are divided into the following categories:
 
-*   [Data](#data-cond)
-*   [Engagement](#engagement-cond)
-*   [Technology](#technology-cond)
-*   [URL](#url-cond)
+*   [Data](#data)
+*   [Engagement](#engagement)
+*   [Technology](#technology)
+*   [URL](#url)
 
-### <a name="data-cond"></a>Data
+### Data
 
 #### Cookie
 
@@ -284,14 +282,14 @@ Specify any custom code that must exist as a condition of the event. Use the bui
 2.  Type the custom code.
 3.  Click Save.
 
-#### Data Element
+#### Value Comparison
 
-Specify if a data element requires a specific value for the event to trigger an action.
+Compares two values. See [Value Comparison operators](#value-comparison-operators), below, for more details.
 
-1.  Select a data element.
-    Type the data element in the box, or click the icon and select a data element.
-2.  Specify the value that must exist as a condition for the event.
-3.  (Optional) Enable Regex if this is a regular expression.
+1.  Provide a value.
+2.  Select the operator.
+3.  (Where required) Select whether the comparison should be case-insensitive.
+4.  Provide another value for the comparison.
 
 #### Variable
 
@@ -301,25 +299,83 @@ Specify the JavaScript variable name and value that must exist for an event to t
 2.  Specify the variable value that must exist as a condition for the event.
 3.  (Optional) Enable Regex if this is a regular expression.
 
-### <a name="engagement-cond"></a>Engagement
+### Value Comparison operators
 
-#### Cart Amount
+The Data category also includes the following Value Comparison operators:
 
-Configure a shopping cart amount that must be true for the event to trigger an action.
+#### Variable
 
-1.  Select a data element.
-    Type the data element in the box, or click the icon and select a data element.
-2.  Select whether the amount must be greater than, equal to, or less than the specified amount.
-3.  Specify the amount to complete the condition.
+The condition returns true if the two values are equal using a non-strict comparison (in JavaScript, the `==` operator). The values may be of any type. When typing a word like _true_, _false_, _null_, or _undefined_ into a value field, the word is compared as a string and is not be converted to its JavaScript equivalent.
 
-#### Cart Item Quantity
+#### Does Not Equal
 
-Configure the number of items that must be in the shopping cart for the event to trigger an action.
+The condition returns true if the two values are not equal using a non-strict comparison (in JavaScript, the `!=` operator). The values may be of any type. When typing a word like _true_, _false_, _null_, or _undefined_ into a value field, the word is compared as a string and is not be converted to its JavaScript equivalent.
 
-1.  Select a data element.
-    Type the data element in the box, or click the icon and select a data element.
-2.  Select whether the number of items must be greater than, equal to, or less than the specified value.
-3.  Specify the value to complete the condition.
+#### Contains
+
+The condition returns true if the first value contains the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning false.
+
+#### Does Not Contain
+
+The condition returns true if the first value does not contain the second value. Numbers are converted to strings. Any value other than a number or string will result in the condition returning true.
+
+#### Starts With
+
+The condition returns true if the first value starts with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning false.
+
+#### Does Not Start With
+
+The condition returns true if the first value does not start with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning true.
+
+#### Ends With
+
+The condition returns true if the first value ends with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning false.
+
+#### Does Not End With
+
+The condition returns true if the first value does not end with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning true.
+
+#### Matches Regex
+
+The condition returns true if the first value matches the regular expression. Numbers are converted to strings. Any value other than a number or string results in the condition returning false.
+
+#### Does Not Match Regex
+
+The condition returns true if the first value does not match the regular expression. Numbers are converted to strings. Any value other than a number or string results in the condition returning true.
+
+#### Is Less Than
+
+The condition returns true if the first value is less than the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false.
+
+#### Is Less Than Or Equal To
+
+The condition returns true if the first value is less than or equal to the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false.
+
+#### Is Greater Than
+
+The condition returns true if the first value is greater than the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false.
+
+#### Is Greater Than Or Equal To
+
+The condition returns true if the first value is greater than or equal to the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false.
+
+#### Is True
+
+The condition returns true if the value is a boolean with the value of true. The value you provide is not converted to a boolean if it is any other type. Any value other than a boolean with the value of true results in the condition returning false.
+
+#### Is Truthy
+
+The condition returns true if the value is true after being converted to a boolean. See [MDN's Truthy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) for examples of truthy values.
+
+#### Is False
+
+The condition returns true if the value is a boolean with the value of false. The value you provide is not converted to a boolean if it is any other type. Any value other than a boolean with the value of false results in the condition returning false.
+
+#### Is Falsy
+
+The condition returns true if the value is false after being converted to a boolean. See [MDN's Falsy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) for examples of falsy values.
+
+### Engagement
 
 #### Landing Page
 
@@ -327,14 +383,6 @@ Specify the page the user must land on to trigger the event.
 
 1.  Specify the landing page.
 2.  (Optional) Enable Regex if this is a regular expression.
-
-#### Logged In
-
-Specify the data element that indicates whether the user is logged in.
-
-Select a data element.
-
-Type the data element in the box, or click the icon and select a data element.
 
 #### New/Returning Visitor
 
@@ -354,22 +402,6 @@ Configure the number of times the visitor must view the page before the action i
 3.  Configure when the page views are counted by selecting one of the following:
     *   Lifetime
     *   Current Session
-
-#### Previous Converter
-
-Trigger the action if the visitor has converted before.
-
-Select a data element.
-
-Type the data element in the box, or click the icon and select a data element.
-
-#### Registered User
-
-Trigger the action if the visitor is a registered user.
-
-Select a data element.
-
-Type the data element in the box, or click the icon and select a data element.
 
 #### Sessions
 
@@ -396,7 +428,7 @@ Specify the source of the visitor's traffic that must be true for the action to 
 1.  Specify the traffic source.
 2.  (Optional) Enable Regex if this is a regular expression.
 
-### <a name="technology-cond"></a>Technology
+### Technology
 
 #### Browser
 
@@ -464,7 +496,7 @@ Select the window size visitors must use on their devices for the action to be t
 3.  Select whether the window size height of the visitor's device must be greater than, equal to, or less than the specified value.
 4.  Specify the number of pixels required for the window size height.
 
-### <a name="url-cond"></a>URL
+### URL
 
 #### Domain
 
@@ -523,12 +555,12 @@ This section describes the exception types available in the Core extension.
 
 Event condition types are divided into the following categories:
 
-*   [Data](#data-ext)
-*   [Engagement](#engagement-ext)
-*   [Technology](#technology-ext)
-*   [URL](#url-ext)
+*   [Data](#data-event)
+*   [Engagement](#engagement-event)
+*   [Technology](#technology-event)
+*   [URL](#url-event)
 
-### <a name="data-ext"></a>Data
+### <a name="data-event"></a>Data
 
 #### Cookie
 
@@ -552,15 +584,6 @@ Specify any custom code that must exist as a condition of the event. Use the bui
 2.  Type the custom code.
 3.  Click Save.
 
-#### Data Element
-
-Specify if a data element requires that a specific value does not exist for the event to trigger an action.
-
-1.  Select a data element.
-    Type the data element in the box, or click the icon and select a data element.
-2.  Specify the value that must not exist as a condition for the event.
-3.  (Optional) Enable Regex if this is a regular expression.
-
 #### Variable
 
 Specify the JavaScript variable name and value that must not exist for an event to trigger an action.
@@ -569,25 +592,7 @@ Specify the JavaScript variable name and value that must not exist for an event 
 2.  Specify the variable value that must not exist as a condition for the event.
 3.  (Optional) Enable Regex if this is a regular expression.
 
-### <a name="engagement-ext"></a>Engagement
-
-#### Cart Amount
-
-Configure a shopping cart amount that must not be true for the event to trigger an action.
-
-1.  Select a data element.
-    Type the data element in the box, or click the icon and select a data element.
-2.  Select whether the amount must not be greater than, equal to, or less than the specified amount.
-3.  Specify the amount to complete the condition.
-
-#### Cart Item Quantity
-
-Configure the number of items that must not be in the shopping cart for the event to trigger an action.
-
-1.  Select a data element.
-    Type the data element in the box, or click the icon and select a data element.
-2.  Select whether the number of items must not be greater than, equal to, or less than the specified value.
-3.  Specify the value to complete the condition.
+### <a name="engagement-event"></a>Engagement
 
 #### Landing Page
 
@@ -595,14 +600,6 @@ Specify the page the user must not land on to trigger the event.
 
 1.  Specify the landing page.
 2.  (Optional) Enable Regex if this is a regular expression.
-
-#### Logged In
-
-Specify the data element that indicates whether the user is logged in.
-
-Select a data element.
-
-Type the data element in the box, or click the icon and select a data element.
 
 #### New/Returning Visitor
 
@@ -622,21 +619,6 @@ Configure the number of times the visitor must view the page to keep the action 
 3.  Configure when the page views are counted by selecting one of the following:
     *   Lifetime
     *   Current Session
-
-#### Previous Converter
-
-Do not trigger the action if the visitor has converted before.
-
-Select a data element.
-
-Type the data element in the box, or click the icon and select a data element.
-
-#### Registered User
-
-Do not trigger the action if the visitor is a registered user.
-
-1.  Select a data element.
-2.  Type the data element in the box, or click the icon and select a data element.
 
 #### Sessions
 
@@ -659,7 +641,7 @@ Specify the source of the visitor's traffic that must be true to prevent the act
 1.  Specify the traffic source.
 2.  (Optional) Enable Regex if this is a regular expression.
 
-### <a name="technology-ext"></a>Technology
+### <a name="technology-event"></a>Technology
 
 #### Browser
 
@@ -727,7 +709,7 @@ Select the window size visitors must not use on their devices for the action to 
 3.  Select whether the window size height of the visitor's device must be greater than, equal to, or less than the specified value.
 4.  Specify the number of pixels required for the window size height.
 
-### <a name="url-ext"></a>URL
+### <a name="url-event"></a>URL
 
 #### Domain
 
@@ -808,7 +790,7 @@ Code from custom actions is embedded in the main Launch library. The code is wri
 
 Code from custom actions is loaded from the server and written to the document using [Postscribe](https://github.com/krux/postscribe). If a rule has multiple Custom Code actions, the code is loaded in parallel from the server, but written in the order configured in the rule.
 
-While using document.write after a page has loaded would typically present problems, this is not an issue for code provided through Custom Code actions. You may use document.write within Custom Code actions regardless of when the code will be executed.
+While using `document.write` after a page has loaded would typically present problems, this is not an issue for code provided through Custom Code actions. You may use `document.write` within Custom Code actions regardless of when the code will be executed.
 
 #### Custom Code Validation
 

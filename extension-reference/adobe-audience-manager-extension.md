@@ -62,11 +62,7 @@ The Adobe Audience Manager extension provides the following actions in the Then 
 
 ### Run Custom Code
 
-**Description**
-
 Run the custom code configured in the code editor.
-
-**Settings**
 
 Enter the desired code in the Code Editor, then provide a name for the code. This code will become available in the Then portion of the rule builder.
 
