@@ -24,7 +24,7 @@
   * [Link DTM Embed Code](administration/link-dtm-embed-code.md)
 * [Extension Reference](extension-reference/README.md)
   * [Core Extension](extension-reference/core-extension.md)
-  * Experience Cloud ID Service Extension
+  * [Experience Cloud ID Service Extension](extension-reference/experience-cloud-id-service-extension.md)
   * [Adobe Analytics Extension](extension-reference/adobe-analytics-extension.md)
   * [Adobe Analytics for Video Extension](extension-reference/adobe-analytics-for-video-extension.md)
   * [Adobe Target Extension](extension-reference/adobe-target-extension.md)
