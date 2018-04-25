@@ -4,13 +4,13 @@ Launch is the next-generation of Adobe's tag management technology, built on the
 
 The basic Launch workflow:
 
-1. [Set up groups and users](./#setup).
-2. [Log in](./#login).
-3. [Create a property](./#create).
-4. [Install extensions](./#install).
-5. [Create data elements and rules](./#element-rule).
-6. [Test in your dev environment](./#test).
-7. [Promote to production](./#promote).
+1. [Set up groups and users](./#1-set-up-groups-and-users).
+2. [Log in](./#2-log-in).
+3. [Create a property](./#3-create-a-property).
+4. [Install extensions](./#4-install-extensions).
+5. [Create data elements and rules](./#5-create-data-elements-and-rules).
+6. [Test in your dev environment](./#6-test-in-your-dev-environment).
+7. [Promote to production](./#7-promote-to-production).
 
 For an introductory video, see [Introduction to Launch, by Adobe](videos.md).
 
