@@ -59,55 +59,33 @@ The Target extension provides the following actions in the Then portion of a rul
 
 ### Load Target
 
-**Description**
-
 Add this action to your Launch rule where it makes sense to load Target in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site.
-
-**Settings**
 
 No configuration is needed.
 
 ### Load Target Async
 
-**Description**
-
 Add this action to your Launch rule where it makes sense to load Target asynchronously in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site.
-
-**Settings**
 
 No configuration is needed.
 
 ### Add Mbox Params
 
-**Description**
-
 Add parameters to your mbox configuration.
 
-**Settings**
-
-Specify the name and value of any parameter you want to add.
-
-Click the Plus icon to add more parameters.
+1. Specify the name and value of any parameter you want to add.
+2. Click the Plus icon to add more parameters.
 
 ### Add Global Mbox Params
 
-**Description**
-
 Add parameters to your global mbox configuration.
 
-**Settings**
-
-Specify the name and value of any parameter you want to add.
-
-Click the Plus icon to add more parameters.
+1. Specify the name and value of any parameter you want to add.
+2. Click the Plus icon to add more parameters.
 
 ### Fire Global Mbox
 
-**Description**
-
 Fire the global mbox on your page.
-
-**Settings**
 
 Specify whether to enable body hiding to prevent flickering, and the style used when hiding your body element.
 
@@ -120,11 +98,7 @@ For more information, refer to the [Target online help documentation](https://ma
 
 ### Fire Global Mbox Async
 
-**Description**
-
 Fire the global mbox asynchronously on your page.
-
-**Settings**
 
 Specify whether to enable body hiding to prevent flickering, and the style used when hiding your body element.
 
