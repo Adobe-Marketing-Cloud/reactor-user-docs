@@ -67,7 +67,7 @@ Once a library is created, use the drop down menu for that library to select one
 
 ## Add to a library
 
-1. Install the [extensions](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/publishing/extensions.md) you want to add.
+1. Install the [extensions](../managing-resources/extensions.md) you want to add.
 2. Create the [data elements](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/publishing/data-elements.md) and rules you want to add.
 3. Open the Publishing tab.
 4. Select the [library](https://github.com/Aaronius/gitbooktest/tree/190c7c3dc0fbdc5a9ed48e7927383d3e9f032d78/publishing/library.md) you want to change, then click Edit.

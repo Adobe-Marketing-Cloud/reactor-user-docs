@@ -100,22 +100,23 @@ The steps below guide you through the process of assigning permissions. Steps 1-
 
       For example, if Group 1 gives access to Property A with the Develop right and Group 2 gives access to Property B with the Publish right, Develop and Publish rights are not combined for Property A and Property B. You can only develop on Property A and publish on Property B.
 
-11. To assign users to be part of your group, open the Users tab, then click Add User.  
+11. To assign users to be part of your group, open the Users tab, then click Add User.
 
+```text
+![](../.gitbook/assets/add-user.png)
 
-    ![](../.gitbook/assets/add-user.png)
+Click ... for additional options, such as bulk user operations.
 
-    Click ... for additional options, such as bulk user operations.
+Note: Being an Org Admin or a Product Admin does not grant you any rights within the Launch product. You must belong to at least one product profile.
+```
 
-    Note: Being an Org Admin or a Product Admin does not grant you any rights within the Launch product. You must belong to at least one product profile.
+1. Search for the user you'd like to add to the group. You can search by name or by email address. This auto-populates from existing users in your Org. Once you have found the user you want, click on their name.
 
-12. Search for the user you'd like to add to the group. You can search by name or by email address. This auto-populates from existing users in your Org. Once you have found the user you want, click on their name.
+   ![](../.gitbook/assets/profile-user.png)
 
-    ![](../.gitbook/assets/profile-user.png)
+   Once you've added users, they receive an email letting them know that they now have rights to Launch. They can login to Launch at [https://launch.adobe.com](https://launch.adobe.com).
 
-    Once you've added users, they receive an email letting them know that they now have rights to Launch. They can login to Launch at [https://launch.adobe.com](https://launch.adobe.com).
-
-    Note: If the user does not exist, you can simply type their entire email address, then provide a first and last name. The new user receives an email, and when they create an Adobe ID from that email invitation, they are linked together with the user account you created for them. If you are assigning permissions for yourself, you won't have this issue.
+   Note: If the user does not exist, you can simply type their entire email address, then provide a first and last name. The new user receives an email, and when they create an Adobe ID from that email invitation, they are linked together with the user account you created for them. If you are assigning permissions for yourself, you won't have this issue.
 
 ### Common issues
 
