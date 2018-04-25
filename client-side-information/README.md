@@ -6,7 +6,7 @@ This section contains information that is useful when managing client-side opera
 
   This reference documents the \_satellite object and the things you can do with it.
 
-* [**Asynchronous Deployment of Experience Cloud JavaScript**](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/client-side-information/async.md)
+* [**Asynchronous Deployment of Experience Cloud JavaScript**](asynchronous-deployment.md)
 
   Performance and non-blocking deployment of the JavaScript libraries required by our products is increasingly important to Adobe Experience Cloud users. Tools like [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/) recommend that users change they way they deploy The Adobe libraries on their site. This article explains how to use the Adobe JavaScript libraries in an asynchronous fashion.
 
