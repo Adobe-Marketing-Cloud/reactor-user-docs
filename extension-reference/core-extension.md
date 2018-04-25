@@ -8,17 +8,6 @@ Use this reference for information about the options available when using this e
 
 This topic describes the event types available in the Core extension.
 
-Event types are divided into the following categories:
-
-* [Browser](core-extension.md#browser)
-* [Form](core-extension.md#form)
-* [Keyboard](core-extension.md#keyboard)
-* [Media](core-extension.md#media)
-* [Mobile](core-extension.md#mobile)
-* [Mouse](core-extension.md#mouse)
-* [Other](core-extension.md#other)
-* [Page load](core-extension.md#page-load)
-
 For information about options that can be set for several different event types, see [Options](core-extension.md#options).
 
 ### Browser
@@ -255,13 +244,6 @@ If you select this option, the following parameters become available:
 ## Core extension condition types
 
 This section describes the condition types available in the Core extension.
-
-Event condition types are divided into the following categories:
-
-* [Data](core-extension.md#data-cond)
-* [Engagement](core-extension.md#engagement-cond)
-* [Technology](core-extension.md#technology-cond)
-* [URL](core-extension.md#url-cond)
 
 ### Data
 
@@ -529,13 +511,6 @@ Specify URL parameter used in the URL.
 ## Core extension exception types
 
 This section describes the exception types available in the Core extension.
-
-Event condition types are divided into the following categories:
-
-* [Data](core-extension.md#data-ext)
-* [Engagement](core-extension.md#engagement-ext)
-* [Technology](core-extension.md#technology-ext)
-* [URL](core-extension.md#url-ext)
 
 ### Data
 
