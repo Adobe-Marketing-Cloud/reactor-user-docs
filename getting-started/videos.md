@@ -1,9 +1,5 @@
 # Videos
 
-title: Videos
-
-## permalink: /videos/
-
 These videos introduce you to Launch concepts and tasks.
 
 * [Introduction to Launch, by Adobe](https://www.youtube.com/embed/rwqqkG1SERU)
