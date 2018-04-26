@@ -25,7 +25,7 @@ There are four basic states that a library can be in. Specific actions must be t
 
 ![](../.gitbook/assets/library-state.png)
 
-## Development
+### Development
 
 Libraries are created in Development. Any changes to a library must be made while the library is in Development. When development and testing are completed, the library is submitted.
 
@@ -43,7 +43,7 @@ Available actions for a library in Development state are:
 
   Unassigns the library from its development environment and moves the library to the submitted column for an Approver to work on.
 
-## Submitted
+### Submitted
 
 An Approver tests the library in a staging environment. When testing is completed, the library is approved or rejected. Rejected builds go back to Development so changes can be made before the approval flow starts over again.
 
@@ -65,7 +65,7 @@ Available actions for a library in Submitted state are:
 
   Unassigns the library from the staging environment and moves the library to the Development column for changes.
 
-## Approved
+### Approved
 
 The library is waiting to be published. A Publisher can publish or reject the library. Rejected builds go back to Development so that changes can be made before the approval flow begins again.
 
@@ -85,7 +85,7 @@ Available actions for a library in Approved state are:
 
   Unassigns the library from the staging environment and moves the library to the Development column for changes.
 
-## Published
+### Published
 
 The library is live in the production environment. This column shows which libraries have been published and their publish dates. You can look at these libraries, but you cannot make changes. If you want to change what's in your production environment, you'll need to create a new library and push it through the approval process.
 
