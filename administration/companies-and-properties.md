@@ -4,16 +4,6 @@ A property, or web property, is a collection of rules, data elements, configured
 
 A property can be any grouping of one or more domains and subdomains. You can manage and track these assets similarly. For example, suppose that you have multiple websites based on one template, and you want to track the same assets on all of them. You can apply one property to multiple domains.
 
-This section contains the following information:
-
-* [Companies](companies-and-properties.md#companies)
-* [Separating the Launch environment for multiple entities](companies-and-properties.md#separating)
-* [Best practices for planning properties](companies-and-properties.md#best-practices)
-* [Deactivating a property](companies-and-properties.md#deactivating)
-* [Properties page](companies-and-properties.md#Properties)
-* [Create a property](companies-and-properties.md#property-create)
-* [Delete a property](companies-and-properties.md#property-delete)
-
 For a video tutorial, see [Creating your first property](../getting-started/videos.md).
 
 ## Companies
@@ -117,7 +107,7 @@ Create a property in Launch.
 
 Note: Only a user with sufficient rights can create a property. See [User Management](users.md).
 
-Before beginning, review the [Best practices for planning properties](companies-and-properties.md) for properties.
+Before beginning, review the [Best practices for planning properties](companies-and-properties.md#best-practices-for-planning-properties) for properties.
 
 1. Navigate to your company page, then click Add New Property.
 
