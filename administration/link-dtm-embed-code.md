@@ -30,14 +30,9 @@ Before you link your embed code:
 
 * Your DTM company must be connected to the Experience Cloud.
 * Your user account must have the Manage Environments right in Launch and the Admin right in DTM.
-* In Launch, go to Environments.
-* Create a Prod environment. You can only have one Prod environment. If you already have one, delete it and create a linked Prod environment.
 
-  Important: You cannot get your old Prod Environment back if you delete it.
-
-  * Use the Link Your DTM Embed Code toggle.
-    * Paste your Prod Embed Code from DTM into the appropriate text field in Launch.
-
-* Finish configuring your Prod environment.
-* Click Save.
+1. In Launch, go to Environments.
+2. Create a Prod environment.  You can only have one Prod environment. If you already have one, delete it and create a linked Prod environment. Important: You cannot get your old Prod Environment back if you delete it. Use the Link Your DTM Embed Code toggle. Paste your Prod Embed Code from DTM into the appropriate text field in Launch.
+3. Finish configuring your Prod environment.
+4. Click Save.
 
