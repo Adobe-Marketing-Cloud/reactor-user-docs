@@ -40,45 +40,45 @@ Multiple Launch companies are not recommended. Adobe strongly suggests multiple 
 
 ## Best practices for planning properties
 
-Considering the following when planning properties:
-
-* Data
-
-  For all of your websites, is the data you are going to collect very similar, somewhat similar, or unique?
-
-  If the data you need to collect is similar across websites, it might make sense to group those sites into one property to avoid duplicating rules or copying rules from one property to another.
-
-  If your data collection needs are unique for each site, it might make sense to separate those sites in their own properties. This method lets you control the data collection more specifically for each site, without using large amounts of conditional logic in custom scripts.
-
-  For example, if 80 percent of the data you are collecting across your sites is the same, or similar, it makes sense to group those sites together into the same property. If the data is unique for each site, it makes sense to put each site into its own property.
-
-* Variables
-
-  Similar to data, for all of your websites, are the variables you are going to set in your Analytics and other extensions very similar, somewhat similar, or unique?
-
-  For example, if eVar27 is used for the same source value across all of your websites, it might make sense to group those sites together so you can set those common variables across your sites in just one property.
-
-  If your variable usage is unique for each site, it might make more sense to separate those sites into their own properties so you can control the variables more specifically for each site without using large amounts of conditional logic in custom scripts.
-
-* Extensions, Tags, and Systems
-
-  Are the extensions, tags and systems you are going to deploy through Launch very similar, somewhat similar, or unique?
-
-  If the extensions, tags, and systems you are going to deploy through Launch are very similar across your sites, you might want to include those sites in the same property.
-
-  If you are deploying Adobe Analytics on only one site, and your other extensions and tags are also unique to certain sites, you might want to create separate properties for those sites so you can control those specific extensions in one property.
-
-  For example, If you are deploying Adobe Analytics, Target, and the same 3rd-party tags and extensions across your sites, that is a reason to group sites together.
-
-* People
-
-  For the individuals, teams, and organizations that are working in Launch, will they need access to all of your websites, some of them, or just one of your domains or sub-domains?
-
-  The User Management features allow you to assign different roles to different people for all of your properties, or on a per-property basis. If someone has sufficient rights, that person can perform administrative actions across all the properties in that Launch company. All the other roles can be assigned on a per-property basis. You can even hide a property from certain users \(non-admins\) by not giving them any role in that property.
-
 Each implementation can be very different in Launch, with a wide variety of data-collection needs, variable usage, extensions, third-party tags, other systems and technologies, people, teams, geographic regions, and so on. Using the flexible User Management features and properties, you can create a configuration that matches your workflow and processes.
 
 If the scenarios you are tracking, the data you are collecting, the extensions you are deploying, and the variables you are setting are similar across all or some of your domains and subdomains, it is easier to have those domains and subdomains grouped into the same property in Launch. If those are unique for each domain and subdomain, it is easier to have those domains and subdomains in their own property. If you choose to group domains and subdomains in a single property now, you can always change your mind and later create several web properties.
+
+Considering the following when planning properties:
+
+#### Data
+
+For all of your websites, is the data you are going to collect very similar, somewhat similar, or unique?
+
+If the data you need to collect is similar across websites, it might make sense to group those sites into one property to avoid duplicating rules or copying rules from one property to another.
+
+If your data collection needs are unique for each site, it might make sense to separate those sites in their own properties. This method lets you control the data collection more specifically for each site, without using large amounts of conditional logic in custom scripts.
+
+For example, if 80 percent of the data you are collecting across your sites is the same, or similar, it makes sense to group those sites together into the same property. If the data is unique for each site, it makes sense to put each site into its own property.
+
+#### Variables
+
+Similar to data, for all of your websites, are the variables you are going to set in your Analytics and other extensions very similar, somewhat similar, or unique?
+
+For example, if eVar27 is used for the same source value across all of your websites, it might make sense to group those sites together so you can set those common variables across your sites in just one property.
+
+If your variable usage is unique for each site, it might make more sense to separate those sites into their own properties so you can control the variables more specifically for each site without using large amounts of conditional logic in custom scripts.
+
+#### Extensions, Tags, and Systems
+
+Are the extensions, tags and systems you are going to deploy through Launch very similar, somewhat similar, or unique?
+
+If the extensions, tags, and systems you are going to deploy through Launch are very similar across your sites, you might want to include those sites in the same property.
+
+If you are deploying Adobe Analytics on only one site, and your other extensions and tags are also unique to certain sites, you might want to create separate properties for those sites so you can control those specific extensions in one property.
+
+For example, If you are deploying Adobe Analytics, Target, and the same 3rd-party tags and extensions across your sites, that is a reason to group sites together.
+
+#### People
+
+For the individuals, teams, and organizations that are working in Launch, will they need access to all of your websites, some of them, or just one of your domains or sub-domains?
+
+The User Management features allow you to assign different roles to different people for all of your properties, or on a per-property basis. If someone has sufficient rights, that person can perform administrative actions across all the properties in that Launch company. All the other roles can be assigned on a per-property basis. You can even hide a property from certain users \(non-admins\) by not giving them any role in that property.
 
 ## Deactivating a property
 
