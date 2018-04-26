@@ -2,9 +2,6 @@
 
 This topic describes the user management process and available rights.
 
-* [Assign user permissions](users.md#permissions)
-* [Rights details](users.md#rights)
-
 The following video tutorial provides an overview:
 
 [https://www.youtube.com/embed/ba28BHX8cwU](https://www.youtube.com/embed/ba28BHX8cwU)
