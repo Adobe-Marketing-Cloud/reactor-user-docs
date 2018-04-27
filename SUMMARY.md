@@ -22,6 +22,7 @@
   * [Adapters](administration/adapters.md)
   * [Environments](administration/environments.md)
   * [Link DTM Embed Code](administration/link-dtm-embed-code.md)
+  * [Deploy JavaScript tags to opt in to Launch](administration/deploy-javascript-tags-to-opt-in-to-launch.md)
 * [Extension Reference](extension-reference/README.md)
   * [Core Extension](extension-reference/core-extension.md)
   * [Experience Cloud ID Service Extension](extension-reference/experience-cloud-id-service-extension.md)
