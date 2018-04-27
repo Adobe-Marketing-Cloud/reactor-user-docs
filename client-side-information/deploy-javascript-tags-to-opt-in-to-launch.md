@@ -1,12 +1,12 @@
 # Deploy JavaScript tags to opt in to Launch
 
-The combination of the European Union [General Data Protection Regulation \(GDPR\)](https://gdpr-info.eu/art-7-gdpr/) and [ePrivacy](https://medium.com/mydata/consent-lost-gdpr-and-found-eprivacy-e85cf881ffb) legislation requires consent management in Europe. Adobe customers will require visitors to opt-in before Adobe solutions execute for that visitor. Visitors have the ability to opt-out of anything they have opted in to.
+The combination of the European Union [General Data Protection Regulation \(GDPR\)](https://gdpr-info.eu/art-7-gdpr/) and [ePrivacy](https://medium.com/mydata/consent-lost-gdpr-and-found-eprivacy-e85cf881ffb) legislation requires companies to be able to manage consent for their users.  Adobe customers may require visitors to opt-in before Adobe solutions execute for any given visitor. Visitors should have the ability to manage their opt-in and opt-out status.
 
 Adobe Experience Cloud customers require a variety of implementations of these requirements. Some use  enterprise-level consent managers and others build their own.
 
 For Launch, extension developers use extensions and the rule builder to define opt-in and opt-out solutions.
 
-This document contains recommendations for each Adobe-provided extension.
+This document contains information about how to prevent Adobe tags from firing until consent is acquired.
 
 ## Advertising Cloud
 
