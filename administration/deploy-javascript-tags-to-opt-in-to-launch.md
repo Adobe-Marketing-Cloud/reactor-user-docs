@@ -12,6 +12,8 @@ This document contains recommendations for each Adobe-provided extension.
 
 Launch does not fire Advertising Cloud automatically. Advertising Cloud only fires if you specifically tell it to in a rule action. Use the rule conditions to determine when and what to fire. For example, to use cookies to determine opt-in status, set a data element to read that cookie and use it as a condition in the rule to determine when to fire the Track Conversion action.
 
+Integrations with consent managers \(such as OneTrust\) can set and track the consent cookies for customers, which can then be used in the rule builder.
+
 ## Analytics
 
 In the Link Tracking section of the Analytics extension's configuration settings, make sure the following are _not_ selected: 
