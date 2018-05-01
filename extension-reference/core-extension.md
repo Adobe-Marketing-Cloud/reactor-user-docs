@@ -172,7 +172,7 @@ See [Options](core-extension.md#options), below.
 
 In addition, configure whether the rule is triggered immediately or after a specified number of milliseconds.
 
-#### pushState or hashchange
+#### History Change
 
 Trigger the event if a pushState or hashchange occurs.
 
