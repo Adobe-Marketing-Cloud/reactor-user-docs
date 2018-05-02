@@ -1,5 +1,55 @@
 # Release Notes
 
+## May 3, 2018
+
+### Documentation
+
+Open source documentation for Launch now available at [https://docs.adobelaunch.com](https://docs.adobelaunch.com).
+
+## April 24, 2018
+
+### Enhancements
+
+#### Rule builder
+
+Events in rule builder are no longer draggable.
+
+#### Extension delete
+
+Improved warning messages.
+
+### Bug fixes
+
+* No longer prompt for unsaved changes on rule components when
+
+  changes have been saved.
+
+* Fixed problematic interactions with Active Library.
+
+## April 17, 2018
+
+### Features
+
+#### Rule ID enhancement
+
+Rule ID is now emitted for each rule in a build, and can be referenced in the browser. 
+
+#### Page Load event order	
+
+Page Load events now execute in logical order in async deployments \(Library Loaded &gt; Page Bottom &gt; DOM Ready &gt; Window Loaded\).	
+
+## April 11, 2018
+
+### Features
+
+#### Core Extension enhancement
+
+Data elements can now reference other data elements.
+
+#### Interface enhancements
+
+Minor style improvements.
+
 ## April 3, 2018
 
 ### Features
