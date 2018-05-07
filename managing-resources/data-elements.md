@@ -55,18 +55,19 @@ Data elements are the building blocks for rules. Data elements let you create a 
 6. Select whether to force a lowercase value and whether to remove line breaks and spaces.
 7. Select a duration.
 
-   The available choices are:
+  The available choices are:
 
-   * Page view
-     * Available only while the page persists.
-     * Can be created and set in scripts using `_satellite` object syntax:
-
-       `_satellite.setVar('data_element_name')`
-   * Session
-     * Sets a session-level cookie in the browser.
-     * Available throughout the site visit.
-   * Visitor
-     * Sets a 2-year cookie.
+  * None
+    * The value is not stored.
+  * Page view
+    * The value is stored until a new page is loaded.
+    * Can be created and set in scripts using `_satellite` object syntax:
+      `_satellite.setVar('data_element_name')`
+  * Session
+    * The value is stored in a session-level cookie in the browser.
+    * Available throughout the site visit.
+  * Visitor
+    * The value is stored in a 2-year cookie.
 
 8. Click Save.
 
