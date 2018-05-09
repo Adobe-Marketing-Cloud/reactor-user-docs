@@ -154,7 +154,7 @@ if (window.location.pathname == '/') {
 
 ## Built-in data elements
 
-If you used any of the following data elements in the past, you must create custom data elements in Launch:
+If you used any of the following data elements in the past, you must create custom data element in Launch:
 
 * URI
 * Protocol
