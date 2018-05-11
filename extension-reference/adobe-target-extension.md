@@ -63,12 +63,6 @@ Add this action to your Launch rule where it makes sense to load Target in the c
 
 No configuration is needed.
 
-### Load Target Async
-
-Add this action to your Launch rule where it makes sense to load Target asynchronously in the context of your rule. This loads the at.js library into the page. In most implementations, Target should be loaded on every page of your site.
-
-No configuration is needed.
-
 ### Add Mbox Params
 
 Add parameters to your mbox configuration.
@@ -95,21 +89,6 @@ The following options are available:
 * **Body Hidden Style:** The default value is `body{opacity:0}`. This value can be changed to something different, like `body{display:none}`.
 
 For more information, refer to the [Target online help documentation](https://marketing.adobe.com/resources/help/en_US/target/ov/r_advanced_mboxjs_settings.html).
-
-### Fire Global Mbox Async
-
-Fire the global mbox asynchronously on your page.
-
-Specify whether to enable body hiding to prevent flickering, and the style used when hiding your body element.
-
-The following options are available:
-
-* **Body Hiding:** You can enable or disable this setting. The default value is Enabled, which means HTML BODY is hidden.
-* **Body Hidden Style:** The default value is `body{opacity:0}`. This value can be changed to something different, like `body{display:none}`.
-
-For more information, refer to the [Target online help documentation](https://marketing.adobe.com/resources/help/en_US/target/ov/r_advanced_mboxjs_settings.html).
-
-Note: You cannot combine Load Target \(sync\) action with Fire Global Mbox Async action or vice-versa. Use either sync or async actions.
 
 ## Adobe Target extension with an asynchronous deployment
 
