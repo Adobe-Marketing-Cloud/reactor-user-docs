@@ -4,8 +4,6 @@ Data elements are the building blocks for your data dictionary \(or data map\). 
 
 A single data element is a variable who's value can be mapped to query strings, URLs, cookie values, JavaScript variables, and so on. You can reference this value by its variable name throughout Launch. This collection of data elements becomes the dictionary of defined data that you can use to build your rules \(events, conditions, and actions\). This data dictionary is shared across all of Launch for use with any extension you've added to your property.
 
-Data Elements &gt; Edit.
-
 Important: Changes do not take effect until they are [published](../publishing/).
 
 Use data elements as widely as possible throughout rule creation to consolidate the definition of dynamic data and to improve the efficiency of your tagging process. You define data rules once and then use them in multiple places.
