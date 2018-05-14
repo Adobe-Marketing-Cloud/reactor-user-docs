@@ -63,10 +63,10 @@ Data elements are the building blocks for rules. Data elements let you create a 
 
        `_satellite.setVar('data_element_name')`
    * Session
-     * Values persist in Session Storage until the browser tab is closed.
+     * Values persist in the browser's session storage until the browser tab is closed.
      * Available throughout the site visit.
    * Visitor
-     * The value is stored indefinitely in local storage.
+     * The value is stored indefinitely in the brower's local storage.
 
 8. Click Save.
 
