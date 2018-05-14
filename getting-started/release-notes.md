@@ -1,5 +1,17 @@
 # Release Notes
 
+## May 10, 2018
+
+### Features
+
+#### Data Elements duration, "None" option
+
+Data Elements now have a "None" duration option.  Newly created Data Elements default to this setting.
+
+#### Environment pages default
+
+Environment pages now display async embed codes as the default.  Toggling between sync and async works exactly as before.
+
 ## May 3, 2018
 
 ### Documentation
