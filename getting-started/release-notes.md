@@ -1,6 +1,6 @@
 # Release Notes
 
-## May 10, 2018
+## May 8, 2018
 
 ### Features
 
