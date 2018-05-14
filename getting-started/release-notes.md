@@ -8,7 +8,7 @@
 
 Data Elements now have a "None" duration option.  Newly created Data Elements default to this setting.
 
-#### Environment pages default
+#### Environment pages default to display async embed codes
 
 Environment pages now display async embed codes as the default.  Toggling between sync and async works exactly as before.
 
