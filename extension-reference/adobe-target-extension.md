@@ -90,11 +90,25 @@ The following options are available:
 
 For more information, refer to the [Target online help documentation](https://marketing.adobe.com/resources/help/en_US/target/ov/r_advanced_mboxjs_settings.html).
 
+## Adobe Target basic deployment
+
+Once the Target Extension is installed, you'll need to create at least one rule to properly deploy it.  You first need to load the Target library \(at.js\), specify the parameters you want to use with the global mbox, and fire the global mbox.
+
+A Target rule with this basic implementation looks like this:
+
+![](../.gitbook/assets/basic_target_implementation.png)
+
+Once you have saved this rule, you'll need to add it to a Library and build/deploy so that you can test the behavior.
+
 ## Adobe Target extension with an asynchronous deployment
 
-Launch supports asynchronous deployment.
+Launch can be deployed asynchronously.  If you are loading the Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously.  This is a fully supported scenario, but there is one additional consideration that must be handled.
 
-To use the Adobe Target extension with an asynchronous deployment, we suggest you use a pre-hiding snippet and load the Launch bundle asynchronously to avoid any content flicker.
+In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap.
+
+This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target.
+
+If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Launch bundle asynchronously to avoid any content flicker.
 
 * A pre-hiding snippet should be loaded _before_ the Launch bundle, to ensure there is no flicker.
 
