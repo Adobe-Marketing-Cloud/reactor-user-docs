@@ -34,7 +34,7 @@ If you use embed code linking, the process is mostly the same as without it, but
 
 1. Create your property, install an extension, create data elements, and create rules in Launch, as you normally would.
 2. Create your Development and Staging environments in Launch as usual.
-3. ** Create your Prod environment in Launch and use the \[**Link Your DTM Embed Code\*\*\]\(link-dtm-embed-code.md\#embed-code-link\) option.
+3.  **Create your Prod environment in Launch and use the \[**Link Your DTM Embed Code\*\*\]\(link-dtm-embed-code.md\#embed-code-link\) option.
 4. Create your library in Launch as usual.
 5. Test in Dev, submit, test in Stage, and approve as usual.
 6. Publish.
