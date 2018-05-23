@@ -65,3 +65,7 @@ When the event and conditions are met, retrieve identity information that is sto
 
 When the event and conditions are met, remove identity information that is stored for the visitor.
 
+### Retrieve Then Remove Identies
+
+When the event and conditions are met, retrieve identity information that is stored for the visitor, then remove it.
+
