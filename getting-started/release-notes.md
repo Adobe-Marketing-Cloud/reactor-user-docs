@@ -10,7 +10,7 @@ The Launch and DTM libraries using Akamai are now available on CDN edge nodes in
 
 #### Improved error messages
 
-The information contained in error messages has been improved and expanded throughout the API and UI.  This should be especially useful for build failures messages.
+The information contained in error messages has been improved and expanded throughout the API and UI.  This should be especially useful for build failure messages.
 
 #### Add All Changes Button
 
