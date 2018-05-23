@@ -8,8 +8,7 @@
   * [Extensions](managing-resources/extensions.md)
   * [Data Elements](managing-resources/data-elements.md)
   * [Rules](managing-resources/rules.md)
-  * [Delete Resources](managing-resources/delete-resources/README.md)
-    * [Adobe Privacy Extension](managing-resources/delete-resources/adobe-privacy-extension.md)
+  * [Delete Resources](managing-resources/delete-resources.md)
 * [Publishing](publishing/README.md)
   * [Libraries](publishing/libraries.md)
   * [Builds](publishing/builds.md)
@@ -32,4 +31,5 @@
   * [Adobe Target Extension](extension-reference/adobe-target-extension.md)
   * [Adobe ContextHub Extension](extension-reference/adobe-contexthub-extension.md)
   * [Adobe Audience Manager Extension](extension-reference/adobe-audience-manager-extension.md)
+  * [Adobe Privacy Extension](extension-reference/adobe-privacy-extension.md)
 

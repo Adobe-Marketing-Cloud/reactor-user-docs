@@ -144,7 +144,7 @@ Fixed the following issues in the Core extension:
 
 #### Delete resources
 
-You can delete data elements, rules, and extensions. See [Delete Resources](../managing-resources/delete-resources/).
+You can delete data elements, rules, and extensions. See [Delete Resources](../managing-resources/delete-resources.md).
 
 #### Link DTM Embed Code to Launch
 
