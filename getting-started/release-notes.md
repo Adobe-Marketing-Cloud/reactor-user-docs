@@ -6,23 +6,27 @@
 
 #### Launch and DTM libraries are now live in China
 
-The Launch and DTM libraries can be used in China.
+The Launch and DTM libraries using Akamai are now available on CDN edge nodes in China.  This will result in much faster library load speeds for end users in China.
 
 #### Improved error messages
 
-The information contained in error messages has been improved and expanded, especially for build failures.
+The information contained in error messages has been improved and expanded throughout the API and UI.  This should be especially useful for build failures messages.
 
-#### Add All Changes feature
+#### Add All Changes Button
 
-Click Add All Changes on the Edit Library page to add anything newer than what is already in Production to the current library.
+We've changed the behavior of the Add All Changes button on the Edit Library page.  Previously, a resource was only considered "changed" until you had added it to a Library and saved it.  Now a resource will be considered "changed" until it has been published to the Production environment.
 
 #### Adobe Privacy extension
 
-The Adobe Privacy extension contains functions that can assist those implementing privacy initiatives, such as GDPR.
+The Adobe Privacy extension provides functionality for collecting and/or removing user IDs assigned to end users by Adobe solutions.
 
 #### Launch Core extension: Value Comparison condition
 
-The new Value Comparison condition Compares two values, using any of several available operators.
+The new Value Comparison condition Compares two values, using any of several available operators.  This replaces the functionality of several older conditions that are far too specific.
+
+#### Launch Core extension: Frequency condition
+
+This condition allows you to specify the number of times the condition should return true within a time period or event occurrence. Examples: 5 times per Day, 2 times per Visit.
 
 ## May 8, 2018
 
