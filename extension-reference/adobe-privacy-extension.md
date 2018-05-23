@@ -1,6 +1,6 @@
 # Adobe Privacy Extension
 
-The Adobe Privacy extension helps you configure Adobe solutions to impliment privacy functions, including GDPR.
+ The Adobe Privacy extension provides functionality for collecting and removing user IDs assigned to end users by Adobe solutions.
 
 ## Configure Solutions During Installation
 
