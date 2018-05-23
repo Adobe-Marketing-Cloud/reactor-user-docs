@@ -1,5 +1,29 @@
 # Release Notes
 
+## May 24, 2018
+
+### Features
+
+#### Launch and DTM libraries are now live in China
+
+The Launch and DTM libraries can be used in China.
+
+#### Improved error messages
+
+The information contained in error messages has been improved and expanded, especially for build failures.
+
+#### Add All Changes feature
+
+Click Add All Changes on the Edit Library page to add anything newer than what is already in Production to the current library.
+
+#### Adobe Privacy extension
+
+The Adobe Privacy extension contains functions that can assist those implementing privacy initiatives, such as GDPR.
+
+#### Launch Core extension: Value Comparison condition
+
+The new Value Comparison condition Compares two values, using any of several available operators.
+
 ## May 8, 2018
 
 ### Features
