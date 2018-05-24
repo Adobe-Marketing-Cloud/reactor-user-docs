@@ -24,7 +24,7 @@ The Adobe Privacy extension provides functionality for collecting and/or removin
 
 The new Value Comparison condition Compares two values, using any of several available operators.  This replaces the functionality of several older conditions that were far too specific.
 
-#### Launch Core extension: Frequency condition
+#### Launch Core extension: Max Frequency condition
 
 This condition allows you to specify the number of times the condition should return true within a time period or event occurrence. Examples: 5 times per Day, 2 times per Visit.
 
