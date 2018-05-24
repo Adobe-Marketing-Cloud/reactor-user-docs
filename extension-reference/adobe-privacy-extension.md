@@ -61,9 +61,13 @@ The following actions are available when you configure a rule using the Adobe Pr
 
 When the event and conditions are met, retrieve identity information that is stored for the visitor.
 
+Enter the name of a JavaScript function you want to pass the data to.  This function or method handles the retrieved Identities.  Whether you store them, display them, or send them to the Adobe GDPR API, is within your control.
+
 ### Remove Identities
 
 When the event and conditions are met, remove identity information that is stored for the visitor.
+
+Enter the name of a JavaScript function you want to pass the data to.  This function or method handles the retrieved Identities.  Whether you store them, display them, or send them to the Adobe GDPR API, is within your control.
 
 ### Retrieve Then Remove Identies
 
