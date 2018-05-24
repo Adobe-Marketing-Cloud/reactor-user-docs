@@ -269,22 +269,14 @@ Specify any custom code that must exist as a condition of the event. Use the bui
 
 #### Value Comparison
 
-Compares two values. See "Value Comparison operators," below, for more details.					
+Compares two values. 					
 
-1. Provide a value..
-2. Select the operator.
+1. Provide a value.
+2. Select the operator. Refer to the list of  value comparison operators, below, for more details.
 3. \(Where required\) Select whether the comparison should be case-insensitive. 					  
 4. Provide another value for the comparison.
 
-#### Variable
-
-Specify the JavaScript variable name and value that must exist for an event to trigger an action.
-
-1. Specify the JavaScript variable name.
-2. Specify the variable value that must exist as a condition for the event.
-3. \(Optional\) Enable Regex if this is a regular expression.
-
-### Value Comparison Operators
+The following value comparison operators are available:
 
 **Equal:** The condition returns true if the two values are equal using a non-strict comparison \(in JavaScript, the == operator\). The values may be of any type. When typing a word like _true_,  _false_,  _null_, or  _undefined_ into a value field, the word is compared as a string and is not be converted to its JavaScript equivalent. 
 
@@ -320,7 +312,15 @@ Specify the JavaScript variable name and value that must exist for an event to t
 
 **Is False:** The condition returns true if the value is a boolean with the value of false. The value you provide is not converted to a boolean if it is any other type. Any value other than a boolean with the value of false results in the condition returning false. 
 
-**Is Falsy:** The condition returns true if the value is false after being converted to a boolean. See [MDN's Falsy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) for examples of falsy values.					
+**Is Falsy:** The condition returns true if the value is false after being converted to a boolean. See [MDN's Falsy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) for examples of falsy values.	
+
+#### Variable
+
+Specify the JavaScript variable name and value that must exist for an event to trigger an action.
+
+1. Specify the JavaScript variable name.
+2. Specify the variable value that must exist as a condition for the event.
+3. \(Optional\) Enable Regex if this is a regular expression.
 
 ### Engagement
 
@@ -374,6 +374,29 @@ Specify the source of the visitor's traffic that must be true for the action to 
 
 1. Specify the traffic source.
 2. \(Optional\) Enable Regex if this is a regular expression.
+
+### Other
+
+#### Date Range
+
+Specify a date range. Choose the date and time the event occurs after, the date it occurs before, and the time zone.
+
+#### Max Frequency
+
+Specify the maximum number of times the condition returns true. You can select from the following options:
+
+* Page view
+* Sessions
+* Visitor
+* Seconds
+* Minutes
+* Days
+* Weeks
+* Months
+
+#### Sampling
+
+Specify the percentage of the time the condition returns true.
 
 ### Technology
 
@@ -524,6 +547,53 @@ Specify any custom code that must exist as a condition of the event. Use the bui
 2. Type the custom code.
 3. Click Save.
 
+#### Value Comparison
+
+Compares two values. 					
+
+1. Provide a value.
+2. Select the operator. Refer to the list of  value comparison operators, below, for more details.
+3. \(Where required\) Select whether the comparison should be case-insensitive. 					  
+4. Provide another value for the comparison.
+
+The following value comparison operators are available:
+
+**Equal:** The condition returns true if the two values are equal using a non-strict comparison \(in JavaScript, the == operator\). The values may be of any type. When typing a word like _true_,  _false_,  _null_, or  _undefined_ into a value field, the word is compared as a string and is not be converted to its JavaScript equivalent. 
+
+**Does Not Equal:**  The condition returns true if the two values are not equalusing a non-strict comparison \(in JavaScript, the != operator\). The values may be of any type. When typing a word like _true_, _false_, _null_, or _undefined_ into a value field, the word is compared as a string and is not be converted to its JavaScript equivalent. 
+
+**Contains:** The condition returns true if the first value contains the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning false. 
+
+**Does Not Contain:** The condition returns true if the first value does not contain the second value. Numbers are converted to strings. Any value other than a number or string will result in the condition returning true. 
+
+**Starts With:** The condition returns true if the first value starts with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning false. 
+
+**Does Not Start With:** The condition returns true if the first value does not start with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning true. 
+
+**Ends With:** The condition returns true if the first value ends with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning false. 
+
+**Does Not End With:** The condition returns true if the first value does not end with the second value. Numbers are converted to strings. Any value other than a number or string results in the condition returning true. 
+
+**Matches Regex:** The condition returns true if the first value matches the regular expression. Numbers are converted to strings. Any value other than a number or string results in the condition returning false. 
+
+**Does Not Match Regex:** The condition returns true if the first value does not match the regular expression. Numbers are converted to strings. Any value other than a number or string results in the condition returning true. 
+
+**Is Less Than:** The condition returns true if the first value is less than the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false. 
+
+**Is Less Than Or Equal To:** The condition returns true if the first value is less than or equal to the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false. 
+
+**Is Greater Than:** The condition returns true if the first value is greater than the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false. 
+
+**Is Greater Than Or Equal To:** The condition returns true if the first value is greater than or equal to the second value. Strings representing numbers are converted to numbers. Any value other than a number or a convertible string result in the condition returning false. 
+
+**Is True:** The condition returns true if the value is a boolean with the value of true. The value you provide is not converted to a boolean if it is any other type. Any value other than a boolean with the value of true results in the condition returning false. 
+
+**Is Truthy:** The condition returns true if the value is true after being converted to a boolean. See [MDN's Truthy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) for examples of truthy values. 
+
+**Is False:** The condition returns true if the value is a boolean with the value of false. The value you provide is not converted to a boolean if it is any other type. Any value other than a boolean with the value of false results in the condition returning false. 
+
+**Is Falsy:** The condition returns true if the value is false after being converted to a boolean. See [MDN's Falsy documentation](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) for examples of falsy values.	
+
 #### Variable
 
 Specify the JavaScript variable name and value that must not exist for an event to trigger an action.
@@ -580,6 +650,29 @@ Specify the source of the visitor's traffic that must be true to prevent the act
 
 1. Specify the traffic source.
 2. \(Optional\) Enable Regex if this is a regular expression.
+
+### Other
+
+#### Date Range
+
+Specify a date range. Choose the date and time the event occurs after, the date it occurs before, and the time zone.
+
+#### Max Frequency
+
+Specify the maximum number of times the condition returns true. You can select from the following options:
+
+* Page view
+* Sessions
+* Visitor
+* Seconds
+* Minutes
+* Days
+* Weeks
+* Months
+
+#### Sampling
+
+Specify the percentage of the time the condition returns true.
 
 ### Technology
 
