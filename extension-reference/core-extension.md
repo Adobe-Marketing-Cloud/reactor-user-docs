@@ -269,7 +269,9 @@ Specify any custom code that must exist as a condition of the event. Use the bui
 
 #### Value Comparison
 
-Compares two values. 					
+Compares two values to determine whether this condition returns true.
+
+If you have a rule with multiple conditions, it is possible that this condition will return true, but the rule will still not fire because the other conditions evaluate as false or one of the exceptions evaluates as true. 					
 
 1. Provide a value.
 2. Select the operator. Refer to the list of  value comparison operators, below, for more details.
@@ -549,7 +551,9 @@ Specify any custom code that must exist as a condition of the event. Use the bui
 
 #### Value Comparison
 
-Compares two values. 					
+Compares two values to determine whether this exception returns true.
+
+If you have a rule with multiple conditions, it is possible that this condition will return true, but the rule will still not fire because the other conditions evaluate as false or one of the exceptions evaluates as true. 	 					
 
 1. Provide a value.
 2. Select the operator. Refer to the list of  value comparison operators, below, for more details.
