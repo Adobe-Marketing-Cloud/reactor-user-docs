@@ -113,10 +113,10 @@ This module exposes all of the constants from this class: [https://adobe-marketi
 
    ```javascript
    var getMediaHeartbeatInstance =
-     turbine.getSharedModule('adobe-video-analytics', '**get-instance**');
+     turbine.getSharedModule('adobe-video-analytics', 'get-instance');
 
    var MediaHeartbeat =
-     turbine.getSharedModule('adobe-video-analytics', '**media-heartbeat**');
+     turbine.getSharedModule('adobe-video-analytics', 'media-heartbeat');
        ...
 
        var delegate = {
