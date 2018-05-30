@@ -174,7 +174,7 @@ Browser support in the Launch client-side libraries:
 * Chrome \(latest\)
 * Safari \(latest\)
 * Firefox \(latest\)
-* Internet Explorer \(9 and above\)
+* Internet Explorer \(10 and above\)
 * iOS Safari \(latest\)
 * Android Chrome \(latest\)
 
