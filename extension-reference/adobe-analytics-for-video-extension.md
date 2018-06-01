@@ -81,98 +81,82 @@ The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared 
     1. A valid delegate object exposing these functions:
 
         <table id="table_qp4_31t_ycb">
-            <tgroup cols="3">
-                <colspec colname="col1" colnum="1" align="left"
-                colwidth="3*"/>
-                <colspec colname="col2" colnum="2" align="left"
-                colwidth="4*"/>
-                <colspec colname="col3" colnum="3" colwidth="1*"/>
                 <thead>
-                    <row>
-                        <entry>Method</entry>
-                        <entry>Description</entry>
-                        <entry>Required</entry>
-                    </row>
+                    <tr>
+                        <td>Method</td>
+                        <td>Description</td>
+                        <td>Required</td>
+                    </tr>
                 </thead>
                 <tbody>
-                    <row>
-                        <entry><codeph>getQoSObject()</codeph></entry>
-                        <entry>
+                    <tr>
+                        <td><codeph>getQoSObject()</codeph></td>
+                        <td>
                         <p>Returns the <codeph>MediaObject</codeph>
                         instance that contains the current QoS
                         information. This method will be called multiple
                         times during a playback session. Player
                         implementation must always return the most
                         recently available QoS data.</p>
-                        </entry>
-                        <entry>Yes</entry>
-                    </row>
-                    <row>
-                        <entry><codeph>getCurrentPlaybackTime()</codeph></entry>
-                        <entry>
+                        </td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><codeph>getCurrentPlaybackTime()</codeph></td>
+                        <td>
                         <p>Returns the current position of the playhead. </p>
                         <p>For VOD tracking, the value is specified in
                         seconds from the beginning of the media item. </p>
                         <p>For LIVE/LIVE tracking, the value is specified
                         in seconds from the beginning of the program.</p>
-                        </entry>
-                        <entry>Yes</entry>
-                    </row>
+                        </td>
+                        <td>Yes</td>
+                    </tr>
                 </tbody>
-            </tgroup>
         </table>
 
     2. An optional config object exposing these properties:
         
         <table
             id="table_sqg_4zs_ycb">
-            <tgroup cols="4">
-                <colspec colname="col1" colnum="1" align="left"
-                colwidth="2*"/>
-                <colspec colname="col2" colnum="2" align="left"
-                colwidth="2*"/>
-                <colspec colname="col3" colnum="3" colwidth="2*"
-                align="left"/>
-                <colspec colname="col4" colnum="4" colwidth="2*"/>
             <thead>
-                <row>
-                <entry>Property</entry>
-                <entry>Description</entry>
-                <entry>Required</entry>
-                <entry>Value</entry>
-                </row>
+                <tr>
+                <td>Property</td>
+                <td>Description</td>
+                <td>Required</td>
+                <td>Value</td>
+                </tr>
             </thead>
             <tbody>
-                <row>
-                    <entry>
+                <tr>
+                    <td>
                     <p>Online Video Provider</p>
-                    </entry>
-                    <entry>Name of the online video platform through
-                    which content gets distributed.</entry>
-                    <entry>No. If present overrides the value defined
-                    during Extension configuration.</entry>
-                    <entry>Empty String</entry>
-                </row>
-                <row>
-                    <entry>Player Name</entry>
-                    <entry>
+                    </td>
+                    <td>Name of the online video platform through
+                    which content gets distributed.</td>
+                    <td>No. If present overrides the value defined
+                    during Extension configuration.</td>
+                    <td>Empty String</td>
+                </tr>
+                <tr>
+                    <td>Player Name</td>
+                    <td>
                     <p>Name of the video player in use. </p>
                     <p>E.g.: "AVPlayer", "HTML5 Player", "My Custom
                     VideoPlayer"</p>
-                    </entry>
-                    <entry>No. If present overrides the value defined
-                    during Extension configuration.</entry>
-                    <entry>Empty String</entry>
-                </row>
-                <row>
-                    <entry>Channel</entry>
-                    <entry>Channel name property</entry>
-                    <entry>No. If present overrides the value defined
-                    during Extension configuration.</entry>
-                    <entry>Empty String</entry>
-                </row>
+                    </td>
+                    <td>No. If present overrides the value defined
+                    during Extension configuration.</td>
+                    <td>Empty String</td>
+                </tr>
+                <tr>
+                    <td>Channel</td>
+                    <td>Channel name property</td>
+                    <td>No. If present overrides the value defined
+                    during Extension configuration.</td>
+                    <td>Empty String</td>
+                </tr>
             </tbody>
-            </tgroup>
         </table>
 
     **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
