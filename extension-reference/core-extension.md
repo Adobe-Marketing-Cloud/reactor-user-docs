@@ -833,7 +833,3 @@ While using document.write after a page has loaded would typically present probl
 
 The validator used in the Launch code editor is designed to identify issues with developer-written code. Code that has gone through a minification process--such as the AppMeasurement.js code downloaded from the Code Manager--might be falsely flagged as having issues by the Launch validator, which can usually be ignored.
 
-| Table Test |  |
-| --- | --- |
-| Table Content Test |  |
-
