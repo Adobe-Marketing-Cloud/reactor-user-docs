@@ -20,52 +20,48 @@ After you have included all three of the extensions mentioned above in your Laun
 #### Configuation Options
 
 <table id="table_j5x_1tp_cdb">
-    <tgroup cols="2">
-        <colspec align="left" colname="Col1" colnum="1" colwidth="2*"/>
-        <colspec align="left" colname="Col2" colnum="2" colwidth="6*"/>
     <thead>
-        <row>
-        <entry>Option</entry>
-        <entry>Description</entry>
-        </row>
+        <tr>
+        <td>Option</td>
+        <td>Description</td>
+        </tr>
     </thead>
     <tbody>
-        <row>
-            <entry>Tracking Server</entry>
-            <entry>
+        <tr>
+            <td>Tracking Server</td>
+            <td>
             <p>Defines the server for tracking media heartbeats. <note>This
             is not the same server as your analytics tracking
             server.</note></p>
-            </entry>
-        </row>
-        <row>
-            <entry>Application Version</entry>
-            <entry>The version of the video player app/SDK.</entry>
-            </row>
-            <row>
-            <entry>Player Name</entry>
-            <entry>Name of the video player in use. E.g.: "AVPlayer", "HTML5
-            Player", "My Custom VideoPlayer"</entry>
-        </row>
-        <row>
-            <entry>Channel</entry>
-            <entry>Channel name property</entry>
-            </row>
-            <row>
-            <entry>Online Video Provider</entry>
-            <entry>Name of the online video platform through which content gets
-            distributed</entry>
-        </row>
-        <row>
-            <entry>Debug Logging</entry>
-            <entry>Preferred debug log output</entry>
-            </row>
-            <row>
-            <entry>Enable SSL</entry>
-            <entry>Enable / Disable sending pings over HTTPS.</entry>
-        </row>
+            </td>
+        </tr>
+        <tr>
+            <td>Application Version</td>
+            <td>The version of the video player app/SDK.</td>
+            </tr>
+            <tr>
+            <td>Player Name</td>
+            <td>Name of the video player in use. E.g.: "AVPlayer", "HTML5
+            Player", "My Custom VideoPlayer"</td>
+        </tr>
+        <tr>
+            <td>Channel</td>
+            <td>Channel name property</td>
+            </tr>
+            <tr>
+            <td>Online Video Provider</td>
+            <td>Name of the online video platform through which content gets
+            distributed</td>
+        </tr>
+        <tr>
+            <td>Debug Logging</td>
+            <td>Preferred debug log output</td>
+            </tr>
+            <tr>
+            <td>Enable SSL</td>
+            <td>Enable / Disable sending pings over HTTPS.</td>
+        </tr>
     </tbody>
-    </tgroup>
 </table>
 
 **Important:** The VA Analytics Launch Extension requires the presence of the [Adobe Analytics](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-analytics.md) and [Experience Cloud ID](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-mcid.md) extensions. Customers must also add these extensions to their extension property and configure them.
