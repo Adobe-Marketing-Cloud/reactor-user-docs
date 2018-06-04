@@ -2,12 +2,12 @@
 
 Use this documentation for information on installing, configuring, and implementing the Adobe Analytics for Video Extension. Included are the options available when using this extension to build a rule, along with examples and links to samples.
 
-The Adobe Analytics for Video Extension \(VA Launch Extension\) adds the core VA JavaScript library. This library provides the functionality for adding the `mediaHeartbeat` instance to a Launch site or project. The VA Launch Extension requires two additional extensions:
+The Adobe Analytics for Video Extension \(VA Launch Extension\) adds the core VA JavaScript library (VideoHeartbeat 2.x SDK). This extension provides the functionality for adding the `MediaHeartbeat` tracker instance to a Launch site or project. The VA Launch Extension requires two additional extensions:
 
 * [Analytics Extension](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-analytics.md)
 * [Experience Cloud ID Extension](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-mcid.md)
 
-After you have included all three of the extensions mentioned above in your Launch project, you must then include custom JavaScript, or build a player-specific extension, to map specific video player API events to the Video Analytics events exposed through the VA Launch Extension.
+After you have included all three of the extensions mentioned above in your Launch project, you must then include or build a player-specific extension, which maps specific video player API events to the Video Analytics events on the `MediaHeartbeat` tracker instance exposed through the VA Launch Extension.
 
 ## Install and Configure the VA Launch Extension
 
@@ -15,7 +15,7 @@ After you have included all three of the extensions mentioned above in your Laun
 
 **Configure -** To configure the VA Launch Extension, open the Extensions tab, hover over the extension, and then click Configure:
 
-![](../.gitbook/assets/va-launch-doc-google-docs.jpg)
+![](../.gitbook/assets/ext-va-config.jpg)
 
 #### Configuation Options
 
@@ -191,9 +191,11 @@ The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared 
         getMediaHeartbeatInstance(delegate, config).then(function(instance) {
             self._mediaHeartbeat = instance;
             ...
-            // Do Tracking using the Media Heartbeat instance.
-            });
-        }
+            // Do Tracking using the MediaHeartbeat instance.
+        }).catch(function(err){
+            // Getting MediaHeartbeat instance failed.
+        });
+        
         ...
         ```
 
@@ -205,13 +207,22 @@ The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared 
 
 You can obtain the VA Launch HTML5 sample player here: [HTML5 Sample Player](https://github.com/adobe/reactor-adobe-va-sample-player). The sample player acts as a reference to create video player extensions and to showcase using the VA Launch Extension to support Adobe Analytics for Video.
 
-![](launch-ui-rules-video-play_reduced.png)
+## Sample Player extension action types ##
+This section describes the action types available in the Sample Player extension.
 
-The sample player comes with an existing rule that opens the specified video when the core extension fires the `DOMLoaded` event.
+### Open Video ###
 
-* `< _your sample player repo_ >/src/lib/helpers/analytics/adobeAnalyticsProvider.js` - This file implements Video Analytics tracking by using Shared Modules exposed by the VA Launch Extension.
+The Open Video action provides various configurations for creating and customizing a HTML5 player, providing a video to play and enabling/disabling Adobe Video Analytics tracking. 
+
+   **Action Configuration / Player Settings:**  Note the CSS Selector setting which specifics the `<div>` in the web page where the player is added. Note also that the "Enable Adobe Analytics" checkbox is checked in the Analytics Settings pane.
+   
+   ![](../.gitbook/assets/ext-va-sp-action.png)
+   
+   ![](../.gitbook/assets/ext-va-sp-action1.png)
+   
 * [https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/view/actions/openVideo/openVideo.jsx](https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/view/actions/openVideo/openVideo.jsx) - UI Code to configure the Action is defined here.
-* [https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/actions/openVideo.js](https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/actions/openVideo.js) - This file exports a function that gets executed when the `openVideo` Action is triggered as part of the launch rule. 
+
+* [https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/actions/openVideo.js](https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/actions/openVideo.js) - This file exports a function that gets executed when the Action is triggered as part of the launch rule. 
 
     This is a code snippet from `openVideo.js` where the openVideo Action is executed:
 
@@ -235,10 +246,14 @@ The sample player comes with an existing rule that opens the specified video whe
     }
     ...
     ```
+* [https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/helpers/analytics/adobeAnalyticsProvider.js](https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/helpers/analytics/adobeAnalyticsProvider.js) - This file implements Video Analytics tracking by using Shared Modules exposed by the VA Launch Extension.
 
-    **Action Configuration / Player Settings:**  Note the CSS Selector setting where the corresponding `<div>` in the player is set. Note also that the "Enable Adobe Analytics" checkbox is checked in the Analytics Settings pane.
+## Sample Player extension basic deployment ##
 
-    ![](launch-ui-action-config-player_reduced.png)
-    ![](launch-ui-action-config_reduced.png)
+Once the Sample Player Extension is installed, you'll need to create at least one rule to properly deploy it. The Image below shows a sample rule that opens the specified video when the core extension fires the `DOMLoaded` event.
+
+![](../.gitbook/assets/ext-va-sp-rule.png)
+
+Once you have saved this rule, you'll need to add it to a Library and build/deploy so that you can test the behavior.
 
 **Important:** Currently, if you have a custom player that doesn't have a Launch extension, you have to write your own extension to make use of the VA Launch Extension. 
