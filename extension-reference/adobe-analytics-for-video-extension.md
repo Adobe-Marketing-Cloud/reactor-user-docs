@@ -246,7 +246,7 @@ The Open Video action provides various configurations for creating and customizi
     }
     ...
     ```
-* [https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/helpers/analytics/adobeAnalyticsProvider.js] - This file implements Video Analytics tracking by using Shared Modules exposed by the VA Launch Extension.
+* [https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/helpers/analytics/adobeAnalyticsProvider.js](https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/helpers/analytics/adobeAnalyticsProvider.js) - This file implements Video Analytics tracking by using Shared Modules exposed by the VA Launch Extension.
 
 ## Sample Player extension basic deployment ##
 
