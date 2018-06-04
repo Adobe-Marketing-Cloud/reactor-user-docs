@@ -47,14 +47,20 @@ In your terminal, run
 
 ## 5. Create Your Content  
 
-You are now set to begin creating your tutorial page. Be sure your new file title is descriptive, succinct, and is a .md file.  
-**Good title**: "creating-a-new-rule.md"   
-MD stands for markdown. If you are unfamiliar with .md files or markdown, you can learn more [here](https://guides.github.com/features/mastering-markdown/). A template.md file is located in the tutorials folder to help you get started. 
+You are now set to begin creating your tutorial page. Be sure your new file title is descriptive, succinct, and is a .md file.
+```
+**Good title**: "creating-a-new-rule.md"
+```   
+MD stands for markdown. If you are unfamiliar with .md files or markdown, you can learn more [here](https://guides.github.com/features/mastering-markdown/). Unfortunately, markdown does not support embedding videos. If you need to embed a video, please leave a comment in the location you would like your video with the following format: 
+```
+// Embed video here. Link: https://www.youtube.com/watch?v=eZBlRkF0-to&list=PLVkhvRpDxnn8aDsk9mW_wVufaOKJRK-Ls&index=2
+```
+We will embed the video for you in the location of your comment when your contribution is merged. A [TEMPLATE.md](./TEMPLATE.md) file is located in the tutorials folder to help you get started. 
 
 ## 6. Create a New Pull Request
 
 Once you've finished with your tutorial and are happy with the changes, it's time for a pull request! This is basically a request to have your changes added to the live site. It's important to note that any changes outisde of your new tutorial files will **not** be accepted.
-1. Open your terminal to the reactor-user-docs project. 
+1. Open your terminal and navigate to the reactor-user-docs project. 
 2. Enter  
  ```git add .```  
  and press enter.
