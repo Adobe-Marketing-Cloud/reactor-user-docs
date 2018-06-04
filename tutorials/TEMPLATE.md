@@ -2,7 +2,7 @@
 
 By Celeste Robinson
 
-Data Elements are an incredibly useful and are a necessary tool in Launch. Check out the video below to learn more about them and how to use them.
+Data Elements are an incredibly useful and necessary tool in Launch. Check out the video below to learn more about what they are and how to use them.
 
 // Embed video here. Link: https://www.youtube.com/watch?v=zf05jwkDR4c
 
