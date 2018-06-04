@@ -14,7 +14,7 @@ Let's jump right in!
 - Videos and screenshots are one of the best ways to provide instruction, and we highly encourage using them. However, be careful that your media does not disclose any sensitive information such as passwords, tokens, or keys.
 - Create your tutorial in the corresponding sections such as Publishing, Data Elements, or Other. This will help users find exactly what they're looking for. 
 
-## 1. Read Required Contributor Material**
+## 1. Read Required Contributor Material
 As with any project, it's best to be prepared before beginning. Read the below information to familiarize yourself with contribution policies and guidelines.
 
  ### Code Of Conduct
@@ -63,7 +63,6 @@ Once you've finished with your tutorial and are happy with the changes, it's tim
 and press enter.
 4. Enter  
 ```git push origin [name-of-your-branch]```
-5. Return to https://github.com/Adobe-Marketing-Cloud/reactor-user-docs. There should now be a green button that says "Create pull request". If there's not, click on the gray button that says "New pull request." You may choose to leave a comment, then click "Create pull request".
-You may receive requested changes after your pull request is reviewed. After those changes are made, follow the steps 1-4 again. Once everything is satisfactory, your pull request will be merged into the master branch.
+5. Return to https://github.com/Adobe-Marketing-Cloud/reactor-user-docs. There should now be a green button that says "Create pull request". If there's not, click on the gray button that says "New pull request." You may choose to leave a comment, then click "Create pull request". You may be asked to make changes after your pull request is reviewed. After those changes are made, repeat the steps 1-4 under "Create a New Pull Request". Once everything is satisfactory, your pull request will be merged into the master branch.
 
-    **Please note that there will be no expectations on how long it will take to be approved and merged.*
+    **Please note that there will be no expectations on how long it will take for your contribution to be approved and merged.*
