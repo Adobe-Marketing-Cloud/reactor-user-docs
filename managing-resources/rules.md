@@ -115,15 +115,15 @@ The load order for rules depends on whether the rule action is configured with J
 
 You can use `document.write` within your custom scripts regardless of the events configured for the rule.
 
-You can order different custom code types amongst each other. For example, you can now have a JavaScript custom code action, then an HTML custom code action, then a JavaScript custom code action. Launch ensures that they are executed in that order.
+You can order different custom code types among each other. For example, you can now have a JavaScript custom code action, then an HTML custom code action, then a JavaScript custom code action. Launch ensures that they are executed in that order.
 
 ### Rules with page bottom or page top event
 
-* Javascript The JavaScript is embedded in the main Launch library. The custom script is wrapped in a script tag and written to the document using document.write. If the rule has multiple custom scripts, they're written in order.
-* HTML The HTML is embedded in the main Launch library. `document.write` is used to write the HTML to the document. If the rule has multiple custom scripts, they're written in order.
+* **Javascript:** The JavaScript is embedded in the main Launch library. The custom script is wrapped in a script tag and written to the document using `document.write`. If the rule has multiple custom scripts, they're written in order.
+* **HTML:** The HTML is embedded in the main Launch library. `document.write` is used to write the HTML to the document. If the rule has multiple custom scripts, they're written in order.
 
 ### Rules with any other event
 
-* JavaScript The JavaScript is loaded from the server as regular text, wrapped in a script tag, and added to the document using Postscribe. If the rule has multiple JavaScript custom scripts, they will be loaded in parallel from the server, but executed in the same order that was configured in the rule.
-* HTML The HTML is loaded from the server and added to the document using Postscribe. If the rule has multiple custom HTML scripts, they will be loaded in parallel from the server, but executed in the same order that was configured in the rule.
+* **JavaScript:** The JavaScript is loaded from the server as regular text, wrapped in a script tag, and added to the document using Postscribe. If the rule has multiple JavaScript custom scripts, they will be loaded in parallel from the server, but executed in the same order that was configured in the rule.
+* **HTML:** The HTML is loaded from the server and added to the document using Postscribe. If the rule has multiple custom HTML scripts, they will be loaded in parallel from the server, but executed in the same order that was configured in the rule.
 
