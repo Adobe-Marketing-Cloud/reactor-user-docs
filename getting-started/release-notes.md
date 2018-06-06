@@ -1,5 +1,18 @@
 # Release Notes
 
+## June 5, 2018
+
+### Features
+
+* Updated Adobe Analytics extension to support [AppMeasurement 2.9](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/release/c_release_notes_mjs.html).
+* Added "Make tracker globally accessible" feature in the Adobe Analytics extension, which enables the tracker to be scoped globally under `windows.s`.
+
+### Bug Fixes
+
+* Fixed a bug that caused list view to reset when returning from detail view
+* Fixed a few bugs to improve loading of resources in the revision selector
+* Fixed a bug where multiple rules were overwriting s.events in the Adobe Analytics extension
+
 ## May 24, 2018
 
 ### Features
