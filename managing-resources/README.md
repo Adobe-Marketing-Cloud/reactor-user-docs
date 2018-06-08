@@ -1,3 +1,7 @@
+---
+Testing: Metadata
+---
+
 # Managing Resources
 
 Dynamic Tag Management was primarily designed to help you place tags and code on your web pages. Launch provides that capability, but enhances it with even more features:
