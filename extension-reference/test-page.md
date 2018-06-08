@@ -13,7 +13,9 @@ version: false
 title: ID Service Settings for DTM
 private-feature-pack: false
 redirect: false
-description: Configuration settings for using DTM to deploy the Experience Cloud ID Service
+description: >-
+  Configuration settings for using Dynamic Tag Management to deploy the
+  Experience Cloud ID Service
 ---
 
 # Test Page
