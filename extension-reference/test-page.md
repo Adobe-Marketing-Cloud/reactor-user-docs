@@ -18,7 +18,5 @@ description: Configuration settings for using DTM to deploy the Experience Cloud
 
 # Test Page
 
-## Test Page
-
 Ignore this page. It's being used to test something for a demo.
 
