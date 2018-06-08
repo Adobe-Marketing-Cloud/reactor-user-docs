@@ -80,9 +80,7 @@ Launch requires the following:
 
 ### Adobe Launch FAQ
 
-Frequently asked questions about dynamic tag management.
-
-A FAQ about the new version of dynamic tag management, announced in March 2017.
+Frequently asked questions about the new tag management capabilities, announced in March 2017.
 
 #### What is Launch?
 
