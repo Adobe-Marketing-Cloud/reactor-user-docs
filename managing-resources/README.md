@@ -1,5 +1,5 @@
 ---
-Testing: Spaghetti  
+Testing: Spaghetti
 ---
 
 # Managing Resources
