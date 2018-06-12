@@ -32,5 +32,4 @@
   * [Adobe ContextHub Extension](extension-reference/adobe-contexthub-extension.md)
   * [Adobe Audience Manager Extension](extension-reference/adobe-audience-manager-extension.md)
   * [Adobe Privacy Extension](extension-reference/adobe-privacy-extension.md)
-  * [Test Page](extension-reference/test-page.md)
 
