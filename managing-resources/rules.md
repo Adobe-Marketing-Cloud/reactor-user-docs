@@ -98,7 +98,7 @@ When creating or editing rules, you can save and build to your [active library](
 
 Rule ordering allows you to control the order of execution for rules that share an event.
 
-It is often important to have your rules fire in a specific order. If you have several rules that conditionally set Analytics variables and you need to make sure that the rule with Send Beacon goes last. If you have a rule that fires Target and another rule that fires Analytics and you want the Target rule to run first.
+It is often important to have your rules fire in a specific order. Examples: \(1\) you have several rules that conditionally set Analytics variables and you need to make sure that the rule with Send Beacon goes last. \(2\) you have a rule that fires Target and another rule that fires Analytics and you want the Target rule to run first.
 
 Ultimately, the responsibility for executing actions in order lie with the extension developer of the event type that you're using. For Adobe extensions, Adobe makes sure this works properly. For 3rd party extensions, Adobe provides guidance to extension developers to implement this properly, but it is up to them to do so.
 
