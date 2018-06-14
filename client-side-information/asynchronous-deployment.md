@@ -30,13 +30,15 @@ This indicates to the browser that when this script tag is parsed, the browser s
 
 Although the goal is to display content to visitors faster, and asynchronously loading the JavaScript achieves that goal, asynchronous deployment requires careful consideration under certain circumstances.
 
-### Personalized content
+### Timing
 
-Note: The Target Extension does not currently support async deployments. Support is expected in an upcoming release.
+As described above, in synchronous deployments, page rendering pauses while the Launch library is loaded and executed.  This means that events that happen after the library is loaded \(Page Bottom, DOM Ready, Window Loaded, etc\) always reliably happen after the `_satellite` object is available.
 
-Some products dynamically load personalized content at runtime. Typically, part or all of the body content is hidden until the personalized content displays. Otherwise, default content is displayed, then replaced by personalized content moments later. This is known as "flicker" and is undesirable for the user experience.
+In asynchronous deployments, the page rendering does not pause for the library to be loaded.  This means that the sequence of events is less reliable and can even vary from one browser to another and even one page load to another depending on a number of factors \(cached libraries, bandwidth, etc\).
 
-The Target and Launch teams are hard at work to solve this problem for async deployments of Target so that you can avoid this flicker. For now Target deployments should continue to be done synchronously.
+If you see things occuring out of order - or occuring in different order inconsistently - it is likely that you have some timing issues to work through.
+
+Deployments that require precise timing may need to make more use of eventHandlers and direct call rules in order to make their implementations more robust and consistent.
 
 ### Page Bottom event type
 
