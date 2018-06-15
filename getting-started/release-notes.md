@@ -1,5 +1,13 @@
 # Release Notes
 
+## June 15, 2018
+
+### Features
+
+#### Target Extension v0.6.0
+
+Target Extension has been updated to use at.js v1.3.1.  When you deploy Target with Analytics, we now wait until all Target calls have resolved \(including redirect offers\) before Analytics fires, resolving the race condition that previously existed.
+
 ## June 5, 2018
 
 ### Features
