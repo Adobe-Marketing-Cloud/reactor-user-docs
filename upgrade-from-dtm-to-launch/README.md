@@ -6,21 +6,15 @@ description: >-
 
 # Upgrade From DTM to Launch
 
-### Upgrade FAQ {#upgrade-assistant-faq}
+### [Upgrade FAQ](upgrade-faq.md) {#upgrade-assistant-faq}
 
 A list of common questions people have about the DTM to Launch upgrade process.
 
-[Upgrade FAQ](upgrade-faq.md)
+### [Upgrade Preparation Guide](upgrade-preparation-guide.md)
 
-### Upgrade Preparation Guide
+Details about the specific differences between your DTM property and the upgraded version in Launch.[​](upgrade-faq.md)
 
-Details about the specific differences between your DTM property and the upgraded version in Launch.
-
-[Upgrade Preparation Guide](upgrade-preparation-guide.md)[​](upgrade-faq.md)
-
-### Link DTM Embed Code
+### [Link DTM Embed Code](link-dtm-embed-code.md)
 
 How linking embed codes works and how to do it.
-
-[Link DTM Embed Code](link-dtm-embed-code.md)
 
