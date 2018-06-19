@@ -25,6 +25,7 @@
   * [Link DTM Embed Code](administration/link-dtm-embed-code.md)
 * [Upgrade From DTM to Launch](upgrade-from-dtm-to-launch/README.md)
   * [Upgrade FAQ](upgrade-from-dtm-to-launch/upgrade-faq.md)
+  * [Upgrade Preparation Guide](upgrade-from-dtm-to-launch/upgrade-preparation-guide.md)
 * [Extension Reference](extension-reference/README.md)
   * [Core Extension](extension-reference/core-extension.md)
   * [Experience Cloud ID Service Extension](extension-reference/experience-cloud-id-service-extension.md)

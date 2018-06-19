@@ -10,5 +10,11 @@ description: >-
 
 A list of common questions people have about the DTM to Launch upgrade process.
 
-​[Upgrade FAQ](https://docs.adobelaunch.com/~/drafts/-LDDp5WyoqdxWXFcYKA6/primary/moving-from-dtm-to-launch/launch-upgrade-assistant)​
+[Upgrade FAQ](upgrade-faq.md)
+
+### Upgrade Preparation Guide
+
+Details about the specific differences between your DTM property and the upgraded version in Launch.
+
+[Upgrade Preparation Guide](upgrade-preparation-guide.md)[​](upgrade-faq.md)
 
