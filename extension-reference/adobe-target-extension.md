@@ -14,42 +14,54 @@ To configure the extension, open the Extensions tab, hover over the extension, a
 
 ### at.js Settings
 
-Configure your at.js settings. The following configuration options are available:
 
-#### Client Code
 
-The client code is a client-specific sequence of characters often required when using the Target APIs.
+All of your at.js settings, with the exception of the Timeout. are automatically retrieved from your at.js configuration in the Target user interface. The extension only retrieves settings from the Target user interface when it is first added, so all settings should be managed in the Launch interface if additional updates are needed.
 
-Can be changed using data elements.
+The following configuration options are available:
 
-#### Organization ID
+#### Client Code {#client-code}
 
-This ID ties your implementation to your Adobe Experience Cloud account.
+The client code is Target’s account identifier. This should almost always be left as the default value.
 
 Can be changed using data elements.
 
-#### Server Domain
+#### Organization ID {#organization-id}
+
+This ID ties your implementation to your Adobe Experience Cloud account. This should almost always be left as the default value.
+
+Can be changed using data elements.
+
+#### Global Mbox Name {#global-mbox-name}
+
+Shows the name of your global Target request. By default, this name is target-global-mbox, unless you have changed the name in the Target user interface before adding the extension.
+
+Can be changed using data elements.
+
+#### Server Domain {#server-domain}
 
 The domain where Target requests are sent. This should almost always be left as the default value.
 
-#### Cross Domain
+#### Cross Domain {#cross-domain}
 
 Determines where Target sets cookies in the browsers.
 
 * **Disabled:** Sets the cookies on the first-party domain only. This is the typical setting.
 * **Enabled:** Sets cookies on both the first-party domain and the third-party Target domain \(the "Server Domain"\).
 
-#### Timeout \(ms\)
+#### Timeout \(ms\) {#timeout-ms}
 
-If Target does not respond with content within the defined period, the server call times out and default content is displayed. Additional calls continue to be attempted during the visitor's session. The default is 3000ms.
+If the response from Target is not received within the defined period, the request times out and default content is displayed. Additional requests continue to be attempted during the visitor's session. The default is 3000ms, which might be different from the Timeout configured in the Target user interface.
 
 For more information about how the Timeout setting works, refer to the [Adobe Target help](https://marketing.adobe.com/resources/help/en_US/target/ov2/c_target-atjs-advanced-settings.html).
 
-#### Global Mbox Name
+#### Other at.js settings available in the Target user interface {#other-at-js-settings-available-in-the-target-user-interface}
 
-Shows the name of your global mbox. By default, this name is target-global-mbox.
+Several settings that are available on the “Edit at.js settings” page of the Target user interface are not part of the Target extension. Here are suggested workarounds:
 
-Can be changed using data elements.
+* Auto-create global mbox This setting is replaced by the Fire Global Mbox action in the Target extension.
+* Library Header This setting is not part of the Target extension. Put code that needs to load before at.js in a Core Extension&gt;Custom Code action before using the Load Target action.
+* Library Footer This setting is not part of the Target extension. Put code that needs to load after at.js in a Core Extension&gt;Custom Code action after using the Load Target action.
 
 ## Target extension action types
 
