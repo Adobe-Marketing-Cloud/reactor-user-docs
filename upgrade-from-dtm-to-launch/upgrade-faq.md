@@ -2,7 +2,7 @@
 
 ### What does the Launch Upgrade do? {#what-does-the-launch-upgrade-do}
 
-The Launch Upgrade reads your DTM property and attempts to make a complete copy of that property in Launch. The resulting Launch property is structured to mimic the on-page behavior of your DTM property as closely as possible. To read about differences in structure, see [Upgrade Preparation Guide](https://docs.adobelaunch.com/~/drafts/-LDDp5WyoqdxWXFcYKA6/primary/moving-from-dtm-to-launch/upgrade-preparation-guide).
+The Launch Upgrade reads your DTM property and attempts to make a complete copy of that property in Launch. The resulting Launch property is structured to mimic the on-page behavior of your DTM property as closely as possible. To read about differences in structure, see [Upgrade Preparation Guide](upgrade-preparation-guide.md).
 
 When the upgrade is complete, a new property appears in Launch. A link to the new property is created. If the upgrade doesn't work, partially completed operations are deleted and an error message explains as much as possible about what went wrong. In some cases, error messages inform you that you can modify your DTM property and try the upgrade again.
 
@@ -42,14 +42,14 @@ If you mouse over the button it will tell you, but generally, there are a few re
 
 ### How should I get ready to upgrade? {#how-should-i-get-ready-to-upgrade}
 
-Not everything that you can do in DTM is compatible with Launch. A list of these items is available in the [preparation guide](https://docs.adobelaunch.com/~/drafts/-LDDp5WyoqdxWXFcYKA6/primary/moving-from-dtm-to-launch/upgrade-preparation-guide). Make any necessary changes to your DTM property before you attempt the upgrade.
+Not everything that you can do in DTM is compatible with Launch. A list of these items is available in the [preparation guide](upgrade-preparation-guide.md). Make any necessary changes to your DTM property before you attempt the upgrade.
 
 ### What do I do if the upgrade doesn't work? {#what-do-i-do-if-the-upgrade-doesnt-work}
 
 The upgrade is expected to succeed in nearly every scenario. There are a few reasons that it may fail:
 
 1. You don't have the correct permissions. If the upgrade fails for this reason, correct any permissions issues and try again, or ask someone with the appropriate permissions to perform the Upgrade for you.
-2. Your property has configuration issues. If the Upgrade fails for this reason, DTM informs you that you have property configuration issues. Please check the [Preparation Guide](https://docs.adobelaunch.com/~/drafts/-LDDp5WyoqdxWXFcYKA6/primary/moving-from-dtm-to-launch/upgrade-preparation-guide#properties) and try again.
+2. Your property has configuration issues. If the Upgrade fails for this reason, DTM informs you that you have property configuration issues. Please check the [Preparation Guide](upgrade-preparation-guide.md) and try again.
 
 Failures for any other reason are rare. If your upgrade fails for any other reason, please contact Client Care and provide your DTM Company and Property Name. Client Care will troubleshoot the issue.
 
