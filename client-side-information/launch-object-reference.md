@@ -290,7 +290,7 @@ _satellite._monitors
 
 Important: This function should not be accessed from production code. It is intended only for debugging purposes and will change over time as needed.
 
-### Sample
+#### Sample
 
 On your web page running a Launch library, add a snippet of code to your HTML. Typically, the code is placed in the `<head>` tag before the `<script>` tag that loads the Launch library. This allows the monitor to catch the earliest system events that occur in the Launch library. For example:
 
@@ -352,7 +352,7 @@ If `ruleTriggered` is called, either `ruleCompleted` or `ruleConditionFailed` wi
 
 Note: A monitor doesn't have to specify all three methods \(`ruleTriggered`, `ruleCompleted`, and `ruleConditionFailed`\). Launch works with whatever supported methods have been provided by the monitor.
 
-### Testing the Monitor
+#### Testing the Monitor
 
 The example above specifies all three methods in the monitor. When they're called, the monitor logs out relevant information. To test this, set up two rules in the Launch library:
 
