@@ -77,21 +77,21 @@ No configuration is needed.
 
 ### Add Mbox Params
 
-Add parameters to your mbox configuration.
+Add parameters to all mbox requests. The Load Target action must be used earlier.
 
 1. Specify the name and value of any parameter you want to add.
 2. Click the Plus icon to add more parameters.
 
 ### Add Global Mbox Params
 
-Add parameters to your global mbox configuration.
+Add parameters only to your global mbox requests. The Load Target action must be used earlier.
 
 1. Specify the name and value of any parameter you want to add.
 2. Click the Plus icon to add more parameters.
 
 ### Fire Global Mbox
 
-Fire the global mbox on your page.
+Fire the global mbox on your page. The Load Target action must be used earlier.
 
 Specify whether to enable body hiding to prevent flickering, and the style used when hiding your body element.
 
@@ -114,28 +114,22 @@ Once you have saved this rule, you'll need to add it to a Library and build/depl
 
 ## Adobe Target extension with an asynchronous deployment
 
-Launch can be deployed asynchronously.  If you are loading the Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously.  This is a fully supported scenario, but there is one additional consideration that must be handled.
+Launch can be deployed asynchronously. If you are loading the Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled. 
 
-In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap.
+In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, it is suggested that you use a pre-hiding snippet and load the Launch bundle asynchronously to avoid any content flicker. 
 
-This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target.
+Here are some things to keep in mind when using the pre-hiding snippet: 
 
-If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Launch bundle asynchronously to avoid any content flicker.
+* This code can't be managed by Launch, so it must be added to the page directly.
+* The snippet must be added before loading the Launch header embed code.
+* This code can't be managed by Launch, so it must be added to the page directly.
+* The “Fire Global Mbox” action should be used on all pages using the pre-hiding snippet in order to minimize the duration of the pre-hiding.
+* The page displays when the earliest of the following events occurs: 
+  * When the global mbox response has been received
+  * When the global mbox request times out
+  * When the snippet itself times out. 
 
-* A pre-hiding snippet should be loaded _before_ the Launch bundle, to ensure there is no flicker.
-
-  Important: This code can't be managed by Launch, so it must be added to the page directly.
-
-* To avoid hiding the whole page, the pre-hiding snippet should hide a container element that will be personalized.
-
-  The CSS selector used in the pre-hiding snippet can be customized, so you can pre-hide more than one element. By default, the snippet tries to load the whole page.
-
-| Pre-hiding Snippet | Launch Bundle | Body Hiding Inside fireGlobalMbox Action | Target Actions |
-| --- | --- | --- | --- |
-| True | Async | Prehiding snippet hides body or other elements. Without prehiding snippet, flicker occurs. | Sync |
-| False | Sync | Body hiding enabled. | Async |
-
-The snippet must be added before loading at.js. The pre-hiding code snippet is as follows:
+The pre-hiding code snippet is as follows and can be minified. The configurable options are at the end:
 
 ```javascript
 ;(function(win, doc, style, timeout) {
@@ -190,4 +184,6 @@ Instead of default:
 ```css
 body {opacity: 0 !important}
 ```
+
+By default, the snippet times out at 3000ms or 3 seconds. This value can be customized.
 
