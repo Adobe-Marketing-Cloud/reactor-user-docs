@@ -169,7 +169,7 @@ You can delete data elements, rules, and extensions. See [Delete Resources](../m
 
 #### Link DTM Embed Code to Launch
 
-When you link your DTM embed code to Launch, you can keep your DTM production embed code on a page, but serve Launch files there instead of DTM. See [Link DTM Embed Code to Launch](../administration/link-dtm-embed-code.md).
+When you link your DTM embed code to Launch, you can keep your DTM production embed code on a page, but serve Launch files there instead of DTM. See [Link DTM Embed Code to Launch]().
 
 ## March 6, 2018
 

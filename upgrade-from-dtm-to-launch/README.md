@@ -18,3 +18,9 @@ Details about the specific differences between your DTM property and the upgrade
 
 [Upgrade Preparation Guide](upgrade-preparation-guide.md)[​](upgrade-faq.md)
 
+### Link DTM Embed Code
+
+How linking embed codes works and how to do it.
+
+[Link DTM Embed Code](link-dtm-embed-code.md)
+
