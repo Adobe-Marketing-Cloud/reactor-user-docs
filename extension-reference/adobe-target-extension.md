@@ -112,28 +112,21 @@ Once you have saved this rule, you'll need to add it to a Library and build/depl
 
 ## Adobe Target extension with an asynchronous deployment
 
-Launch can be deployed asynchronously.  If you are loading the Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously.  This is a fully supported scenario, but there is one additional consideration that must be handled.
+Launch can be deployed asynchronously. If you are loading the Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled.
 
-In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap.
+In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Launch bundle asynchronously to avoid any content flicker. 
 
-This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target.
+Here are some things to keep in mind when using the pre-hiding snippet:
 
-If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Launch bundle asynchronously to avoid any content flicker.
+* The snippet must be added before loading the Launch header embed code.
+* This code can't be managed by Launch, so it must be added to the page directly.
+* The page will be displayed when the earliest of the following events occur: 
+  * When the global mbox response has been received
+  * When the global mbox request times out
+  * When the snippet itself times out
+* The “Fire Global Mbox” action should be used on all pages using the pre-hiding snippet to minimize the duration of the pre-hiding.
 
-* A pre-hiding snippet should be loaded _before_ the Launch bundle, to ensure there is no flicker.
-
-  Important: This code can't be managed by Launch, so it must be added to the page directly.
-
-* To avoid hiding the whole page, the pre-hiding snippet should hide a container element that will be personalized.
-
-  The CSS selector used in the pre-hiding snippet can be customized, so you can pre-hide more than one element. By default, the snippet tries to load the whole page.
-
-| Pre-hiding Snippet | Launch Bundle | Body Hiding Inside fireGlobalMbox Action | Target Actions |
-| --- | --- | --- | --- |
-| True | Async | Prehiding snippet hides body or other elements. Without prehiding snippet, flicker occurs. | Sync |
-| False | Sync | Body hiding enabled. | Async |
-
-The snippet must be added before loading at.js. The pre-hiding code snippet is as follows:
+The pre-hiding code snippet is as follows and can be minified. The configurable options are at the end:
 
 ```javascript
 ;(function(win, doc, style, timeout) {
@@ -175,9 +168,9 @@ The snippet must be added before loading at.js. The pre-hiding code snippet is a
 }(window, document, "body {opacity: 0 !important}", 3000));
 ```
 
-By default the snippet pre-hides the whole HTML BODY. In some cases, you may only want to pre-hide certain HTML elements and not the entire page. You can achieve that by customizing the style parameter. It can be replaced with something that pre-hides only particular regions of the page.
+By default, the snippet pre-hides the whole HTML BODY. In some cases, you might want to pre-hide only certain HTML elements and not the entire page. You can achieve that by customizing the style parameter. Replace it with something that pre-hides only particular regions of the page. 
 
-For example, you have two regions identified by IDs container-1 and container-2, then the style can be replaced with the following:
+For example, if you have two regions identified by IDs container-1 and container-2, the style can be replaced with the following:
 
 ```css
 #container-1, #container-2 {opacity: 0 !important}
@@ -188,4 +181,6 @@ Instead of default:
 ```css
 body {opacity: 0 !important}
 ```
+
+By default, the snippet times out at 3000ms or 3 seconds. This value can be customized.
 
