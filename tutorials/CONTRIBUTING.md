@@ -8,13 +8,13 @@ As you may or may not know, Adobe Launch uses the GitBook platform to display it
 
 Let's jump right in!
 
-## Good Tutorial Practices 
+## Good Tutorial Practices
 
 ### Please keep these tips in mind while building your tutorial page
 
 - Have a descriptive and succinct title! It's the best way for others to find exactly what they're looking for. Perhaps even include a short text description of what your tutorial aims to achieve.
 - Videos and screenshots are one of the best ways to provide instruction, and we highly encourage using them. However, be careful that your media does not disclose any sensitive information such as passwords, tokens, or keys.
-- Create your tutorial in the corresponding sections such as Publishing, Data Elements, or Other. This will help users find exactly what they're looking for. 
+- Create your tutorial in the corresponding sections such as Publishing, Data Elements, or Other. This will help users find exactly what they're looking for.
 
 ## 1. Read Required Contributor Material
 
@@ -59,7 +59,7 @@ git checkout -b [name-of-your-new-branch]
 
 ## 5. Create Your Content  
 
-You are now set to begin creating your tutorial page. Be sure your new file title is descriptive, succinct, and is a .md file. 
+You are now set to begin creating your tutorial page. Be sure your new file title is descriptive, succinct, and is a .md file.
 
     Good title: "creating-a-new-rule.md"
 
@@ -69,13 +69,33 @@ MD stands for markdown. If you are unfamiliar with .md files or markdown, you ca
 // Embed video here. Link: https://www.youtube.com/watch?v=eZBlRkF0-tolist=PLVkhvRpDxnn8aDsk9mW_wVufaOKJRK-Ls&index=2
 ```
 
-We will embed the video for you in the location of your comment when your contribution is merged. A [TEMPLATE.md](./TEMPLATE.md) file is located in the tutorials folder to help you get started. 
+We will embed the video for you in the location of your comment when your contribution is merged. A [TEMPLATE.md](./TEMPLATE.md) file is located in the tutorials folder to help you get started.
+
+Feel free to include some personal information about yourself. This would be a great place for a link to your github, twitter, instagram, or all of the above.
+
+## 5. Add Your Tutorial to the SUMMARY.md
+
+To have your tutorial show up within the documentation navigation, you'll need to add some info to the SUMMARY.md file in the root folder of reactor-user-docs.
+
+If I created a tutorial about how to create a new rule, these are the steps I would take.
+
+1. Open the [SUMMARY.md](../SUMMARY.md) file.
+
+2. In the tutorials section, create a new line under the Rules section
+
+3. Tab over once, and write markdown for the link. The link to my tutorial would look like this.
+
+    ```* [Create a New Rule](tutorials/create-a-new-rule.md)```
+
+Between the brackets is how the name of your tutorial will show up in the navigation. Between the parenthesis is the path to your tutorial. The path will always be `tutorials/name-of-your-tutorial-file`. Be sure to include the asterisk.
+
+That's it!
 
 ## 6. Create a New Pull Request
 
 Once you've finished with your tutorial and are happy with the changes, it's time for a pull request! This is basically a request to have your changes added to the live site. It's important to note that any changes outisde of your new tutorial files will **not** be accepted.
 
-1. Open your terminal and navigate to the reactor-user-docs project. 
+1. Open your terminal and navigate to the reactor-user-docs project.
 2. Enter
 
     ```bash
