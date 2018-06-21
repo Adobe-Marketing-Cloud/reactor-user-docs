@@ -14,48 +14,46 @@ To configure the extension, open the Extensions tab, hover over the extension, a
 
 ### at.js Settings
 
-
-
-All of your at.js settings, with the exception of the Timeout. are automatically retrieved from your at.js configuration in the Target user interface. The extension only retrieves settings from the Target user interface when it is first added, so all settings should be managed in the Launch interface if additional updates are needed.
+All of your at.js settings, with the exception of the Timeout. are automatically retrieved from your at.js configuration in the Target user interface. The extension only retrieves settings from the Target user interface when it is first added, so all settings should be managed in the Launch interface if additional updates are needed. 
 
 The following configuration options are available:
 
-#### Client Code {#client-code}
+#### Client Code
 
 The client code is Target’s account identifier. This should almost always be left as the default value.
 
 Can be changed using data elements.
 
-#### Organization ID {#organization-id}
+#### Organization ID
 
 This ID ties your implementation to your Adobe Experience Cloud account. This should almost always be left as the default value.
 
 Can be changed using data elements.
 
-#### Global Mbox Name {#global-mbox-name}
+#### Global Mbox Name
 
 Shows the name of your global Target request. By default, this name is target-global-mbox, unless you have changed the name in the Target user interface before adding the extension.
 
 Can be changed using data elements.
 
-#### Server Domain {#server-domain}
+#### Server Domain
 
 The domain where Target requests are sent. This should almost always be left as the default value.
 
-#### Cross Domain {#cross-domain}
+#### Cross Domain
 
 Determines where Target sets cookies in the browsers.
 
 * **Disabled:** Sets the cookies on the first-party domain only. This is the typical setting.
 * **Enabled:** Sets cookies on both the first-party domain and the third-party Target domain \(the "Server Domain"\).
 
-#### Timeout \(ms\) {#timeout-ms}
+#### Timeout \(ms\)
 
 If the response from Target is not received within the defined period, the request times out and default content is displayed. Additional requests continue to be attempted during the visitor's session. The default is 3000ms, which might be different from the Timeout configured in the Target user interface.
 
 For more information about how the Timeout setting works, refer to the [Adobe Target help](https://marketing.adobe.com/resources/help/en_US/target/ov2/c_target-atjs-advanced-settings.html).
 
-#### Other at.js settings available in the Target user interface {#other-at-js-settings-available-in-the-target-user-interface}
+#### Other at.js settings available in the Target user interface
 
 Several settings that are available on the “Edit at.js settings” page of the Target user interface are not part of the Target extension. Here are suggested workarounds:
 
@@ -114,22 +112,28 @@ Once you have saved this rule, you'll need to add it to a Library and build/depl
 
 ## Adobe Target extension with an asynchronous deployment
 
-Launch can be deployed asynchronously. If you are loading the Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously. This is a fully supported scenario, but there is one additional consideration that must be handled. 
+Launch can be deployed asynchronously.  If you are loading the Launch library asynchronously with Target inside it, then Target will also be loaded asynchronously.  This is a fully supported scenario, but there is one additional consideration that must be handled.
 
-In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, it is suggested that you use a pre-hiding snippet and load the Launch bundle asynchronously to avoid any content flicker. 
+In asynchronous deployments, it is possible for the page to finish rendering the default content before the Target library is fully loaded and has performed the content swap.
 
-Here are some things to keep in mind when using the pre-hiding snippet: 
+This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target.
 
-* This code can't be managed by Launch, so it must be added to the page directly.
-* The snippet must be added before loading the Launch header embed code.
-* This code can't be managed by Launch, so it must be added to the page directly.
-* The “Fire Global Mbox” action should be used on all pages using the pre-hiding snippet in order to minimize the duration of the pre-hiding.
-* The page displays when the earliest of the following events occurs: 
-  * When the global mbox response has been received
-  * When the global mbox request times out
-  * When the snippet itself times out. 
+If you want to avoid this flicker, we suggest you use a pre-hiding snippet and load the Launch bundle asynchronously to avoid any content flicker.
 
-The pre-hiding code snippet is as follows and can be minified. The configurable options are at the end:
+* A pre-hiding snippet should be loaded _before_ the Launch bundle, to ensure there is no flicker.
+
+  Important: This code can't be managed by Launch, so it must be added to the page directly.
+
+* To avoid hiding the whole page, the pre-hiding snippet should hide a container element that will be personalized.
+
+  The CSS selector used in the pre-hiding snippet can be customized, so you can pre-hide more than one element. By default, the snippet tries to load the whole page.
+
+| Pre-hiding Snippet | Launch Bundle | Body Hiding Inside fireGlobalMbox Action | Target Actions |
+| --- | --- | --- | --- |
+| True | Async | Prehiding snippet hides body or other elements. Without prehiding snippet, flicker occurs. | Sync |
+| False | Sync | Body hiding enabled. | Async |
+
+The snippet must be added before loading at.js. The pre-hiding code snippet is as follows:
 
 ```javascript
 ;(function(win, doc, style, timeout) {
@@ -184,6 +188,4 @@ Instead of default:
 ```css
 body {opacity: 0 !important}
 ```
-
-By default, the snippet times out at 3000ms or 3 seconds. This value can be customized.
 
