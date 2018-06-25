@@ -284,7 +284,11 @@ The DTM `Registered User` condition has been replaced by the `Value Comparison` 
 
 ### Custom Scripts {#custom-scripts}
 
-Any custom script in DTM \(Non-sequential, Sequential JS, Sequential HTML\) without content is not copied to Launch.
+The contents of custom scripts will be copied over as is.  We will not introspect the code and try to determine it's purpose, we will simply copy it over to custom code in Launch.  There are a few things you should know about this process.
 
-ES6 is not supported in Launch. It's not supported in DTM either, but the compiler wouldn't catch it because it didn't exist when the DTM compiler was developed. If you are using ES6 code in DTM, the code is copied to Launch, but your build will fail with compile errors when you make a build. You can fix this before or after you upgrade.
+1. Any custom script in DTM \(Non-sequential, Sequential JS, Sequential HTML\) without content is not copied to Launch.
+2. ES6 is not supported in Launch. It's not supported in DTM either, but the compiler wouldn't catch it because it didn't exist when the DTM compiler was developed. If you are using ES6 code in DTM, the code is copied to Launch, but your build will fail with compile errors when you make a build. You can fix this before or after you upgrade.
+3. In custom code, it is common to reference the `_satellite` object and various properties and functions that it provides.  Launch `satellite` object, but it is not structured the same as before.  Functions and properties that were supported in DTM have made the move to Launch, but many of the ones that were unsupported did not.  If you were using any of these functions, it is likely that your custom code will need to be updated.  Please see the Launch Object Reference to see what is supported on the new Launch `satellite` object.
+
+
 

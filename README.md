@@ -6,23 +6,23 @@ Launch empowers anyone to build and maintain their own integrations with Launch,
 
 Launch is offered to Adobe Experience Cloud customers as an included, value-add feature. Launch is an entirely new product with a new code base, designed to replace the previous Dynamic Tag Management \(DTM\) service. However, DTM will continue to be supported for the foreseeable future. Adobe will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy DTM.
 
-### Key benefits
+## Key benefits
 
 * Faster time to value
 * Trustworthy data through centralized collection, organization, and delivery using data elements
 * Compelling experiences through the integration of data and marketing technology using rule builder
 
-### Key features
+## Key features
 
-#### Extensions
+### Extensions
 
 An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the Launch UI and client functionality. ​Build, manage, and update your integrations using a virtually self-service interface. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
 
-#### Extension Catalog
+### Extension Catalog
 
 Browse, configure, and deploy marketing/advertising tools built and maintained by independent software vendors.
 
-#### Rule Builder
+### Rule Builder
 
 Create robust rules that combine multiple events, sequenced in the way that you determine using if/then logic with conditions and exceptions. Extensions provide options for:
 
@@ -35,11 +35,11 @@ The rule builder includes real-time error checking and syntax highlighting for y
 
 When the criteria outlined in your rules are met and conditions are satisfied, the actions you define are executed in order.
 
-#### Data Elements
+### Data Elements
 
 Collect, organize, and deliver data across web-based marketing and advertising technology.
 
-#### Enterprise Publishing
+### Enterprise Publishing
 
 The publishing process enables teams to publish code to pages. Different people can create an implementation, approve it, and publish it to your pages.
 
@@ -49,7 +49,7 @@ The publishing process enables teams to publish code to pages. Different people 
 * Unlimited development environments ​
 * Deliberate, permissioned process for merging libraries together ​
 
-#### Open APIs
+### Open APIs
 
 Automate implementations of individual technologies, or a group of technologies.
 
@@ -58,11 +58,11 @@ Automate implementations of individual technologies, or a group of technologies.
 * Integrate the Launch APIs with your own internal systems ​
 * You can build your own user interface, if desired ​
 
-#### Light, Modular Container tag
+### Light, Modular Container tag
 
 The Launch container tag is 60% lighter than DTM and 40% lighter than Google Tag Manager. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact. See [Minification](publishing/builds.md).
 
-### Other highlights
+## Other highlights
 
 Launch provides several improvements over similar systems, including:
 
@@ -71,14 +71,14 @@ Launch provides several improvements over similar systems, including:
 * Custom action scripts within a rule can be loaded in parallel, but are executed sequentially ​
 * If you avoid Page Top and Page Bottom rules, the code is mostly asynchronous, with a path to getting fully async ​
 
-### Requirements
+## Requirements
 
 Launch requires the following:
 
 * You must be an Adobe Experience Cloud customer.
 * You must deploy the Launch or DTM embed code on your web pages.
 
-### Adobe Launch FAQ
+## Adobe Launch FAQ
 
 Frequently asked questions about the new tag management capabilities, announced in March 2017.
 
@@ -99,7 +99,7 @@ No. Launch is an entirely new product with a new code base. The system has been 
 
 Yes, legacy DTM \(the existing production version\) will continue to be supported for the foreseeable future. Adobe will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy DTM.
 
-The Launch team is working to make the migration process from legacy DTM to Launch as easy as possible so customers can take advantage of more than twenty new features, extensions, and APIs that Launch provides.
+Many customers see Launch implementations as an opportunity to start from scratch and cleanup many issues they have with current implementations.  If this does not describe you, you can copy an existing DTM property into Launch and save yourself a bunch of effort.  [See the Upgrade FAQ](upgrade-from-dtm-to-launch/upgrade-faq.md) for more inormation.
 
 #### How much does Launch cost?
 
@@ -107,51 +107,37 @@ There is no additional charge for Launch. It is available for any Adobe Experien
 
 #### Will I have to change the embed codes in my current DTM implementation?
 
-No, you won't have to change your production embed codes if you're currently using the existing \(legacy\) DTM system. You can continue to work in your current DTM Company and Web Properties without worrying about changing that embed code. The product team has not finalized the migration process just yet, but they are working to make it as easy and automated as possible. For more details, see the [Launch help docs](https://marketing.adobe.com/resources/help/en_US/experience-cloud/launch/embed-code-link.html), and this [blog post](https://medium.com/launch-by-adobe/migrating-from-dtm-to-launch-57548251a86d).
+No, you won't have to change your production embed codes if you're currently using the existing \(legacy\) DTM system. You can continue to work in your current DTM Company and Web Properties without worrying about changing that embed code. 
+
+If you'd like, you can link your DTM Production embed code with your Launch Production embed code so you don't have to change your page tags.  See [Link DTM Embed Code](upgrade-from-dtm-to-launch/link-dtm-embed-code.md) for more information.
 
 #### I heard there are plug-ins now. What's that about?
 
-Launch is built into the Adobe Cloud Platform and it is fully extensible. Customers, Adobe Partners, agencies, and marketing or advertising technology vendors will soon be able to build Launch extensions that add new functionality or modify existing functionality. The system allows partners and clients to build, manage, and update their own integrations. This is just one way Adobe is opening up the Adobe Cloud Platform so customers and partners can build products and businesses on the Platform, and so everyone can more easily connect Adobe technology to the marketing and advertising technologies from other vendors. Over time, this will be the place for customers to install and configure all of their client-side technologies.
+We call them [Extensions](./#extensions).  Launch is built into the Adobe Cloud Platform and it is fully extensible. Customers, Adobe Partners, agencies, and marketing or advertising technology vendors will soon be able to build Launch extensions that add new functionality or modify existing functionality. The system allows partners and clients to build, manage, and update their own integrations. This is just one way Adobe is opening up the Adobe Cloud Platform so customers and partners can build products and businesses on the Platform, and so everyone can more easily connect Adobe technology to the marketing and advertising technologies from other vendors.
 
 #### Will all third-party extensions be available right away?
 
-Extensions will be available for all Adobe solutions and for a select group of independent vendors when Launch is released. The product team is working closely with several technology partners to ensure the availability of these extensions upon release. After that initial release of Launch, the product team will work to expand the number of extensions as quickly as possible. Because extensions can be built, managed, and updated by the Extension developer, vendors won't have to wait for Adobe engineering to build them, so this should be a very rapid process going forward.
+Extensions are available for all Adobe solutions and for a growing number of  independent vendors. New extensions are always under development and more are added to the catalog every week.
+
+Each extension developer maintains their own roadmap and schedule for their extensions, the Launch team does not have control or influence.
 
 #### When will clients or partners be able to build extensions?
 
-After general availability, Launch will open its virtually self-service portal that extension developers can use to build their own integrations with the Adobe Cloud Platform.
+Anyone can build an extension now.  Please read [developer docs](https://developer.adobelaunch.com/guides/extensions/) to get started.  Currently all extensions are open to all Launch users, but later this year we will add the ability to build an extension that can only be seen by your company and a whitelist of others that you specify.
 
 #### Will Launch meet my company's security standards?
 
 Launch is SOC-2 and Gramm-Leach-Bliley Act ready. Launch also offers the capability of being self-hosted. The JavaScript libraries can be served from your own servers, or the CDN of your choice. For I.T. and security teams, this gives you the ability to run automated testing, to check the files into your own version control system, and to fully comply with any internal production migration processes, security-related or otherwise.
 
-#### I have a project coming up very soon. Should I wait for Launch?
+#### I have a project coming up very soon. Should I use Launch or DTM?
 
-If you are already using legacy DTM, or are currently deploying DTM, you should continue to do so. Don't wait. Move your projects forward using the current DTM. Then, when you're ready to move to Launch, the migration process will make it as easy and automated as possible \(no on-page embed code changes, and automated migration of Rules and Data Elements\).
+Launch.  Any new deployments done with DTM will need to be migrated eventually as DTM reaches it's sunset phase.
 
-#### Which capabilities exist in Launch that don't exist in legacy DTM?
-
-Launch will offer four major capabilities that aren't comparable to legacy DTM:
-
-* Deploy non-Adobe client-side browser technologies quickly and easily
-
-  Using extensions, clients and partners can easily control in-browser technologies in the interface, without managing custom code.
-
-* Enterprise-grade publishing
-
-  Compartmentalize and control each piece of your libraries to deploy precisely what you need, where you need it, and when you need it.
-
-* Robust approval workflows
-
-  Flexible approval workflows allow custom processes to match your existing internal approval processes.
-
-* Granular rights management
-
-  Administrators will designate which extensions users can, and can't use. They will also control which areas within Launch are accessible to certain users.
-
-#### Does Launch support single page apps and my favorite framework?
+#### Does Launch support single page apps \(SPAs\) and my favorite framework?
 
 Yes. Launch has capabilities to give users and extension developers flexibility in collecting, managing, and distributing data within single page application experiences or Ajax-heavy pages or sites. This applies regardless of your development framework preferences, whether that's Angular, React.js, Ember, Meteor, etc.
+
+Read more about the benefits of using Launch for your SPAs on the [Launch blog](https://medium.com/launch-by-adobe/the-top-5-reasons-that-launch-is-better-for-single-page-applications-5a7b9880939f).
 
 #### Does Launch support dynamic data layers?
 
@@ -159,11 +145,11 @@ Yes. Launch includes an extension that specializes in listening for changes in d
 
 #### Which event types does Launch support?
 
-Event types are available through extensions. The pre-loaded DTM extension includes 30 built-in event types. Other extensions could add additional event types. For example, the YouTube extension includes four video event types: play, pause, end, and time played. Through extensions, Launch can support any other browser event types or synthetic event types, such as specific visitor activity sequences.
+Event types are available through extensions. The Launch Core extension includes 30 built-in event types. Other extensions add additional event types. For example, the YouTube extension includes four video event types: play, pause, end, and time played. Through extensions, Launch can support any other browser event types or synthetic event types, such as specific visitor activity sequences.
 
 #### Will the new Launch speed up \(or slow down\) my web site?
 
-Launch is designed to deliver and run marketing and advertising technologies on your web site as efficiently as possible using today's best practices. When used properly, Launch has proven to improve performance of web sites over alternative methods of providing similar functionality.
+Performance is very important to us.  Launch is designed to deliver and run marketing and advertising technologies on your web site as efficiently as possible using today's best practices. Adobe technologies deployed together through Launch are faster than any other deployment method.   You can read more about performance and our perspective in the [Performance Whitepaper](https://medium.com/launch-by-adobe/adobe-web-browser-technology-performance-477c2bfeaa98).
 
 #### Which browsers will Launch support?
 
