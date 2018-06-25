@@ -1,18 +1,102 @@
-# Users
+---
+description: >-
+  This page describes how users acquire rights to perform actions inside of
+  Launch, by Adobe.
+---
 
-This topic describes the user management process and available rights.
+# User Permissions
 
-The following video tutorial provides an overview:
+## Permission Types
 
-[https://www.youtube.com/embed/ba28BHX8cwU](https://www.youtube.com/embed/ba28BHX8cwU)
+In order to understand how users are granted rights to work in Launch, there are two different permissions that you need to understand.
 
-## Assign user permissions
+1. Experience Cloud Permissions - these live in the Admin Console at the company level and govern who can control group permissions and group membership for all Experience Cloud products.
+2. Launch Permissionss - Launch is one of the Experience Cloud products.  These live in the Admin Console at the Product Profile level and govern which users can actually perform certain actions when logged into Launch.
 
-Launch user permissions are managed in the Admin Console like other Adobe Experience Cloud products.
+We'll look at these different permissions types in more detail.
 
-Every company that signs a contract with Adobe has at least one organization administrator \(org admin\) who is responsible for giving their users access to the right products. The org admin can add other org admins, and can also delegate to product admins who can assign permissions to individual products.
+### Experience Cloud Permissions
 
-The steps below guide you through the process of assigning permissions. Steps 1-3 below can be bypassed by navigating directly to [Adobe Admin Console](https://adminconsole.adobe.com/enterprise/products). If you belong to more than one Organization, be sure to select the correct org from the top nav on the right.
+This section will only mention a few things that are important to understand for usage of Launch.  Please [go here](https://helpx.adobe.com/au/enterprise/using/admin-roles.html) for a more comprehensive view of the scope of Experience Cloud permissions.
+
+#### Organization Administrator
+
+Organization Administrators are often referred to as Org Admins.  An Org Admin's main function is to assign permissions to other users.  They do this by creating Product Profiles \(or groups\) which contain a specific set of rights within a specific product and then assigning users - existing or new - to that Product Profile.
+
+They do not have any rights in Launch as a result of being an Org Admin.  They will have to add themselves to a Product Profile that has Launch rights if they want to do anything in Launch.
+
+#### Product Administrator
+
+A Product Administrator \(or Product Admin\) is similar to an Org Admin, but is narrower in scope.  A Product Admin only has the permission to modify Product Profiles for a specific Adobe product, rather than any Adobe product the company has access to.
+
+### Launch Permissions
+
+Within the Experience Cloud, no rights or permissions are assigned to individual users.  They are assigned to a Product Profile \(see [Experience Cloud Permissions](users.md#experience-cloud-permissions) above\).  Individual users are then assigned to one or more Product Profiles. 
+
+Within a Product Profile, there are two main dimensions that can be used to assign permissions in Launch.
+
+#### 1\) Properties
+
+Any properties you create in Launch become available in the Admin Console for you to assign permissions.  If a  given Product Profile does not have access to Property A1, users who belong to that Profile will not be able to see or modify any settings within Property A1.
+
+#### 2\) Rights
+
+Assuming that a user belongs to a Profile with access to Property A1, then what they can do within Property A1 is determined by the rights they have been granted.  Users with permissions to Property A1, but no assigned rights will have read-only access.
+
+There are 6 rights that can be assigned in a Product Profile.
+
+1. **Manage Properties** - This right grants the ability to create new Properties in Launch and to modify the metadata and settings that live at the Property level. You can also delete properties.  You can read more about Properties [here](companies-and-properties.md). Administrators usually perform this role.
+2. **Manage Environments** - This right grants the ability to create and modify environments. You can read more about Environments [here](environments.md). This role typically belongs to the IT group.
+3. **Manage Extensions** - This right grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension.  More information on extensions is available [here](../managing-resources/extensions.md). This role could typically belong to IT or Marketing depending on your organization.
+4. **Develop** - The Develop right lets you create rules and data elements. You can also create libraries and build them in existing Development environments.  Finally, you can Submit a library for approval when ready.  Most day-to-day tasks in Launch rely on this right.
+5. **Approve** - The Approve right lets you take a submitted library and build to the Staging environment.  You can also Approve a library for publishing once testing has been completed.
+6. **Publish** - The Publish right lets you publish approved libraries to the Production environment.
+
+### Total User Permissions
+
+An individual users total permissions are determined by their total membership in different Product Profiles.  If a user belongs to multiple Product Profiles, the permissions from each profile are added together rather than multiplied.
+
+An example: Product Profile A grants Henry the Develop right for Property 1.  Product Profile B grants Henry the Publish right for Property 2.  Henry can Develop in Property 1 and Publish in Property 2, but he cannot Publish in Property 1 \(or Develop in Property 2\) because he has not been granted explicit rights to do so.
+
+## Rights scenarios
+
+Different companies have different sets of needs when it comes time to creating new Product Profiles.  These will vary based on company size, org structure, number of sites, number of people involved in managing tags, etc.
+
+Below are a few common scenarios and a recommended starting point as you think about creating Product Profiles and adding users to them.
+
+### 1\) One-person Show
+
+If you run a small company that has one person in charge of everything, grant this user permission to all Properties and assign them all 6 rights listed above.
+
+### 2\) Separation of Duties
+
+Many people are involved in tagging.  You have one set of people \(maybe an external consultant\) that creates rules and data elements, but you don't want them to have access to the Production environment.  You want to make sure that nobody deploys to Production except the IT team.
+
+1. Create an account for your consultants and grant them only the develop right.
+2. The consultant builds and tests within the confines you set.
+3. If the consultant wants a new extension, or is ready to go live, a representative from your organization \(with the appropriate rights\), performs those actions.
+
+### 3\) Enterprise
+
+An enterprise company might have multiple sites divided geographically, with different teams responsible for each geo. Within those teams, different individuals develop and publish.
+
+This is similar to Separation of Duties above, but with different geographic areas.
+
+* North America
+  * Develop group
+  * Publish group
+* Europe
+  * Develop group
+  * Publish group
+* ...
+  * Develop group
+  * Publish group
+
+## Assigning User Permissions
+
+The steps below guide you through the process of assigning permissions. You also view it on video [here](https://www.youtube.com/watch?v=ba28BHX8cwU).
+
+Steps 1-3 below can be bypassed by navigating directly to [Adobe Admin Console](https://adminconsole.adobe.com/enterprise/products). If you belong to more than one Organization, be sure to select the correct org from the top nav on the right.
 
 ### 1. Sign in to [http://marketing.adobe.com](http://marketing.adobe.com) 
 
@@ -124,78 +208,21 @@ Once you've added users, they receive an email letting them know that they now h
 
 Note: If the user does not exist, you can simply type their entire email address, then provide a first and last name. The new user receives an email, and when they create an Adobe ID from that email invitation, they are linked together with the user account you created for them. If you are assigning permissions for yourself, you won't have this issue.
 
-### Common issues
+## Common issues
 
-* Error loading account. Resolution: Your user does not belong to any Launch product profiles. See the steps above to create a profile and assign rights to it, and to assign a user to a profile.
+### Error loading account
 
-  ![](../.gitbook/assets/profile-error.png)
+When you login to launch, you receive a message saying "Error Loading Account".
 
-* Grayed-out property button. Resolution: Your user account does not belong to a product configuration that has the Manage Properties right. Double-check steps 9 and on, above.
+![](../.gitbook/assets/profile-error.png)
 
-## Rights details
+Resolution: Your user does not belong to any Launch product profiles. See the steps above to create a profile and assign rights to it, and to assign a user to a profile.
 
-Although groups are created for the entire Experience Cloud, you must set up some Launch-specific options.
+### Grayed-out Property Button
 
-Launch deploys JavaScript to a web page that has control over site content, impacts load times, and so on. Who has permission to publish things is important to most users
+Once you've logged in, you can't add any Properties.
 
-Launch provides different rights that give people different capabilities within the system. Users with access but no assigned rights have read-only access.
+Resolution: Your user account does not belong to a product configuration that has the Manage Properties right. Go back to Step 5 above.
 
-The following rights can be set:
-
-* Develop
-
-  The Develop right lets you create rules and data elements. You can also create libraries and builds and deploy them in development environments. This controls what your client-side code does and when. The Develop right only lets you build or deploy to development environments.
-
-* Approve
-
-  Approvers can deploy the existing libraries built by users with the Develop right to the staging environment, and approve them for publishing.
-
-* Publish
-
-  The Publish right lets you take libraries approved by the Approver and publish them to the Production Environment
-
-* Manage Extensions
-
-  Extensions expand the scope and functionality of the code that Launch deploys to a website. For example, if you need to drop a Facebook pixel when certain criteria are met, you can install the Facebook extension and then use the Facebook Pixel action as part of a rule definition. This role could typically belong to IT or Marketing depending on your organization.
-
-* Manage Properties
-
-  A property is a container that has some basic metadata and assigns a universe where all other permissions apply. Typically, there is one property for each website where you want to deploy code. You can include multiple sites within a single property if you want to deploy the same code on multiple sites. Administrators usually perform this role.
-
-* Manage Environments
-
-  An environment describes how code is deployed. Use environments to determine whether code is deployed in Akamai or a private server. You can also configure whether you want deployable code or packaged .zip files \(passwords optional\). You can have one or more development environments, one optional staging environment, and one production environment. This role typically belongs to the IT group.
-
-### Rights scenarios
-
-#### One person show
-
-If you run a small company that has one person in charge of everything, grant this user all rights for all properties.
-
-#### Separation of duties
-
-If you have a medium-sized company has an external consultant that does the work, but can't publish:
-
-1. Create an account for your consultants and grant them only the develop right.
-2. The consultant builds and tests within the confines you set.
-3. If the consultant wants a new extension, or is ready to go live, a representative from your organization \(with the appropriate rights\), performs those actions.
-
-#### Big company
-
-An enterprise company might have multiple sites divided geographically, with different teams responsible for each geo. Within those teams, different individuals develop and publish.
-
-This is similar to Scenario \#2, but with different geographic areas.
-
-* North America
-  * Develop group
-  * Publish group
-* South America
-  * Develop group
-  * Publish group
-* Europe
-  * Develop group
-  * Publish group
-* ...
-  * Develop group
-  * Publish group
+### 
 

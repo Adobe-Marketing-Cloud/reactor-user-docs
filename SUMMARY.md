@@ -18,7 +18,7 @@
   * [Asynchronous Deployment](client-side-information/asynchronous-deployment.md)
   * [Deploy JavaScript tags to opt in to Launch](client-side-information/deploy-javascript-tags-to-opt-in-to-launch.md)
 * [Administration](administration/README.md)
-  * [Users](administration/users.md)
+  * [User Permissions](administration/users.md)
   * [Companies and Properties](administration/companies-and-properties.md)
   * [Adapters](administration/adapters.md)
   * [Environments](administration/environments.md)
