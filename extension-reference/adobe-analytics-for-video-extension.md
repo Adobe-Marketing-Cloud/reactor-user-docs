@@ -4,10 +4,10 @@ Use this documentation for information on installing, configuring, and implement
 
 The Adobe Analytics for Video Extension \(VA Launch Extension\) adds the core VA JavaScript library \(VideoHeartbeat 2.x SDK\). This extension provides the functionality for adding the `MediaHeartbeat` tracker instance to a Launch site or project. The VA Launch Extension requires two additional extensions:
 
-* [Analytics Extension](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-analytics.md)
-* [Experience Cloud ID Extension](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-mcid.md)
+* [Analytics Extension](https://docs.adobelaunch.com/extension-reference/adobe-analytics-extension)
+* [Experience Cloud ID Extension](https://docs.adobelaunch.com/extension-reference/experience-cloud-id-service-extension)
 
-After you have included all three of the extensions mentioned above in your Launch project, you must then include or build a player-specific extension, which maps specific video player API events to the Video Analytics events on the `MediaHeartbeat` tracker instance exposed through the VA Launch Extension.
+After you have included all three of the extensions mentioned above in your Launch project, you can either use `MediaHeartbeat` APIs from the webapp or either include or build a player-specific extension, which maps specific video player events to the Video Analytics APIs on the `MediaHeartbeat` tracker instance exposed through the VA Launch Extension.
 
 ## Install and Configure the VA Launch Extension
 
@@ -26,21 +26,23 @@ After you have included all three of the extensions mentioned above in your Laun
 | Player Name | Name of the video player in use. E.g.: "AVPlayer", "HTML5 Player", "My Custom VideoPlayer" |
 | Channel | Channel name property |
 | Online Video Provider | Name of the online video platform through which content gets distributed |
-| Debug Logging | Preferred debug log output |
-| Enable SSL | Enable / Disable sending pings over HTTPS. |
-|||
+| Debug Logging | Enable or Disable logs |
+| Enable SSL | Enable or Disable sending pings over HTTPS. |
+| Export APIs to Window Object | Enable or Disable exporting Video Analytics APIs to global scope |
+| Variable Name | Variable name to export Video Analytics APIs under "window" object |
+|
 
-**Important:** The VA Analytics Launch Extension requires the presence of the [Adobe Analytics](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-analytics.md) and [Experience Cloud ID](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/c_extension-mcid.md) extensions. Customers must also add these extensions to their extension property and configure them.
+**Important:** The VA Analytics Launch Extension requires the presence of the [Adobe Analytics](https://docs.adobelaunch.com/extension-reference/adobe-analytics-extension) and [Experience Cloud ID](https://docs.adobelaunch.com/extension-reference/experience-cloud-id-service-extension) extensions. Customers must also add these extensions to their extension property and configure them.
 
 ## Using the VA Launch Extension
 
-**Important:** Currently, the only way to leverage the VA Launch Extension is through the use of "shared modules" which you can only access from other Launch extensions. That is, a webpage/JS app cannot access or declare `getMediaHeartbeatInstance`, or use `turbine` \(see code sample below\) outside of a Launch Extension.
+### From Webpage/JS app
+  
+  The VA Extension exports the MediaHeartbeat APIs in the global window object by enabling "Export APIs to Window Object" setting in the Configuration page. It exports the APIs under the configured variable name. For ex) If the variable name is configured to be `ADB` then MediaHeartbeat can be accessed by `window.ADB.MediaHeartbeat`.
 
-### Using the VA Launch Extension from other Launch Extensions
+**Important:** The Extension exports the APIs only when `window["CONFIGURED_VARIABLE_NAME"]` is undefined and does not override existing variables.
 
-The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared modules. \(For additional information on Shared Modules, see [Shared Modules documentation](https://developer.adobelaunch.com/guides/extensions/shared-modules/).\)
-
-* `get-instance`
+* Create MediaHeartbeat Instance : `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance`
 
   **Params:**
 
@@ -50,7 +52,33 @@ The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared 
      | --- | --- |
      | getQoSObject\(\) | Returns theMediaObject instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. |
      | getCurrentPlaybackTime\(\) | Returns the current position of the playhead.For VOD tracking, the value is specified in seconds from the beginning of the media item.For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
-     |||
+     |
+
+  **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
+
+* Access MediaHeartbeat Constants : `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat`
+
+  It exposes all of the constants and static methods from this class: [https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html).
+
+You can obtain the sample player here: [VA Sample Player](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/tree/master/sdks/js/samples/Launch/VideoHeartbeatSample). The sample player acts as a reference to showcase using the VA Launch Extension to support Adobe Analytics for Video directly from the webapp.
+
+### From other Launch Extensions
+
+The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared modules to other extensions. \(For additional information on Shared Modules, see [Shared Modules documentation](https://developer.adobelaunch.com/guides/extensions/shared-modules/).\)
+
+**Important:** Shared Modules can only be accessed from other Launch extensions. That is, a webpage/JS app cannot access the shared modules, or use `turbine` \(see code sample below\) outside of a Launch Extension.
+
+* Create MediaHeartbeat Instance : `get-instance` Shared Module
+
+  **Params:**
+
+  1. A valid delegate object exposing these functions:
+
+     | Method | Description |
+     | --- | --- |
+     | getQoSObject\(\) | Returns theMediaObject instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. |
+     | getCurrentPlaybackTime\(\) | Returns the current position of the playhead.For VOD tracking, the value is specified in seconds from the beginning of the media item.For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
+     |
 
   2. An optional config object exposing these properties:
 
@@ -59,51 +87,52 @@ The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared 
      | Online Video Provider | Name of the online video platform through which content gets distributed. | No. If present overrides the value defined during Extension configuration. |
      | Player Name | Name of the video player in use.E.g.: "AVPlayer", "HTML5 Player", "My Custom VideoPlayer" | No. If present overrides the value defined during Extension configuration. |
      | Channel | Channel name property | No. If present overrides the value defined during Extension configuration. |
-     ||||
+     |
 
-     **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
+  **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
 
-* `media-heartbeat`
+* Access MediaHeartbeat Constants : `media-heartbeat` Shared Module
 
-  This module exposes all of the constants from this class: [https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html).
+  This module exposes all of the constants and static methods from this class: [https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html).
 
-  1. Implemement the shared Media Heartbeat instance as follows:
+* Code Sample
+1. Create MediaHeartbeat tracker instance as follows:
 
-     ```javascript
-      var getMediaHeartbeatInstance =
-        turbine.getSharedModule('adobe-video-analytics', 'get-instance');
+    ```javascript
+    var getMediaHeartbeatInstance =
+      turbine.getSharedModule('adobe-video-analytics', 'get-instance');
 
-      var MediaHeartbeat =
-        turbine.getSharedModule('adobe-video-analytics', 'media-heartbeat');
+    var MediaHeartbeat =
+      turbine.getSharedModule('adobe-video-analytics', 'media-heartbeat');
+      ...
+
+    var delegate = {
+        getCurrentPlaybackTime: this._getCurrentPlaybackTime.bind(this),
+        getQoSObject: this._getQoSObject.bind(this),
+    }
+
+    var config = {
+        playerName: "Custom Player",
+        ovp: "Custom OVP",
+        channel: "Custom Channel"
+    }
+    ...
+
+    var self = this;
+    getMediaHeartbeatInstance(delegate, config).then(function(instance) {
+        self._mediaHeartbeat = instance;
         ...
+        // Do Tracking using the MediaHeartbeat instance.
+    }).catch(function(err){
+        // Getting MediaHeartbeat instance failed.
+    });
 
-      var delegate = {
-          getCurrentPlaybackTime: this._getCurrentPlaybackTime.bind(this),
-          getQoSObject: this._getQoSObject.bind(this),
-      }
+    ...
+    ```
 
-      var config = {
-          playerName: "Custom Player",
-          ovp: "Custom OVP",
-          channel: "Custom Channel"
-      }
-      ...
+2. Using the Media Heartbeat instance, follow the [VHL SDK JS documentation](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/) and [JS API documentation](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/index.html) to implement video tracking.
 
-      var self = this;
-      getMediaHeartbeatInstance(delegate, config).then(function(instance) {
-          self._mediaHeartbeat = instance;
-          ...
-          // Do Tracking using the MediaHeartbeat instance.
-      }).catch(function(err){
-          // Getting MediaHeartbeat instance failed.
-      });
-
-      ...
-     ```
-
-  2. Using the Media Heartbeat instance, follow the [VHL SDK JS documentation](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/) and [JS API documentation](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/index.html) to implement video tracking.
-
-**Note: Testing -** For this release, to test your extension you must upload it to [Adobe Launch](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/extension-reference/launch.adobe.com), where you have access to all dependent extensions.
+**Note: Testing -** For this release, to test your extension you must upload it to [Adobe Launch](launch.adobe.com), where you have access to all dependent extensions.
 
 ## Leveraging the Sample HTML5 Player
 
@@ -158,5 +187,3 @@ Once the Sample Player Extension is installed, you'll need to create at least on
 ![Player Extension Sample Rule](../.gitbook/assets/ext-va-sp-rule.png)
 
 Once you have saved this rule, you'll need to add it to a Library and build/deploy so that you can test the behavior.
-
-**Important:** Currently, if you have a custom player that doesn't have a Launch extension, you have to write your own extension to make use of the VA Launch Extension.
