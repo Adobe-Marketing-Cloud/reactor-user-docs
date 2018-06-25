@@ -30,7 +30,6 @@ After you have included all three of the extensions mentioned above in your Laun
 | Enable SSL | Enable or Disable sending pings over HTTPS. |
 | Export APIs to Window Object | Enable or Disable exporting Video Analytics APIs to global scope |
 | Variable Name | Variable name to export Video Analytics APIs under "window" object |
-|
 
 **Important:** The VA Analytics Launch Extension requires the presence of the [Adobe Analytics](https://docs.adobelaunch.com/extension-reference/adobe-analytics-extension) and [Experience Cloud ID](https://docs.adobelaunch.com/extension-reference/experience-cloud-id-service-extension) extensions. Customers must also add these extensions to their extension property and configure them.
 
@@ -52,7 +51,6 @@ After you have included all three of the extensions mentioned above in your Laun
      | --- | --- |
      | getQoSObject\(\) | Returns theMediaObject instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. |
      | getCurrentPlaybackTime\(\) | Returns the current position of the playhead.For VOD tracking, the value is specified in seconds from the beginning of the media item.For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
-     |
 
   **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
 
@@ -78,7 +76,6 @@ The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared 
      | --- | --- |
      | getQoSObject\(\) | Returns theMediaObject instance that contains the current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. |
      | getCurrentPlaybackTime\(\) | Returns the current position of the playhead.For VOD tracking, the value is specified in seconds from the beginning of the media item.For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
-     |
 
   2. An optional config object exposing these properties:
 
@@ -87,7 +84,6 @@ The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared 
      | Online Video Provider | Name of the online video platform through which content gets distributed. | No. If present overrides the value defined during Extension configuration. |
      | Player Name | Name of the video player in use.E.g.: "AVPlayer", "HTML5 Player", "My Custom VideoPlayer" | No. If present overrides the value defined during Extension configuration. |
      | Channel | Channel name property | No. If present overrides the value defined during Extension configuration. |
-     |
 
   **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
 
