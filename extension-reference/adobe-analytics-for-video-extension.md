@@ -1,20 +1,21 @@
 # Adobe Analytics for Video Extension
 
 Use this documentation for information on installing, configuring, and implementing 
-the Adobe Analytics for Video Extension. Included are the options available when 
-using this extension to build a rule, along with examples and links to samples.
+the Adobe Analytics for Video Extension (Video Analytics Launch Extension). Included 
+are the options available when using this extension to build a rule, along with 
+examples and links to samples.
 
-The Adobe Analytics for Video Extension (VA Launch Extension) adds the core VA 
-JavaScript library (VideoHeartbeat 2.x SDK). This extension provides the functionality 
-for adding the `MediaHeartbeat` tracker instance to a Launch site or project. 
-The VA Launch Extension requires two additional extensions:
+The Video Analytics (VA) Launch Extension adds the core VA JavaScript library (VA 2.x SDK). 
+This extension provides the functionality for adding the `MediaHeartbeat` tracker instance 
+to a Launch site or project.  The VA Launch Extension requires two additional extensions:
 
 * [Analytics Extension](https://docs.adobelaunch.com/extension-reference/adobe-analytics-extension)
 * [Experience Cloud ID Extension](https://docs.adobelaunch.com/extension-reference/experience-cloud-id-service-extension)
 
-After you have included all three of the extensions mentioned above in your Launch project, you can proceed in one of two ways:
+After you have included all three of the extensions mentioned above in your 
+Launch project, you can proceed in one of two ways:
 
-* Use `MediaHeartbeat` APIs from your webapp
+* Use `MediaHeartbeat` APIs from your web app
 * Include, or build, a player-specific extension that maps specific video player 
   events to the Video Analytics APIs on the `MediaHeartbeat` tracker instance. 
   This instance is exposed through the VA Launch Extension.
@@ -59,7 +60,7 @@ is undefined and does not override existing variables.
 
 1. **Create MediaHeartbeat Instance:** `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance`
 
-  **Params:** A valid delegate object exposing these functions:
+   **Params:** A valid delegate object exposing these functions:
 
   | Method | Description |
   | --- | --- |
@@ -74,7 +75,7 @@ is undefined and does not override existing variables.
   [`MediaHeartbeat`](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html) class.
 
   You can obtain the sample player here: [VA Sample Player](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/tree/master/sdks/js/samples/Launch/VideoHeartbeatSample). 
-  The sample player acts as a reference to showcase using the VA Launch Extension to support Adobe Analytics for Video directly from a webapp.
+  The sample player acts as a reference to showcase how to use the VA Launch Extension to support Video Analytics directly from a webapp.
 
 ### Using From Other Launch Extensions
 
@@ -88,7 +89,7 @@ That is, a webpage/JS app cannot access the shared modules, or use `turbine`
 
 1. **Create MediaHeartbeat Instance:** `get-instance` Shared Module
 
-  **Params:**
+   **Params:**
 
   * A valid delegate object exposing these functions:
 
@@ -101,9 +102,9 @@ That is, a webpage/JS app cannot access the shared modules, or use `turbine`
 
     | Property | Description | Required |
     | --- | --- | --- |
-    | Online Video Provider | Name of the online video platform through which content gets distributed. | No. If present overrides the value defined during Extension configuration. |
-    | Player Name | Name of the video player in use.E.g.: "AVPlayer", "HTML5 Player", "My Custom VideoPlayer" | No. If present overrides the value defined during Extension configuration. |
-    | Channel | Channel name property | No. If present overrides the value defined during Extension configuration. |
+    | Online Video Provider | Name of the online video platform through which content is distributed. | No. If present, overrides the value defined during extension configuration. |
+    | Player Name | Name of the video player in use (e.g., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer") | No. If present, overrides the value defined during extension configuration. |
+    | Channel | Channel name property | No. If present, overrides the value defined during extension configuration. |
 
   **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
 
