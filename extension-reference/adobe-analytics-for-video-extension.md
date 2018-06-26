@@ -62,20 +62,20 @@ is undefined and does not override existing variables.
 
    **Params:** A valid delegate object exposing these functions:
 
-  | Method | Description |
-  | --- | --- |
-  | `getQoSObject()` | Returns `theMediaObject` instance that contains current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. |
-  | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
+   | Method | Description |
+   | --- | --- |
+   | `getQoSObject()` | Returns `theMediaObject` instance that contains current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. |
+   | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
 
-  **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
+   **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
 
 2. **Access MediaHeartbeat Constants:** `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat`
 
-  This exposes all of the constants and static methods from the 
-  [`MediaHeartbeat`](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html) class.
+   This exposes all of the constants and static methods from the 
+   [`MediaHeartbeat`](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html) class.
 
-  You can obtain the sample player here: [VA Sample Player](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/tree/master/sdks/js/samples/Launch/VideoHeartbeatSample). 
-  The sample player acts as a reference to showcase how to use the VA Launch Extension to support Video Analytics directly from a webapp.
+   You can obtain the sample player here: [VA Sample Player](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/tree/master/sdks/js/samples/Launch/VideoHeartbeatSample). 
+   The sample player acts as a reference to showcase how to use the VA Launch Extension to support Video Analytics directly from a webapp.
 
 ### Using From Other Launch Extensions
 
@@ -91,22 +91,22 @@ That is, a webpage/JS app cannot access the shared modules, or use `turbine`
 
    **Params:**
 
-  * A valid delegate object exposing these functions:
+   * A valid delegate object exposing these functions:
 
-    | Method | Description |
-    | --- | --- |
-    | `getQoSObject()` | Returns the `MediaObject` instance that contains the current QoS information. This method will be called multiple times during a playback session. The player implementation must always return the most recently available QoS data. |
-    | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
+     | Method | Description |
+     | --- | --- |
+     | `getQoSObject()` | Returns the `MediaObject` instance that contains the current QoS information. This method will be called multiple times during a playback session. The player implementation must always return the most recently available QoS data. |
+     | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
 
-  * An optional config object exposing these properties:
+   * An optional config object exposing these properties:
 
-    | Property | Description | Required |
-    | --- | --- | --- |
-    | Online Video Provider | Name of the online video platform through which content is distributed. | No. If present, overrides the value defined during extension configuration. |
-    | Player Name | Name of the video player in use (e.g., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer") | No. If present, overrides the value defined during extension configuration. |
-    | Channel | Channel name property | No. If present, overrides the value defined during extension configuration. |
-
-  **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
+     | Property | Description | Required |
+     | --- | --- | --- |
+     | Online Video Provider | Name of the online video platform through which content is distributed. | No. If present, overrides the value defined during extension configuration. |
+     | Player Name | Name of the video player in use (e.g., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer") | No. If present, overrides the value defined during extension configuration. |
+     | Channel | Channel name property | No. If present, overrides the value defined during extension configuration. |
+ 
+   **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
 
 2. **Access MediaHeartbeat Constants:** `media-heartbeat` Shared Module
 
