@@ -4,8 +4,8 @@ Use this documentation for information on installing, configuring, and implement
 the Adobe Analytics for Video Extension. Included are the options available when 
 using this extension to build a rule, along with examples and links to samples.
 
-The Adobe Analytics for Video Extension \(VA Launch Extension\) adds the core VA 
-JavaScript library \(VideoHeartbeat 2.x SDK\). This extension provides the functionality 
+The Adobe Analytics for Video Extension (VA Launch Extension) adds the core VA 
+JavaScript library (VideoHeartbeat 2.x SDK). This extension provides the functionality 
 for adding the `MediaHeartbeat` tracker instance to a Launch site or project. 
 The VA Launch Extension requires two additional extensions:
 
@@ -24,12 +24,12 @@ After you have included all three of the extensions mentioned above in your Laun
 * **Install -** To install the VA Launch Extension, open your extension property, 
   click _Extensions &gt; Catalog_, hover over the _Adobe Analytics for Video_ 
   extension, and click _Install_.
-* **Configure -** To configure the VA Launch Extension, open the Extensions tab, 
-  hover over the extension, and then click Configure:
+* **Configure -** To configure the VA Launch Extension, open the _Extensions_ tab, 
+  hover over the extension, and then click _Configure_:
 
 ![VA Extension Configuration](../.gitbook/assets/ext-va-config.jpg)
 
-### Configuation Options
+#### Configuation Options:
 
 | Option | Description |
 | --- | --- |
@@ -63,22 +63,28 @@ is undefined and does not override existing variables.
 
   | Method | Description |
   | --- | --- |
-  | `getQoSObject\(\)` | Returns `theMediaObject` instance that contains current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. |
-  | `getCurrentPlaybackTime\(\)` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
+  | `getQoSObject()` | Returns `theMediaObject` instance that contains current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. |
+  | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
 
   **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
 
 2. **Access MediaHeartbeat Constants:** `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat`
 
-  This exposes all of the constants and static methods from this class: [https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html).
+  This exposes all of the constants and static methods from the 
+  [`MediaHeartbeat`](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html) class.
 
-  You can obtain the sample player here: [VA Sample Player](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/tree/master/sdks/js/samples/Launch/VideoHeartbeatSample). The sample player acts as a reference to showcase using the VA Launch Extension to support Adobe Analytics for Video directly from a webapp.
+  You can obtain the sample player here: [VA Sample Player](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/tree/master/sdks/js/samples/Launch/VideoHeartbeatSample). 
+  The sample player acts as a reference to showcase using the VA Launch Extension to support Adobe Analytics for Video directly from a webapp.
 
 ### Using From Other Launch Extensions
 
-The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared modules to other extensions. \(For additional information on Shared Modules, see [Shared Modules documentation](https://developer.adobelaunch.com/guides/extensions/shared-modules/).\)
+The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared 
+modules to other extensions. (For additional information on Shared Modules, 
+see [Shared Modules documentation](https://developer.adobelaunch.com/guides/extensions/shared-modules/).)
 
-**Important:** Shared Modules can only be accessed from other Launch extensions. That is, a webpage/JS app cannot access the shared modules, or use `turbine` \(see code sample below\) outside of a Launch Extension.
+**Important:** Shared Modules can only be accessed from other Launch extensions. 
+That is, a webpage/JS app cannot access the shared modules, or use `turbine` 
+(see code sample below) outside of a Launch Extension.
 
 1. **Create MediaHeartbeat Instance:** `get-instance` Shared Module
 
@@ -210,4 +216,5 @@ the specified video when the core extension fires the `DOMLoaded` event.
 
 ![Player Extension Sample Rule](../.gitbook/assets/ext-va-sp-rule.png)
 
-After you have saved this rule, you will need to add it to a Library, and then build and deploy so that you can test the behavior.
+After you have saved this rule, you will need to add it to a Library, and then 
+build and deploy so that you can test the behavior.
