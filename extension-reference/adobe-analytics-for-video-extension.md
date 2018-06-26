@@ -110,7 +110,7 @@ That is, a webpage/JS app cannot access the shared modules, or use `turbine`
 
 2. **Access MediaHeartbeat Constants:** `media-heartbeat` Shared Module
 
-This module exposes all of the constants and static methods from this class: [https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html).
+   This module exposes all of the constants and static methods from this class: [https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html).
 
 1. Create MediaHeartbeat tracker instance as follows:
 
