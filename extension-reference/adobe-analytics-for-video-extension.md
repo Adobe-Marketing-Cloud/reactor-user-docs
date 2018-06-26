@@ -1,13 +1,13 @@
 # Adobe Analytics for Video Extension
 
 Use this documentation for information on installing, configuring, and implementing 
-the Adobe Analytics for Video Extension (Video Analytics Launch Extension). Included 
+the Adobe Analytics for Video extension (Video Analytics extension). Included 
 are the options available when using this extension to build a rule, along with 
 examples and links to samples.
 
-The Video Analytics (VA) Launch Extension adds the core VA JavaScript library (VA 2.x SDK). 
+The Video Analytics (VA) extension adds the core VA JavaScript library (VA 2.x SDK). 
 This extension provides the functionality for adding the `MediaHeartbeat` tracker instance 
-to a Launch site or project.  The VA Launch Extension requires two additional extensions:
+to a Launch site or project.  The VA extension requires two additional extensions:
 
 * [Analytics Extension](https://docs.adobelaunch.com/extension-reference/adobe-analytics-extension)
 * [Experience Cloud ID Extension](https://docs.adobelaunch.com/extension-reference/experience-cloud-id-service-extension)
@@ -18,19 +18,19 @@ Launch project, you can proceed in one of two ways:
 * Use `MediaHeartbeat` APIs from your web app
 * Include, or build, a player-specific extension that maps specific video player 
   events to the Video Analytics APIs on the `MediaHeartbeat` tracker instance. 
-  This instance is exposed through the VA Launch Extension.
+  This instance is exposed through the VA extension.
 
-## Install and Configure the VA Launch Extension
+## Install and configure the VA extension
 
-* **Install -** To install the VA Launch Extension, open your extension property, 
+* **Install -** To install the VA extension, open your extension property, 
   click _Extensions &gt; Catalog_, hover over the _Adobe Analytics for Video_ 
   extension, and click _Install_.
-* **Configure -** To configure the VA Launch Extension, open the _Extensions_ tab, 
+* **Configure -** To configure the VA extension, open the _Extensions_ tab, 
   hover over the extension, and then click _Configure_:
 
 ![VA Extension Configuration](../.gitbook/assets/ext-va-config.jpg)
 
-#### Configuation Options:
+#### Configuation options:
 
 | Option | Description |
 | --- | --- |
@@ -44,18 +44,18 @@ Launch project, you can proceed in one of two ways:
 | Export APIs to Window Object | Enable or Disable exporting Video Analytics APIs to global scope |
 | Variable Name | A variable you use to export Video Analytics APIs under the `window` object |
 
-**Reminder:** The VA Launch Extension requires the [Adobe Analytics](https://docs.adobelaunch.com/extension-reference/adobe-analytics-extension) and [Experience Cloud ID](https://docs.adobelaunch.com/extension-reference/experience-cloud-id-service-extension) extensions. You must also add these extensions to your extension property and configure them.
+**Reminder:** The VA extension requires the [Adobe Analytics](https://docs.adobelaunch.com/extension-reference/adobe-analytics-extension) and [Experience Cloud ID](https://docs.adobelaunch.com/extension-reference/experience-cloud-id-service-extension) extensions. You must also add these extensions to your extension property and configure them.
 
-## Using the VA Launch Extension
+## Using the VA extension
 
-### Using From a Webpage/JS App
+### Using from a webpage/JS-app
   
-The VA Launch Extension exports the MediaHeartbeat APIs in the global window object 
+The VA extension exports the MediaHeartbeat APIs in the global window object 
 by enabling the _"Export APIs to Window Object"_ setting in the Configuration page. 
 It exports the APIs under the configured variable name. For example, if the variable 
 name is configured to be `ADB` then MediaHeartbeat can be accessed by `window.ADB.MediaHeartbeat`.
 
-**Important:** The VA Launch Extension exports the APIs only when `window["CONFIGURED_VARIABLE_NAME"]` 
+**Important:** The VA extension exports the APIs only when `window["CONFIGURED_VARIABLE_NAME"]` 
 is undefined and does not override existing variables.
 
 1. **Create MediaHeartbeat Instance:** `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance`
@@ -75,17 +75,17 @@ is undefined and does not override existing variables.
    [`MediaHeartbeat`](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html) class.
 
    You can obtain the sample player here: [VA Sample Player](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/tree/master/sdks/js/samples/Launch/VideoHeartbeatSample). 
-   The sample player acts as a reference to showcase how to use the VA Launch Extension to support Video Analytics directly from a webapp.
+   The sample player acts as a reference to showcase how to use the VA extension to support Video Analytics directly from a webapp.
 
-### Using From Other Launch Extensions
+### Using from other extensions
 
-The VA Launch Extension exposes the `get-instance` and `media-heartbeat` shared 
+The VA extension exposes the `get-instance` and `media-heartbeat` shared 
 modules to other extensions. (For additional information on Shared Modules, 
 see [Shared Modules documentation](https://developer.adobelaunch.com/guides/extensions/shared-modules/).)
 
-**Important:** Shared Modules can only be accessed from other Launch extensions. 
+**Important:** Shared Modules can only be accessed from other extensions. 
 That is, a webpage/JS app cannot access the shared modules, or use `turbine` 
-(see code sample below) outside of a Launch Extension.
+(see code sample below) outside of an extension.
 
 1. **Create MediaHeartbeat Instance:** `get-instance` Shared Module
 
@@ -154,18 +154,18 @@ That is, a webpage/JS app cannot access the shared modules, or use `turbine`
 **Note: Testing -** For this release, to test your extension you must upload it to 
 [Adobe Launch](launch.adobe.com), where you have access to all dependent extensions.
 
-## Leveraging the Sample HTML5 Player
+## Leveraging the sample HTML5 player
 
-You can obtain the VA Launch Extension sample HTML5 player here: 
+You can obtain the VA extension sample HTML5 player here: 
 [HTML5 Sample Player](https://github.com/adobe/reactor-adobe-va-sample-player). 
 The sample player acts as a reference to create video player extensions and to 
-showcase using the VA Launch Extension to support Adobe Analytics for Video.
+showcase using the VA extension to support Adobe Analytics for Video.
 
-## Sample Player Extension Action Types
+### Sample player extension action types
 
 This section describes the action types available in the Sample Player extension.
 
-### Open Video
+#### Open Video
 
 The _Open Video_ action provides various configurations for creating and customizing 
 an HTML5 player, providing a video to play and enabling/disabling Adobe Video Analytics tracking.
@@ -207,11 +207,11 @@ the _Enable Adobe Analytics_ checkbox is checked in the Analytics Settings pane.
     ```
 
 * [\[...\]/analytics/adobeAnalyticsProvider.js](https://github.com/adobe/reactor-adobe-va-sample-player/blob/master/src/lib/helpers/analytics/adobeAnalyticsProvider.js) - 
-This file implements Video Analytics tracking by using Shared Modules exposed by the VA Launch Extension.
+This file implements Video Analytics tracking by using Shared Modules exposed by the VA extension.
 
-## Sample Player extension basic deployment
+### Sample player extension basic deployment
 
-Once the Sample Player Extension is installed, you'll need to create at least 
+Once the Sample Player extension is installed, you'll need to create at least 
 one rule to properly deploy it. The Image below shows a sample rule that opens 
 the specified video when the core extension fires the `DOMLoaded` event.
 
