@@ -2,7 +2,7 @@
 
 This section contains information that is useful for Launch administrators.
 
-* [**Users**](users.md)
+* [**Users**](user-permissions.md)
 
   This topic describes the user management process and available rights.
 

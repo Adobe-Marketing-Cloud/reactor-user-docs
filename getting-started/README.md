@@ -20,7 +20,7 @@ Launch is fully integrated with your Adobe ID. User permissions are managed thro
 
 Unlike DTM, Launch has rights-based user management. \(DTM was role-based.\) This means that instead of getting a role which implies a certain set of rights, individual rights must be granted explicitly. These rights are assigned to groups, then users are added to the appropriate groups in order to gain access. Even if your company has access to Launch, individual users cannot do anything until an Org Administrator explicitly grants them some rights.
 
-For detailed instructions on how to create groups and add users for Launch, see [Users](../administration/users.md).
+For detailed instructions on how to create groups and add users for Launch, see [Users](../administration/user-permissions.md).
 
 ## 2. Log in
 

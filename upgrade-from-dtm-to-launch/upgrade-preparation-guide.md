@@ -1,9 +1,3 @@
----
-description: >-
-  Details about the specific differences between your DTM property and the
-  upgraded version in Launch.
----
-
 # Upgrade Preparation Guide
 
 Launch, by Adobe, is an entirely different system than DTM. Conceptually, they achieve the same goal, but the way they do so is different. The`_satellite`object looks different in Launch than it does in DTM. The relationships between extensions, rules, and data elements are also different than before. Some things that exist in both systems have moved to different locations or are accessed in different ways.

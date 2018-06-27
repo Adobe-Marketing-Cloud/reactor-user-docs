@@ -105,7 +105,7 @@ Click a property to see an overview of that property. The overview shows any act
 
 Create a property in Launch.
 
-Note: Only a user with sufficient rights can create a property. See [User Management](users.md).
+Note: Only a user with sufficient rights can create a property. See [User Management](user-permissions.md).
 
 Before beginning, review the [Best practices for planning properties](companies-and-properties.md#best-practices-for-planning-properties) for properties.
 
