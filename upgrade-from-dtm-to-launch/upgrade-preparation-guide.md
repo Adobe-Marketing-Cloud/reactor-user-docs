@@ -286,7 +286,7 @@ The contents of custom scripts are copied over as is.  The code is not inpected 
 
 * Any custom script in DTM \(Non-sequential, Sequential JS, Sequential HTML\) without content is not copied to Launch.
 * ES6 is not supported in Launch.  ES6 is not supported in DTM either, but the compiler wouldn't catch it because it didn't exist when the DTM compiler was developed.  **Important:** If you use ES6 code in DTM, the code is copied to Launch, but your build fails with compile errors when you make the build. You can fix this before or after you upgrade.
-* In custom code, it is common to reference the `_satellite` object and various properties and functions that it provides.   Launch uses the  `satellite` object, but it is not structured the same as before.  Functions and properties that were supported in DTM move to Launch, but many of the ones that were unsupported do not.  If you use any of these functions in DTM, it is likely that your custom code needs to be updated.  Please see the Launch Object Reference to see what is supported on the new Launch `satellite` object.
+* In custom code, it is common to reference the `_satellite` object and various properties and functions that it provides.   Launch uses the  `satellite` object, but it is not structured the same as before.  Functions and properties that were supported in DTM move to Launch, but many of the ones that were unsupported do not.  If you use any of these functions in DTM, it is likely that your custom code needs to be updated.  Please see the [Launch Object Reference](https://docs.adobelaunch.com/client-side-information/launch-object-reference) to see what is supported on the new Launch `satellite` object.
 
 
 
