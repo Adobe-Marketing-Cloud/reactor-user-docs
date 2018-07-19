@@ -6,7 +6,7 @@ A list of common questions people have about the DTM to Launch upgrade process.
 
 ### [Upgrade Preparation Guide](upgrade-preparation-guide.md)
 
-Details about the specific differences between your DTM property and the upgraded version in Launch.[​](upgrade-faq.md)
+Details about the differences between your DTM property and the upgraded version in Launch.[​](upgrade-faq.md)
 
 ### [Link DTM Embed Code](link-dtm-embed-code.md)
 
