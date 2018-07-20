@@ -33,7 +33,7 @@ If you don't have at least one valid domain defined on your DTM property, it is 
 
 The advanced settings on your DTM property are copied to Launch.
 
-### Tools {#tools}
+## Tools
 
 When you upgrade to Launch, the most commonly used DTM tools are converted into an installed Launch extension on your property.
 
