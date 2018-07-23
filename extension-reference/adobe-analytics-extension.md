@@ -38,7 +38,7 @@ If you select this option, specify one or more report suites for each of the fol
 
 #### Tracker is accessible on the global variable named
 
-Specify a global variable.
+Checking this box allows the tracker object to be used globally. For example, you could define the variable window.s.pageName anywhere on your site.
 
 ### Load the library from a custom URL
 
@@ -60,7 +60,7 @@ If you select this option, specify one or more report suites for each of the fol
 
 #### Tracker is accessible on the global variable named
 
-Specify a global variable.
+Specify the tracker object to be used globally.
 
 ### Let me provide custom library code
 
@@ -80,7 +80,7 @@ If you select this option, specify one or more report suites for each of the fol
 
 #### Tracker is accessible on the global variable named
 
-Specify a global variable.
+Specify the tracker object to be used globally.
 
 ## General
 
@@ -109,29 +109,31 @@ _satellite.setCookie("sat_track", "true");
 
 ### Character Set
 
-Choose the character set used by Analytics.
+Determines how the image request is encoded. If your implementation or site uses non-ASCII characters, it is important to define character set here. You can select a preset character set or specify a custom character set. Adobe recommends using the same character coding as your site. Typically this value is UTF-8. 
 
-You can select a preset character set or specify a custom character set.
+Character Set can be set in Analytics custom code using the variable s.charSet.
 
 For more information about character sets, see the [Multi-Byte Character Sets whitepaper](https://marketing.adobe.com/resources/help/en_US/whitepapers/multibyte/multibyte_encodings.html).
 
 ### Currency Code
 
-Choose the currency code used by Analytics.
-
-You can select a preset currency code or specify a custom currency code.
+Determines the conversion rate to be applied to revenue and currency events. If your site allows visitors to purchase in multiple currencies, setting the currency code ensures the monetary amount is converted and stored correctly. 
 
 For more information about the supported currency codes, see the [Multi-Currency Support whitepaper](https://marketing.adobe.com/resources/help/en_US/whitepapers/currency/currency_codes.html).
 
 ### Tracking Server
 
-The domain at which the image request and cookie is written.
+Used for first-party cookie implementations to dictate where the first-party cookie is stored. If you use the Experience Cloud ID Service, Adobe advises against populating this field.
+
+Tracking Server can be set in Analytics custom code using the variable s.trackingServer.
 
 See [trackingServer](https://marketing.adobe.com/resources/help/en_US/sc/implement/trackingServer.html) in the Adobe Analytics Implementation guide.
 
 ### SSL Tracking Server
 
-The domain at which the image request and cookie is written. Used for secure pages. If not defined, SSL data goes to trackingServer.
+Used for SSL first-party cookie implementations to dictate where the first-party cookie is stored. If you use the Experience Cloud ID Service, Adobe advises against populating this field. If not defined, SSL data uses Tracking Server.
+
+SSL Tracking Server can be set in Analytics custom code using the variable s.trackingServerSecure.
 
 See [trackingServerSecure](https://marketing.adobe.com/resources/help/en_US/sc/implement/trackingServerSecure.html).
 
