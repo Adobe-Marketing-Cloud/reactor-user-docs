@@ -109,7 +109,7 @@ _satellite.setCookie("sat_track", "true");
 
 ### Character Set
 
-Determines how the image request is encoded. If your implementation or site uses non-ASCII characters, it is important to define character set here. You can select a preset character set or specify a custom character set. Adobe recommends using the same character coding as your site. Typically this value is UTF-8. 
+Determines how the image request is encoded. If your implementation or site uses non-ASCII characters, it is important to define character set here. You can select a preset character set or specify a custom character set. Adobe recommends using the same character coding as your site. Typically this value is UTF-8.
 
 Character Set can be set in Analytics custom code using the variable s.charSet.
 
@@ -117,7 +117,7 @@ For more information about character sets, see the [Multi-Byte Character Sets wh
 
 ### Currency Code
 
-Determines the conversion rate to be applied to revenue and currency events. If your site allows visitors to purchase in multiple currencies, setting the currency code ensures the monetary amount is converted and stored correctly. 
+Determines the conversion rate to be applied to revenue and currency events. If your site allows visitors to purchase in multiple currencies, setting the currency code ensures the monetary amount is converted and stored correctly.
 
 For more information about the supported currency codes, see the [Multi-Currency Support whitepaper](https://marketing.adobe.com/resources/help/en_US/whitepapers/currency/currency_codes.html).
 
@@ -178,10 +178,9 @@ You can use one of the following methods to track outbound links from SPA sites:
 * If you do not want to track any outbound links from your SPA, insert an entry into the Never Track section.  For example, [http://testsite.com/spa/\#](http://testsite.com/spa/#)  All \# links to this host are ignored. All outbound links to other hosts are tracked, such as [http://www.google.com](http://www.google.com). 
 * If there are some links that you want to track on your SPA, use the Always Track section.  
 
+For example, if you have a spa/\#/about page, you could put "about" in the Always Track section.
 
-  For example, if you have a spa/\#/about page, you could put "about" in the Always Track section.
-
-  The "about" page is the only outbound link that is tracked. Any other links on the page \(for example, [http://www.google.com](http://www.google.com)\) are not tracked.
+The "about" page is the only outbound link that is tracked. Any other links on the page \(for example, [http://www.google.com](http://www.google.com)\) are not tracked.
 
 Note that these two options are mutually exclusive.
 

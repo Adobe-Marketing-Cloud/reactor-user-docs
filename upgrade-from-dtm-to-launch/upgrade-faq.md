@@ -33,7 +33,6 @@ If you mouse over the button, a message informs you why it is not available. The
 * Your Property is Disabled. Enable the DTM Property first before you try to Upgrade.
 * You did not sign in through the Experience Cloud. Your DTM Company must be connected to the same Experience Cloud Org as your Launch Company, and Adobe can't tell if you don't sign in through the Experience Cloud. Log in through the Experience Cloud and try again.
 * You are not a DTM Admin.  You must be a DTM Admin to perform the upgrade. Ask your admin either to upgrade for you or to to make you an Admin so you can perform the upgrade yourself.
-* You don't have the Manage Properties right in Launch.  Ask your Org Admin \(or a Launch Product Admin\) to add you to a Product Profile with the Manage Properties right.
 
 ### What does the recommended upgrade process look like? {#what-does-the-recommended-upgrade-process-look-like}
 
@@ -48,7 +47,7 @@ If you mouse over the button, a message informs you why it is not available. The
 
 The upgrade is expected to succeed in nearly every scenario. There are a few reasons why it might fail, such as:
 
-* You don't have the correct permissions.  If the upgrade fails for this reason, correct any permissions issues and try again, or ask someone with the appropriate permissions to perform the upgrade for you.
+* You don't have the Manage Properties right in Launch.  Ask your Org Admin \(or a Launch Product Admin\) to add you to a Product Profile with the Manage Properties right.
 * Your property has configuration issues.  If the upgrade fails for this reason, DTM informs you that you have property configuration issues. Please check the [Preparation Guide](upgrade-preparation-guide.md) and try again.
 
 In the rare case that your upgrade fails for any other reason, please contact Client Care and provide your DTM Company and Property Name. Client Care will troubleshoot the issue.
