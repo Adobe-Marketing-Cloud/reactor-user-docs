@@ -36,7 +36,7 @@ For more about creating properties, see [Create a property](../administration/co
 
 Extensions are one of the core features of Launch. An extension is an integration built by Adobe or an Adobe partner that adds new and endless options for the tags that you can deploy to your sites. If you think of Launch as an operating system, extensions are the apps that you install so Launch can do the things you need it to do.
 
-All new properties come with the [Core extension](../extension-reference/core-extension.md) installed. This extension is built by the Launch team to provide a robust default set of data element types for your data layer and event types for your rules. Most actions you will want to perform \(get an ECID, send Adobe Analytics beacons, load the Target global mbox, etc\) will come from extensions that you install from the catalog.
+All new properties come with the [Core extension](../extension-reference/core-extension/) installed. This extension is built by the Launch team to provide a robust default set of data element types for your data layer and event types for your rules. Most actions you will want to perform \(get an ECID, send Adobe Analytics beacons, load the Target global mbox, etc\) will come from extensions that you install from the catalog.
 
 What makes Launch truly unique among tag management systems is that these extensions can be built by anyone. Do you need to drop a Facebook remarketing pixel on your site? Check out the extension that Facebook built. Do you want the same for Twitter or Linked In? Use those extensions. Do you need to run a survey? Look at Question Pro or Foresee. Do you need to manage privacy and consent from your end users to help out with GDPR? Take a good look at Evidon and Trust Arc. Would you like to see really granular insight into the behavior of individual users on your site? Maybe take a look at Clicktale. For more information, see [Add a new extension](../managing-resources/extensions.md#add-a-new-extension).
 
@@ -50,7 +50,7 @@ What makes Launch truly unique among tag management systems is that these extens
 * Session and local storage
 * Just about everything else
 
-Once defined in a data element, you can use the element anywhere throughout Launch for any extension. \(See [Data Elements](../managing-resources/data-elements.md).\)
+Once defined in a data element, you can use the element anywhere throughout Launch for any extension. \(See [Data Elements](../extension-reference/core-extension/data-elements.md).\)
 
 **Rules** are at the logical core of your implementation and control the what, when, where, and how of all the tags on your site. Define an event, set conditions and exceptions, then define the actions and order. Finally, publish your changes to see the results. For more information, see [Rules](../managing-resources/rules.md).
 

@@ -10,7 +10,9 @@ The build consists of one or more JavaScript files that reference each other. Th
 
 The default file format for builds is a package of .js files that contain all the required code for your extensions, data elements, and rules to run in the way that you want them to.
 
-However, in certain cases, you might prefer a .zip archive of the files rather than the executable JavaScript file. To create the .zip file, every environment has an Archive option. If you click this box, your builds are delivered as a .zip archive rather than as executable files. However, the build is still delivered to the location specified by the adapter.
+However, in certain cases, you might prefer a .zip archive of the files rather than the executable JavaScript file. For example, you might want to create an archive if you host your build yourself and want to use the build in another deployment.  If you provide anything in the self-hosted path to library field, you can save your environment.  Along with your new embed code, a link to the archived download becomes available.  Launch still builds your library and deploys it, but instead of deploying a bunch of JavaScript files, you can deploy a zip file to Akamai, and download it from assets.adobedtm.com/... Note that there won't be anything in that location until you make a build.
+
+To create the .zip file, every environment has an Archive option. If you click this box, your builds are delivered as a .zip archive rather than as executable files. However, the build is still delivered to the location specified by the adapter.
 
 To complete a build, select a library and click the Build option that is available at that level of the publishing process \(Build for Development, Build for Staging, and so on..
 

@@ -33,7 +33,7 @@ After you have included all three of the extensions mentioned above in your Laun
 #### Configuation options:
 
 | Option | Description |
-| --- | --- |
+| :--- | :--- |
 | Tracking Server | Defines the server for tracking media heartbeats \(this is not the same server as your analytics tracking server\) |
 | Application Version | The version of the video player app/SDK |
 | Player Name | Name of the video player in use \(e.g., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer"\) |
@@ -59,7 +59,7 @@ The VA extension exports the MediaHeartbeat APIs in the global window object by 
    **Params:** A valid delegate object exposing these functions:
 
    | Method | Description |
-   | --- | --- |
+   | :--- | :--- |
    | `getQoSObject()` | Returns `theMediaObject` instance that contains current QoS information. This method will be called multiple times during a playback session. Player implementation must always return the most recently available QoS data. |
    | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
 
@@ -84,14 +84,14 @@ The VA extension exposes the `get-instance` and `media-heartbeat` shared modules
    * A valid delegate object exposing these functions:
 
      | Method | Description |
-     | --- | --- |
+     | :--- | :--- |
      | `getQoSObject()` | Returns the `MediaObject` instance that contains the current QoS information. This method will be called multiple times during a playback session. The player implementation must always return the most recently available QoS data. |
      | `getCurrentPlaybackTime()` | Returns the current position of the playhead. For VOD tracking, the value is specified in seconds from the beginning of the media item. For LIVE/LIVE tracking, the value is specified in seconds from the beginning of the program. |
 
    * An optional config object exposing these properties:
 
      | Property | Description | Required |
-     | --- | --- | --- |
+     | :--- | :--- | :--- |
      | Online Video Provider | Name of the online video platform through which content is distributed. | No. If present, overrides the value defined during extension configuration. |
      | Player Name | Name of the video player in use \(e.g., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer"\) | No. If present, overrides the value defined during extension configuration. |
      | Channel | Channel name property | No. If present, overrides the value defined during extension configuration. |

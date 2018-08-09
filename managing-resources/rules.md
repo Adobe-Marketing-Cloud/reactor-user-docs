@@ -34,7 +34,7 @@ If a specified event occurs, the conditions and exceptions are evaluated, then t
 
   Specify any exceptions that would keep the rule from firing, even if the events and conditions are met.
 
-The events that are available depend on which extensions are installed. For information about the events in the Core extension, see [Core extension event types](../extension-reference/core-extension.md#core-extension-event-types).
+The events that are available depend on which extensions are installed. For information about the events in the Core extension, see [Core extension event types](../extension-reference/core-extension/#core-extension-event-types).
 
 Note: DTM provided page load, event-based, and direct call event types. This is no longer true in Launch. Rather than event types, Launch extensions configure different individual events.
 

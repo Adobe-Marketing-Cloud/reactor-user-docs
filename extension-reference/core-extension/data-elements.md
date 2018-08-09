@@ -2,9 +2,9 @@
 
 Data elements are the building blocks for your data dictionary \(or data map\). Use data elements to collect, organize, and deliver data across marketing and ad technology.
 
-A single data element is a variable who's value can be mapped to query strings, URLs, cookie values, JavaScript variables, and so on. You can reference this value by its variable name throughout Launch. This collection of data elements becomes the dictionary of defined data that you can use to build your rules \(events, conditions, and actions\). This data dictionary is shared across all of Launch for use with any extension you've added to your property.
+A single data element is a variable whose value can be mapped to query strings, URLs, cookie values, JavaScript variables, and so on. You can reference this value by its variable name throughout Launch. This collection of data elements becomes the dictionary of defined data that you can use to build your rules \(events, conditions, and actions\). This data dictionary is shared across all of Launch for use with any extension you've added to your property.
 
-Important: Changes do not take effect until they are [published](../publishing/).
+**Important:** Changes do not take effect until they are [published](../../publishing/).
 
 Use data elements as widely as possible throughout rule creation to consolidate the definition of dynamic data and to improve the efficiency of your tagging process. You define data rules once and then use them in multiple places.
 
@@ -14,14 +14,14 @@ For example, if there is a particular way that you reference page names or produ
 
 Using page name as an example, suppose you use a particular page-name schema by referencing a data layer, `document.title` element, or a title tag within the website. In Launch, you can create a data element as a single point of reference for that particular point of data. You can then use this data element in any rule that needs to reference the page name. If for some reason in the future you decide to change the way you reference page name \(for example, you have been referencing `document.title` but you now want to reference a particular data layer\), you don't need to edit many different rules to change that reference. You simply change the reference once in the data element and all rules that reference that data element automatically update.
 
-Note: If a data element is not referenced in a rule, it is not loaded on any page unless specifically called in custom script
+**Note:** If a data element is not referenced in a rule, it is not loaded on any page unless specifically called in custom script
 
 Data elements are populated with data when they are used in rules or when manually called in a script. At a high level, you:
 
 1. [Create a data element](data-elements.md#create-a-data-element), if you haven't done so already.
-2. Use the data element in a [rule](rules.md) or a custom script.
+2. Use the data element in a [rule](../../managing-resources/rules.md) or a custom script.
 
-For an introductory video, see [Data elements](../getting-started/videos.md).
+For an introductory video, see [Data elements](../../getting-started/videos.md).
 
 ## Data element usage
 
@@ -70,7 +70,7 @@ Data elements are the building blocks for rules. Data elements let you create a 
 
 8. Click Save.
 
-When creating or editing elements, you can save and build to your [active library](../publishing/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the Active Library drop down.
+When creating or editing elements, you can save and build to your [active library](../../publishing/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the Active Library drop down.
 
 ## Types of data elements
 
@@ -78,7 +78,46 @@ Data Element types are determined by the extension. There is no limit to the typ
 
 The following sections describe the types of data elements available in the Core extension. Other extensions use other types of data elements.
 
-### JavaScript Variable
+### Cookie
+
+Any available domain cookie can be referenced in the cookie name field.
+
+#### Example:
+
+`cookieName`
+
+### Custom code
+
+Custom JavaScript can be entered into the UI by clicking Open Editor and inserting code into the editor window.
+
+A return statement is necessary in the editor window in order to indicate what value should be set as the data element value. If a return statement is not included, the default value or an empty string will be returned as the data element value.
+
+**Example:**
+
+```text
+var pageType = $('div.page-wrapper').attr('class').split('')[1];
+if (window.location.pathname == '/') {
+  return 'homepage';
+} else {
+  return pageType;
+}
+```
+
+### DOM attribute
+
+Any element value can be retrieved, such as a div or H1 tag.
+
+#### Example:
+
+CSS Selector Chain:
+
+`id#dc logo img`
+
+Get the value of:
+
+`src`
+
+### JavaScript variable
 
 Any available JavaScript object or variable can be referenced using the path field.
 
@@ -101,29 +140,22 @@ If you use a data collector object as party of your data layer, simply use dot n
 
 `window.document.title`
 
-### DOM Attribute
+### Local storage
 
-Any element value can be retrieved, such as a div or H1 tag.
+Provide the name of your local storage item in the Local Storage Item Name field.
 
-#### Example:
+### Page info
 
-CSS Selector Chain:
+You can select one of the following page attributes to use in your data element:
 
-`id#dc logo img`
+* URL
+* Hostname
+* Pathname
+* Protocol
+* Referrer
+* Title
 
-Get the value of:
-
-`src`
-
-### Cookie
-
-Any available domain cookie can be referenced in the cookie name field.
-
-#### Example:
-
-`cookieName`
-
-### URL Querystring Parameter
+### Query string parameter
 
 Specify a single URL parameter in the URL Parameter field.
 
@@ -133,22 +165,31 @@ Only the name section is necessary and any special designators like "?" or "=" s
 
 `contentType`
 
-### Custom Script
+### Random number
 
-Custom JavaScript can be entered into the UI by clicking Open Editor and inserting code into the editor window.
+Specify the minimum and maximum values for your random number. 
 
-A return statement is necessary in the editor window in order to indicate what value should be set as the data element value. If a return statement is not included, the default value or an empty string will be returned as the data element value.
+**Defaults:**
 
-#### Example:
+Minimum: 0
 
-```javascript
-var pageType = $('div.page-wrapper').attr('class').split('')[1];
-if (window.location.pathname == '/') {
-  return 'homepage';
-} else {
-  return pageType;
-}
-```
+Maximum: 1000000000
+
+### Session storage
+
+Provide the name of your session storage item in the Session Storage Item Name field.
+
+### Visitor behavior
+
+Select one of the following visitor behavior attributes:
+
+* Landing page
+* Traffic source
+* Minutes on site
+* Session count
+* Session page view count
+* Lifetime page view count
+* Is new visitor
 
 ## Built-in data elements
 
