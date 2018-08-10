@@ -1,5 +1,18 @@
 # Release Notes
 
+## July 24, 2018
+
+### Bug Fixes
+
+* In some scenarios, rules saved through the UI were not being saved with the correct order.  This has now been fixed.  In a future update, a data migration will fix all affected rules, but in the meantime manually editing the rule, making a change, and saving will fix an impacted rule.
+
+## July 10, 2018
+
+### Updates
+
+* Anchor Delay has been moved from Property Settings to configuration for the Core extension Click event
+* Tracking Cookie Name has been moved from Property Settings to the Adobe Analytics, Google Universal Analytics, and Cookie Optin condition settings
+
 ## June 15, 2018
 
 ### Features

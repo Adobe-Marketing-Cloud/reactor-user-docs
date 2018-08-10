@@ -144,7 +144,13 @@ If you use a data collector object as party of your data layer, simply use dot n
 
 Provide the name of your local storage item in the Local Storage Item Name field.
 
+Local storage gives browsers a way to store information from page to page \([https://www.w3schools.com/html/html5\_webstorage.asp](https://www.w3schools.com/html/html5_webstorage.asp)\). Local storage works a lot like cookies, but is much larger and more flexible. 
+
+Use the provided field to specify the value you created for a local storage item, such as `lastProductViewed.`
+
 ### Page info
+
+Use these data points to capture page info for use in your rule logic or to send information to Analytics or external tracking systems.
 
 You can select one of the following page attributes to use in your data element:
 
@@ -167,6 +173,13 @@ Only the name section is necessary and any special designators like "?" or "=" s
 
 ### Random number
 
+Use this data element to generate a random number. It’s often used for sampling data or creating IDs, such as a Hit ID. The random number can slso be used to obfuscate or salt sensitive data. Some examples might include:
+
+* Generate a Hit ID
+* Concatenate the number to a user token or timestamp to ensure uniqueness
+* Perform a one-way hash on PII data
+* Randomly decide when to show a survey request on the site
+
 Specify the minimum and maximum values for your random number. 
 
 **Defaults:**
@@ -179,7 +192,11 @@ Maximum: 1000000000
 
 Provide the name of your session storage item in the Session Storage Item Name field.
 
+Session storage is similar to local storage, except the data is discarded after the session ends, whereas local storage or a cookie might retain the data.
+
 ### Visitor behavior
+
+Similar to Page Info, this data element uses common behavior types to enrich logic within rules or data collection.
 
 Select one of the following visitor behavior attributes:
 
@@ -190,6 +207,13 @@ Select one of the following visitor behavior attributes:
 * Session page view count
 * Lifetime page view count
 * Is new visitor
+
+Some common use cases include:
+
+* Show a survey after a visitor has been on the site for five minutes
+* If this is the landing page for the visit, populate an Analytics metric
+* Show a new offer to the visitor after X number of Session Counts
+* Display a newsletter sign up if this is a first time visitor
 
 ## Built-in data elements
 
