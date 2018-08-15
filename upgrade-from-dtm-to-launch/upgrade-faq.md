@@ -30,9 +30,9 @@ To opt-in, provide your Adobe Org ID  [here](https://adobe.allegiancetech.com/cg
 
 If you mouse over the button, a message informs you why it is not available. There are a few typical reasons:
 
-* Your Property is Disabled. Enable the DTM Property first before you try to Upgrade.
-* You did not sign in through the Experience Cloud. Your DTM Company must be connected to the same Experience Cloud Org as your Launch Company, and Adobe can't tell if you don't sign in through the Experience Cloud. Log in through the Experience Cloud and try again.
-* You are not a DTM Admin.  You must be a DTM Admin to perform the upgrade. Ask your admin either to upgrade for you or to to make you an Admin so you can perform the upgrade yourself.
+* Your Property is Disabled - Enable the DTM Property first before you try to Upgrade.
+* You did not sign in through the Experience Cloud - Your DTM Company must be connected to the same Experience Cloud Org as your Launch Company.  Log in through the Experience Cloud and try again.
+* You are not a DTM Admin - You must be have the DTM Admin right granted to you through Admin Console.  Ask an Org Admin to grant you this right or find someone who already has it to perform the Upgrade for you.
 
 ### What does the recommended upgrade process look like? {#what-does-the-recommended-upgrade-process-look-like}
 
