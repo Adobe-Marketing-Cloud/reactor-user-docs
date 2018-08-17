@@ -1,8 +1,7 @@
 ---
 description: >-
-  Documentation for Launch extensions provided by 3rd parties.  If you own an
-  extension, please feel free to add a sub-page for your Documentation and link
-  it below.
+  If you own a Launch extension and need a place to provide documentation for
+  it, please feel free to add a sub-page with your documentation.
 ---
 
 # 3rd Party Extensions
