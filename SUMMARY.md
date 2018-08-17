@@ -7,6 +7,7 @@
 * [Managing Resources](managing-resources/README.md)
   * [Extensions](managing-resources/extensions.md)
   * [Rules](managing-resources/rules.md)
+  * [Extension Upgrade](managing-resources/extension-upgrade.md)
   * [Data Elements](managing-resources/data-elements.md)
   * [Delete Resources](managing-resources/delete-resources.md)
 * [Publishing](publishing/README.md)
