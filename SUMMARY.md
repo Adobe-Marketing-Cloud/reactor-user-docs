@@ -38,13 +38,4 @@
     * [Core Extension](extension-reference/adobe-extensions/core-extension.md)
     * [Experience Cloud ID Service Extension](extension-reference/adobe-extensions/experience-cloud-id-service-extension.md)
   * [3rd Party Extensions](extension-reference/3rd-party-extensions.md)
-* [Tutorials](tutorials/README.md)
-  * [Adapters](tutorials/adapters.md)
-  * [Administration](tutorials/administration.md)
-  * [Data Elements](tutorials/data-elements.md)
-  * [Environments](tutorials/environments.md)
-  * [Extensions](tutorials/extensions.md)
-  * [Getting Started](tutorials/getting-started.md)
-  * [Publishing](tutorials/publishing.md)
-  * [Rules](tutorials/rules.md)
 
