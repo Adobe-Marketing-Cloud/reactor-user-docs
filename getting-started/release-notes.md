@@ -1,5 +1,18 @@
 # Release Notes
 
+## July 24, 2018
+
+### Bug Fixes
+
+* In some scenarios, rules saved through the UI were not being saved with the correct order.  This has now been fixed.  In a future update, a data migration will fix all affected rules, but in the meantime manually editing the rule, making a change, and saving will fix an impacted rule.
+
+## July 10, 2018
+
+### Updates
+
+* Anchor Delay has been moved from Property Settings to configuration for the Core extension Click event
+* Tracking Cookie Name has been moved from Property Settings to the Adobe Analytics, Google Universal Analytics, and Cookie Optin condition settings
+
 ## June 15, 2018
 
 ### Features
@@ -133,7 +146,7 @@ Minor style improvements.
 
 #### Adobe Analytics for Video Extension 1.0.0
 
-The [Adobe Analytics for Video Extension](../extension-reference/adobe-analytics-for-video-extension.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension \(VA Extension\) requires two additional extensions:
+The [Adobe Analytics for Video Extension](../extension-reference/adobe-extensions/adobe-analytics-for-video-extension.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension \(VA Extension\) requires two additional extensions:
 
 * Analytics Extension
 * Experience Cloud ID Extension
@@ -169,7 +182,7 @@ You can delete data elements, rules, and extensions. See [Delete Resources](../m
 
 #### Link DTM Embed Code to Launch
 
-When you link your DTM embed code to Launch, you can keep your DTM production embed code on a page, but serve Launch files there instead of DTM. See [Link DTM Embed Code to Launch](../administration/link-dtm-embed-code.md).
+When you link your DTM embed code to Launch, you can keep your DTM production embed code on a page, but serve Launch files there instead of DTM. See [Link DTM Embed Code to Launch]().
 
 ## March 6, 2018
 

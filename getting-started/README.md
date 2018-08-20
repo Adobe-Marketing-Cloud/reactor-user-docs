@@ -20,7 +20,7 @@ Launch is fully integrated with your Adobe ID. User permissions are managed thro
 
 Unlike DTM, Launch has rights-based user management. \(DTM was role-based.\) This means that instead of getting a role which implies a certain set of rights, individual rights must be granted explicitly. These rights are assigned to groups, then users are added to the appropriate groups in order to gain access. Even if your company has access to Launch, individual users cannot do anything until an Org Administrator explicitly grants them some rights.
 
-For detailed instructions on how to create groups and add users for Launch, see [Users](../administration/users.md).
+For detailed instructions on how to create groups and add users for Launch, see [Users](../administration/user-permissions.md).
 
 ## 2. Log in
 
@@ -36,7 +36,7 @@ For more about creating properties, see [Create a property](../administration/co
 
 Extensions are one of the core features of Launch. An extension is an integration built by Adobe or an Adobe partner that adds new and endless options for the tags that you can deploy to your sites. If you think of Launch as an operating system, extensions are the apps that you install so Launch can do the things you need it to do.
 
-All new properties come with the [Core extension](../extension-reference/core-extension.md) installed. This extension is built by the Launch team to provide a robust default set of data element types for your data layer and event types for your rules. Most actions you will want to perform \(get an ECID, send Adobe Analytics beacons, load the Target global mbox, etc\) will come from extensions that you install from the catalog.
+All new properties come with the [Core extension](../extension-reference/adobe-extensions/core-extension.md) installed. This extension is built by the Launch team to provide a robust default set of data element types for your data layer and event types for your rules. Most actions you will want to perform \(get an ECID, send Adobe Analytics beacons, load the Target global mbox, etc\) will come from extensions that you install from the catalog.
 
 What makes Launch truly unique among tag management systems is that these extensions can be built by anyone. Do you need to drop a Facebook remarketing pixel on your site? Check out the extension that Facebook built. Do you want the same for Twitter or Linked In? Use those extensions. Do you need to run a survey? Look at Question Pro or Foresee. Do you need to manage privacy and consent from your end users to help out with GDPR? Take a good look at Evidon and Trust Arc. Would you like to see really granular insight into the behavior of individual users on your site? Maybe take a look at Clicktale. For more information, see [Add a new extension](../managing-resources/extensions.md#add-a-new-extension).
 

@@ -833,3 +833,146 @@ While using document.write after a page has loaded would typically present probl
 
 The validator used in the Launch code editor is designed to identify issues with developer-written code. Code that has gone through a minification process--such as the AppMeasurement.js code downloaded from the Code Manager--might be falsely flagged as having issues by the Launch validator, which can usually be ignored.
 
+## Core extension data element types
+
+Data Element types are determined by the extension. There is no limit to the types that can be created.
+
+The following sections describe the types of data elements available in the Core extension. Other extensions use other types of data elements.
+
+### Cookie
+
+Any available domain cookie can be referenced in the cookie name field.
+
+#### Example:
+
+`cookieName`
+
+### Custom code
+
+Custom JavaScript can be entered into the UI by clicking Open Editor and inserting code into the editor window.
+
+A return statement is necessary in the editor window in order to indicate what value should be set as the data element value. If a return statement is not included, the default value or an empty string will be returned as the data element value.
+
+**Example:**
+
+```text
+var pageType = $('div.page-wrapper').attr('class').split('')[1];
+if (window.location.pathname == '/') {
+  return 'homepage';
+} else {
+  return pageType;
+}
+```
+
+### DOM attribute
+
+Any element value can be retrieved, such as a div or H1 tag.
+
+#### Example:
+
+CSS Selector Chain:
+
+`id#dc logo img`
+
+Get the value of:
+
+`src`
+
+### JavaScript variable
+
+Any available JavaScript object or variable can be referenced using the path field.
+
+When you have JavaScript variables, or object properties in your markup, and you want to collect those values in Launch to use with any of your extensions or rules, one way to capture those values is to use Data Elements in Launch. This way, you can refer to the Data Element throughout your Rules, and if the source of the data ever changes, you only need to change your reference to the source \(the Data Element\) in one place in Launch.
+
+For example, let's say your markup contains a JavaScript variable called `Page_Name`, like this:
+
+```markup
+<script>
+  //data layer
+  var Page_Name = "Homepage"
+</script>
+```
+
+When you create the Data Element in Launch, simply provide the path to that variable.
+
+If you use a data collector object as party of your data layer, simply use dot notation in the Path to reference the object and property you want to capture into the Data Element, like `_myData.pageName`, or `digitalData.pageName`, etc.
+
+#### Example:
+
+`window.document.title`
+
+### Local storage
+
+Provide the name of your local storage item in the Local Storage Item Name field.
+
+Local storage gives browsers a way to store information from page to page \([https://www.w3schools.com/html/html5\_webstorage.asp](https://www.w3schools.com/html/html5_webstorage.asp)\). Local storage works a lot like cookies, but is much larger and more flexible. 
+
+Use the provided field to specify the value you created for a local storage item, such as `lastProductViewed.`
+
+### Page info
+
+Use these data points to capture page info for use in your rule logic or to send information to Analytics or external tracking systems.
+
+You can select one of the following page attributes to use in your data element:
+
+* URL
+* Hostname
+* Pathname
+* Protocol
+* Referrer
+* Title
+
+### Query string parameter
+
+Specify a single URL parameter in the URL Parameter field.
+
+Only the name section is necessary and any special designators like "?" or "=" should be omitted
+
+#### Example:
+
+`contentType`
+
+### Random number
+
+Use this data element to generate a random number. It’s often used for sampling data or creating IDs, such as a Hit ID. The random number can slso be used to obfuscate or salt sensitive data. Some examples might include:
+
+* Generate a Hit ID
+* Concatenate the number to a user token or timestamp to ensure uniqueness
+* Perform a one-way hash on PII data
+* Randomly decide when to show a survey request on the site
+
+Specify the minimum and maximum values for your random number. 
+
+**Defaults:**
+
+Minimum: 0
+
+Maximum: 1000000000
+
+### Session storage
+
+Provide the name of your session storage item in the Session Storage Item Name field.
+
+Session storage is similar to local storage, except the data is discarded after the session ends, whereas local storage or a cookie might retain the data.
+
+### Visitor behavior
+
+Similar to Page Info, this data element uses common behavior types to enrich logic within rules or data collection.
+
+Select one of the following visitor behavior attributes:
+
+* Landing page
+* Traffic source
+* Minutes on site
+* Session count
+* Session page view count
+* Lifetime page view count
+* Is new visitor
+
+Some common use cases include:
+
+* Show a survey after a visitor has been on the site for five minutes
+* If this is the landing page for the visit, populate an Analytics metric
+* Show a new offer to the visitor after X number of Session Counts
+* Display a newsletter sign up if this is a first time visitor
+

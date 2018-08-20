@@ -10,7 +10,7 @@ If the Adobe ContextHub extension is not yet installed, open your property, then
 
 To configure the extension, open the Extensions tab, hover over the extension, and then click Configure.
 
-![](../.gitbook/assets/ext-contexthub-config.png)
+![](../../.gitbook/assets/ext-contexthub-config.png)
 
 Select the ContextHub type. The following configuration options are available:
 

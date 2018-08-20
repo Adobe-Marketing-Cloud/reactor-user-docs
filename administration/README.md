@@ -2,7 +2,7 @@
 
 This section contains information that is useful for Launch administrators.
 
-* [**Users**](users.md)
+* [**Users**](user-permissions.md)
 
   This topic describes the user management process and available rights.
 
@@ -17,8 +17,4 @@ This section contains information that is useful for Launch administrators.
 * [**Environment**](environments.md)
 
   An _environment_ is a destination for deployment. An environment has a 1:1 relationship with an embed code.
-
-* [**Link DTM Embed Code to Launch**](link-dtm-embed-code.md)
-
-  When you link your DTM embed code to Launch, you can keep your DTM production embed code on a page, but serve Launch files there instead of DTM.
 

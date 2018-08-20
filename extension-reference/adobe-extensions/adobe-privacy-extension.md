@@ -19,7 +19,7 @@ When you install the Adobe Privacy extension from the Extension Catalog, you are
 
 ### Analytics
 
-![](../.gitbook/assets/ext-privacy-aa.jpg)
+![](../../.gitbook/assets/ext-privacy-aa.jpg)
 
 By default, you must provide your report suite by entering a string or selecting a data element.
 
@@ -27,25 +27,25 @@ To configure other items, click Choose an Item, select the item you want to conf
 
 ### Audience Manager
 
-![](../.gitbook/assets/ext-privacy-aam.jpg)
+![](../../.gitbook/assets/ext-privacy-aam.jpg)
 
 Click Choose an Item, select the item you want to configure, then click Add and enter the requested parameter or a data element. Currently, you can configure only the aamUUIDCookieName.
 
 ### Target
 
-![](../.gitbook/assets/ext-privacy-target.jpg)
+![](../../.gitbook/assets/ext-privacy-target.jpg)
 
 Enter the Target client code.
 
 ### Visitor Service
 
-![](../.gitbook/assets/ext-privacy-visitor.jpg)
+![](../../.gitbook/assets/ext-privacy-visitor.jpg)
 
 Enter your IMS Organization ID.
 
 ### AdCloud
 
-![](../.gitbook/assets/ext-privacy-adcloud.jpg)
+![](../../.gitbook/assets/ext-privacy-adcloud.jpg)
 
 There are no specific parameters to configure for AdCloud.
 
