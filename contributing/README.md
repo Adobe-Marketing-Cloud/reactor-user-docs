@@ -15,6 +15,7 @@ Let's jump right in!
 * Have a descriptive and succinct title! It's the best way for others to find exactly what they're looking for. Perhaps even include a short text description of what your tutorial aims to achieve.
 * Videos and screenshots are one of the best ways to provide instruction, and we highly encourage using them. However, be careful that your media does not disclose any sensitive information such as passwords, tokens, or keys.
 * Create your tutorial in the corresponding sections such as Publishing, Data Elements, or Other. This will help users find exactly what they're looking for.
+* Feel free to reference our [example tutorial](https://docs.adobelaunch.com/contributing/template) for guidance on how to format yours.
 
 ## 1. Read Required Contributor Material
 
