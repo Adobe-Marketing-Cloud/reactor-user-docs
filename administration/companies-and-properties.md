@@ -109,7 +109,7 @@ Note: Only a user with sufficient rights can create a property. See [User Manage
 
 Before beginning, review the [Best practices for planning properties](companies-and-properties.md#best-practices-for-planning-properties) for properties.
 
-1. Navigate to your company page, then click Add New Property.
+1. Navigate to your company page, then click New Property.
 
    ![](../.gitbook/assets/property-create.jpg)
 
@@ -119,14 +119,7 @@ Before beginning, review the [Best practices for planning properties](companies-
 
    **URL:** The base URL of the property
 
-3. \(Optional\) Configure Advanced Settings.
-
-   **Return an empty string for undefined values of Data Elements:** Select this check box if you want undefined values to be empty, rather than to assign default values.
-
-   **Tracking Cookie Name:** Overrides the default tracking cookie name. You can customize the name that Launch uses to track your opt-out status for receiving other cookies.
-
-   **Anchor Delay \(Milliseconds\):** Specifies how long Launch waits for tags to fire on clicked links before moving to the next page. The default value is 100 milliseconds. Longer delays improve tracking accuracy. Adobe recommends a delay of 500 milliseconds or less, which the user will not perceive. Launch will wait up to the time specified, but if the beacon fires sooner, the delay is cut short. \(That is, user won't always wait the full length of the delay.\)
-
+3. \(Optional\) **Return an empty string for undefined values of Data Elements:** Select this check box if you want undefined values to be empty, rather than to assign default values.
 4. Click Save.
 
    The extension is automatically installed into the new property.

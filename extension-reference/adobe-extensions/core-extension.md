@@ -120,11 +120,13 @@ There are no settings for this event type.
 
 Trigger the event if the specified element is clicked.
 
-See [Options](core-extension.md#options), below.
+Optionally, you can specify property values that must be true for the element before the event is triggered.
 
-You can also specify whether to delay navigation until the rule runs if the element is a link.
+You can also specify whether to delay navigation until the rule runs if the element is a link. When you click the check box, a field opens where you can enter the desired delay in milliseconds. This specifies how long Launch waits for tags to fire on clicked links before moving to the next page. The default value is 100 milliseconds. Longer delays improve tracking accuracy. Adobe recommends a delay of 500 milliseconds or less, which the user will not perceive. Launch will wait up to the time specified, but if the beacon fires sooner, the delay is cut short. \(That is, user won't always wait the full length of the delay.\)
 
 In addition, specify that the event is triggered after a specific amount of time.
+
+For advanced options, see [Options](core-extension.md#options), below.
 
 #### Hover
 
