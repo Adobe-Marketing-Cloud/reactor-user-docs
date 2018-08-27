@@ -97,19 +97,20 @@ Each property is shown in the Properties list.
 The Properties list shows the following information:
 
 * Property name
+* Platform
 * Status
 
 Click a property to see an overview of that property. The overview shows any activity performed on the property. It also lists the metrics and extensions for the property.
 
-## Create a property
+## Create or configure a property
 
-Create a property in Launch.
+Create or configure a property in Launch.
 
 Note: Only a user with sufficient rights can create a property. See [User Management](user-permissions.md).
 
 Before beginning, review the [Best practices for planning properties](companies-and-properties.md#best-practices-for-planning-properties) for properties.
 
-1. Navigate to your company page, then click New Property.
+1. Navigate to your company page, then click New Property, or select an existing property from the list and click Configure.
 
    ![](../.gitbook/assets/property-create.jpg)
 
@@ -117,7 +118,7 @@ Before beginning, review the [Best practices for planning properties](companies-
 
    **Name:** The name of your property.
 
-   **URL:** The base URL of the property
+   **Domain:** The base URL of the property
 
 3. \(Optional\) **Return an empty string for undefined values of Data Elements:** Select this check box if you want undefined values to be empty, rather than to assign default values.
 4. Click Save.

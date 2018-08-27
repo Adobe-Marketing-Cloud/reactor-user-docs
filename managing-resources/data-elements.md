@@ -39,7 +39,7 @@ You can use data elements in custom scripts by using the `_satellite` object syn
 
 Data elements are the building blocks for rules. Data elements let you create a data dictionary \(or data map\) of commonly used items on a page, regardless of where they originate \(query strings, URLs, or cookie values\) for any object that is contained on your site.
 
-1. From a Property page, open the Data Elements tab, then click Create New Data Element.
+1. From a Property page, open the Data Elements tab, then click Add Data Element.
 2. Name the data element.
 3. Select an extension and type.
 
