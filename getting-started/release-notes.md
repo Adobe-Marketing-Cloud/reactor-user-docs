@@ -1,5 +1,31 @@
 # Release Notes
 
+## August 14, 2018
+
+### Updates
+
+The extension catalog is now sorted by display name rather than name.
+
+### Bug Fixes
+
+* When switching properties, the cache was not clearing correctly and incorrect warnings displayed to users about which extensions were installed
+* Rules with modified actions now correctly show as changes when adding to a library in all cases
+
+## August 7, 2018
+
+### Features
+
+#### Extension Upgrade
+
+Completes the API work done in Launch 18.7.3.
+
+* Gives UI users notifications when extensions have updated versions available
+* Allows the users to install that extension, test, and publish
+
+### Updates
+
+Embed codes have moved from the Environment detail page to an installation instructions modal.  This modal is displayed automatically after you create a new environment and is accessible from the Environments List view.
+
 ## July 24, 2018
 
 ### Bug Fixes
