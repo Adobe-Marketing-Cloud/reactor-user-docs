@@ -40,7 +40,7 @@ Assuming that a user belongs to a Profile with access to Property A1, what they 
 There are several rights that can be assigned in a Product Profile.
 
 * **Manage Properties:** Grants the ability to create new properties in Launch and to modify the metadata and settings at the property level. You can also delete properties.  Read more about properties [here](companies-and-properties.md). Administrators usually perform this role.
-* **Manage Environments:** Grants the ability to create and modify environments. Read more about Environments [here](environments.md). This role typically belongs to the IT group.
+* **Manage Environments:** Grants the ability to create and modify environments. Read more about Environments [here](../publishing/environments.md). This role typically belongs to the IT group.
 * **Manage Extensions:** Grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension.  More information on extensions is available [here](../managing-resources/extensions.md). This role typically belongs to IT or Marketing, depending on your organization.
 * **Develop:** Grants the ability to create rules and data elements. You can also create libraries and build them in existing development environments. You can submit a library for approval when ready.  Most day-to-day tasks in Launch require this right.
 * **Approve:** Grants the ability to take a submitted library and build to the staging environment.  You can also approve a library for publishing once testing has been completed.

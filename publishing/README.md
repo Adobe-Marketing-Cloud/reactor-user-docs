@@ -14,15 +14,15 @@ There are a few components and relationships that are important to understand in
 
   A build is the actual set of files containing the code that is delivered to each user's browser when that user views your site.
 
-* [Environments](../administration/environments.md)
+* [Environments](environments.md)
 
   An environment is a set of deployment instructions that tells Launch what format you'd like your build in and where you'd like that build delivered.
 
-* [Adapters](../administration/adapters.md)
+* [Adapters](adapters.md)
 
   An adapter represents the connection details for the environment to deliver the build. You can choose to let Launch manage the hosting of your build, or you can provide information for your own host servers.
 
-* [Embed Code](../administration/environments.md#embed-code)
+* [Embed Code](environments.md#embed-code)
 
   The embed code is the set of script tags that you place within the HTML on your site. These tags tell each browser where to retrieve the build. The embed code is attached to an environment and can change when you make changes to your environment configuration.
 

@@ -80,7 +80,7 @@ An adapter is a connection between Launch and your hosting location. Launch curr
 
 If you want to self-host, you can have Launch push directly to your servers through SFTP or you can push it to Akamai and download it \(using your environment's Archive option\).
 
-For more information, see [Adapters](../administration/adapters.md).
+For more information, see [Adapters](../publishing/adapters.md).
 
 ### Environments
 
@@ -89,7 +89,7 @@ Each library is created inside an environment. An environment defines how you wa
 * **Adapter:** Each environment needs an adapter which determines where Launch will push any builds created in this environment
 * **Archive:** The default is to deploy your build as a minified .js file \(or if you're using custom code, multiple files which reference each other\). You can have wrap all these together into a zip file and encrypt it.
 
-Once you have saved your environment, it generates the embed code which you can copy and paste into your website. Note that the embed code will not work until you have actually created a library and produced a build. For more information, see [Environments](../administration/environments.md).
+Once you have saved your environment, it generates the embed code which you can copy and paste into your website. Note that the embed code will not work until you have actually created a library and produced a build. For more information, see [Environments](../publishing/environments.md).
 
 ### Publish a build to Dev
 
