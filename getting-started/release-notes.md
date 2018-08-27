@@ -17,10 +17,7 @@ The extension catalog is now sorted by display name rather than name.
 
 #### Extension Upgrade
 
-Completes the API work done in Launch 18.7.3.
-
-* Gives UI users notifications when extensions have updated versions available
-* Allows the users to install that extension, test, and publish
+Launch users will now be notified when new versions of extensions are available and can install them on their own.  Read more [here](../managing-resources/extension-upgrade.md).
 
 ### Updates
 
