@@ -1,13 +1,5 @@
 # Environments
 
-Extensions, rules, and data elements are building blocks. When you want to make your application do something, these building blocks are added to libraries and then a library is "built" into a build.
-
-When you create a library, you must assign it to an environment.  When the library is built, Launch uses the settings from the assigned environment to determine the following:
-
-1. Destination - This is the location where you want your build to be deployed. It is controlled by selecting an adapter for the environment to use.
-2. File Format - You can get a deployable set of files or have it zipped up in an archive format. This is controlled by the archive settings.
-3. Embed Code - This is the code you'll use to deploy your build at run-time and will be different based on property type.
-
 The publishing workflow encompasses multiple environments. At a minimum, you will have:
 
 * One Development environment
@@ -17,6 +9,37 @@ The publishing workflow encompasses multiple environments. At a minimum, you wil
 Tip: You can create multiple development environments if it is useful for you. This is most common on larger teams with multiple developers working on different projects at the same time.
 
 ## Destination
+
+Extensions, rules, and data elements are building blocks. When you want to make your application do something, these building blocks are added to libraries and then a library is "built" into a build.
+
+When you create a library, you must assign it to an environment.  When the library is built, Launch uses the settings from the assigned environment to determine the following:
+
+1. Destination - This is the location where you want your build to be deployed. It is controlled by selecting an adapter for the environment to use.
+2. File Format - You can get a deployable set of files or have it zipped up in an archive format. This is controlled by the archive settings.
+3. Embed Code - This is the code you'll use to deploy your build at run-time and will be different based on property type.
+4. Open the Environments tab.
+5. Click Create New Environment.
+6. Select the type of environment you want to create.
+   * Development
+
+     The environment where you create and edit, events, configurations, and so on.
+
+   * Staging
+
+     The environment where you test and approve your changes.
+
+   * Production
+
+     The environment where your embed codes are placed in the pages or applications that are available to the public.
+7. Select your adapter.
+8. \(Optional\) Enable Create Archive if you want your build delivered as a .zip package. If you want to encrypt the .zip file, enable Encrypt Archive and enter an encryption password. Enter the location where the library is hosted. The path can be either a full URL or a relative path that can be used across multiple domains.
+9. Click Save.
+10. In the Web Install Instructions dialog box, select whether to load the library asynchronously. If you choose to load the library asynchronously, copy the embed code provided in the dialog box.  You can also install your embed code later by clicking the Install icon for that environment in your Environments list.  Refer to the information below.
+11. Repeat for each environment in your development, approval, and publishing change.
+
+After the environments are created, you are ready to publish.
+
+## Install the embed code
 
 On the environment screen, you have a drop-down menu to select from the existing adapters on your property.
 
@@ -69,31 +92,4 @@ Configuration changes that change your embed codes are:
 ## Create an Environment
 
 When the embed code changes in Launch, you'll need to update the embed codes in your HTML. For obvious reasons, many people try to avoid changing embed codes after they've been implemented.Create an environment
-
-1. Open the Environments tab.
-2. Click Create New Environment.
-3. Select the type of environment you want to create.
-   * Development
-
-     The environment where you create and edit, events, configurations, and so on.
-
-   * Staging
-
-     The environment where you test and approve your changes.
-
-   * Production
-
-     The environment where your embed codes are placed in the pages or applications that are available to the public.
-4. Select your adapter.
-5. \(Optional\) Select the archive format if you want your build delivered as a .zip package.
-6. Click Create.
-
-   The embed code for your environment is displayed.
-
-7. Click Save.
-8. Repeat for each environment in your development, approval, and publishing change.
-
-After the environments are created, you are ready to publish.
-
-## 
 

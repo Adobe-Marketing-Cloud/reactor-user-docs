@@ -43,6 +43,8 @@ Available actions for a library in Development state are:
 
   Unassigns the library from its development environment and moves the library to the submitted column for an Approver to work on.
 
+* Delete Deleting a library removes it from Launch. It does not remove the build from the environment,
+
 ### Submitted
 
 An Approver tests the library in a staging environment. When testing is completed, the library is approved or rejected. Rejected builds go back to Development so changes can be made before the approval flow starts over again.

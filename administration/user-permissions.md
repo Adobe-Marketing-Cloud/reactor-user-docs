@@ -27,24 +27,27 @@ A Product Administrator \(or Product Admin\) is similar to an Org Admin, but is 
 
 Within the Experience Cloud, no rights or permissions are assigned to individual users.  They are assigned to a Product Profile \(see [Experience Cloud Permissions](user-permissions.md#experience-cloud-permissions) above\).  Individual users are then assigned to one or more Product Profile. 
 
-Within a Product Profile, there are two main dimensions that can be used to assign permissions in Launch.
+Within a Product Profile, Launch permissions are divided into two categories, Property Rights and Company Rights.
 
-#### Properties
+#### Property Rights
 
 Any properties you create in Launch become available in the Admin Console for you to assign permissions.  If a given Product Profile does not have access to Property A1, users who belong to that Profile cannot see or modify any settings within Property A1.
 
-#### Rights
-
 Assuming that a user belongs to a Profile with access to Property A1, what they can do within Property A1 is determined by the rights they have been granted.  Users with permissions to Property A1, but no assigned rights, have read-only access.
 
-There are several rights that can be assigned in a Product Profile.
+You can set the following Property Rights:
 
-* **Manage Properties:** Grants the ability to create new properties in Launch and to modify the metadata and settings at the property level. You can also delete properties.  Read more about properties [here](companies-and-properties.md). Administrators usually perform this role.
-* **Manage Environments:** Grants the ability to create and modify environments. Read more about Environments [here](../publishing/environments.md). This role typically belongs to the IT group.
-* **Manage Extensions:** Grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension.  More information on extensions is available [here](../managing-resources/extensions.md). This role typically belongs to IT or Marketing, depending on your organization.
 * **Develop:** Grants the ability to create rules and data elements. You can also create libraries and build them in existing development environments. You can submit a library for approval when ready.  Most day-to-day tasks in Launch require this right.
 * **Approve:** Grants the ability to take a submitted library and build to the staging environment.  You can also approve a library for publishing once testing has been completed.
 * **Publish:** Grants the ability to publish approved libraries to the production environment.
+* **Manage Extensions:** Grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension.  More information on extensions is available [here](../managing-resources/extensions.md). This role typically belongs to IT or Marketing, depending on your organization.
+* **Manage Environments:** Grants the ability to create and modify environments. Read more about Environments [here](../publishing/environments.md). This role typically belongs to the IT group.
+
+#### Company Rights
+
+Currently, there is one available Company Right:
+
+* **Manage Properties:** Grants the ability to create new properties in Launch and to modify the metadata and settings at the property level. You can also delete properties.  Read more about properties [here](companies-and-properties.md). Administrators usually perform this role.
 
 ### Total User Permissions
 
@@ -171,9 +174,17 @@ Assign the rights you want to be part of your group definition. Open the Rights 
 
 ![](../.gitbook/assets/profile-rights-select.png)
 
-Rights are not automatically included. You must assign each right to your profile. You can quickly add all rights to this profile by using the + Add All button or you can assign individual rights by using the individual + buttons. For more information on what permissions are associated with each right, see [Rights details](user-permissions.md#rights-details). Click Save when finished. If Save is not available, you didn't make any changes and the profile won't give you any rights
+Rights are not automatically included. You must assign each right to your profile. You can quickly add all rights to this profile by using the + Add All button or you can assign individual rights by using the individual + buttons. For more information on what permissions are associated with each right, see [Rights details](user-permissions.md#rights-details). Click Save when finished. If Save is not available, you didn't make any changes and the profile won't give you any rights.
 
-![](../.gitbook/assets/profile-rights.png)
+First, assign Property Rights:
+
+![](../.gitbook/assets/rights-property.png)
+
+Then, assign Company Rights.
+
+![](../.gitbook/assets/rights-company.png)
+
+
 
 Some important notes:
 

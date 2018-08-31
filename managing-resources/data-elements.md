@@ -51,7 +51,8 @@ Data elements are the building blocks for rules. Data elements let you create a 
    If you do not provide a value, no value is sent. Some people choose to enter something like "none" or "n/a" so they can determine what is sent if there isn't a value. Different solutions deal with an empty variable differently. This creates consistency even if a value doesn't exist.
 
 6. Select whether to force a lowercase value and whether to remove line breaks and spaces.
-7. Select a duration.
+7. Select whether to use clean text. The Clean Text option removes any whitespace from the beginning and end and replaces any successive spaces in the middle with single spaces. Use this option to normalize element values for easier matching.
+8. Select a duration.
 
    The available choices are:
 
@@ -68,13 +69,13 @@ Data elements are the building blocks for rules. Data elements let you create a 
    * Visitor
      * The value is stored indefinitely in the brower's local storage.
 
-8. Click Save.
+9. Click Save.
 
 When creating or editing elements, you can save and build to your [active library](../publishing/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the Active Library drop down.
 
 ## Built-in data elements
 
-If you used any of the following data elements in the past, you must create custom data element in Launch:
+If you used any of the following data elements in the past, you must create a custom data element in Launch:
 
 * URI
 * Protocol

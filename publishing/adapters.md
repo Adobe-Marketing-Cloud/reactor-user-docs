@@ -1,5 +1,9 @@
 # Adapters
 
+## Managed by Adobe
+
+This adapter typr is the default selection and is simplest to manage.
+
 Extensions, rules, and data elements are building blocks. When you want to make your application do something, these building blocks are added to libraries and then a library is "built" into a build. Those builds are delivered to a hosted location.
 
 Adapters define available destinations where the builds can be delivered. They come in two types:
@@ -9,15 +13,11 @@ Adapters define available destinations where the builds can be delivered. They c
 
 The same adapter can be used for multiple environments within a property.
 
-## Managed by Adobe
-
-This adapter typr is the default selection and is simplest to manage.
-
-If you choose to have Launch manage the hosting for your build, Launch delivers the build to a 3rd party CDN. These CDNs operate independently from Adobe, so even when Launch has maintenance or downtime, the tags deployed to your sites and applications continue to function as normal.  The embed code references the main library file on the CDN so a browser can retrieve the files ar run-time.
-
 When you create a new property through the UI, one of these will be created for you.
 
 ### Create Managed by Adobe adapter
+
+If you choose to have Launch manage the hosting for your build, Launch delivers the build to a 3rd party CDN. These CDNs operate independently from Adobe, so even when Launch has maintenance or downtime, the tags deployed to your sites and applications continue to function as normal.  The embed code references the main library file on the CDN so a browser can retrieve the files ar run-time.
 
 1. Open the Adapters tab.
 2. Create the new adapter.
@@ -37,8 +37,6 @@ Specifically, Akamai runs more than 137,000 servers in 87 countries within more 
 
 No. Launch can do nothing from the client side if the library is unavailable. However, these CDNs are designed with multiple redundancies and have made a business around making assets available all the time.
 
-If you feel that you need more control over the library and it's location, we recommend you look into self-hosting the library files.
-
 ### CDN cache control headers
 
 Cache control headers are automatically set for libraries hosted using the Adobe-managed adapters.
@@ -50,6 +48,8 @@ Cache control headers are automatically set for libraries hosted using the Adobe
 Note: It is up to browsers to receive and respect the cache control headers. Some browsers might ignore them.
 
 Important: Cache control headers were added in Spring of 2018. Environments that do not have "-development" or "-staging" in their Environment embed codes were created prior to that time.  These environments will need to be recreated if you want to take advantage of these new cache control headers.  If you don't re-create the environments, you'll have the same 60-minute cache control as the production libraries.
+
+If you feel that you need more control over the library and it's location, we recommend you look into self-hosting the library files.
 
 ## Self-managed adapter
 
