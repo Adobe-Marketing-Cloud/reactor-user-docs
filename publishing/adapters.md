@@ -27,7 +27,7 @@ If you choose to have Launch manage the hosting for your build, Launch delivers 
 
 ### Why choose Adobe-managed hosting for library files?
 
-When you choose the Adobe-managed option, it means that your Launch library files are served to your visitors from the 3rd party CDNs that Adobe has contracted with.  Today, the primary CDN provide is Akamai.
+When you choose the Adobe-managed option, it means that your Launch library files are served to your visitors from the 3rd party CDNs that Adobe has contracted with.  Today, the primary CDN provide is Akamai.  Files hosted on Akamai will have a domain of [assets.adobedtm.com](https://assets.adobedtm.com).  This can be referenced securely or not securely \(http:// or https://\) based on you how you call it in your `<script>` tag.
 
 Akamai is robust when serving content to a global, high-volume audience of Web visitors. Akamai runs redundant networks of load-balanced, geo-optimized nodes to serve content as quickly as possible to visitors wherever they are located throughout the world.
 
