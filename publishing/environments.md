@@ -47,15 +47,15 @@ When a build is created, Launch will deliver that build to whatever location you
 
 ## Archive
 
-Most builds consist of multiple files.  When this happens, there will be a main library file \(linked in the embed code\) which will contain internal references to the other files.  Those other files will be pulled in as needed.
+Most builds consist of multiple files. Multi-file drafts contain a main library file \(linked in the embed code\) that contains internal references to the other files. Those other files are pulled in as needed.
 
-By default, the archive option is `off` and the build will be delivered in a format that will execute at run-time as is.  For Web properties, this is .js.  For Mobile properties, this is .json.
+By default, the archive option is `off`, and the build is delivered in a format that executes at run-time as is.  For Web properties, this is .js.  For Mobile properties, this is .json.
 
-If you use the archive option, all build files will be delivered as a .zip file \(optionally encrypted\).  This can be useful if:
+If you use the archive option, all build files are delivered as a .zip file \(optionally encrypted\).  This can be useful if:
 
-1. You are self-hosting the library, but don't want to setup the SFTP adapter for delivery
-2. You need to run code analysis on the build prior to deployment
-3. You just want to look at all the build contents to see what's in it
+1. You are self-hosting the library, but don't want to set up the SFTP adapter for delivery.
+2. You need to run code analysis on the build prior to deployment.
+3. You just want to look at the build contents to see what's in it.
 
 ## Embed code
 
