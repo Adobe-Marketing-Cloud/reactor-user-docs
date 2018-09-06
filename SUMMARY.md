@@ -17,6 +17,7 @@
   * [Builds](publishing/builds.md)
   * [Environments](publishing/environments.md)
   * [Libraries](publishing/libraries.md)
+  * [Self-hosting Libraries](publishing/self-hosting-libraries.md)
 * [Client-side Information](client-side-information/README.md)
   * [Asynchronous Deployment](client-side-information/asynchronous-deployment.md)
   * [Deploy JavaScript tags to opt in to Launch](client-side-information/deploy-javascript-tags-to-opt-in-to-launch.md)

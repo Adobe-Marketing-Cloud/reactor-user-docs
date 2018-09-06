@@ -47,7 +47,7 @@ When a build is created, Launch will deliver that build to whatever location you
 
 ## Archive
 
-Most builds consist of multiple files. Multi-file drafts contain a main library file \(linked in the embed code\) that contains internal references to the other files. Those other files are pulled in as needed.
+Most builds consist of multiple files. Multi-file builds contain a main library file \(linked in the embed code\) that contains internal references to the other files. Those other files are pulled in as needed.
 
 By default, the archive option is `off`, and the build is delivered in a format that executes at run-time as is.  For Web properties, this is .js.  For Mobile properties, this is .json.
 
