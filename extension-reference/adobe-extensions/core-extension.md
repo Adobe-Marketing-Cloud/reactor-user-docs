@@ -190,19 +190,25 @@ Specify the number of seconds that must pass before the event is triggered.
 
 #### DOM Ready
 
-Trigger when the DOM is ready.
+Trigger when the DOM is ready and the user can interact with the page
 
 There are no settings for this event type.
 
-#### On Load
+#### Library Loaded (Page Top)
 
-Trigger the event when the page loads.
+Trigger the event as soon as the satellite library is loaded.
 
 There are no settings for this event type.
 
 #### Page Bottom
 
-Trigger the event if the user reaches the bottom of the page
+Trigger the event once _satellite.pageBottom(); has been called.
+
+There are no settings for this event type.
+
+#### Window Loaded
+
+Trigger the event when onLoad is called by the browser and the page has finished loading.
 
 There are no settings for this event type.
 
