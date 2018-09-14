@@ -12,7 +12,7 @@ Examples of differences that are further defined below:
 
 * Rule components and data elements that aren't doing anything in your DTM property are not copied to Launch.  Example: `Data Element` conditions defined by a data element that does not exist are not copied.
 * Many conditions have been updated so the options available in the condition are slightly different in Launch.  Example: The `Operating System` condition no longer supports Blackberry.
-* Many resources are called something new in Launch, so they are copied with the new name.  Example: `Page Top` events move to `Library Load` events.
+* Many resources are called something new in Launch, so they are copied with the new name.  Example: `Page Top` events move to `Library Loaded` events.
 * Many very specific conditions have been replaced by a more generic `Value Comparison` condition in Launch.  This enables more options, provides consistency with all the comparison operators, and simplifies maintainance as well. Example: the `Cart Amount` condition has been replaced by the `Value Comparison` condition.
 
 ## Properties {#properties}
