@@ -10,11 +10,11 @@ This section contains information that is useful for Launch administrators.
 
   A property, or web property, is a collection of rules, data elements, configured extensions, environments, and libraries. There is only one publish embed code per property.
 
-* [**Adapter**](../publishing/adapters.md)
+* [**Adapter**](../publishing/web/adapters.md)
 
   When you create a build, Launch delivers that build to a location determined by the adapter assigned to the environment.
 
-* [**Environment**](../publishing/environments.md)
+* [**Environment**](../publishing/web/environments.md)
 
   An _environment_ is a destination for deployment. An environment has a 1:1 relationship with an embed code.
 
