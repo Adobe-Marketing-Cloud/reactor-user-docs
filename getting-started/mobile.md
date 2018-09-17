@@ -4,17 +4,17 @@ Launch is the next generation of Adobe's website tag and mobile SDK management t
 
 The basic Launch workflow:
 
-1. ​[Set up groups and users](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started#1-set-up-groups-and-users).
-2. ​[Log in](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started#2-log-in).
-3. ​[Create a property](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started#3-create-a-property).
-4. ​[Install extensions](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started#4-install-extensions).
-5. ​[Create data elements and rules](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started#5-create-data-elements-and-rules).
-6. ​[Test in your dev environment](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started#6-test-in-your-dev-environment).
-7. ​[Add the SDKs to and intialize them in your app project](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/mobile#7-add-sdks-to-and-intialize-them-in-your-app-project)​
-8. ​[Implement Solution APIs](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/mobile#8-implement-solution-apis).
-9. ​[Promote to Production](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/mobile#9-promote-to-production).
+1. ​[Set up groups and users](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/README.md#1-set-up-groups-and-users).
+2. ​[Log in](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/README.md#2-log-in).
+3. ​[Create a property](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/README.md#3-create-a-property).
+4. ​[Install extensions](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/README.md#4-install-extensions).
+5. ​[Create data elements and rules](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/README.md#5-create-data-elements-and-rules).
+6. ​[Test in your dev environment](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/README.md#6-test-in-your-dev-environment).
+7. ​[Add the SDKs to and intialize them in your app project](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/mobile/README.md#7-add-sdks-to-and-intialize-them-in-your-app-project)​
+8. ​[Implement Solution APIs](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/mobile/README.md#8-implement-solution-apis).
+9. ​[Promote to Production](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/mobile/README.md#9-promote-to-production).
 
-For an introductory video, see [Introduction to Launch, by Adobe](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/videos).
+For an introductory video, see [Introduction to Launch, by Adobe](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/videos/README.md).
 
 **Important**: Unless otherwise specified, the following steps apply to Web and mobile.
 
@@ -36,7 +36,7 @@ In Launch, your first task is to create a property.
 
 A property is a container that you fill with extensions, rules, data elements, and libraries to deploy tags to your site and configuration parameters to your mobile apps. Some users create a property for each website \(or group of closely related sites\) where they want to deploy the same set of tags. For mobile applications, a new property can contain multiple applications or one application depending on the need for different configurations.
 
-For more about creating properties, see [Create a property](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/companies-and-properties#create-a-property).
+For more about creating properties, see [Create a property](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/companies-and-properties/README.md#create-a-property).
 
 ## 4. Install extensions {#4-install-extensions}
 
@@ -57,7 +57,7 @@ Here are some issues to consider when installing extensions:
 
 * Would you like to see really granular insight into the behavior of individual users on your site? Take a look at Clicktale, and for mobile attribution, look at Branch.
 
-  For more information, see [Add a new extension](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/managing-resources/extensions#add-a-new-extension).
+  For more information, see [Add a new extension](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/managing-resources/extensions/README.md#add-a-new-extension).
 
 ## 5. Create data elements and rules {#5-create-data-elements-and-rules}
 
@@ -71,21 +71,21 @@ Here are some issues to consider when installing extensions:
 * Session and local storage
 * Just about everything else
 
-Once defined in a data element, you can use the element anywhere in Launch for any extension. For more information, see [Data Elements](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/managing-resources/data-elements).
+Once defined in a data element, you can use the element anywhere in Launch for any extension. For more information, see [Data Elements](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/managing-resources/data-elements/README.md).
 
-**Rules** are at the logical core of your implementation and control the what, when, where, and how. With rules, you can define an event, set conditions and exceptions, define the actions and order, and publish your changes to see the results. For more information, see [Rules](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/managing-resources/rules).
+**Rules** are at the logical core of your implementation and control the what, when, where, and how. With rules, you can define an event, set conditions and exceptions, define the actions and order, and publish your changes to see the results. For more information, see [Rules](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/managing-resources/rules/README.md).
 
 ## 6. Test in your Dev environment {#6-test-in-your-dev-environment}
 
 ### Libraries and builds {#libraries-and-builds}
 
-Nothing in Launch is published automatically. Each set of changes you make is encapsulated into a [library](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/libraries). Each library you create automatically inherits anything upstream \(published, approved, or submitted\) as a baseline, so all you need to do is define the changes that you want to make. This library serves as the blueprint for a [build](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/builds). A build for a web property is the actual set of JavaScript files that are deployed and used on your site. A build for a mobile property is the JSON file used to configure your SDK and a manifest file that can be used with a dependency manager such as Maven, Carthage, or CocoaPods to bundle in extensions.![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LFU0QMlNa2BozkGzwB1%2F-LFU0dKvLICy6zdpJCV6%2F-LFU0ifGxfdfGKaVtWNq%2Floop.png?generation=1529528909645051&alt=media)
+Nothing in Launch is published automatically. Each set of changes you make is encapsulated into a [library](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/libraries/README.md). Each library you create automatically inherits anything upstream \(published, approved, or submitted\) as a baseline, so all you need to do is define the changes that you want to make. This library serves as the blueprint for a [build](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/builds/README.md). A build for a web property is the actual set of JavaScript files that are deployed and used on your site. A build for a mobile property is the JSON file used to configure your SDK and a manifest file that can be used with a dependency manager such as Maven, Carthage, or CocoaPods to bundle in extensions.![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LFU0QMlNa2BozkGzwB1%2F-LFU0dKvLICy6zdpJCV6%2F-LFU0ifGxfdfGKaVtWNq%2Floop.png?generation=1529528909645051&alt=media)
 
 Here is an overview of the process:
 
 1. Launch publishes a build to your host server.
 
-   As mentioned above, a build is the actual JavaScript file\(s\) that Launch produces. This relationship between Launch and your host location is defined by an adapter. For more information about adaptors, see [Adapters](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started#adapters) below.
+   As mentioned above, a build is the actual JavaScript file\(s\) that Launch produces. This relationship between Launch and your host location is defined by an adapter. For more information about adaptors, see [Adapters](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/README.md#adapters) below.
 
 2. Launch provides an embed code `<script>` tag that goes on your site.
 
@@ -97,7 +97,7 @@ Here is an overview of the process:
 
 An adapter is a connection between Launch and your hosting location. Launch currently supports an Akamai adapter and an SFTP adapter. When you generate a build, Launch connects to the server that is defined by your adapter.
 
-If you want to self-host, you can have Launch push directly to your servers through SFTP or you can push the build to Akamai and download it by using your environment's Archive option. For more information, see [Adapters](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/adapters).
+If you want to self-host, you can have Launch push directly to your servers through SFTP or you can push the build to Akamai and download it by using your environment's Archive option. For more information, see [Adapters](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/adapters/README.md).
 
 ### Environments {#environments}
 
@@ -110,7 +110,7 @@ You can specify the following types of environments:
 
 After you save your environment, it generates the embed code that you can copy and paste into your website.
 
-**Important**: The embed code will not work until you have created a library and produced a build. For more information, see [Environments](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/environments).
+**Important**: The embed code will not work until you have created a library and produced a build. For more information, see [Environments](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/environments/README.md).
 
 ### Publish a build to Dev {#publish-a-build-to-dev}
 
@@ -161,7 +161,7 @@ Promoting a library all the way through to production will typically require coo
 2. An **Approver** has Approve rights, can build the library to the stage environment, and approve it after testing. This process moves the library to the approved state, but only one library can be submitted and approved at a time.
 3. A **Publisher** has Publish rights and can build the library to the production environment.
 
-You can assign all these rights to one person. For more information about the different states and options that are available during the publishing process, see [Approval Workflow](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/approval-workflow).
+You can assign all these rights to one person. For more information about the different states and options that are available during the publishing process, see [Approval Workflow](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/approval-workflow/README.md).
 
 ## Additional resources {#additional-resources}
 
@@ -174,6 +174,6 @@ To learn more about Launch, see the following resources:
 
   These videos introduce you to Launch concepts and tasks.
 
-[  
-](/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started)
+[    
+](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/README.md)
 
