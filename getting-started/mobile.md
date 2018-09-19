@@ -16,8 +16,6 @@ The basic Launch workflow:
 
 For an introductory video, see [Introduction to Launch, by Adobe](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/videos/README.md).
 
-**Important**: Unless otherwise specified, the following steps apply to Web and mobile.
-
 ## 1. Set up groups and users {#1-set-up-groups-and-users}
 
 Launch is fully integrated with your Adobe ID. User permissions are managed through the Admin Console with other Adobe products and solutions from the Creative Cloud, Document Cloud, and Experience Cloud.
