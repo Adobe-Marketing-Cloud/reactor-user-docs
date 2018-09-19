@@ -4,6 +4,8 @@ Use this reference for information about configuring the Experience Cloud ID ext
 
 Use this extension to integrate the Experience Cloud ID Service with your property. With the Experience Cloud ID Service, you can create and store unique and persistent identifiers for your site visitors.
 
+The ECID JS library can be found at this location: [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+
 ## Configure the Experience Cloud ID extension
 
 This section provides a reference for the options available when configuring the Experience Cloud ID extension.
