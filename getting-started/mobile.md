@@ -77,7 +77,9 @@ Once defined in a data element, you can use the element anywhere in Launch for a
 
 ### Libraries and builds {#libraries-and-builds}
 
-Nothing in Launch is published automatically. Each set of changes you make is encapsulated into a [library](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/libraries/README.md). Each library you create automatically inherits anything upstream \(published, approved, or submitted\) as a baseline, so all you need to do is define the changes that you want to make. This library serves as the blueprint for a [build](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/builds/README.md). A build for a web property is the actual set of JavaScript files that are deployed and used on your site. A build for a mobile property is the JSON file used to configure your SDK and a manifest file that can be used with a dependency manager such as Maven, Carthage, or CocoaPods to bundle in extensions.![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LFU0QMlNa2BozkGzwB1%2F-LFU0dKvLICy6zdpJCV6%2F-LFU0ifGxfdfGKaVtWNq%2Floop.png?generation=1529528909645051&alt=media)
+Nothing in Launch is published automatically. Each set of changes you make is encapsulated into a [library](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/libraries/README.md). Each library you create automatically inherits anything upstream \(published, approved, or submitted\) as a baseline, so all you need to do is define the changes that you want to make. This library serves as the blueprint for a [build](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/builds/README.md). A build for a web property is the actual set of JavaScript files that are deployed and used on your site. A build for a mobile property is the JSON file used to configure your SDK and a manifest file that can be used with a dependency manager such as Maven, Carthage, or CocoaPods to bundle in extensions.
+
+![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LFU0QMlNa2BozkGzwB1%2F-LFU0dKvLICy6zdpJCV6%2F-LFU0ifGxfdfGKaVtWNq%2Floop.png?generation=1529528909645051&alt=media)
 
 Here is an overview of the process:
 
@@ -135,8 +137,19 @@ Complete the following steps:
 2. Import the SDK headers in your app project.
 3. Register your extensions with the SDK Core extension.
 4. Initiate the SDKs wiht the Launch app/environment IDs.
-5. Implement logging Describe the 3 types of logging
-6. Implement Lifecycle Metrics Explain lifecycle start and stop. Provide simple use cases when lifecycle metrics should be implemented.
+5. Implement logging 
+
+   The following logging levels are supported in the Adobe Experience Cloud Plaform SDKs:
+   * Error
+   * Debug
+   * Trace
+   * Verbose
+   
+   Logging for each level is cumulative with the level above it. For example, the Trace level includes the Error and Debug levels, and the Verbose level includes the Trace, Debug, and Error levels.
+   
+6. Implement Lifecycle Metrics 
+   * For more information about Lifecycle start and stop, see [Lifecycle Methods](lifecycle/lifecycle-methods). 
+   * For information about when Lifecycle should be implemented, see [Lifecycle Extension in Android](lifecycle/lifecycle-extension-in-android) and [Lifecycle Extension in iOS](lifecycle/lifecycle-extension-in-ios).
 
 ## 8. Implement Solution APIs {#8-implement-solution-apis}
 
