@@ -16,7 +16,7 @@ The basic Launch workflow:
 
 For an introductory video, see [Introduction to Launch, by Adobe](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/videos/README.md).
 
-## 1. Set up groups and users {#1-set-up-groups-and-users}
+## 1. Set up groups and users
 
 Launch is fully integrated with your Adobe ID. User permissions are managed through the Admin Console with other Adobe products and solutions from the Creative Cloud, Document Cloud, and Experience Cloud.
 
@@ -24,11 +24,11 @@ Unlike DTM, which has a role-based user management, Launch has rights-based user
 
 For more information about how to create groups and add users for Launch, see [Users](https://github.com/jiabingeng/mobile-launch/tree/99e9070fe9a3f19319363a0299dd4c8ead31fb10/administration/users.md).
 
-## 2. Log in {#2-log-in}
+## 2. Log in
 
 After Launch rights have been added to your Adobe ID, you need to log in to Launch by going to [https://launch.adobe.com](https://launch.adobe.com) or by logging in to the [Experience Cloud \(https://experiencecloud.adobe.com\)](https://experiencecloud.adobe.com), navigating to the Activation page, and clicking on Launch.
 
-## 3. Create a property {#3-create-a-property}
+## 3. Create a property
 
 In Launch, your first task is to create a property.
 
@@ -36,7 +36,7 @@ A property is a container that you fill with extensions, rules, data elements, a
 
 For more about creating properties, see [Create a property](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/companies-and-properties/README.md#create-a-property).
 
-## 4. Install extensions {#4-install-extensions}
+## 4. Install extensions
 
 Extensions are one of the core features of Launch. An extension is an integration built by Adobe or an Adobe partner that adds new and endless options for the tags that you can deploy to your sites. If you think of Launch as an operating system, extensions are the apps that you install so that Launch can do the things you need it to do.
 
@@ -57,7 +57,7 @@ Here are some issues to consider when installing extensions:
 
   For more information, see [Add a new extension](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/managing-resources/extensions/README.md#add-a-new-extension).
 
-## 5. Create data elements and rules {#5-create-data-elements-and-rules}
+## 5. Create data elements and rules 
 
 **Important**: This step is required for Mobile users **only** if you want to use Adobe Campaign.
 
@@ -73,9 +73,9 @@ Once defined in a data element, you can use the element anywhere in Launch for a
 
 **Rules** are at the logical core of your implementation and control the what, when, where, and how. With rules, you can define an event, set conditions and exceptions, define the actions and order, and publish your changes to see the results. For more information, see [Rules](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/managing-resources/rules/README.md).
 
-## 6. Test in your Dev environment {#6-test-in-your-dev-environment}
+## 6. Test in your Dev environment 
 
-### Libraries and builds {#libraries-and-builds}
+### Libraries and builds 
 
 Nothing in Launch is published automatically. Each set of changes you make is encapsulated into a [library](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/libraries/README.md). Each library you create automatically inherits anything upstream \(published, approved, or submitted\) as a baseline, so all you need to do is define the changes that you want to make. This library serves as the blueprint for a [build](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/builds/README.md). A build for a web property is the actual set of JavaScript files that are deployed and used on your site. A build for a mobile property is the JSON file used to configure your SDK and a manifest file that can be used with a dependency manager such as Maven, Carthage, or CocoaPods to bundle in extensions.
 
@@ -93,13 +93,13 @@ Here is an overview of the process:
 
 3. When a user browses your site, the Embed Code `<script>` tag retrieves the build from your host server and performs your defined actions in the browser.
 
-### Adapters {#adapters}
+### Adapters 
 
 An adapter is a connection between Launch and your hosting location. Launch currently supports an Akamai adapter and an SFTP adapter. When you generate a build, Launch connects to the server that is defined by your adapter.
 
 If you want to self-host, you can have Launch push directly to your servers through SFTP or you can push the build to Akamai and download it by using your environment's Archive option. For more information, see [Adapters](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/adapters/README.md).
 
-### Environments {#environments}
+### Environments 
 
 Each library is created in an environment, and an environment defines how you want your build to look after it is published.
 
@@ -112,7 +112,7 @@ After you save your environment, it generates the embed code that you can copy a
 
 **Important**: The embed code will not work until you have created a library and produced a build. For more information, see [Environments](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/environments/README.md).
 
-### Publish a build to Dev {#publish-a-build-to-dev}
+### Publish a build to Dev 
 
 Now that you understand the basic components, the publishing process should make more sense.
 
@@ -124,7 +124,7 @@ To publish, you need to complete the following tasks:
 4. Create a library and assign it to the dev environment you created.
 5. Build your library.
 
-## 7. Add the SDKs to and intialize them in your app project {#7-add-the-sdks-to-and-intialize-them-in-your-app-project}
+## 7. Add the SDKs to and intialize them in your app project 
 
 Complete the following steps:
 
@@ -151,7 +151,7 @@ Complete the following steps:
    * For more information about Lifecycle start and stop, see [Lifecycle Methods](lifecycle/lifecycle-methods). 
    * For information about when Lifecycle should be implemented, see [Lifecycle Extension in Android](lifecycle/lifecycle-extension-in-android) and [Lifecycle Extension in iOS](lifecycle/lifecycle-extension-in-ios).
 
-## 8. Implement Solution APIs {#8-implement-solution-apis}
+## 8. Implement Solution APIs 
 
 Implement the solution APIs in the following order:
 
@@ -160,7 +160,7 @@ Implement the solution APIs in the following order:
 3. Implement Adobe Campaign
 4. Implement Adobe Target.
 
-## 9. Promote to production {#9-promote-to-production}
+## 9. Promote to production 
 
 After you test your build in your dev environment, the promotion process is simple. Before you try it out, ensure that you create your stage and production environments and put the embed codes in the necessary places.
 
@@ -174,7 +174,7 @@ Promoting a library all the way through to production will typically require coo
 
 You can assign all these rights to one person. For more information about the different states and options that are available during the publishing process, see [Approval Workflow](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/approval-workflow/README.md).
 
-## Additional resources {#additional-resources}
+## Additional resources 
 
 To learn more about Launch, see the following resources:
 
@@ -184,7 +184,4 @@ To learn more about Launch, see the following resources:
 * ​[**Videos**](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/67a59a7519514467a713016adfe46d999fe330d8/getting-started/videos.html)​
 
   These videos introduce you to Launch concepts and tasks.
-
-[    
-](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/README.md)
 
