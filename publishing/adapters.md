@@ -19,6 +19,8 @@ Today, the primary CDN provider is Akamai.  Files hosted on Akamai will have a d
 
 When you create a new property through the Launch UI, a default adapter of this type is created for you.
 
+#### Note: For mobile properties a "Managed by Adobe" adapter is created for you.
+
 ### Create Managed by Adobe adapter
 
 1. Open the Adapters tab.
