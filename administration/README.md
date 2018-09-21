@@ -8,7 +8,7 @@ This section contains information that is useful for Launch administrators.
 
 * [**Companies and Properties**](companies-and-properties.md)
 
-  A property, or web property, is a collection of rules, data elements, configured extensions, environments, and libraries. There is only one publish embed code per property.
+  A property, or web property, is a collection of rules, data elements, configured extensions, environments, and libraries.
 
 * [**Adapter**](../publishing/web/adapters.md)
 
