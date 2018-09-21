@@ -1,6 +1,6 @@
 # Mobile
 
-Launch is the next generation of Adobe's website tag and mobile SDK management technology, built on the Adobe Cloud Platform. It is built from the ground up to support an open and sustainable ecosystem where anyone can build their own integrations that Adobe customers can deploy to their websites and mobile applciations. It is an API first application so anything you can do through the UI you can also do programmatically through an API.
+Launch is the next generation of Adobe's website tag and mobile SDK management technology, built on the Adobe Experience Platform. It is built from the ground up to support an open and sustainable ecosystem where anyone can build their own integrations that Adobe customers can deploy to their websites and mobile applciations. It is an API first application so anything you can do through the UI you can also do programmatically through an API.
 
 The basic Launch workflow:
 
@@ -83,15 +83,20 @@ Nothing in Launch is published automatically. Each set of changes you make is en
 
 Here is an overview of the process:
 
+### For Web
 1. Launch publishes a build to your host server.
 
    As mentioned above, a build is the actual JavaScript file\(s\) that Launch produces. This relationship between Launch and your host location is defined by an adapter. For more information about adaptors, see [Adapters](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/README.md#adapters) below.
-
+    
 2. Launch provides an embed code `<script>` tag that goes on your site.
 
    When you create an environment and attach an adapter, the environment provides this `<script>` tag to put on your pages.
 
 3. When a user browses your site, the Embed Code `<script>` tag retrieves the build from your host server and performs your defined actions in the browser.
+
+### For Mobile
+1. Launch published a JSON configuration file to an endpoint connected to either a development, stage or production environement.
+
 
 ### Adapters
 
