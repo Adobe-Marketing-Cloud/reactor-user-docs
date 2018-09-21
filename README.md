@@ -1,14 +1,14 @@
 # Overview
 
-Launch is the next generation of tag management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
+Launch is the next generation of website tag and mobile SDK management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising integrations necessary to power relevant customer experiences.
 
-Launch empowers anyone to build and maintain their own integrations with Launch, called Extensions. These extensions are available to Launch customers in an app-store experience so they can quickly install, configure, and deploy their tags.
+Launch empowers anyone to build and maintain their own integrations with Launch, called Extensions. These extensions are available to both web and mobile Launch customers in an app-store experience so they can quickly install, configure, and deploy their integrations.
 
-Launch is offered to Adobe Experience Cloud customers as an included, value-add feature. Launch is an entirely new product with a new code base, designed to replace the previous Dynamic Tag Management \(DTM\) service. However, DTM will continue to be supported for the foreseeable future. Adobe will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy DTM.
+~~Launch is offered to Adobe Experience Cloud customers as an included, value-add feature. Launch is an entirely new product with a new code base, designed to replace the previous Dynamic Tag Management \(DTM\) service. However, DTM will continue to be supported for the foreseeable future. Adobe will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy DTM.
 
 ## Key benefits
 
-* Faster time to value
+* Faster time to value with the ability to dynamically deploy changes to your website or mobile app
 * Trustworthy data through centralized collection, organization, and delivery using data elements
 * Compelling experiences through the integration of data and marketing technology using rule builder
 
@@ -16,7 +16,11 @@ Launch is offered to Adobe Experience Cloud customers as an included, value-add 
 
 ### Extensions
 
+#### Web
 An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the Launch UI and client functionality. ​Build, manage, and update your integrations using a virtually self-service interface. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
+
+#### Mobile
+There are two sides to Mobile extensions are comprised of the Launch UI configuration options and native SDK components that work with the core Adobe Cloud Platform SDKs to deliver functionality to mobile apps.
 
 ### Extension Catalog
 
