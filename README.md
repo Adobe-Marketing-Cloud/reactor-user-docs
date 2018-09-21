@@ -17,9 +17,11 @@ Launch empowers anyone to build and maintain their own integrations with Launch,
 ### Extensions
 
 #### Web
+
 An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the Launch UI and client functionality. ​Build, manage, and update your integrations using a virtually self-service interface. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
 
 #### Mobile
+
 There are two sides to Mobile extensions are comprised of the Launch UI configuration options and native SDK components that work with the core Adobe Cloud Platform SDKs to deliver functionality to mobile apps.
 
 ### Extension Catalog
