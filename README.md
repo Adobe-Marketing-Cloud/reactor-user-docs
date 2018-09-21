@@ -24,7 +24,7 @@ An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the
 
 Mobile extensions are comprised of a Launch UI configuration screen and native SDK components that work with the core Adobe Cloud Platform SDKs to deliver functionality to mobile apps.
 
-**Important**: In Android and iOS apps, only contents on secure http connections (```https```) are served. When a URL that contains ```http://``` is passed in, the connections are blocked.
+**Important**: In Android and iOS extensions, only contents on secure http connections (```https```) are served. When a URL that contains ```http://``` is passed in, the connections are blocked.
 
 ### Extension Catalog
 
