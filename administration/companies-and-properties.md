@@ -115,10 +115,11 @@ Note: Only a user with sufficient rights can create a property. See [User Manage
 Before beginning, review the [Best practices for planning properties](companies-and-properties.md#best-practices-for-planning-properties) for properties.
 
 1. Navigate to your company page, then click New Property, or select an existing property from the list and click Configure.
-
-   ![](../.gitbook/assets/property-create.jpg)
    
 ### For Web   
+
+![](../.gitbook/assets/property-create.jpg)
+
 2. Fill in the fields:
 
    **Name:** The name of your property.
