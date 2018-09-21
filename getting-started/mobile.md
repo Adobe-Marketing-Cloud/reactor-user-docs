@@ -79,43 +79,15 @@ Once defined in a data element, you can use the element anywhere in Launch for a
 
 Nothing in Launch is published automatically. Each set of changes you make is encapsulated into a [library](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/libraries/README.md). Each library you create automatically inherits anything upstream \(published, approved, or submitted\) as a baseline, so all you need to do is define the changes that you want to make. This library serves as the blueprint for a [build](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/publishing/web/builds/README.md). A build for a web property is the actual set of JavaScript files that are deployed and used on your site. A build for a mobile property is the JSON file used to configure your SDK and a manifest file that can be used with a dependency manager such as Maven, Carthage, or CocoaPods to bundle in extensions.
 
-![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LFU0QMlNa2BozkGzwB1%2F-LFU0dKvLICy6zdpJCV6%2F-LFU0ifGxfdfGKaVtWNq%2Floop.png?generation=1529528909645051&alt=media)
-
-Here is an overview of the process:
-
-### For Web
-1. Launch publishes a build to your host server.
-
-   As mentioned above, a build is the actual JavaScript file\(s\) that Launch produces. This relationship between Launch and your host location is defined by an adapter. For more information about adaptors, see [Adapters](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/README.md#adapters) below.
-    
-2. Launch provides an embed code `<script>` tag that goes on your site.
-
-   When you create an environment and attach an adapter, the environment provides this `<script>` tag to put on your pages.
-
-3. When a user browses your site, the Embed Code `<script>` tag retrieves the build from your host server and performs your defined actions in the browser.
-
-### For Mobile
-1. Launch published a JSON configuration file to an endpoint connected to either a development, stage or production environement.
-
-
 ### Adapters
 
-An adapter is a connection between Launch and your hosting location. Launch currently supports an Akamai adapter and an SFTP adapter. When you generate a build, Launch connects to the server that is defined by your adapter.
+An adapter is a connection between Launch and your hosted configuration endpoint. When you generate a build, Launch connects to the server and published changes to the configuration.
 
-If you want to self-host, you can have Launch push directly to your servers through SFTP or you can push the build to Akamai and download it by using your environment's Archive option. For more information, see [Adapters](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/adapters/README.md).
+For more information, see [Adapters](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/adapters/README.md).
 
 ### Environments
 
-Each library is created in an environment, and an environment defines how you want your build to look after it is published.
-
-You can specify the following types of environments:
-
-* **Adapter** Each environment needs an adapter that determines where Launch will push the builds that were created in this environment.
-* **Archive** The default is to deploy your build as a minified .js file, or if you are using custom code, multiple files that reference each other. You can have wrap all these files together in a zip file and encrypt it.
-
-After you save your environment, it generates the embed code that you can copy and paste into your website.
-
-**Important**: The embed code will not work until you have created a library and produced a build. For more information, see [Environments](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/administration/environments/README.md).
+Each library is created in an environment, and an environment defines how you build and test configuration changes to your applications. For each environment created you will specify a name and choose the Adobe Hosted adapater that was pre-created for you. You can add as many developemtn environments as you wish, but you can only define a single stage and production environement. 
 
 ### Publish a build to Dev
 
@@ -125,7 +97,7 @@ To publish, you need to complete the following tasks:
 
 1. Create an adapter.
 2. Create a dev environment by using the adapter you created.
-3. Deploy the embed code from your dev environment to your dev test site.
+3. Copy the configuration code snippets from your dev environment to initialize the SDK in your development app.
 4. Create a library and assign it to the dev environment you created.
 5. Build your library.
 
@@ -144,7 +116,7 @@ Complete the following steps:
 4. Initiate the SDKs wiht the Launch app/environment IDs.
 5. Implement logging
 
-   The following logging levels are supported in the Adobe Experience Cloud Plaform SDKs:
+   The following logging levels are supported in the Adobe Experience Plaform SDKs:
 
    * Error
    * Debug
