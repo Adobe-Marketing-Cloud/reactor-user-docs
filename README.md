@@ -22,7 +22,7 @@ An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the
 
 #### Mobile
 
-There are two sides to Mobile extensions are comprised of the Launch UI configuration options and native SDK components that work with the core Adobe Cloud Platform SDKs to deliver functionality to mobile apps.
+Mobile extensions are comprised of a Launch UI configuration screen and native SDK components that work with the core Adobe Cloud Platform SDKs to deliver functionality to mobile apps.
 
 ### Extension Catalog
 
@@ -37,9 +37,9 @@ Create robust rules that combine multiple events, sequenced in the way that you 
 * Exceptions
 * Actions
 
-The rule builder includes real-time error checking and syntax highlighting for your custom code.
+~~The rule builder includes real-time error checking and syntax highlighting for your custom code.
 
-When the criteria outlined in your rules are met and conditions are satisfied, the actions you define are executed in order.
+~~When the criteria outlined in your rules are met and conditions are satisfied, the actions you define are executed in order.
 
 ### Data Elements
 
@@ -47,10 +47,10 @@ Collect, organize, and deliver data across web-based marketing and advertising t
 
 ### Enterprise Publishing
 
-The publishing process enables teams to publish code to pages. Different people can create an implementation, approve it, and publish it to your pages.
+The publishing process enables teams to dynamically publish updates to both web pages and application. Different people can create an implementation, approve it, and publish.
 
-* Changes to your code are encapsulated within libraries you define ​
-* You specify where and when you want your code deployed ​
+* Changes to your implementation are encapsulated within libraries you define ​
+* You specify where and when you want your changes deployed ​
 * Multiple libraries can be built in parallel by different teams ​
 * Unlimited development environments ​
 * Deliberate, permissioned process for merging libraries together ​
@@ -64,11 +64,19 @@ Automate implementations of individual technologies, or a group of technologies.
 * Integrate the Launch APIs with your own internal systems ​
 * You can build your own user interface, if desired ​
 
+## Requirements
+
+Launch requires the following:
+
+* You must be an Adobe Experience Cloud customer.
+* You must deploy the Launch or DTM embed code on your web pages.
+* For mobile, you must integrate the Adobe Experience Platform Mobile SDKs into your application.
+
+## Additional highlights for Web
+
 ### Light, Modular Container tag
 
 The Launch container tag is 60% lighter than DTM and 40% lighter than Google Tag Manager. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact. See [Minification](publishing/web/builds.md).
-
-## Other highlights
 
 Launch provides several improvements over similar systems, including:
 
@@ -77,16 +85,7 @@ Launch provides several improvements over similar systems, including:
 * Custom action scripts within a rule can be loaded in parallel, but are executed sequentially ​
 * If you avoid Page Top and Page Bottom rules, the code is mostly asynchronous, with a path to getting fully async ​
 
-## Requirements
-
-Launch requires the following:
-
-* You must be an Adobe Experience Cloud customer.
-* You must deploy the Launch or DTM embed code on your web pages.
-
 ## Adobe Launch FAQ
-
-Frequently asked questions about the new tag management capabilities, announced in March 2017.
 
 #### What is Launch?
 
@@ -177,9 +176,6 @@ Browser support in the Launch application interface:
 
 Legacy DTM supported older versions of Internet Explorer, but over the last few years, the percentage of overall web users with older, outdated browsers has dropped to a small segment for our clients. Most Adobe clients now leverage more modern web platform features in current browsers and create better user experiences, including single page applications and interactive Ajax-heavy web sites and pages. As most clients move to more modern approaches with their sites, they demand a solution like Launch that enables those approaches.
 
-#### Does the new Launch work on native mobile apps?
-
-Adobe continues to recommend the [Mobile Services App SDK](http://www.adobe.com/solutions/digital-marketing/mobile-services/app-sdk.html) to implement data collection and delivery in a native mobile app environment. With Adobe mobile services, the process is streamlined with a single SDK that works with multiple Adobe Cloud Platform solutions. Going forward, you will see additional tag management-like functionality in the Mobile Services interface as the Launch and Mobile teams continue working closely together for more seamless Cloud Platform access and user experiences.
 
 #### What if I have other questions?
 
