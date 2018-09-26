@@ -17,11 +17,11 @@ The extension catalog is now sorted by display name rather than name.
 
 #### Extension Upgrade
 
-Launch users will now be notified when new versions of extensions are available and can install them on their own.  Read more [here](../managing-resources/extension-upgrade.md).
+Launch users will now be notified when new versions of extensions are available and can install them on their own. Read more [here](../managing-resources/extension-upgrade.md).
 
 ### Updates
 
-Embed codes have moved from the Environment detail page to an installation instructions modal.  This modal is displayed automatically after you create a new environment and is accessible from the Environments List view.
+Embed codes have moved from the Environment detail page to an installation instructions modal. This modal is displayed automatically after you create a new environment and is accessible from the Environments List view.
 
 ## July 24, 2018
 
@@ -42,7 +42,7 @@ Embed codes have moved from the Environment detail page to an installation instr
 
 #### Target Extension v0.6.0
 
-Target Extension has been updated to use at.js v1.3.1.  When you deploy Target with Analytics, we now wait until all Target calls have resolved \(including redirect offers\) before Analytics fires, resolving the race condition that previously existed.
+Target Extension has been updated to use at.js v1.3.1. When you deploy Target with Analytics, we now wait until all Target calls have resolved \(including redirect offers\) before Analytics fires, resolving the race condition that previously existed.
 
 ## June 5, 2018
 
@@ -63,15 +63,15 @@ Target Extension has been updated to use at.js v1.3.1.  When you deploy Target w
 
 #### Launch and DTM libraries are now live in China
 
-The Launch and DTM libraries using Akamai are now available on CDN edge nodes in China.  This provides much faster library load speeds for end users in China.
+The Launch and DTM libraries using Akamai are now available on CDN edge nodes in China. This provides much faster library load speeds for end users in China.
 
 #### Improved error messages
 
-The information contained in error messages has been improved and expanded throughout the API and UI.  This should be especially useful for build failure messages.
+The information contained in error messages has been improved and expanded throughout the API and UI. This should be especially useful for build failure messages.
 
 #### Add All Changes Button
 
-Changed the behavior of the Add All Changes button on the Edit Library page.  Previously, a resource was only considered "changed" until you had added it to a Library and saved it.  Now a resource is considered "changed" until it has been published to the Production environment.
+Changed the behavior of the Add All Changes button on the Edit Library page. Previously, a resource was only considered "changed" until you had added it to a Library and saved it. Now a resource is considered "changed" until it has been published to the Production environment.
 
 #### Adobe Privacy extension
 
@@ -79,7 +79,7 @@ The Adobe Privacy extension provides functionality for collecting and/or removin
 
 #### Launch Core extension: Value Comparison condition
 
-The new Value Comparison condition Compares two values, using any of several available operators.  This replaces the functionality of several older conditions that were far too specific.
+The new Value Comparison condition Compares two values, using any of several available operators. This replaces the functionality of several older conditions that were far too specific.
 
 #### Launch Core extension: Max Frequency condition
 
@@ -91,11 +91,11 @@ This condition allows you to specify the number of times the condition should re
 
 #### Data Elements duration, "None" option
 
-Data Elements now have a "None" duration option.  Newly created Data Elements default to this setting.
+Data Elements now have a "None" duration option. Newly created Data Elements default to this setting.
 
 #### Environment pages default to display async embed codes
 
-Environment pages now display async embed codes as the default.  Toggling between sync and async works exactly as before.
+Environment pages now display async embed codes as the default. Toggling between sync and async works exactly as before.
 
 ## May 3, 2018
 
@@ -129,11 +129,11 @@ Improved warning messages.
 
 #### Rule ID enhancement
 
-Rule ID is now emitted for each rule in a build, and can be referenced in the browser. 
+Rule ID is now emitted for each rule in a build, and can be referenced in the browser.
 
-#### Page Load event order	
+#### Page Load event order
 
-Page Load events now execute in logical order in async deployments \(Library Loaded &gt; Page Bottom &gt; DOM Ready &gt; Window Loaded\).	
+Page Load events now execute in logical order in async deployments \(Library Loaded &gt; Page Bottom &gt; DOM Ready &gt; Window Loaded\).
 
 ## April 11, 2018
 
@@ -169,7 +169,7 @@ Minor style improvements.
 
 #### Adobe Analytics for Video Extension 1.0.0
 
-The [Adobe Analytics for Video Extension](../extension-reference/adobe-extensions/adobe-analytics-for-video-extension.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension \(VA Extension\) requires two additional extensions:
+The [Adobe Analytics for Video Extension](../extension-reference/web/adobe-analytics-for-video-extension.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension \(VA Extension\) requires two additional extensions:
 
 * Analytics Extension
 * Experience Cloud ID Extension
@@ -205,7 +205,7 @@ You can delete data elements, rules, and extensions. See [Delete Resources](../m
 
 #### Link DTM Embed Code to Launch
 
-When you link your DTM embed code to Launch, you can keep your DTM production embed code on a page, but serve Launch files there instead of DTM. See [Link DTM Embed Code to Launch]().
+When you link your DTM embed code to Launch, you can keep your DTM production embed code on a page, but serve Launch files there instead of DTM. See [Link DTM Embed Code to Launch](release-notes.md).
 
 ## March 6, 2018
 
@@ -300,7 +300,7 @@ You can now pass actual objects to the log function and view them as objects in 
 
 * On-page
 
-  The Launch library now includes support for running asynchronously. There are important ramifications for how this changes what happens in your library. You should read the [Async documentation](../client-side-information/asynchronous-deployment.md) before you do anything.
+  The Launch library now includes support for running asynchronously. There are important ramifications for how this changes what happens in your library. You should read the [Async documentation](../client-side-information/web/asynchronous-deployment.md) before you do anything.
 
 * Async Toggle on Environments
 

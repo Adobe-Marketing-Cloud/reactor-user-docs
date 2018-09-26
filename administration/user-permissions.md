@@ -11,29 +11,29 @@ This article examines these different permissions types in detail.
 
 ### Experience Cloud Permissions
 
-This section discusses factors that are important to understand when using Launch.  See [Administrative Roles in the Enterprise User Guide](https://helpx.adobe.com/au/enterprise/using/admin-roles.html)  for a comprehensive view of Experience Cloud permissions.
+This section discusses factors that are important to understand when using Launch. See [Administrative Roles in the Enterprise User Guide](https://helpx.adobe.com/au/enterprise/using/admin-roles.html) for a comprehensive view of Experience Cloud permissions.
 
 #### Organization Administrator
 
-Organization Administrators are often referred to as Org Admins.  An Org Admin's main function is to assign permissions to other users.  They do this by creating Product Profiles \(or groups\) that contain a specific set of rights within a specific product and then assigning users, existing or new, to that Product Profile.
+Organization Administrators are often referred to as Org Admins. An Org Admin's main function is to assign permissions to other users. They do this by creating Product Profiles \(or groups\) that contain a specific set of rights within a specific product and then assigning users, existing or new, to that Product Profile.
 
-Enterprise Org Admins do not inherit any rights in Launch.  They must add themselves to a Product Profile that has Launch rights if they want to do anything in Launch.
+Enterprise Org Admins do not inherit any rights in Launch. They must add themselves to a Product Profile that has Launch rights if they want to do anything in Launch.
 
 #### Product Administrator
 
-A Product Administrator \(or Product Admin\) is similar to an Org Admin, but is narrower in scope.  A Product Admin only has the permission to modify Product Profiles for a specific Adobe product, rather than all Adobe products the company has access to.
+A Product Administrator \(or Product Admin\) is similar to an Org Admin, but is narrower in scope. A Product Admin only has the permission to modify Product Profiles for a specific Adobe product, rather than all Adobe products the company has access to.
 
 ### Launch Permissions
 
-Within the Experience Cloud, no rights or permissions are assigned to individual users.  They are assigned to a Product Profile \(see [Experience Cloud Permissions](user-permissions.md#experience-cloud-permissions) above\).  Individual users are then assigned to one or more Product Profile. 
+Within the Experience Cloud, no rights or permissions are assigned to individual users. They are assigned to a Product Profile \(see [Experience Cloud Permissions](user-permissions.md#experience-cloud-permissions) above\). Individual users are then assigned to one or more Product Profile.
 
 Within a Product Profile, Launch permissions are divided into two categories, Property Rights and Company Rights.
 
 #### Property Rights
 
-Any properties you create in Launch become available in the Admin Console for you to assign permissions.  If a given Product Profile does not have access to Property A1, users who belong to that Profile cannot see or modify any settings within Property A1.
+Any properties you create in Launch become available in the Admin Console for you to assign permissions. If a given Product Profile does not have access to Property A1, users who belong to that Profile cannot see or modify any settings within Property A1.
 
-Assuming that a user belongs to a Profile with access to Property A1, what they can do within Property A1 is determined by the rights they have been granted.  Users with permissions to Property A1, but no assigned rights, have read-only access.
+Assuming that a user belongs to a Profile with access to Property A1, what they can do within Property A1 is determined by the rights they have been granted. Users with permissions to Property A1, but no assigned rights, have read-only access.
 
 You can set the following Property Rights:
 
@@ -41,7 +41,7 @@ You can set the following Property Rights:
 * **Approve:** Grants the ability to take a submitted library and build to the staging environment.  You can also approve a library for publishing once testing has been completed.
 * **Publish:** Grants the ability to publish approved libraries to the production environment.
 * **Manage Extensions:** Grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension.  More information on extensions is available [here](../managing-resources/extensions.md). This role typically belongs to IT or Marketing, depending on your organization.
-* **Manage Environments:** Grants the ability to create and modify environments. Read more about Environments [here](../publishing/environments.md). This role typically belongs to the IT group.
+* **Manage Environments:** Grants the ability to create and modify environments. Read more about Environments [here](../publishing/web/environments.md). This role typically belongs to the IT group.
 
 #### Company Rights
 
@@ -51,13 +51,13 @@ Currently, there is one available Company Right:
 
 ### Total User Permissions
 
-An individual user's total permissions are determined by their total membership in different Product Profiles.  If a user belongs to multiple Product Profiles, the permissions from each profile are added together rather than multiplied.
+An individual user's total permissions are determined by their total membership in different Product Profiles. If a user belongs to multiple Product Profiles, the permissions from each profile are added together rather than multiplied.
 
-For example: Product Profile A grants Henry the Develop right for Property 1.  Product Profile B grants Henry the Publish right for Property 2.  Henry can Develop in Property 1 and Publish in Property 2, but he cannot Publish in Property 1 \(or Develop in Property 2\) because he has not been granted explicit rights to do so.
+For example: Product Profile A grants Henry the Develop right for Property 1. Product Profile B grants Henry the Publish right for Property 2. Henry can Develop in Property 1 and Publish in Property 2, but he cannot Publish in Property 1 \(or Develop in Property 2\) because he has not been granted explicit rights to do so.
 
 ## Rights scenarios
 
-Different companies have different needs when creating new Product Profiles.  These needs vary based on company size, org structure, number of sites, number of people involved in managing tags, and so on.
+Different companies have different needs when creating new Product Profiles. These needs vary based on company size, org structure, number of sites, number of people involved in managing tags, and so on.
 
 Below are a few common scenarios and a recommended starting point as you think about creating Product Profiles and adding users to them.
 
@@ -67,7 +67,7 @@ If you run a small company that has one person in charge of everything, grant th
 
 ### 2\) Separation of Duties
 
-Many people are involved in tagging.  You have one set of people \(maybe an external consultant\) that creates rules and data elements, but you don't want them to have access to the production environment.  You want to make sure that nobody deploys to Production except the IT team.
+Many people are involved in tagging. You have one set of people \(maybe an external consultant\) that creates rules and data elements, but you don't want them to have access to the production environment. You want to make sure that nobody deploys to Production except the IT team.
 
 1. Create an account for your consultants and grant them only the develop right.
 2. The consultant builds and tests within the confines you set.
@@ -95,7 +95,7 @@ The steps below guide you through the process of assigning permissions. You can 
 
 Steps 1-3 below can be bypassed by navigating directly to [Adobe Admin Console](https://adminconsole.adobe.com/enterprise/products). If you belong to more than one organization, select the correct org from the top nav on the right.
 
-### 1. Sign in to [http://marketing.adobe.com](http://marketing.adobe.com) 
+### 1. Sign in to [http://marketing.adobe.com](http://marketing.adobe.com)
 
 Sign in to [http://marketing.adobe.com](http://marketing.adobe.com) with your Adobe ID, then choose the organization to use within Launch from the Navigation menu.
 
@@ -184,8 +184,6 @@ Then, assign Company Rights.
 
 ![](../.gitbook/assets/rights-company.png)
 
-
-
 Some important notes:
 
 * Lack of rights means read-only access.
@@ -228,6 +226,4 @@ Resolution: Your user does not belong to any Launch product profiles. See the st
 Once you've logged in, you can't add any Properties.
 
 Resolution: Your user account does not belong to a product configuration that has the Manage Properties right. Go back to Step 5 above.
-
-### 
 
