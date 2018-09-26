@@ -4,7 +4,6 @@ Launch is the next generation of website tag and mobile SDK management capabilit
 
 Launch empowers anyone to build and maintain their own integrations with Launch, called Extensions. These extensions are available to web and mobile Launch customers in an app-store experience, so customers can quickly install, configure, and deploy their integrations.
 
-
 ## Key benefits
 
 Here are the benefits for using Adobe Launch:
@@ -41,7 +40,6 @@ Create robust rules that combine multiple events, sequenced in the way that you 
 * Conditions
 * Exceptions
 * Actions
-
 
 ### Data Elements
 

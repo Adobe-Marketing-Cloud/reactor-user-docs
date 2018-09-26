@@ -6,7 +6,7 @@ description: >-
 
 # Adobe Analytics
 
-## Configuring the Analytics Extension in Adobe Launch ##
+## Configuring the Analytics Extension in Adobe Launch
 
 1. In Launch, click the **Extensions** tab.
 2. On the **Installed** tab, locate the **Adobe Analytics** extension and click **Configure**. 
@@ -23,7 +23,7 @@ description: >-
 
 8. Click **Save**.
 
-## Additional Information ##
+## Additional Information
 
 Here is some additional information:
 

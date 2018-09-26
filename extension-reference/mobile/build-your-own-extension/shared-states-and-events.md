@@ -17,6 +17,7 @@ A module that receives an event for which it is listening \(for example, when An
 
 Here is an illustration of the workflow:
 
-![](.gitbook/assets/shared-state-lifecycle.png)
+![](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/5ba02dd958441ab9339a8a62b8352c7e21bd0938/extension-reference/mobile/build-your-own-extension/.gitbook/assets/shared-state-lifecycle.png)
 
-For a complete list of the events and shared states, see [Events and Shared States](./events/README.md).
+For a complete list of the events and shared states, see [Events and Shared States](events/).
+

@@ -37,3 +37,4 @@ The following table describes each privacy status:
 * Audience Manager: Signals and ID syncs are saved until the privacy status changes to `opt-in` \(hits are sent\) or `opt-out` \(hits are discarded\).
 * Value in the JSON Config file: `optunknown`
 * Value in setPrivacyStatus: `ADBMobilePrivacyStatusOptUnknown`
+

@@ -1,6 +1,7 @@
 ---
 description: >-
-  This section contains information about how to implement and use the Lifecycle extension in Android.
+  This section contains information about how to implement and use the Lifecycle
+  extension in Android.
 ---
 
 # Lifecycle Extension in Android
@@ -42,7 +43,7 @@ To implement lifecycle metrics, complete the following steps in each Activity of
    }
    ```
 
-   For more information about registering an extension and setting up the SDK, see <add link>.
+   For more information about registering an extension and setting up the SDK, see .
 
 3. In the `onResume` function, start the lifecycle data collection:
 
@@ -79,7 +80,7 @@ When lifecycle metrics are implemented, a call is made to `MobileCore.lifecycleS
 
 To understand why this is essential, here is an illustration of the Android activity lifecycle:
 
-![](.gitbook/assets/android-crash.png)
+![](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/5ba02dd958441ab9339a8a62b8352c7e21bd0938/extension-reference/mobile/lifecycle/.gitbook/assets/android-crash.png)
 
 For more information about the Android activity lifecycle, see [Activities](https://developer.android.com/guide/components/activities/).
 

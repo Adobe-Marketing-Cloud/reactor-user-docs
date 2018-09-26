@@ -2,7 +2,7 @@
 
 Sessions contain information about the current lifecycle such as device information, application install or upgrade information, session start and pause times, number of application launches, plus any additional context data provided by the developer through the `LifecycleStart` API. Session data is persisted, so it is available across application launches.
 
-## Additional Information ##
+## Additional Information
 
 Here is some additional information:
 

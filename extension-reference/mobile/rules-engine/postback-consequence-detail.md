@@ -22,7 +22,7 @@ For more information about Consequences and associated Detail Objects, see [Defi
       <td style="text-align:left">Destination URL</td>
       <td style="text-align:left">templateurl</td>
       <td style="text-align:left">string</td>
-      <td style="text-align:left"><b>Required</b>.  Destination URL to which the postback signal will be
+      <td style="text-align:left"><b>Required</b>. Destination URL to which the postback signal will be
         sent.</td>
     </tr>
     <tr>
@@ -33,8 +33,6 @@ For more information about Consequences and associated Detail Objects, see [Defi
         <p><b>Optional</b>. A string that contains the post-body to be sent. If this
           value exists, the postback will be sent as a <code>POST</code>, instead
           of a <code>GET</code>, request.</p>
-        <p><b></b>
-        </p>
         <p><b>Tip</b>: If necessary, the string should be appropriately json escaped.</p>
       </td>
     </tr>
@@ -54,9 +52,7 @@ For more information about Consequences and associated Detail Objects, see [Defi
         value is <code>2</code>.</td>
     </tr>
   </tbody>
-</table>
-
-## Usage Examples
+</table>## Usage Examples
 
 The objects in the following usage examples are full Consequence Objects that contain the detail definition on which this document focuses.
 

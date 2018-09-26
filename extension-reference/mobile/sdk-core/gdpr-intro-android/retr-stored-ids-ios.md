@@ -19,9 +19,9 @@ The Adobe Experience Cloud Platform SDKs identities \(as applicable\) are locall
 
 Here is an example of the `[ACPCore getSdkIdentities:]` method in iOS:
 
-```objective-c
+```text
 [ACPCore getSdkIdentities:^(NSString * _Nullable content){
-	NSLog(content);
+    NSLog(content);
 }];
 ```
 

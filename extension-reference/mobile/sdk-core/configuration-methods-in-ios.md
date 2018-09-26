@@ -6,19 +6,17 @@ Start the Core processing. This should be called after the initial set of extens
 
 ### Syntax
 
-```objective-c
+```text
 + (void) start: (nullable void (^) (void)) callback;
 ```
 
 ### Example
 
-```objective-c
+```text
 [ACPCore start:^{
    // do stuff after extensions has finished being registered
 }];
 ```
-
-## 
 
 ## configureWithAppID
 
@@ -81,8 +79,6 @@ NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ExampleJSONFile"of
 [ACPCore configureWithFileInPath:filePath];
 ```
 
-
-
 ## setPrivacyStatus
 
 Sets the privacy status for the current user to status.
@@ -92,7 +88,7 @@ You can set the privacy status to one of the following values:
 * `ACPMobilePrivacyStatusOptIn`, hits are sent immediately.
 * `ACPMobilePrivacyStatusOptOut` , hits are discarded.
 * `ACPMobilePrivacyStatusUnknown`:
-   * If offline tracking is enabled, hits are saved until the privacy status changes to opt-in, and the hits are sent. 
+  * If offline tracking is enabled, hits are saved until the privacy status changes to opt-in, and the hits are sent. 
 
 If the privacy status is opt-out, the hits are discarded. If offline tracking is disabled, hits are discarded until the privacy status changes to opt in. Calls to `setPrivacyStatus` have the same effects as a call to `updateConfiguration`. The value set here is stored so that, at relaunch, the privacy status setting is preserved.
 
@@ -107,8 +103,6 @@ If the privacy status is opt-out, the hits are discarded. If offline tracking is
 ```text
 [ACPCore setPrivacyStatus:ACPMobilePrivacyStatusOptIn
 ```
-
-
 
 ## getPrivacyStatus
 

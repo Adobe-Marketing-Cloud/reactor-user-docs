@@ -19,12 +19,12 @@ If Audience Manager is configured in your JSON file, a signal that contains life
 
    ```java
    public class AudiencetApp extends Application {
-   
+
     @Override
     public void onCreate() {
         super.onCreate();
         MobileCore.setApplication(this);
-   
+
         try {
             Audience.registerExtension();
             Identity.registerExtension();
@@ -32,7 +32,7 @@ If Audience Manager is configured in your JSON file, a signal that contains life
             //Log the exception
         }
     }
-   } 
+   }
    ```
 
    **Important**: Audience Manager depends on the Identity extension and is automatically included in Core. When installing the SDK manually, ensure that you download and add the Identity extension to your project.

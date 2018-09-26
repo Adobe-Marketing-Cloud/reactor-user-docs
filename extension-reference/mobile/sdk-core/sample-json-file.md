@@ -2,7 +2,7 @@
 
 Here is a sample JSON file for the Adobe Experience Cloud Platform SDKs:
 
-```json
+```javascript
 { 
     "experienceCloud.org": "3CE342C75100435B0A490D4C@AdobeOrg",  
     "target.clientCode": "yourclientcode",  
@@ -20,3 +20,4 @@ Here is a sample JSON file for the Adobe Experience Cloud Platform SDKs:
     "rules.url": "https://link.to.rules/test.zip"
 }
 ```
+

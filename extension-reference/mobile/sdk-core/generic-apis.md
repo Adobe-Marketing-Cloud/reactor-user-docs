@@ -33,7 +33,7 @@ Identity.registerExtension();
 Analytics.registerExtension();
 ```
 
-The Analytics extension supports this API. 
+The Analytics extension supports this API.
 
 ### iOS
 
@@ -68,7 +68,7 @@ Ensure that the Analytics extension and the Identity extension are registered **
 [ACPAnalytics registerExtension];
 ```
 
-The Analytics extension supports this API. 
+The Analytics extension supports this API.
 
 ## Track State
 
@@ -99,7 +99,7 @@ Identity.registerExtension();
 Analytics.registerExtension();
 ```
 
-The Analytics extension supports this API. 
+The Analytics extension supports this API.
 
 ### iOS
 
@@ -134,7 +134,7 @@ Ensure that the Analytics extension and the Identity extension are registered **
 [ACPAnalytics registerExtension];
 ```
 
-The Analytics extension supports this API. 
+The Analytics extension supports this API.
 
 ## collectPII
 
@@ -166,7 +166,7 @@ Ensure that the `Signal` extension is registered before this API is called:
 Signal.registerExtension();
 ```
 
-The Signal extension supports this API. 
+The Signal extension supports this API.
 
 ### iOS
 
@@ -203,7 +203,7 @@ Ensure that the `ACPSignal` extension is registered **before** this API is calle
 [ACPSignal registerExtension];
 ```
 
- The Signal extension supports this API. 
+The Signal extension supports this API.
 
 ## Lifecycle Start
 
@@ -233,7 +233,7 @@ Ensure that the Lifecycle extension is registered **before** this API is called:
 Lifecycle.registerExtension();
 ```
 
-The `Lifecycle` extension supports this API. 
+The `Lifecycle` extension supports this API.
 
 ### iOS
 
@@ -270,7 +270,7 @@ Ensure that the Lifecycle extension is registered **before** this API is called:
 [ACPLifecycle registerExtension];
 ```
 
-The Lifecycle extension supports this API. 
+The Lifecycle extension supports this API.
 
 ## Lifecycle Pause
 
@@ -298,7 +298,7 @@ Ensure that the Lifecycle extension is registered **before** this API is called:
 Lifecycle.registerExtension();
 ```
 
-The Lifecycle extension supports this API. 
+The Lifecycle extension supports this API.
 
 ### iOS
 
@@ -332,7 +332,7 @@ Ensure that the Lifecycle extension is registered **before** this API is called:
 [ACPLifecycle registerExtension];
 ```
 
-The Lifecycle extension supports this API. 
+The Lifecycle extension supports this API.
 
 ## Set Advertising Identifier
 
@@ -360,7 +360,7 @@ Ensure that the Identity extension is registered **before** this API is called:
 Identity.registerExtension();
 ```
 
-The Identity extension supports this API. 
+The Identity extension supports this API.
 
 ### iOS
 
@@ -394,7 +394,7 @@ Ensure that the `Identity` extension is registered **before** this API is called
 [ACPIdentity registerExtension];
 ```
 
-The Identity extension supports this API. 
+The Identity extension supports this API.
 
 ## Set Push Identifier
 
@@ -459,5 +459,5 @@ Ensure that the `Identity` and `Analytics` extensions are registered **before** 
 [ACPAnalytics registerExtension];
 ```
 
-The Identity extension supports this API. 
+The Identity extension supports this API.
 

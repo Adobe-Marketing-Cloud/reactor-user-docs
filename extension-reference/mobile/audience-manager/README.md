@@ -8,7 +8,7 @@ description: >-
 
 Applications can use this extension to update a user’s audience profile and retrieve the current segments into which a user has fallen. These segments will be shared with the parent application and published for other extensions that might use audience segments.
 
-## Configuring the Audience Manager Extension in Adobe Launch ##
+## Configuring the Audience Manager Extension in Adobe Launch
 
 1. In Launch, click the **Extensions** tab.
 2. On the **Installed** tab, locate the **Adobe Audience Manager** extension and click **Configure**.
@@ -16,7 +16,7 @@ Applications can use this extension to update a user’s audience profile and re
 4. Click the up or down arrows and select a timeout value.
 5. Click **Save**.
 
-## Additional Information ##
+## Additional Information
 
 Here is some additiona linformation:
 

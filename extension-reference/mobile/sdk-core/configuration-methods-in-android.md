@@ -13,7 +13,7 @@ Start the Core processing. This should be called after the initial set of extens
 ### Syntax
 
 ```java
-public static void start(final AdobeCallback completionCallback) 
+public static void start(final AdobeCallback completionCallback)
 ```
 
 ### Example
@@ -27,10 +27,9 @@ MobileCore.start(new AdobeCallback() {
 });
 ```
 
-
 ### setApplication
 
-This method must be called in the `onCreate` method of every entry activity, or called it once in the `onCreate` method of  your custom Application class.
+This method must be called in the `onCreate` method of every entry activity, or called it once in the `onCreate` method of your custom Application class.
 
 For example:
 
@@ -85,8 +84,6 @@ void configureWithAppID(final String appId)
 MobileCore.ConfigureWithAppId("1423ae38-8385-8963-8693-28375403491d");
 ```
 
-
-
 ### updateConfiguration
 
 Allows the caller to pass a map of the configuration key-value pairs to override the existing configuration. Keys that are not found in the existing configuration are added. Null values are allowed, and these values remove the configuration parameter.
@@ -111,16 +108,13 @@ data.put("global.timeoneOffset", -420);
 MobileCore.updateConfiguration(data);
 ```
 
-
-
 ### setPrivacyStatus
 
-Sets the privacy status for  SDK. The set privacy status is preserved and applied over any new configuration changes from calls to `configureWithAppID` or `configureWithFileInPath(String)` even across application restarts.
-Here are the privacy status values:
+Sets the privacy status for SDK. The set privacy status is preserved and applied over any new configuration changes from calls to `configureWithAppID` or `configureWithFileInPath(String)` even across application restarts. Here are the privacy status values:
 
-- `MobilePrivacyStatus.OPT_IN`, where the hits are sent immediately.
-- `MobilePrivacyStatus.OPT_OUT`, where the hits are discarded.
-- `MobilePrivacyStatus.UNKNOWN`, where if your report suite is timestamp enabled, hits are saved until the privacy status changes to opt-in \(hits are sent\) or opt-out \(hits are discarded\).
+* `MobilePrivacyStatus.OPT_IN`, where the hits are sent immediately.
+* `MobilePrivacyStatus.OPT_OUT`, where the hits are discarded.
+* `MobilePrivacyStatus.UNKNOWN`, where if your report suite is timestamp enabled, hits are saved until the privacy status changes to opt-in \(hits are sent\) or opt-out \(hits are discarded\).
 
 If your report suite is not timestamp enabled, hits are discarded until the privacy status changes to opt in. The default value is set in the ADBMobileConfig.json file.
 
@@ -136,17 +130,15 @@ public static void setPrivacyStatus(final MobilePrivacyStatus privacyStatus);
 MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_OUT);
 ```
 
-### 
-
 ### getPrivacyStatus
 
 Returns the enum representation of the privacy status for current user.
 
 Here are the privacy status values:
 
-- `MobilePrivacyStatus.OPT_IN`, where the hits are sent immediately.
-- `MobilePrivacyStatus.OPT_OUT`, where the hits are discarded.
-- `MobilePrivacyStatus.UNKNOWN`, where if your report suite is timestamp enabled, hits are saved until the privacy status changes to opt-in \(hits are sent\) or opt-out \(hits are discarded\).
+* `MobilePrivacyStatus.OPT_IN`, where the hits are sent immediately.
+* `MobilePrivacyStatus.OPT_OUT`, where the hits are discarded.
+* `MobilePrivacyStatus.UNKNOWN`, where if your report suite is timestamp enabled, hits are saved until the privacy status changes to opt-in \(hits are sent\) or opt-out \(hits are discarded\).
 
 If your report suite is not timestamp enabled, hits are discarded until the privacy status changes to opt in. The default value is set in the ADBMobileConfig.json file.
 
@@ -162,9 +154,8 @@ void getPrivacyStatus(final AdobeCallback callback);
 MobileCore.getPrivacyStatus(new AdobeCallback<MobilePrivacyStatus>() {
     @Override
     public void call(MobilePrivacyStatus value) {
-   	   System.out.println("getPrivacyStatus: " + status);
+          System.out.println("getPrivacyStatus: " + status);
     }
 });
 ```
 
-### 

@@ -1,5 +1,3 @@
-
-
 # Identity Extension in Android
 
 The Experience Cloud ID service provides a universal visitor ID across Experience Cloud solutions. The ID service is required by Analytics for Target, video heartbeat, and so on.
@@ -15,7 +13,6 @@ The Experience Cloud ID service provides a universal visitor ID across Experienc
 To enable the Experience Cloud ID:
 
 1. Add the library to your project
-
 2. Import the library:
 
    `import com.adobe.marketing.mobile.*;`
@@ -46,3 +43,4 @@ Experience Cloud Organization IDs uniquely identify each client company in the A
 **Important:** You must include `@AdobeOrg`.
 
 After the configuration is complete, an Experience Cloud ID will be generated and, where applicable, be included on all Analytics and Audience Manager hits. Other IDs, such as custom and automatically-generated IDs, will continue to be sent with each hit.
+

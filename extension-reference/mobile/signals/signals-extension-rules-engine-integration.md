@@ -1,4 +1,4 @@
-# Signals Extension and Rules Engine Integration
+# Signals Extension and Rules Engine integration
 
 The rules that you set up can use the available triggers and conditions, and the action for these triggers and conditions will be one of the following types:
 

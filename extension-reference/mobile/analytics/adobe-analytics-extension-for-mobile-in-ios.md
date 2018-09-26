@@ -22,18 +22,18 @@ States are the different screens or views in your application. Each time a new s
     #import <ACPIdentity_iOS/ACPIdentity_iOS.h>
    ```
 
-   **Important**:  Analytics depends on the Identity extension and is automatically included in the Core pod. When installing manually, ensure that you have also added the `ACPIdentity.framework` to your project.
+   **Important**: Analytics depends on the Identity extension and is automatically included in the Core pod. When installing manually, ensure that you have also added the `ACPIdentity.framework` to your project.
 
-3. Register both the Analytics and Identity extensions in  your app's `didFinishLaunchingWithOptions` function.
+3. Register both the Analytics and Identity extensions in your app's `didFinishLaunchingWithOptions` function.
 
    ```objectivec
    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
        [ACPIdentity registerExtension];
-   	[ACPAnalytics registerExtension];
-   
+       [ACPAnalytics registerExtension];
+
      // Override point for customization after application launch.
      return YES;
-   } 
+   }
    ```
 
 4. Call `[ACPAnalytics trackState: data:]` to send a hit for the state view:

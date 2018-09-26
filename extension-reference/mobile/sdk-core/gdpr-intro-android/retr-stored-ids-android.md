@@ -21,10 +21,8 @@ Here is an example of the `MobileCore.getSdkIdentities()` method in Android:
 MobileCore.getSdkIdentities(new AdobeCallback<String>() {
     @Override
     public void call(String value) {
-   	 // handle the json string
+        // handle the json string
     }
 });
 ```
-
-
 

@@ -6,7 +6,7 @@ description: This information can help you understand the Identity Extension.
 
 The Identity extension allows your app to communicate with the Experience Cloud ID Service, and this interaction will primarily be in sync with the customer identifiers.
 
-## Configuring the Identity Extension in Adobe Launch ##
+## Configuring the Identity Extension in Adobe Launch
 
 1. In Launch, click the Extensions tab.
 2. On the **Installed** tab, locate the **Identity** extension and click **Configure**.
@@ -15,7 +15,7 @@ The Identity extension allows your app to communicate with the Experience Cloud 
 5. Verify that your Experience Cloud ID is correct. 
 6. Click **Save**.
 
-## Additional Information ##
+## Additional Information
 
 Here is some additional information:
 

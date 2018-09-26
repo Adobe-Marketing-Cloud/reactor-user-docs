@@ -8,7 +8,7 @@ This extension interprets all Analytics, Signal, and Rules Engine Request Conten
 
 **Important**: The Rules Engine extension does not require any configuration.
 
-## Additional Information ##
+## Additional Information
 
 Here is some additional information:
 

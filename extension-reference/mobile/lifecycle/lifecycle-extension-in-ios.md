@@ -6,13 +6,15 @@ description: >-
 
 # Lifecycle Extension in iOS
 
+## Lifecycle Extension in iOS
+
 You can track lifecycle to learn how frequently and how long your app is being used.
 
 **Tip:** The code snippets in this section are only examples. Your final implementation will probably contain additional code that is specific to your app.
 
 **Important**: The Lifecycle extension supports the `lifecycleStart` and `lifecyclePause` APIs from the `ACPCore` extension to track application lifecycle for the Adobe SDK.
 
-## Implementing Lifecycle Metrics in iOS
+### Implementing Lifecycle Metrics in iOS
 
 After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and many other metrics.
 
@@ -27,27 +29,26 @@ To implement lifecycle metrics, complete the following steps:
 
 2. Register the Lifecycle extension: In your app's `didFinishLaunchingWithOptions` function register the Lifecycle extensions
 
-   ```objective-c
+   ```text
    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
      [ACPLifecycle registerExtension];
-   
+
      // Override point for customization after application launch.
      return YES;
    }
    ```
 
-
-# Public API
+## Public API
 
 Here are the public API's for the Lifecycle extension:
 
-### Lifecycle Start
+#### Lifecycle Start
 
 To implement Lifecycle metrics, add a `lifecycleStart` call in `application:didFinishLaunchingWithOptions`.
 
 Here are code samples for `lifecycleStart` in Objective-C and Swift:
 
-#### Objective-C
+**Objective-C**
 
 ```objectivec
 // Objective-C
@@ -57,7 +58,7 @@ Here are code samples for `lifecycleStart` in Objective-C and Swift:
 }
 ```
 
-#### Swift
+**Swift**
 
 ```swift
 // Swift
@@ -67,13 +68,13 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-### Lifecycle Pause
+#### Lifecycle Pause
 
 The SDK needs to know when your app has entered the background to properly calculate your lifecycle metrics.
 
 Here are some examples for `lifecyclePause` in Objective-C and Swift:
 
-#### Objective-C
+**Objective-C**
 
 ```objectivec
  // Objective-C
@@ -82,7 +83,7 @@ Here are some examples for `lifecyclePause` in Objective-C and Swift:
  }
 ```
 
-#### Swift
+**Swift**
 
 ```swift
 // Swift
@@ -91,7 +92,7 @@ Here are some examples for `lifecyclePause` in Objective-C and Swift:
  }
 ```
 
-## Tracking App Crashes in iOS
+### Tracking App Crashes in iOS
 
 This information helps you understand how crashes are tracked and the best practices to handle false crashes.
 
@@ -131,7 +132,7 @@ iOS uses system notifications that allow developers to track and respond to diff
 
 This approach of measuring crashes provides a high-level answer to the question, Did the user exit my app intentionally? Crash reporting libraries provided by companies like Apteligent \(formerly Crittercism\) use a global `NSException` handler to provide more detailed crash reporting. Your app is not allowed to have more than one of these kinds of handlers. Adobe decided to not implement a global `NSException` handler to prevent build errors, knowing that our customers might be using other crash reporting providers.
 
-## Collecting Additional Data with Lifecycle
+### Collecting Additional Data with Lifecycle
 
 When calling `lifecycleStart`, you can optionally pass in a dictionary of additional data that will be attached to the lifecycle event.
 

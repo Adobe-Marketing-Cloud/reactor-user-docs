@@ -71,3 +71,4 @@ Here is the Analytics event in the Target module:
 * AnalyticsForTarget
 
   The SDK forwards Target's data to analytics when A4T is enabled in Target Services.
+

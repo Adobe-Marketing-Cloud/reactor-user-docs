@@ -8,7 +8,7 @@ description: >-
 
 ## Creating a user attribute
 
-For example, you want to update the ```userID``` of a user that was obtained in the log in page:
+For example, you want to update the `userID` of a user that was obtained in the log in page:
 
 ```java
 UserProfile.updateUserAttribute("userID","Tustin_Jimberlake");

@@ -8,9 +8,10 @@ As a data controller, you can use the Adobe Experience Cloud Platform SDKs to su
 
 For the Adobe Experience Cloud Platform SDK portions of your mobile apps, you can use the following settings and methods:
 
-* To retrieve data from the SDKs, and send this data to your servers, use the `getSdkIdentities` method.  
+* To retrieve data from the SDKs, and send this data to your servers, use the `getSdkIdentities` method.
 
   For more information, see [Retrieving Stored Identifiers In Android](https://github.com/jiabingeng/sdk-v5-docs/tree/8509ef7d0edcdccfdae5a521cb1fe94693581dba/sdk-core/sdk-core/retr-stored-ids-android.md) or [Retrieving Stored Identifiers in iOS](https://github.com/jiabingeng/sdk-v5-docs/tree/8509ef7d0edcdccfdae5a521cb1fe94693581dba/sdk-core/sdk-core/retr-stored-ids-ios.md).
+
 * To set your opt status and help you with a GDPR data deletion request, use the following settings:
 
   * `global.privacy` in the ADBMobileConfig.json configuration file

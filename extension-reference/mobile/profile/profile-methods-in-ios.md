@@ -1,23 +1,24 @@
 # Profile Methods in iOS
 
-# Enabling the UserProfile extension for your app
+## Profile Methods in iOS
+
+## Enabling the UserProfile extension for your app
 
 1. Add the UserProfile library to your project via your `Podfile` by adding `pod 'ACPUserProfile'`
-
 2. Import the UserProfile and Identity library. This can be done in the bridging header if building in Swift.
 
-   ```
+   ```text
    #import <ACPCore_iOS/ACPCore_iOS.h>
    #import <ACPUserProfile_iOS/ACPUserProfile_iOS.h>
    ```
 
-# Register the UserProfile 
+## Register the UserProfile
 
 **Required**: You must complete the following steps in the app before calling other UserProfile APIs.
 
 1. In your app's `didFinishLaunchingWithOptions` function register the UserProfile  extension.
 
-```
+```text
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [ACPUserProfile registerExtension];
   // Override point for customization after application launch.
@@ -25,11 +26,11 @@
 }
 ```
 
-# Public API
+## Public API
 
 Here are the public API for UserProfile extension:
 
-## updateUserAttribute
+### updateUserAttribute
 
 Sets the user profile attributes key and value and allows you to create or update a user profile attribute.
 
@@ -39,13 +40,13 @@ Remember the following information:
 * If the attribute already exists, then the value will be updated.
 * A null attribute value will remove the attribute.
 
-### Syntax
+#### Syntax
 
 ```objectivec
 + (void) updateUserAttribute: (nonnull NSString*) attributeName withValue: (nullable NSString*) attributeValue;
 ```
 
-### Example
+#### Example
 
 Here are examples in Objective-C and Swift:
 
@@ -61,7 +62,7 @@ Here are examples in Objective-C and Swift:
 ACPUserProfile.updateUserAttribute("username", withValue: "Will Smith");
 ```
 
-## updateUserAttributes
+### updateUserAttributes
 
 Sets the user profile attributes key and value.
 
@@ -74,13 +75,13 @@ Allows to create/update a batch of user profile attributes:
 
 A null attribute value will remove the attribute.
 
-### Syntax
+#### Syntax
 
 ```objectivec
 + (void) updateUserAttributes: (nonnull NSDictionary*) attributeMap
 ```
 
-### **Examples**
+#### **Examples**
 
 Here are examples in Objective-C and Swift:
 
@@ -102,27 +103,27 @@ profileMap["usertype"] = "Actor"
 ACPUserProfile.updateUserAttributes(profileMap)
 ```
 
-## removeUserAttribute
+### removeUserAttribute
 
 Removes the user profile attribute for the given key.
 
-### Syntax
+#### Syntax
 
 ```objectivec
 + (void) removeUserAttribute: (nonnull NSString*) key
 ```
 
-### Example
+#### Example
 
 Here are examples in Objective-C and Swift:
 
-#### Objective-C
+**Objective-C**
 
 ```objectivec
 [ACPUserProfile removeUserAttribute:@"itemsAddedToCart"];
 ```
 
-#### Swift
+**Swift**
 
 ```swift
 ACPUserProfile.removeUserAttribute("itemsAddedToCart");

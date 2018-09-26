@@ -15,7 +15,7 @@
 
 ## Register the Target and Identity extensions
 
-   **Required**: You must complete the following steps in the app before calling other Target APIs.
+**Required**: You must complete the following steps in the app before calling other Target APIs.
 
 1. In your app's `didFinishLaunchingWithOptions` function register the Target and Identity extensions:
 

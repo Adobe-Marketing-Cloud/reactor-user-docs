@@ -4,10 +4,10 @@ Launch is the next generation of Adobe's website tag and mobile SDK management t
 
 The basic Launch workflow:
 
-1. [Set up groups and users](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/README.md#1-set-up-groups-and-users).
-2. [Log in](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/README.md#2-log-in).
-3. [Create a property](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/README.md#3-create-a-property).
-4. [Install extensions](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/README.md#4-install-extensions).
+1. [Set up groups and users](mobile.md#1-set-up-groups-and-users). 
+2. [Log in](mobile.md#2-log-in).
+3. [Create a property](mobile.md#3-create-a-property).
+4. [Install Extensions](mobile.md#4-install-extensions).
 5. [Create data elements and rules](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/README.md#5-create-data-elements-and-rules).
 6. [Test in your dev environment](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/README.md#6-test-in-your-dev-environment).
 7. [Add the SDKs to and intialize them in your app project](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/mobile/README.md#7-add-sdks-to-and-intialize-them-in-your-app-project)
@@ -55,7 +55,7 @@ Here are some issues to consider when installing extensions:
 
 * Would you like to see really granular insight into the behavior of individual users on your site? Take a look at Clicktale, and for mobile attribution, look at Branch.
 
- For more information about installing extensions, exapnd the [Mobile](https://launch.gitbook.io/launch-adobe-mobile-sdk-beta/v/staging/extension-reference/mobile) node.
+  For more information about installing extensions, exapnd the [Mobile](https://launch.gitbook.io/launch-adobe-mobile-sdk-beta/v/staging/extension-reference/mobile) node.
 
 ## 5. Create data elements and rules
 

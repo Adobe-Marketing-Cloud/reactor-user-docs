@@ -1,7 +1,5 @@
 # Web
 
-
-
 Launch is the next-generation of Adobe's tag management technology, built on the Adobe Cloud Platform. It is built from the ground up to support an open and sustainable ecosystem where anyone can build their own integrations that Adobe customers can deploy to their sites. It is an API first application so anything you can do through the UI you can also do programmatically through an API.
 
 The basic Launch workflow:

@@ -19,12 +19,12 @@ States are the different screens or views in your application. Each time a new s
 
    ```java
    public class MobileApp extends Application {
-   
+
     @Override
     public void onCreate() {
         super.onCreate();
         MobileCore.setApplication(this);
-   
+
         try {
             Analytics.registerExtension();
             Identity.registerExtension();

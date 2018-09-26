@@ -12,7 +12,7 @@ Here are the implications of the privacy status for this extension:
 * If the configuration is `optunknown`, the network send requests will be queued on the SDK but are not sent out.
 * If the configuration is `optedin`,  the network requests to a third-party destination are allowed, provided the trigger conditions match.
 
-## Additional Information ##
+## Additional Information
 
 Here is some additional information:
 

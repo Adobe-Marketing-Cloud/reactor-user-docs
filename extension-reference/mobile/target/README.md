@@ -6,7 +6,7 @@ description: This information can help you understand Target Extension.
 
 Adobe Target helps you tailor and personalize your customer’s experience on mobile applications. This solution helps you to deliver targeted content in your mobile Application. For more information about Adobe Target, see [Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/).
 
-## Configuring the Adobe Target Extension in Adobe Launch ##
+## Configuring the Adobe Target Extension in Adobe Launch
 
 1. In Launch, click the **Extensions** tab.
 2. On the Installed tab, locate the Adobe Target extension and click **Configure**.
@@ -15,7 +15,7 @@ Adobe Target helps you tailor and personalize your customer’s experience on mo
 5. Select a timeout value.
 6. Click **Save**.
 
-## Additional Information ##
+## Additional Information
 
 Here is some additional information:
 

@@ -2,7 +2,7 @@
 description: This information can help you understand the User Profile Extension.
 ---
 
-# Adobe User Profile
+# Adobe UserProfile
 
 You can use the User Profile extension to store attributes about your user on the client. This information can later be used to target and personalize messages during online or offline scenarios, without having to connect to a server for optimal performance. The User Profile extension manages the Client-Side Operation Profile \(CSOP\) and provides a way to react to public APIs, updates user profile attributes, and shares the user profile attributes with the rest of the system as a generated event.
 
@@ -10,7 +10,7 @@ The Profile data is used by other extensions to perform profile-related actions.
 
 **Important**: The Profile extension does not require any configuration.
 
-## Additional Information ##
+## Additional Information
 
 Here is some additional information:
 

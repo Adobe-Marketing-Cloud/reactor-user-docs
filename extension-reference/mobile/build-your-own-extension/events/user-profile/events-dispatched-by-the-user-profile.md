@@ -6,34 +6,27 @@ The event is used to share the user profile with the other extension. This event
 
 ### Data Payload Definition
 
+| Key | Value Type | Optional | Description |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Key</th>
-      <th style="text-align:left">Value Type</th>
-      <th style="text-align:left">Optional</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Map
-        <String, String>
-      </td>
-      <td style="text-align:left">Map</td>
-      <td style="text-align:left">No</td>
-      <td style="text-align:left">
+      <th style="text-align:left">Map</th>
+      <th style="text-align:left">Map</th>
+      <th style="text-align:left">No</th>
+      <th style="text-align:left">
         <p>A map of all the user profile attributes and the attribute values.</p>
         <p>This map will contain all the user profile attributes (the most updated
           copy).</p>
         <p>The consumers of this data may replace the existing user profile copy
           that they may have with this copy.</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>### Example
-
-Here is a code sample for the `USER_PROFILE : RESPONSE_PROFILE` event:
+  </thead>
+  <tbody></tbody>
+</table>Here is a code sample for the `USER_PROFILE : RESPONSE_PROFILE` event:
 
 ```text
 {

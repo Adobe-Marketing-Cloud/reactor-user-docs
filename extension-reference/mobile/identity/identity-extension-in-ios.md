@@ -9,20 +9,19 @@ The Experience Cloud ID service provides a universal visitor ID across Experienc
 To enable the Experience Cloud ID:
 
 1. Add the library to your project
-
 2. Import the library \(Obj-C\):
 
    `#import <ACPIdentity_iOS/ACPIdentity_iOS.h>`
 
 3. Register Identity extension in your app's `didFinishLaunchingWithOptions` function:
 
-   ```
+   ```text
    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
      [ACPIdentity registerExtension];
-   
+
      // Override point for customization after application launch.
      return YES;
-   } 
+   }
    ```
 
 4. Verify that the app configuration contains the experienceCloud org:

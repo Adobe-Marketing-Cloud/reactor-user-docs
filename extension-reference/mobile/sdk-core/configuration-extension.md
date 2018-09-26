@@ -35,16 +35,17 @@ The unique app ID is set to the Adobe Experience Cloud Platform SDKs in one of t
 
 ### iOS
 
-* `ConfigureWithAppId` method  
+* `ConfigureWithAppId` method
 
-   For more information about the `ConfigureWithAppId` method, see the `ConfigureWithAppId` row in [Configuration Methods in iOS](configuration-methods-in-ios.md).
-* Placing the app ID in the _Info.plist_ file Add the `AppID` from Adobe Launch in your application’s _Info.plist_ file.  
+  For more information about the `ConfigureWithAppId` method, see the `ConfigureWithAppId` row in [Configuration Methods in iOS](configuration-methods-in-ios.md).
+
+* Placing the app ID in the _Info.plist_ file Add the `AppID` from Adobe Launch in your application’s _Info.plist_ file.
 
   The app ID is added with the `ADBMobileAppID` key name. When the Adobe Experience Cloud Platform SDKs is started, the app ID property is automatically read in the _Info.plist_ file, and the Adobe Experience Cloud Platform SDKs attempts to retrieve the corresponding remote configuration.
 
 ### Android
 
-**Required**: The `setApplication` method must be called once in the `onCreate` method of your main activity. 
+**Required**: The `setApplication` method must be called once in the `onCreate` method of your main activity.
 
 For more information about the `setApplication` method, see [Configuration Methods in Android](configuration-methods-in-android.md).
 
