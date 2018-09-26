@@ -55,7 +55,7 @@ Here are some issues to consider when installing extensions:
 
 * Would you like to see really granular insight into the behavior of individual users on your site? Take a look at Clicktale, and for mobile attribution, look at Branch.
 
-  * For more information about installing extensions, exapnd the [Mobile](https://launch.gitbook.io/launch-adobe-mobile-sdk-beta/v/staging/extension-reference/mobile) node.
+ For more information about installing extensions, exapnd the [Mobile](https://launch.gitbook.io/launch-adobe-mobile-sdk-beta/v/staging/extension-reference/mobile) node.
 
 ## 5. Create data elements and rules
 
