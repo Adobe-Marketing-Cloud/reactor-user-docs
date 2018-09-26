@@ -1,4 +1,4 @@
-# Getting Started
+# Mobile
 
 ## Creating and Deploying Configurations in Adobe Launch
 
