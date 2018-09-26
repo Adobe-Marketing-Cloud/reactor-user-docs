@@ -4,7 +4,6 @@ Launch is the next generation of website tag and mobile SDK management capabilit
 
 Launch empowers anyone to build and maintain their own integrations with Launch, called Extensions. These extensions are available to both web and mobile Launch customers in an app-store experience so they can quickly install, configure, and deploy their integrations.
 
-~~Launch is offered to Adobe Experience Cloud customers as an included, value-add feature. Launch is an entirely new product with a new code base, designed to replace the previous Dynamic Tag Management \(DTM\) service. However, DTM will continue to be supported for the foreseeable future. Adobe will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy DTM.
 
 ## Key benefits
 
@@ -39,9 +38,6 @@ Create robust rules that combine multiple events, sequenced in the way that you 
 * Exceptions
 * Actions
 
-~~The rule builder includes real-time error checking and syntax highlighting for your custom code.
-
-~~When the criteria outlined in your rules are met and conditions are satisfied, the actions you define are executed in order.
 
 ### Data Elements
 
