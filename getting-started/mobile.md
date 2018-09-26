@@ -8,11 +8,11 @@ The basic Launch workflow:
 2. [Log in](mobile.md#2-log-in).
 3. [Create a property](mobile.md#3-create-a-property).
 4. [Install Extensions](mobile.md#4-install-extensions).
-5. [Create data elements and rules](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/README.md#5-create-data-elements-and-rules).
-6. [Test in your dev environment](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/README.md#6-test-in-your-dev-environment).
-7. [Add the SDKs to and intialize them in your app project](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/mobile/README.md#7-add-sdks-to-and-intialize-them-in-your-app-project)
-8. [Implement Solution APIs](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/mobile/README.md#8-implement-solution-apis).
-9. [Promote to Production](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/getting-started/mobile/README.md#9-promote-to-production).
+5. [Create data elements and rules](mobile.md#5-create-data-elements-and-rules). 
+6. [Test in your dev environment](mobile.md#6-test-in-your-dev-environment). 
+7. [Add the SDKs to and initialize them in your app project](mobile.md#7-add-the-sdks-to-and-intialize-them-in-your-app-project). 
+8. [Implement Solution APIs](mobile.md#8-implement-the-solution-apis). 
+9. [Promote to production](mobile.md#9-promote-to-production). 
 
 For an introductory video, see [Introduction to Launch, by Adobe](https://github.com/jiabingeng/mobile-launch/tree/7726cc3834e27087359af611628068ee90aab955/launch-adobe-mobile-sdk-beta/v/doc-dev-rekha/getting-started/videos/README.md).
 
