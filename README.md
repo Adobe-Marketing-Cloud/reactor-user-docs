@@ -17,11 +17,11 @@ Launch empowers anyone to build and maintain their own integrations with Launch,
 
 #### Web
 
-An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the Launch UI and client functionality. ​Build, manage, and update your integrations using a virtually self-service interface. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
+An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the Launch UI and client functionality. You can build, manage, and update your integrations using a virtually self-service interface. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
 
 #### Mobile
 
-Mobile extensions are comprised of a Launch UI configuration screen and native SDK components that work with the core Adobe Cloud Platform SDKs to deliver functionality to mobile apps.
+Mobile extensions are comprised of a Launch UI configuration screen and native SDK components that work with the core Adobe Experience Cloud Platform SDKs to deliver functionality to mobile apps.
 
 **Important**: In Android and iOS extensions, only contents on secure http connections \(`https`\) are served. When a URL that contains `http://` is passed in, the connections are blocked.
 
@@ -126,11 +126,11 @@ Each extension developer maintains their own roadmap and schedule for their exte
 
 #### When will clients or partners be able to build extensions?
 
-Anyone can build an extension now. Please read [developer docs](https://developer.adobelaunch.com/guides/extensions/) to get started. Currently all extensions are open to all Launch users, but later this year we will add the ability to build an extension that can only be seen by your company and a whitelist of others that you specify.
+Anyone can build an extension now. To get started, go to [developer docs](https://developer.adobelaunch.com/guides/extensions/). Currently all extensions are open to all Launch users, but later this year we will add the ability to build an extension that can only be seen by your company and a whitelist of others that you specify.
 
 #### Will Launch meet my company's security standards?
 
-Launch is SOC-2 and Gramm-Leach-Bliley Act ready. Launch also offers the capability of being self-hosted. The JavaScript libraries can be served from your own servers, or the CDN of your choice. For I.T. and security teams, this gives you the ability to run automated testing, to check the files into your own version control system, and to fully comply with any internal production migration processes, security-related or otherwise.
+Launch is SOC-2 and Gramm-Leach-Bliley Act ready. Launch also offers the capability of being self-hosted. The JavaScript libraries can be served from your own servers, or the CDN of your choice. For IT and security teams, this gives you the ability to run automated testing, to check the files into your own version control system, and to fully comply with any internal production migration processes, security-related or otherwise.
 
 #### I have a project coming up very soon. Should I use Launch or DTM?
 
