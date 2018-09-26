@@ -24,7 +24,7 @@ An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the
 
 Mobile extensions are comprised of a Launch UI configuration screen and native SDK components that work with the core Adobe Cloud Platform SDKs to deliver functionality to mobile apps.
 
-**Important**: In Android and iOS extensions, only contents on secure http connections (```https```) are served. When a URL that contains ```http://``` is passed in, the connections are blocked.
+**Important**: In Android and iOS extensions, only contents on secure http connections \(`https`\) are served. When a URL that contains `http://` is passed in, the connections are blocked.
 
 ### Extension Catalog
 
@@ -177,7 +177,6 @@ Browser support in the Launch application interface:
 * Internet Explorer \(11 and above\)
 
 Legacy DTM supported older versions of Internet Explorer, but over the last few years, the percentage of overall web users with older, outdated browsers has dropped to a small segment for our clients. Most Adobe clients now leverage more modern web platform features in current browsers and create better user experiences, including single page applications and interactive Ajax-heavy web sites and pages. As most clients move to more modern approaches with their sites, they demand a solution like Launch that enables those approaches.
-
 
 #### What if I have other questions?
 

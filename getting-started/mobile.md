@@ -87,7 +87,7 @@ For more information, see [Adapters](https://github.com/jiabingeng/mobile-launch
 
 ### Environments
 
-Each library is created in an environment, and an environment defines how you build and test configuration changes to your applications. For each environment created you will specify a name and choose the Adobe Hosted adapater that was pre-created for you. You can add as many developemtn environments as you wish, but you can only define a single stage and production environement. 
+Each library is created in an environment, and an environment defines how you build and test configuration changes to your applications. For each environment created you will specify a name and choose the Adobe Hosted adapater that was pre-created for you. You can add as many developemtn environments as you wish, but you can only define a single stage and production environement.
 
 ### Publish a build to Dev
 

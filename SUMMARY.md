@@ -17,7 +17,6 @@
   * [Mobile](publishing/mobile/README.md)
     * [Adapters](publishing/mobile/adapters.md)
     * [Approval Workflow](publishing/mobile/approval-workflow.md)
-    * [Builds](publishing/mobile/builds.md)
     * [Environments](publishing/mobile/environments.md)
     * [Libraries](publishing/mobile/libraries.md)
   * [Web](publishing/web/README.md)
