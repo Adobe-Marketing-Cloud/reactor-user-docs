@@ -7,6 +7,8 @@ Launch empowers anyone to build and maintain their own integrations with Launch,
 
 ## Key benefits
 
+Here are the benefits for using Adobe Launch:
+
 * Faster time to value with the ability to dynamically deploy changes to your website or mobile app
 * Trustworthy data through centralized collection, organization, and delivery using data elements
 * Compelling experiences through the integration of data and marketing technology using rule builder
@@ -48,6 +50,8 @@ Collect, organize, and deliver data across web-based marketing and advertising t
 ### Enterprise Publishing
 
 The publishing process enables teams to dynamically publish updates to both web pages and application. Different people can create an implementation, approve it, and publish.
+
+Here are some benefits to this publishing process:
 
 * Changes to your implementation are encapsulated within libraries you define ​
 * You specify where and when you want your changes deployed ​
