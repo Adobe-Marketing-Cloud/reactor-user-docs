@@ -13,15 +13,17 @@ Launch empowers anyone to build and maintain their own integrations with Launch,
 
 ## Key features
 
+Here are the key features that are available in Launch:
+
 ### Extensions
 
-#### Web
+* **Web**
 
-An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the Launch UI and client functionality. You can build, manage, and update your integrations using a virtually self-service interface. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
+  An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the Launch UI and client functionality. You can build, manage, and update your integrations using a virtually self-service interface. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
 
-#### Mobile
+* **Mobile**
 
-Mobile extensions are comprised of a Launch UI configuration screen and native SDK components that work with the core Adobe Experience Cloud Platform SDKs to deliver functionality to mobile apps.
+  Mobile extensions are comprised of a Launch UI configuration screen and native SDK components that work with the core Adobe Experience Cloud Platform SDKs to deliver functionality to mobile apps.
 
 **Important**: In Android and iOS extensions, only contents on secure http connections \(`https`\) are served. When a URL that contains `http://` is passed in, the connections are blocked.
 
