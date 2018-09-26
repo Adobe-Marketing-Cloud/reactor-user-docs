@@ -129,7 +129,7 @@ Complete the following steps:
    * For more information about Lifecycle start and stop, see [Lifecycle Methods](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/lifecycle/lifecycle-methods/README.md). 
    * For information about when Lifecycle should be implemented, see [Lifecycle Extension in Android](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/lifecycle/lifecycle-extension-in-android/README.md) and [Lifecycle Extension in iOS](https://github.com/jiabingeng/mobile-launch/tree/85c595c9e56c9a817ba5da8d71e656d20c5f558e/getting-started/lifecycle/lifecycle-extension-in-ios/README.md).
 
-## 8. Implement Solution APIs
+## 8. Implement the solution APIs
 
 Implement the solution APIs in the following order:
 
