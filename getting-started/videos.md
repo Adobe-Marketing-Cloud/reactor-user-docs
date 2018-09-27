@@ -9,4 +9,5 @@ These videos introduce you to Launch concepts and tasks.
 * [Data elements](https://www.youtube.com/embed/-tGcKA0tp-I)
 * [Rule builder](https://www.youtube.com/embed/u0ohTL6hI1w)
 * [Publishing workflow](https://www.youtube.com/embed/Pe-YSn26_xI)
+* [Adobe Cloud Platform Launch Mobile Capability](https://video.tv.adobe.com/v/23741/) 
 
