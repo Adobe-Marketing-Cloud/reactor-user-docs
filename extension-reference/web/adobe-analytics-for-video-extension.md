@@ -4,7 +4,7 @@ Use this documentation for information on installing, configuring, and implement
 
 The Video Analytics \(VA\) extension adds the core VA JavaScript library \(VA 2.x SDK\). This extension provides the functionality for adding the `MediaHeartbeat` tracker instance to a Launch site or project. The VA extension requires two additional extensions:
 
-* [Analytics Extension](https://docs.adobelaunch.com/extension-reference/adobe-analytics-extension)
+* [Analytics Extension](https://docs.adobelaunch.com/~/edit/drafts/-LNQre1_XrQVLOEWB0Jz/extension-reference/web/adobe-analytics-extension)
 * [Experience Cloud ID Extension](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension) 
 
 After you have included all three of the extensions mentioned above in your Launch project, you can proceed in one of two ways:
