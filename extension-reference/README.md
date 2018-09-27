@@ -8,3 +8,8 @@ Use this reference to find information about the settings available in each exte
 
 We will be adding documentation highlighting the functionality of each extension featured in the catalog in the very near future."
 
+* For information about the extensions for the web, see [Web](https://docs.adobelaunch.com/~/edit/drafts/-LNQgMsqTldFvRu5qm3O/extension-reference/web).
+* For information about the extensions for mobile, see [Mobile](https://docs.adobelaunch.com/~/edit/drafts/-LNQgMsqTldFvRu5qm3O/extension-reference/mobile).
+
+
+
