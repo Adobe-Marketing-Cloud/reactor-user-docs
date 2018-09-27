@@ -44,7 +44,7 @@ After you have included all three of the extensions mentioned above in your Laun
 | Export APIs to Window Object | Enable or Disable exporting Video Analytics APIs to global scope |
 | Variable Name | A variable you use to export Video Analytics APIs under the `window` object |
 
-**Reminder:** The VA extension requires the [Adobe Analytics](https://docs.adobelaunch.com/extension-reference/adobe-analytics-extension) and [Experience Cloud ID](https://docs.adobelaunch.com/extension-reference/experience-cloud-id-service-extension) extensions. You must also add these extensions to your extension property and configure them.
+**Reminder:** The VA extension requires the [Analytics Extension](https://docs.adobelaunch.com/~/edit/drafts/-LNQre1_XrQVLOEWB0Jz/extension-reference/web/adobe-analytics-extension) and [Experience Cloud ID](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension) extensions. You must also add these extensions to your extension property and configure them.
 
 ## Using the VA extension
 
