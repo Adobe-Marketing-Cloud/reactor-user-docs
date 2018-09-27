@@ -2,7 +2,7 @@
 
 To get started in Mobile, complete the following tasks:
 
-* [Create an Deploy Configurations in Adobe Launch](mobile-1.md#create-and-deploy-configurations-in-adobe-launch)
+* [Create and Deploy Configurations in Adobe Launch](mobile-1.md#create-and-deploy-configurations-in-adobe-launch)
 * [Install the Adobe Cloud Platform SDKs in an Android or iOS App](mobile-1.md#install-the-adobe-cloud-platform-sdks-in-an-android-or-ios-app)
 * [Use the Adobe Experience Cloud Platform SDKs in an iOS App](mobile-1.md#use-the-adobe-experience-cloud-platform-sdks-in-an-ios-app)
 
