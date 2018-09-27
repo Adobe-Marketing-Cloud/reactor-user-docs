@@ -1,6 +1,8 @@
 # Mobile
 
-## Creating and Deploying Configurations in Adobe Launch
+To get started in Mobile, complete the following tasks:
+
+### Creating and Deploying Configurations in Adobe Launch
 
 1. Click **New Property**. 
 2. Create a new property and select **Mobile** as the platform.
@@ -40,14 +42,14 @@
 
     The configuration contained in the library will then be deployed to the Development environment and the library will show under the Submitted section of the publishing workflow. Later, the library can be deployed to Staging and Production environments using the rest of the publishing workflow. For now, testing can be done using the configuration in the Development environment.
 
-## Installing the Adobe Cloud Platform SDKs in an Android or iOS App
+### Installing the Adobe Cloud Platform SDKs in an Android or iOS App
 
 1. Open the mobile property in Launch and go to the **Environments** tab to get the install instructions for adding the SDK to an app.
 2. Find the environment needed in the table and click on the box icon under the **Install** column.
 3. On the **Mobile Install Instructions** pop-up, choose **Android** or **iOS**.
 4. Follow the instructions for using Grade with Android or CocoaPods with iOS. They necessary dependecy and initialization code can be copied from the pop-up to the app project.
 
-## Using the Adobe Experience Cloud Platform SDKs in an iOS App
+### Using the Adobe Experience Cloud Platform SDKs in an iOS App
 
 **Important:** This version of the Adobe Experience Cloud Platform SDKs supports **iOS 10 or later.**
 
