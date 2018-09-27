@@ -65,3 +65,5 @@ To retrieve the configuration as a bundle:
 1. Get the JSON configuration file from Adobe Launch.
 2. In **File Inspector**, add the ADBMobileConfig.json file to any targets in your project that will use the Adobe SDK.
 
+For more information about the mobile extensions, see [Mobile](https://docs.adobelaunch.com/~/edit/drafts/-LNQdZtvO7g0JNcLJGiy/publishing/mobile).
+
