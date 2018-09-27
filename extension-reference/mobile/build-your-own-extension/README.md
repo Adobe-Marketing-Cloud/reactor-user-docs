@@ -4,9 +4,9 @@ description: This information can help you understand how to build your own exte
 
 # Build your own Extension
 
-To support customer-specific features, and allow for the greatest flexibility, the goal is to provide an interface for customers to integrate with the Adobe Experience Cloud Platform SDKs at a much lower level. This interface allows customers to define extensions, which are similar in capabilities to the extensions that Adobe Launch has written for our internal services. We are going to follow an open model, so that these extensions will have access to all of the events and data to which the Adobe Experience Cloud Platform SDK code also has access.
+To support customer-specific features, and allow for the greatest flexibility, the goal is to provide an interface for customers to integrate with the Adobe Cloud Platform SDKs at a much lower level. This interface allows customers to define extensions, which are similar in capabilities to the extensions that Adobe Launch has written for our internal services. We are going to follow an open model, so that these extensions will have access to all of the events and data to which the Adobe Cloud Platform SDK code also has access.
 
-Extensions allow customers to extend the Adobe Experience Cloud Platform SDKs with their own code. This includes listening for and dispatching any event, reading the shared state of any registered extension, and sharing the state of the current extension. The application can use the extension to monitor for information that Adobe does not expose by default. It can also use the extension to modify Adobe Experience Cloud Platform SDK internal operations, for example by adding additional data to messages that are sent or by sending data to other systems.
+Extensions allow customers to extend the Adobe Cloud Platform SDKs with their own code. This includes listening for and dispatching any event, reading the shared state of any registered extension, and sharing the state of the current extension. The application can use the extension to monitor for information that Adobe does not expose by default. It can also use the extension to modify Adobe Cloud Platform SDK internal operations, for example by adding additional data to messages that are sent or by sending data to other systems.
 
 ## Namespace Conventions
 
@@ -36,7 +36,7 @@ When using an extension, you might get asynchronous or synchronous errors.
 
 #### Synchronous Errors
 
-Synchronous errors are caught outside the Adobe Experience Cloud Platform SDK and might occur for the following reasons:
+Synchronous errors are caught outside the Adobe Cloud Platform SDK and might occur for the following reasons:
 
 * When registering a class with the incorrect parent class.
 * When passing empty strings to certain parameters.  Examples include an extension name, an event type, a shared state name, and so on.
@@ -44,7 +44,7 @@ Synchronous errors are caught outside the Adobe Experience Cloud Platform SDK an
 
 #### Asynchronous Errors
 
-Asynchronous errors are caught in the Adobe Experience Cloud Platform SDKs but are rare. When they occur, the error is handled with a callback function, which might be called back on a different thread.
+Asynchronous errors are caught in the Adobe Cloud Platform SDKs but are rare. When they occur, the error is handled with a callback function, which might be called back on a different thread.
 
 Asynchronous errors might occur for the following reasons:
 
@@ -52,7 +52,7 @@ Asynchronous errors might occur for the following reasons:
 * When using a deprecated shared state name.
 * When registration is attempted during extension shutdown.
 * When an event is being dispatched while the extension is being shut down.
-* When a callback from the Adobe Experience Cloud Platform SDKs to the external code throws an exception.
+* When a callback from the Adobe Cloud Platform SDKs to the external code throws an exception.
 * When an internal error occurs, or an unexpected exception is thrown.
 * \(TBD\) When a timeout has been exceeded.
 

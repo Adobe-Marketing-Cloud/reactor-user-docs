@@ -4,7 +4,7 @@ The Experience Cloud ID service provides a universal visitor ID across Experienc
 
 **Tip**: You do not need to populate this ID unless you are using the Experience Cloud ID service. For more information, see [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
 
-**Important:** This functionality requires the Adobe Experience Cloud Platform SDKs.
+**Important:** This functionality requires the Adobe Cloud Platform SDKs.
 
 To enable the Experience Cloud ID:
 

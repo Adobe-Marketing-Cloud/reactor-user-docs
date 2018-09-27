@@ -67,7 +67,7 @@ Here are the key-value pairs in this event:
 
 | **Name** | **Key** | **Value Type** | **Optional** | **Description** |
 | :--- | :--- | :--- | :--- | :--- |
-| Application ID | config.appId | string | true | The Application ID given to this app by A**dobe Mobile Services**. The Configuration Module attempts to retrieve the SDK configuration from a remote server that is owned and maintained by Adobe for the provided _appId._ |
+| Application ID | config.appId | string | true | The Application ID given to this app. The Mobile Core extension attempts to retrieve the SDK configuration from a remote server that is owned and maintained by Adobe for the provided _appId._ |
 | File Path | config.filePath | string | true | A path and file name from which the Configuration Module will attempt to retrieve and SDK configuration.   The path is absolute. |
 | Configuration Update | config.update | Map | true | A Hashmap with the parameters that needs to be updated in the Configuration. |
 | Retrieve Config | config.getData | Boolean | true | A request for a [Configuration Response Content](https://launch.gitbook.io/marketing-mobile-sdk-v5-by-adobe-documentation/~/edit/drafts/-LLAyhl1fBC81Z6OmIeS/build-your-own-extension/events/sdk-core/events-dispatched-by-sdk-core#configuration-response-content) event with the SDK's current configuration. |

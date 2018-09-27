@@ -20,9 +20,9 @@ Start the Core processing. This should be called after the initial set of extens
 
 ## configureWithAppID
 
-Indicates to the Adobe Experience Cloud Platform SDKs that the configuration should be downloaded for the given app ID. Behind the scenes, the SDK retrieves configurations for each module as hosted by Adobe Server. After being downloaded, the configuration file is cached locally. Subsequent requests to this API will use the cached file unless an updated version of the config file is detected.
+Indicates to the Adobe Cloud Platform SDKs that the configuration should be downloaded for the given app ID. Behind the scenes, the SDK retrieves configurations for each module as hosted by Adobe Server. After being downloaded, the configuration file is cached locally. Subsequent requests to this API will use the cached file unless an updated version of the config file is detected.
 
-The app ID passed to this API is stored, so that at relaunch, the Adobe Experience Cloud Platform SDKs configuration is preserved. If the config file fails to load, no configuration changes are made.
+The app ID passed to this API is stored, so that at relaunch, the Adobe Cloud Platform SDKs configuration is preserved. If the config file fails to load, no configuration changes are made.
 
 A null app ID parameter has no effect.
 
@@ -42,7 +42,7 @@ A null app ID parameter has no effect.
 
 Allows the caller to pass a **NSDictionary** or `HashMap` of configuration key value pairs to override the existing configuration. Keys that are not found in the existing configuration are added. Null values are allowed and essentially remove the configuration parameter.
 
-Values that are passed to `updateConfiguration` are always applied over the existing or new configuration. For example, calling `updateConfiguration` followed by `ConfigureWithAppId` will preserve the changes made in the first `updateConfiguration` call. The key-value pairs that are passed to `updateConfiguration` are stored in such a way so, at relaunch, the Adobe Experience Cloud Platform SDK configuration is preserved.
+Values that are passed to `updateConfiguration` are always applied over the existing or new configuration. For example, calling `updateConfiguration` followed by `ConfigureWithAppId` will preserve the changes made in the first `updateConfiguration` call. The key-value pairs that are passed to `updateConfiguration` are stored in such a way so, at relaunch, the Adobe Cloud Platform SDK configuration is preserved.
 
 A null map parameter has no effect.
 
@@ -62,7 +62,7 @@ NSMutableDictionary *updatedConfig = [NSMutableDictionary dictionary];
 
 ## configureWithFileInPath
 
-Allows the caller to pass a bundled path and file name that the Adobe Experience Cloud Platform SDKs uses to read and use a valid configuration. If the configuration file could not be loaded, no configuration changes are made.
+Allows the caller to pass a bundled path and file name that the Adobe Cloud Platform SDKs uses to read and use a valid configuration. If the configuration file could not be loaded, no configuration changes are made.
 
 A null file path parameter has no effect.
 

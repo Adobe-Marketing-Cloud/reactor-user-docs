@@ -1,6 +1,6 @@
 # Sample JSON File
 
-Here is a sample JSON file for the Adobe Experience Cloud Platform SDKs:
+Here is a sample JSON file for the Adobe Cloud Platform SDKs:
 
 ```javascript
 { 

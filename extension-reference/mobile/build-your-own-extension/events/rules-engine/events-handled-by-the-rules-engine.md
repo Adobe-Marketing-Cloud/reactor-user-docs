@@ -30,7 +30,7 @@ Here are the key-value pairs in this event:
 
 | **Extension** | **Key** | **Value Type** | **Description** |
 | :--- | :--- | :--- | :--- |
-| **Acquisition** | acquisition.appid | string | Application ID assigned by **Adobe Mobile Services** |
+| **Acquisition** | acquisition.appid | string | Application ID assigned by the Adobe Cloud Platform SDKs |
 |  | acquisition.server | string | Server address for the fingerprinter. |
 | **Analytics** | analytics.aamForwardingEnabled | boolean | If set to true, Analytics data collection servers will attempt to forward data to Audience Manager on the back end. |
 |  | analytics.batchLimit | number | Indicates to Analytics the number of hits that should be stored until they are all sent in succession. |
@@ -46,7 +46,7 @@ Here are the key-value pairs in this event:
 |  | global.ssl | boolean | If set to true, network requests should be dispatched via HTTPS. If false, network requests should be dispatched via HTTP. |
 | **Identity** | experienceCloud.org | string | Experience Cloud Org Identifier |
 |  | experienceCloud.server | string | Custom endpoint to be used for Visitor ID Service network requests. |
-|  | identity.adidEnabled | boolean | If set to true, indicates that the SDK should expect a call to setAdvertisingIdentifier \(investigating the need for this one...\) |
+|  | identity.adidEnabled | boolean | If set to true, indicates that the SDK should expect a call to `setAdvertisingIdentifier` . |
 | **Lifecycle** | lifecycle.backdateSessionInfo | boolean | If set to true, Analytics requests containing session info or crash events will be backdated to one second after the last hit was sent. If false, this data will be attached to the first hit of the subsequent session. |
 |  | lifecycle.sessionTimeout | number | Number of seconds since the user background the app that must pass in order for the subsequent app launch \(or resume\) to be considered a new lifecycle session. |
 | **Rules Engine** | rules.url | string\[\] | List of Rules endpoints \(represented as strings\), in order of preference. |

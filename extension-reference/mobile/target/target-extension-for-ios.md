@@ -3,7 +3,8 @@
 ## Enabling the Target extension for your app
 
 1. Add the Target library to your project via your `Podfile` by adding `pod 'ACPTarget'`
-2. Import the Target and Identity library. This can be done in the bridging header if building in Swift.
+2. Import the Target and Identity library.   
+   This can be done in the bridging header if building in Swift.
 
    ```objectivec
    #import <ACPCore_iOS/ACPCore_iOS.h>

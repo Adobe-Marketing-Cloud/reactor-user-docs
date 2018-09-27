@@ -6,7 +6,7 @@ The Identity module shared state is created at the following times:
 
 * When the module first loads and is initialized
 * After setting the user ID \(Visitor ID\)
-* When handling a sync request, regardless if the actual sync occurs.   Occurs when setting the push ID, advertising ID, or customer's custom identifiers.
+* When handling a sync request, regardless if the actual sync occurs.    Occurs when setting the push ID, advertising ID, or customer's custom identifiers.
 * When a successful sync request occurs, the shared state is updated after receiving a response from the Visitor ID service.
 
 | Key | Value | Type | Description |

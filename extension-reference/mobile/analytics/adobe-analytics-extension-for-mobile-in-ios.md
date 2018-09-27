@@ -110,5 +110,5 @@ The following methods are used with hit batching:
 
 ## Video Analytics
 
-The Adobe Experience Cloud Platform SDKs do not have milestone tracking. For more information about video analytics, see [Heartbeat Video Measurement](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/).
+The Adobe Cloud Platform SDKs do not have milestone tracking. For more information about video analytics, see [Heartbeat Video Measurement](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/).
 

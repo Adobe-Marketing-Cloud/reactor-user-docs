@@ -4,7 +4,7 @@ description: This information can help you understand Rules Engine Extension.
 
 # Adobe Mobile Rules Engine
 
-This extension interprets all Analytics, Signal, and Rules Engine Request Content events in the Adobe Experience Cloud Platform SDKs. If a rule matches, the Rules Engine also triggers a _Response Content_ event for the listening extensions \(Message, Signals, Lifecycle, User Profile, PII, and so on\) to handle the consequence\(s\).
+This extension interprets all Analytics, Signal, and Rules Engine Request Content events in the Adobe Cloud Platform SDKs. If a rule matches, the Rules Engine also triggers a _Response Content_ event for the listening extensions \(Message, Signals, Lifecycle, User Profile, PII, and so on\) to handle the consequence\(s\).
 
 **Important**: The Rules Engine extension does not require any configuration.
 

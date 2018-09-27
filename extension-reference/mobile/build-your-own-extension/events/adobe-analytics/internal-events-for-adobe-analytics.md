@@ -1,6 +1,6 @@
 # Internal Events for Adobe Analytics
 
-In addition to the Analytics hits that are sent as a result of the track call, the Adobe Experience Cloud Platform SDKs also tracks some internal events that are based on the communication with other modules.
+In addition to the Analytics hits that are sent as a result of the track call, the Adobe Cloud Platform SDKs also tracks some internal events that are based on the communication with other modules.
 
 Here is a list of the events by module:
 
@@ -62,7 +62,7 @@ For Full Screen and Alert style in-app messages:
 For local \(remote\) notifications:
 
 * Impressions: when user triggers the notification.
-* Opens: when user opens app from the notification. This will be tracked with the trackAdobeDeepLink method.
+* Opens: when user opens app from the notification. This will be tracked with the `trackAdobeDeepLink` method.
 
 ## Target Module
 

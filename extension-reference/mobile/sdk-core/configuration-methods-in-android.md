@@ -50,7 +50,7 @@ public class MyApp extends Application {
 
 ### configureWithFileInPath
 
-Allows the caller to pass in a bundled path and file name from which the Adobe Experience Cloud Platform SDKs will attempt to read and use a valid configuration. If the configuration file does not load, no configuration changes are made.
+Allows the caller to pass in a bundled path and file name from which the Adobe Cloud Platform SDKs will attempt to read and use a valid configuration. If the configuration file does not load, no configuration changes are made.
 
 A null file path parameter has no effect.
 
@@ -68,9 +68,9 @@ MobileCore.configureWithFileInPath("absolute/path/to/exampleJSONfile.json");
 
 ### configureWithAppID
 
-After the configuration file is download, it is cached locally. Subsequent requests to this API will use the cached file unless an updated version is detected on the network. The app ID that is passed to this API is stored so that, at relaunch, the Adobe Experience Cloud Platform SDKs configuration is preserved. If the configuration file does not load, no configuration changes are made. A null app ID parameter has no effect.
+After the configuration file is download, it is cached locally. Subsequent requests to this API will use the cached file unless an updated version is detected on the network. The app ID that is passed to this API is stored so that, at relaunch, the Adobe Cloud Platform SDKs configuration is preserved. If the configuration file does not load, no configuration changes are made. A null app ID parameter has no effect.
 
-Indicates to the Adobe Experience Cloud Platform SDKs that the configuration should be downloaded for the given app ID. Behind the scenes, the Adobe Experience Cloud Platform SDKs will retrieve configurations for each module as hosted by Adobe Servers.
+Indicates to the Adobe Cloud Platform SDKs that the configuration should be downloaded for the given app ID. Behind the scenes, the Adobe Cloud Platform SDKs will retrieve configurations for each module as hosted by Adobe Servers.
 
 #### Syntax
 

@@ -1,6 +1,6 @@
 # Retrieving Stored Identifiers in Android
 
-This information helps you retrieve the locally stored Adobe Experience Cloud Platform SDKs identities from your Android app and with GDPR data access requests.
+This information helps you retrieve the locally stored Adobe Cloud Platform SDKs identities from your Android app and with GDPR data access requests.
 
 **Important**: The `getSdkIdentities` method retrieves identities stored in the SDK. You must call this method **before** the user opts-out.
 

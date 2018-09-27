@@ -6,7 +6,7 @@ This event is created when the Target server response is received and the prefet
 
 This event is dispatched in the following scenarios:
 
-* In response to an API prefetch content request.  This event contains a `prefetchresult` key of type _boolean_, which signals the success or failure of the prefetch request.
+* In response to an API prefetch content request.   This event contains a `prefetchresult` key of type _boolean_, which signals the success or failure of the prefetch request.
 * In response to an API batch load requests, where one event is dispatched per request.
 
   This event contains a `content` key of type _string_ that contains mbox content.

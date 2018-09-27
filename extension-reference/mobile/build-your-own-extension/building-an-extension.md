@@ -4,7 +4,7 @@
 
 Before you build an extension, complete the following tasks:
 
-* Ensure that you are using the Adobe Experience Cloud Platform SDKs.
+* Ensure that you are using the Adobe Cloud Platform SDKs.
 
   Extensions extend the behavior of these SDKs.
 
@@ -13,7 +13,7 @@ Before you build an extension, complete the following tasks:
   To determine your goals, think about the following questions:
 
   * Do you need access to data that is not already exposed via the Adobe Experience Cloud Platform SDKs?    
-  * Do you need to be notified when messages will be sent, or data is being collected by the Adobe Experience Cloud Platform SDKs?   
+  * Do you need to be notified when messages will be sent, or data is being collected by the Adobe  Cloud Platform SDKs?   
   * Do you need to add data to or modify data for outgoing messages?    
   * Do you need to expose data to other extensions or to rules processing?
 
@@ -23,15 +23,15 @@ Before you build an extension, complete the following tasks:
 
   Extensions for iOS can currently only be built using Objective-C, and extensions on Android can currently only be built using Java.
 
-* Ensure that you have already included the Adobe Experience Cloud Platform SDKs in your project.
+* Ensure that you have already included the Adobe Cloud Platform SDKs in your project.
 
-## Implementing an Adobe Experience Cloud Platform SDK Extension
+## Implementing an Adobe Cloud Platform SDK Extension
 
 To create a simple extension, complete the following procedures in the order in which they are listed:
 
 ### A. **Create an Extension Class**
 
-The `ACPExtension`\(iOS\) or `Extension` \(Android\) class is the base class that any extensions must derive from. The `init` method \(iOS\) or the base `constructor` \(Android\) of your extension class is where you will have the opportunity to extend the Adobe Experience Cloud Platform SDKs functionality by registering event listeners, or by setting a default shared state that other modules can access.
+The `ACPExtension`\(iOS\) or `Extension` \(Android\) class is the base class that any extensions must derive from. The `init` method \(iOS\) or the base `constructor` \(Android\) of your extension class is where you will have the opportunity to extend the Adobe Cloud Platform SDKs functionality by registering event listeners, or by setting a default shared state that other modules can access.
 
 #### **iOS**
 
@@ -44,10 +44,10 @@ The `ACPExtension` class has the following method that you must override:
 
 The `ACPExtension` class has the following methods that you can optionally override and a member that provides access to the Event Hub:
 
-* `version`, which returns a version string for your extension.   The version string is only used for logging and is currently not validated for formatting. 
-* `onUnregister`, which allows your extension to complete the cleanup that is required when the Adobe Experience Cloud Platform SDK unregisters your extension.   Unregistration typically happens at app shutdown but can also occur when an extension is behaving badly. Examples of the extension behaving badly include taking too long to handle a callback or by throwing an exception.
-* `unexpectedError`, which allows you log additional information when the Adobe Experience Cloud Platform SDKs encounter an error that could not be returned immediately from a call into the SDK.    An example is an exception that is thrown on a worker thread. The exceptions are rare after your extension has been correctly implemented, but the exceptions might occur during development.
-* `api` , allows the extension developer to interact with the Event Hub to register event listeners, manage shared state, and so on.   This method can be used at any time during or after init has been called on your extension. It may also be used by your listeners by using the extension member.      **Tip**: The ACPExtension class provides access to the `ACPExtensionApi` interface through the API member.  
+* `version`, which returns a version string for your extension.    The version string is only used for logging and is currently not validated for formatting. 
+* `onUnregister`, which allows your extension to complete the cleanup that is required when the Adobe Cloud Platform SDK unregisters your extension.    Unregistration typically happens at app shutdown but can also occur when an extension is behaving badly. Examples of the extension behaving badly include taking too long to handle a callback or by throwing an exception.
+* `unexpectedError`, which allows you log additional information when the Adobe Cloud Platform SDKs encounter an error that could not be returned immediately from a call into the SDK.    An example is an exception that is thrown on a worker thread. The exceptions are rare after your extension has been correctly implemented, but the exceptions might occur during development.
+* `api` , allows the extension developer to interact with the Event Hub to register event listeners, manage shared state, and so on.  This method can be used at any time during or after init has been called on your extension. It may also be used by your listeners by using the extension member.        **Tip**: The ACPExtension class provides access to the `ACPExtensionApi` interface through the API member.  
 
 #### **iOS code example**
 
@@ -113,12 +113,12 @@ The `Extension` class has the following method that you must override:
 
 **Tip**: All Adobe module names are prefixed with _com.adobe.module_ and are considered reserved.
 
-* `onUnregistered`, which allows your extension to complete the cleanup that is required when the Adobe Experience Cloud Platform SDK unregisters your extension.  Unregistration typically happens at app shutdown but can also occur when an extension is behaving badly. Examples of the extension behaving badly include taking too long to handle a callback or by throwing an exception.
+* `onUnregistered`, which allows your extension to complete the cleanup that is required when the Adobe Cloud Platform SDK unregisters your extension.  Unregistration typically happens at app shutdown but can also occur when an extension is behaving badly. Examples of the extension behaving badly include taking too long to handle a callback or by throwing an exception.
 
 The `Extension` class has the following methods that you can optionally override and a member that provides access to the Event Hub:
 
 * `getVersion`, which returns a version string for your extension. The version string is only used for logging and is currently not validated for formatting.
-* `onUnexpectedError`, which allows you log additional information when the Adobe Experience Cloud Platform SDK encounters an error that could not be returned immediately from a call into the Adobe Experience Cloud Platform SDK.  An example is an exception that is thrown on a worker thread. The exceptions are rare after your extension has been correctly implemented, but the exceptions might occur during development.
+* `onUnexpectedError`, which allows you log additional information when the Adobe Experience Cloud Platform SDK encounters an error that could not be returned immediately from a call into the Adobe Cloud Platform SDK.  An example is an exception that is thrown on a worker thread. The exceptions are rare after your extension has been correctly implemented, but the exceptions might occur during development.
 * `getApi` , allows the extension developer to interact with the Event Hub to register event listeners, manage shared state, and so on.
 
   This method can be used at any after the extension registration is complete. It may also be used by your listeners by using the extension member.
@@ -154,7 +154,7 @@ After creating your extension class, you can register it by using the `ACPCore` 
 
 **Tip**: Registration can be completed any time after the app is launched.
 
-During registration, the extension class that you passed will be used by the Adobe Experience Cloud Platform SDKs to instantiate an instance that will be retained until the extension is unregistered.
+During registration, the extension class that you passed will be used by the Adobe Cloud Platform SDKs to instantiate an instance that will be retained until the extension is unregistered.
 
 #### **iOS**
 

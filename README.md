@@ -24,7 +24,7 @@ Here are the key features that are available in Launch:
 
 * **Mobile**
 
-  Mobile extensions are comprised of a Launch UI configuration screen and native SDK components that work with the core Adobe Experience Cloud Platform SDKs to deliver functionality to mobile apps.
+  Mobile extensions are comprised of a Launch UI configuration screen and native SDK components that work with the core Adobe Experience Platform SDKs to deliver functionality to mobile apps.
 
 **Important**: In Android and iOS extensions, only contents on secure http connections \(`https`\) are served. When a URL that contains `http://` is passed in, the connections are blocked.
 

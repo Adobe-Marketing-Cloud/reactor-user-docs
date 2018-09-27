@@ -38,5 +38,5 @@ For more information about `collectPii` and its usage, see `collectPii` document
 
 ### Using Tokens in OpenURL Rule Actions
 
-`Open URL` actions allow you to specify a URL, which can contain tokens that will be expanded by the Adobe Experience Cloud Platform SDKs. For more information on tokens, see [Rule Tokens](signals-extension-rules-engine-integration.md#rules-tokens).
+`Open URL` actions allow you to specify a URL, which can contain tokens that will be expanded by the Adobe Cloud Platform SDKs. For more information on tokens, see [Rule Tokens](signals-extension-rules-engine-integration.md#rules-tokens).
 

@@ -1,6 +1,6 @@
 # Audience Manager Methods in Android
 
-The Adobe Experience Cloud Platform SDKs currently supports multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Experience Cloud ID Service.
+The Adobe Cloud Platform SDKs currently supports multiple Adobe Cloud Solutions, including Analytics, Target, Audience Manager, and the Experience Cloud ID Service.
 
 If Audience Manager is configured in your JSON file, a signal that contains lifecycle metrics is sent with your lifecycle hit.
 

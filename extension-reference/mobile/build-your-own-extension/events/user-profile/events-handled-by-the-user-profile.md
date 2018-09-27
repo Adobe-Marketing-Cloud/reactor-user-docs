@@ -12,7 +12,7 @@ Here are the key-value pairs in this event:
 
 | **Key** | **Value Type** | **Optional** | **Description** |
 | :--- | :--- | :--- | :--- |
-| userprofileupdatekey | Map&lt;String, Object&gt; | no | A map of all the attributes and the attribute values that the client wants to update/add to the User Profile that is managed by the Adobe Experience Cloud Platform SDK. An existing attribute name will end up updating the attribute in the SDK, and a new attribute name will add a new attribute to the profile.The value of an attribute can be null, in which case the attribute will be deleted from the profileCurrently supported object types are String, Integer, Double, Boolean, Map and VectorAll the other types will be ignored while processing |
+| userprofileupdatekey | Map&lt;String, Object&gt; | no | A map of all the attributes and the attribute values that the client wants to update/add to the User Profile that is managed by the Adobe Cloud Platform SDK. An existing attribute name will end up updating the attribute in the SDK, and a new attribute name will add a new attribute to the profile.The value of an attribute can be null, in which case the attribute will be deleted from the profileCurrently supported object types are String, Integer, Double, Boolean, Map and VectorAll the other types will be ignored while processing |
 
 ### Example
 

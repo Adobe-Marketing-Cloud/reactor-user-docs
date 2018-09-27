@@ -6,7 +6,7 @@ The Experience Cloud ID service provides a universal visitor ID across Experienc
 
 ## Configuring Identity in Android
 
-**Important:** This functionality requires SDK Core version 1.0 or later.
+**Important:** This functionality requires Adobe Mobile Core version 1.0 or later.
 
 **Required:** The `setApplication()` method must be called once in the `onCreate()` method of your main activity. For more details, see [Initial Configuration](https://launch.gitbook.io/marketing-mobile-sdk-v5-by-adobe-documentation/sdk-core/configuration-methods-in-android)
 

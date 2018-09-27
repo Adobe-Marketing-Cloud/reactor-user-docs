@@ -1,12 +1,12 @@
 # Listening for Events
 
-A common use case is to add an event listener to get notifications for events that occur in the Adobe Experience Cloud Platform SDK. The main location to add an event listener is in the `init` method, although you can add listeners by using other callbacks later. You can add the logic that you want executed when an event occurs, and for which you have a listener, in the `hear` method of your listener class.
+A common use case is to add an event listener to get notifications for events that occur in the Adobe Cloud Platform SDK. The main location to add an event listener is in the `init` method, although you can add listeners by using other callbacks later. You can add the logic that you want executed when an event occurs, and for which you have a listener, in the `hear` method of your listener class.
 
 When handling an event in the event listener, take into consideration that the `hear` method should take a maximum of 100ms to execute. This means that potentially long-running operations should be pushed to another thread \(for example, network or file operations\), as in the following examples.
 
 Here are some additional rules to remember for event listeners:
 
-* You can listen to an event by registering your listener class with an event source and an event type.  The Adobe Experience Cloud Platform SDKs will create an instance of your listener class and retain it as long as your extension is registered.
+* You can listen to an event by registering your listener class with an event source and an event type.  The Adobe Cloud Platform SDKs will create an instance of your listener class and retain it as long as your extension is registered.
 * When an event that you are listening for occurs, the `hear` method on the appropriate instance of your listener class will be called.
 * You can register multiple listeners, but each listener instance only listens for one source/type pair.
 * One listener class might be used to listen for multiple events, but you will need to check the details of the event you are passed on each call to the `hear` method.

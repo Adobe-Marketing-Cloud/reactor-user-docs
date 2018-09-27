@@ -1,6 +1,6 @@
 # Prefetch Offer Content in Android
 
-Adobe Target prefetch feature uses the Adobe Experience Cloud Platform SDKs to fetch offer content as few times as possible by caching the server responses.
+Adobe Target prefetch feature uses the Adobe Cloud Platform SDKs to fetch offer content as few times as possible by caching the server responses.
 
 This process reduces the load time, prevents multiple network calls, and allows Adobe Target to be notified which mbox was visited by the mobile app user. All content will be retrieved and cached during the prefetch call, and this content will be retrieved from the cache for all future calls that contain cached content for the specified mbox name.
 

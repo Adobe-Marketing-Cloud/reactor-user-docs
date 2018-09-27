@@ -102,7 +102,7 @@ To enable hit batching, update your configuration and specify a value for `batch
 }
 ```
 
-When the value is greater than 0, the Adobe Experience Cloud Platform SDKs queue the number of hits equal to the `analytics.batchLimit` value. After this threshold is passed, all hits in the queue are sent.
+When the value is greater than 0, the Adobe Cloud Platform SDKs queue the number of hits equal to the `analytics.batchLimit` value. After this threshold is passed, all hits in the queue are sent.
 
 The following methods are used with hit batching:
 
@@ -112,5 +112,5 @@ The following methods are used with hit batching:
 
 ## Video Analytics
 
-The Adobe Experience Cloud Platform SDKs do not have milestone tracking. For more information about video analytics, see [Heartbeat Video Measurement](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/).
+The Adobe Cloud Platform SDKs do not have milestone tracking. For more information about video analytics, see [Heartbeat Video Measurement](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/).
 

@@ -1,12 +1,12 @@
 # Privacy and General Data Protection Regulation
 
-The Adobe Experience Cloud Platform SDKs provide General Data Protection Regulation \(GDPR\)-ready APIs for Controllers that allow users to retrieve locally stored identities and set opt status flags for data collection and transmission.
+The Adobe Cloud Platform SDKs provide General Data Protection Regulation \(GDPR\)-ready APIs for Controllers that allow users to retrieve locally stored identities and set opt status flags for data collection and transmission.
 
 When Adobe provides software and services to an enterprise, Adobe acts as a data processor for any personal data it processes and stores as part of providing these services. As a data processor, Adobe processes personal data in accordance with your company’s permission and instructions \(for example, as set out in your agreement with Adobe\).
 
-As a data controller, you can use the Adobe Experience Cloud Platform SDKs to support GDPR retrieve and delete requests from your mobile apps.
+As a data controller, you can use the Adobe Cloud Platform SDKs to support GDPR retrieve and delete requests from your mobile apps.
 
-For the Adobe Experience Cloud Platform SDK portions of your mobile apps, you can use the following settings and methods:
+For the Adobe Cloud Platform SDK portions of your mobile apps, you can use the following settings and methods:
 
 * To retrieve data from the SDKs, and send this data to your servers, use the `getSdkIdentities` method.
 

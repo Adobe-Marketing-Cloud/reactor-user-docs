@@ -4,7 +4,7 @@ To get started in Mobile, complete the following tasks:
 
 * [Create and Deploy Configurations in Adobe Launch](mobile-1.md#create-and-deploy-configurations-in-adobe-launch)
 * [Install the Adobe Cloud Platform SDKs in an Android or iOS App](mobile-1.md#install-the-adobe-cloud-platform-sdks-in-an-android-or-ios-app)
-* [Use the Adobe Experience Cloud Platform SDKs in an iOS App](mobile-1.md#use-the-adobe-experience-cloud-platform-sdks-in-an-ios-app)
+* [Use the Adobe Cloud Platform SDKs in an iOS App](mobile-1.md#use-the-adobe-experience-cloud-platform-sdks-in-an-ios-app)
 
 ### Create and Deploy Configurations in Adobe Launch
 
@@ -53,9 +53,9 @@ To get started in Mobile, complete the following tasks:
 3. On the **Mobile Install Instructions** pop-up, choose **Android** or **iOS**.
 4. Follow the instructions for using Grade with Android or CocoaPods with iOS. They necessary dependecy and initialization code can be copied from the pop-up to the app project.
 
-### Use the Adobe Experience Cloud Platform SDKs in an iOS App
+### Use the Adobe Cloud Platform SDKs in an iOS App
 
-**Important:** This version of the Adobe Experience Cloud Platform SDKs supports **iOS 10 or later.**
+**Important:** This version of the Adobe Cloud Platform SDKs supports **iOS 10 or later.**
 
 The configuration can be retrieved remotely or bundled in the app.
 

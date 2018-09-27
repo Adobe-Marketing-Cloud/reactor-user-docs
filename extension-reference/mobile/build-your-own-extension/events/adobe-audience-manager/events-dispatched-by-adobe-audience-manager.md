@@ -24,7 +24,7 @@ Here are the key-value pairs in this event:
 
 | **Key** | **Value Type** | **Optional** | **Description** |
 | :--- | :--- | :--- | :--- |
-| aamprofile | String Map | Yes | The Data payload will contain the Customer key value pairs. The Data Payload will be populated using the CV and CN values in the AAM Stuff array. |
+| aamprofile | String Map | Yes | The Data payload will contain the Customer key value pairs. The Data Payload will be populated using the CV and CN values in the Audience Manager Stuff array. |
 
 ## Audience Manager Identity Response
 

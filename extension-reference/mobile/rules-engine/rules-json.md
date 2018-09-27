@@ -19,7 +19,7 @@ Rules and their associated assets will be delivered as a standard ZIP archive, w
 
 ## File Delivery
 
-Delivery will happen by using a request from the Adobe Experience Cloud Platform SDKs to a list of static endpoints that are defined as part of the SDK configuration. The SDK supports token expansions on this endpoint, which allows the injection of ECIDs and property IDs into the request.
+Delivery will happen by using a request from the Adobe Cloud Platform SDKs to a list of static endpoints that are defined as part of the SDK configuration. The SDK supports token expansions on this endpoint, which allows the injection of ECIDs and property IDs into the request.
 
 This request is a conditional `GET` and occurs by default at the start of each new session.
 

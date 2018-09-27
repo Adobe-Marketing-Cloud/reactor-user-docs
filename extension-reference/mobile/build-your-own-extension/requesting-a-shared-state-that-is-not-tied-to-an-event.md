@@ -2,7 +2,7 @@
 
 Here, extensions can skip passing the `ACPExtensionEvent` \(iOS\) / `Event` \(Android\) parameter to the `getSharedEventState` method. If no state is available, the SDK returns the latest available shared state or a null value.
 
-**Note:** The caller must be careful to account for null values being passed back.
+**Tip:** The caller must be careful to account for null values being passed back.
 
 ## iOS
 

@@ -1,6 +1,6 @@
 # Configuration Keys
 
-The following keys are used by the Adobe Experience Cloud Platform SDKs to configure the Identity Extension:
+The following keys are used by the Adobe Cloud Platform SDKs to configure the Identity Extension:
 
 | Key Name | Data Type | Description |
 | :--- | :--- | :--- |

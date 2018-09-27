@@ -14,7 +14,7 @@ You can track lifecycle to learn how frequently and how long your app is being u
 
 ## Implementing Lifecycle Metrics in Android
 
-Tracking lifecycle requires that the Adobe Experience Cloud Platform SDKs have a valid configuration. For more information, see [Configuration Methods in Android](../sdk-core/configuration-methods-in-android.md).
+Tracking lifecycle requires that the Adobe Cloud Platform SDKs have a valid configuration. For more information, see [Configuration Methods in Android](../sdk-core/configuration-methods-in-android.md).
 
 To implement lifecycle metrics, complete the following steps in each Activity of your application:
 

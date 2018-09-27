@@ -2,12 +2,12 @@
 
 Events can be used by extensions in the following scenarios:
 
-* Triggering actions in the Adobe Experience Cloud Platform SDKs.  Events are used by the extensions to signal when certain actions should take place, for example to send an Analytics ping. Extensions can send the same types of events that the Adobe Experience Cloud Platform SDKs would send internally to trigger these actions.
-* Triggering actions in another extension.    You might have multiple extensions in your application, and some may have their own events defined which will trigger actions.
+* Triggering actions in the Adobe Cloud Platform SDKs.   Events are used by the extensions to signal when certain actions should take place, for example to send an Analytics ping. Extensions can send the same types of events that the Adobe Cloud Platform SDKs would send internally to trigger these actions.
+* Triggering actions in another extension.     You might have multiple extensions in your application, and some may have their own events defined which will trigger actions.
 
 ## Create an Event for Dispatching
 
-The `ACPExtensionEvent` \(iOS\) / `Event` \(Android\) class contains the event that is used by the internal event hub. You can construct an event at any time after the Adobe Experience Cloud Platform SDKs has been initialized.
+The `ACPExtensionEvent` \(iOS\) / `Event` \(Android\) class contains the event that is used by the internal event hub. You can construct an event at any time after the Adobe Cloud Platform SDKs has been initialized.
 
 **Tip**: This event construction is usually completed in an event listener.
 
