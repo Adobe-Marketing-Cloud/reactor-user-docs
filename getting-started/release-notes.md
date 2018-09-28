@@ -1,5 +1,39 @@
 # Release Notes
 
+## September 27, 2018
+
+### Features
+
+Launch has gone mobile!!
+
+1. Launch now lets you create mobile properties.  Within a mobile property, everything works like you'd expect - install extension, create data elements, build rules, publish, etc.
+2. Mobile extensions are available for Core, Profile, Adobe Analytics, Target, and Audience Manager.  Core and Profile are installed by default.
+3. Mobile source code is delivered by package manager.  Installation instructions will provide the code necessary to update your dependencies \(CocoaPods for iOS and Maven for Android are currently supported\) and get started.
+4. Adding new extensions will require you to recompile your app and go through the app store submission/approval.  Data elements, rules, and extension configs are delivered to your application dynamically, are updated at app launch, and do not require app store updates.
+
+See how to get started with mobile properties [here](mobile-1.md).
+
+## September 6, 2018
+
+### Features
+
+When you save a library, Launch will now check all the resources in it and prompt you to add any required extensions that are missing.
+
+### Updates
+
+1. Rights in the Admin Console have been slightly rearranged.  Manage Properties now belongs to the Company Rights group.  All other permissions \(Manage Environments, Manage Extensions, Develop, Approve, and Publish\) are in the Property Rights group.
+2. Database improvements to improve API response times.
+
+### Bug Fixes
+
+There were some edge cases where the rule builder would not display rule components in the same order that the database was saving them in.  Now rule builder always displays rule component order correctly.
+
+## August 23, 2018
+
+### Features
+
+Newly created Launch properties now come with a "Managed by Adobe" adapter and three environments \(one of each type\) by default.
+
 ## August 14, 2018
 
 ### Updates
