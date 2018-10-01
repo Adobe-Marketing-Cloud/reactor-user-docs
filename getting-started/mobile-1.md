@@ -53,6 +53,24 @@ To get started in Mobile, complete the following tasks:
 3. On the **Mobile Install Instructions** pop-up, choose **Android** or **iOS**.
 4. Follow the instructions for using Grade with Android or CocoaPods with iOS. They necessary dependecy and initialization code can be copied from the pop-up to the app project.
 
+### Use the Adobe Cloud Platform SDKs in an Android App
+
+**Important:** This version of the Adobe Experience Cloud Platform SDKs supports **Android 4.0 (API 14) or later.**
+
+The configuration can be retrieved remotely or bundled in the app.
+
+To retrieve the configuration remotely:
+
+1. Get the App ID from Adobe Launch.
+2. Create MainActivity.java in the app.
+3. Add the following line:  `AdobeMobileMarketing.configureWithAppID("YOUR_APP_ID");` .
+4. Launch the app and it will send a remote config request to the Adobe Launch servers and configure the app using the remote config.
+
+To retrieve the configuration bundled in an app:
+
+1. Get the JSON configuration file from Adobe Launch.
+2. Add the ADBMobileConfig.json file to the assets folder in your project.
+
 ### Use the Adobe Cloud Platform SDKs in an iOS App
 
 **Important:** This version of the Adobe Cloud Platform SDKs supports **iOS 10 or later.**
