@@ -4,7 +4,7 @@
 
 **Important**: This variable is required by Analytics.
 
-The Analytics server is based on the parent node. This variable should be populated with the server domain, without an `http://` or `https://` protocol prefix. This prefix is handled automatically by the library and is based on the ssl variable. If `global.ssl` is `true`, a secure connection is made to this server. If `global.ssl` is `false`, a non-secure connection is made to this server.
+The Analytics server is based on the parent node. This variable should be populated with the server domain, without an `http://` or `https://` protocol prefix. This prefix is handled automatically by the library and all Analytics hits are sent with the `https://` protocol prefix.
 
 ## analytics.rsids
 
