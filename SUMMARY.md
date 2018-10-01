@@ -54,6 +54,7 @@
   * [Migrating from the v4 SDKs to the Adobe Cloud Platform SDKs](upgrade-from-dtm-to-launch/migrating-from-the-v4-sdks-to-the-adobe-experience-platform-sdks.md)
 * [Extension Reference](extension-reference/README.md)
   * [Mobile](extension-reference/mobile/README.md)
+    * [Core Extension](extension-reference/mobile/core-extension.md)
     * [Adobe Analytics](extension-reference/mobile/analytics/README.md)
       * [Analytics Methods in Android](extension-reference/mobile/analytics/analytics-methods-in-android.md)
       * [Analytics Extension for Mobile in Android](extension-reference/mobile/analytics/adobe-analytics-extension-for-mobile-in-android.md)
