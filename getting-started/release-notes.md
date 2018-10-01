@@ -334,7 +334,7 @@ You can now pass actual objects to the log function and view them as objects in 
 
 * On-page
 
-  The Launch library now includes support for running asynchronously. There are important ramifications for how this changes what happens in your library. You should read the [Async documentation](../client-side-information/asynchronous-deployment.md) before you do anything.
+  The Launch library now includes support for running asynchronously. There are important ramifications for how this changes what happens in your library. You should read the [Async documentation](../client-side-information/web/asynchronous-deployment.md) before you do anything.
 
 * Async Toggle on Environments
 

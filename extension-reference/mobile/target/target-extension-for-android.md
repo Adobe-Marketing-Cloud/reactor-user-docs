@@ -13,7 +13,7 @@
 
 ## Set the Application Context and Register the Target and Identity Extensions
 
-**Required:** The `setApplication()` method must be called once in the `onCreate()` method of your main activity. For more details, see [Initial Configuration](../sdk-core/configuration-methods-in-android.md)
+**Required:** The `setApplication()` method must be called once in the `onCreate()` method of your main activity. For more details, see [Initial Configuration](../../../client-side-information/mobile/sdk-core/configuration-methods-in-android.md)
 
 1. The Target and Identity extensions must be registered with the SDK core before calling any Target API.
 

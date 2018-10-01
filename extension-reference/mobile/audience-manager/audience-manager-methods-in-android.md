@@ -6,7 +6,7 @@ If Audience Manager is configured in your JSON file, a signal that contains life
 
 ## Configuring Audience Manager in Android
 
-**Required:** The `setContext()` method must be called once in the `onCreate()` method of your main activity. For more details, see [Initial Configuration](../sdk-core/configuration-methods-in-android.md)
+**Required:** The `setContext()` method must be called once in the `onCreate()` method of your main activity. For more details, see [Initial Configuration](../../../client-side-information/mobile/sdk-core/configuration-methods-in-android.md)
 
 **Tip**: If you already added this method call when you implemented Analytics or Target, you do not need to add it again.
 

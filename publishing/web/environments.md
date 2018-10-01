@@ -30,7 +30,7 @@ If you use the archive option, all build files are delivered as a .zip file \(op
 
 The embed code is a `<script>` tag that you put on the pages of your site to load and execute the code you build in Launch.
 
-You can choose to have this tag be synchronous or [asynchronous](../../client-side-information/asynchronous-deployment.md).
+You can choose to have this tag be synchronous or [asynchronous](../../client-side-information/web/asynchronous-deployment.md).
 
 The embed code is generated for you based on the environment configuration, so the only required action for you is to copy and paste them into your site on the pages where you want Launch to run.
 
@@ -46,7 +46,7 @@ In a synchronous deployment, the embed code consists of two `<script>` tags that
 
 If you load the library asynchronously, the browser continues to load the page, retrieves the Launch library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`. Depending on what's in your Launch library, the switch from sync to async can change the behavior of your rules and other elements, so be sure to thoroughly test any changes.
 
-For more information about asynchronous deployment, see [Asynchronous Deployment of Experience Cloud JavaScript](../../client-side-information/asynchronous-deployment.md).
+For more information about asynchronous deployment, see [Asynchronous Deployment of Experience Cloud JavaScript](../../client-side-information/web/asynchronous-deployment.md).
 
 ### Switching embed codes
 
