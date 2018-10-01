@@ -9,9 +9,8 @@ description: This information can help you understand SDK Core.
 ## Configuring the Mobile Core Extension in Adobe Launch
 
 1. On the Extensions page, click **Catalog**.
-2. Locate the Core extension and click **Install**.
-3. Click the up or down arrows to set a session timeout value. This is the period, in seconds, that must pass after a user backgrounds the app, but before the app is launched again and can be considered a new Lifecycle session.
-4. Click **Save**.
+2. Click the up or down arrows to set a session timeout value. This is the period, in seconds, that must pass after a user backgrounds the app, but before the app is launched again and can be considered a new Lifecycle session.
+3. Click **Save**.
 
 ## Additional Information
 
