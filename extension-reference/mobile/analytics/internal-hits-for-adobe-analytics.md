@@ -1,18 +1,18 @@
-# Internal Events for Adobe Analytics
+# Internal Hits for Adobe Analytics
 
-In addition to the Analytics hits that are sent as a result of the track call, the Adobe Cloud Platform SDKs also tracks some internal events that are based on the communication with other modules.
+In addition to the Analytics hits that are sent as a result of the track call, the Adobe Cloud Platform SDKs also tracks some internal hits that are based on the communication with other extensions.
 
-Here is a list of the events by module:
+Here is a list of the hits by extension:
 
-## Lifecycle Module
+## Lifecycle Extension
 
-Here are the Analytics events in the Lifecycle module:
+Here are the Analytics hits in the Lifecycle extension:
 
-### Install Event
+### Install Hit
 
 The SDK tracks the application install details when lifecycle is enabled. These details include the install date and the daily engaged/monthly engaged user badges.
 
-### Launch Event
+### Launch Hit
 
 The SDK tracks every new launch of the application when lifecycle is enabled.
 
@@ -25,29 +25,29 @@ Launch data includes information about the application's number of launches, day
 
 We also track the application version upgrades.
 
-### Crash Event
+### Crash Hit
 
 If your application is terminated without having first been backgrounded, the SDK reports a crash the next time your app is launched.
 
-This will be sent as an individual hit if the `backdateSessionInfo` flag is enabled in your configuration, otherwise it will be sent as part of the launch event.
+This will be sent as an individual hit if the `backdateSessionInfo` flag is enabled in your configuration, otherwise it will be sent as part of the launch hit.
 
 ### SessionInfo
 
 This hit contains information about the previous launch session, more specifically the session length.
 
-This will be sent as an individual hit if backdateSessionInfo flag is enabled in your configuration, otherwise it will be sent as part of the launch event.
+This will be sent as an individual hit if backdateSessionInfo flag is enabled in your configuration, otherwise it will be sent as part of the launch hit.
 
-## Identity Module
+## Identity Extension
 
-Here are the Analytics events that are triggered when the Identity module is enabled:
+Here are the Analytics hits that are triggered when the Identity extension is enabled:
 
 * Push
 
 The SDK tracks changes in the user's push notifications preference. A new hit is sent whenever the user opt-in/opt-out for push notifications.
 
-## Messages Module
+## Messages Extension
 
-Here are the Analytics events that are triggered when the Messages module is enabled:
+Here are the Analytics hits that are triggered when the Messages extension is enabled:
 
 * In-App Message
 
@@ -64,9 +64,9 @@ For local \(remote\) notifications:
 * Impressions: when user triggers the notification.
 * Opens: when user opens app from the notification. This will be tracked with the `trackAdobeDeepLink` method.
 
-## Target Module
+## Target Extension
 
-Here is the Analytics event in the Target module:
+Here is the Analytics hit in the Target extension:
 
 * AnalyticsForTarget
 
