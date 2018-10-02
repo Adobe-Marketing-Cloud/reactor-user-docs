@@ -2,7 +2,7 @@
 description: This information can help you understand Target Extension.
 ---
 
-# Adobe Target
+# Target
 
 Adobe Target helps you tailor and personalize your customer’s experience on mobile applications. This solution helps you to deliver targeted content in your mobile Application. For more information about Adobe Target, see [Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/).
 

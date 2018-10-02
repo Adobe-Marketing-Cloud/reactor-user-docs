@@ -2,7 +2,7 @@
 description: This information can help you understand SDK Core.
 ---
 
-# Adobe Mobile Core
+# Mobile Core
 
 **Important**: Adobe Mobile Core is installed by default. 
 

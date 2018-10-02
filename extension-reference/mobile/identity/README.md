@@ -2,7 +2,7 @@
 description: This information can help you understand the Identity Extension.
 ---
 
-# Adobe Identity
+# Identity
 
 The Identity extension allows your app to communicate with the Experience Cloud ID Service, and this interaction will primarily be in sync with the customer identifiers.
 

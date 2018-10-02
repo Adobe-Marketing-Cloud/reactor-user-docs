@@ -2,7 +2,7 @@
 description: This information can help you understand Signals Extension.
 ---
 
-# Adobe Signals
+# Signals
 
 By leveraging the same triggers and traits that you use to display an in-app message, you can configure the SDK to send customized data to a third-party destination. Also, with the appropriate permissions and configurations, you can use the `collectPii` API to send personally identifiable information \(PII\) to a remote server.
 

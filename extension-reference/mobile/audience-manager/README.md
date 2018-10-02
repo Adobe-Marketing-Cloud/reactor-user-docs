@@ -4,7 +4,7 @@ description: >-
   Adobe Audience Manager.
 ---
 
-# Adobe Audience Manager
+# Audience Manager
 
 Applications can use this extension to update a user’s audience profile and retrieve the current segments into which a user has fallen. These segments will be shared with the parent application and published for other extensions that might use audience segments.
 

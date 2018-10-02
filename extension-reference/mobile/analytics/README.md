@@ -4,7 +4,7 @@ description: >-
   interact with Adobe Analytics.
 ---
 
-# Adobe Analytics
+# Analytics
 
 ## Configuring the Analytics Extension in Adobe Launch
 

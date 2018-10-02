@@ -10,16 +10,16 @@ Used by thousands of customers for web tag management, Adobe Launch can now be u
 
 Creating a mobile property in Launch allows you to:
 
-- Create data elements and build sophisticated rules that can combine actions across multiple solutions.
-- Manage mobile extensions:
-  - Mobile Core and Profile extensions are pre-installed with every mobile property.
-  - Extensions are available for other Adobe solutions including Adobe Analytics, Adobe Target and Adobe Audience Manager.
-- Mobile Core extension and all additional extensions can be downloaded and installed through a dependency managers such as Maven and CocoaPods.
-- When you add an extension, you must recompile your app and complete the app store submission/approval process.
-  
-  Data elements, rules, and extension configs are delivered to your application dynamically, are updated at app launch, and do not require app store updates. 
-  
-For more information about getting started with mobile properties, see [Mobile](getting-started/mobile-1).
+* Create data elements and build sophisticated rules that can combine actions across multiple solutions.
+* Manage mobile extensions:
+  * Mobile Core and Profile extensions are pre-installed with every mobile property.
+  * Extensions are available for other Adobe solutions including Adobe Analytics, Adobe Target and Adobe Audience Manager.
+* Mobile Core extension and all additional extensions can be downloaded and installed through a dependency managers such as Maven and CocoaPods.
+* When you add an extension, you must recompile your app and complete the app store submission/approval process.
+
+  Data elements, rules, and extension configs are delivered to your application dynamically, are updated at app launch, and do not require app store updates.
+
+For more information about getting started with mobile properties, see [Mobile](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/a569e721eb27f758628b9d23f20159c3136ad679/getting-started/getting-started/mobile-1/README.md).
 
 ## September 6, 2018
 
@@ -34,7 +34,7 @@ When you save a library, Launch will now check all the resources in it and promp
 
 ### Bug Fixes
 
-There were some edge cases where the rule builder would not display rule components in the same order that the database was saving them in.  Now rule builder always displays rule component order correctly.
+There were some edge cases where the rule builder would not display rule components in the same order that the database was saving them in. Now rule builder always displays rule component order correctly.
 
 ## August 23, 2018
 
