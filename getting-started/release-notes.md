@@ -14,7 +14,6 @@ Creating a mobile property in Launch allows you to:
 - Manage mobile extensions:
   - Mobile Core and Profile extensions are pre-installed with every mobile property.
   - Extensions are available for other Adobe solutions including Adobe Analytics, Adobe Target and Adobe Audience Manager.
-  - Third party extensions are coming soon!
 - Mobile Core extension and all additional extensions can be downloaded and installed through a dependency managers such as Maven and CocoaPods.
 - When you add an extension, you must recompile your app and complete the app store submission/approval process.
   
