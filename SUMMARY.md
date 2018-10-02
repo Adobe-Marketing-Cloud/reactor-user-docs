@@ -121,7 +121,6 @@
           * [Events Handled by SDK Core](extension-reference/mobile/build-your-own-extension/events/sdk-core/events-handled-by-sdk-core.md)
           * [Events Dispatched by SDK Core](extension-reference/mobile/build-your-own-extension/events/sdk-core/events-dispatched-by-sdk-core.md)
         * [Analytics](extension-reference/mobile/build-your-own-extension/events/adobe-analytics/README.md)
-          * [Internal Hits for Adobe Analytics](extension-reference/mobile/build-your-own-extension/events/adobe-analytics/internal-events-for-adobe-analytics.md)
           * [Events Handled by Adobe Analytics](extension-reference/mobile/build-your-own-extension/events/adobe-analytics/events-handled-by-adobe-analytics.md)
           * [Events Dispatched by Adobe Analytics](extension-reference/mobile/build-your-own-extension/events/adobe-analytics/events-dispatched-by-adobe-analytics.md)
           * [Shared State](extension-reference/mobile/build-your-own-extension/events/adobe-analytics/shared-state.md)
