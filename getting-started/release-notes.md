@@ -19,7 +19,7 @@ Creating a mobile property in Launch allows you to:
 
   Data elements, rules, and extension configs are delivered to your application dynamically, are updated at app launch, and do not require app store updates.
 
-For more information about getting started with mobile properties, see [Mobile](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/a569e721eb27f758628b9d23f20159c3136ad679/getting-started/getting-started/mobile-1/README.md).
+For more information about getting started with mobile properties, see [Mobile](https://docs.adobelaunch.com/getting-started/mobile-1).
 
 ## September 6, 2018
 
