@@ -6,12 +6,21 @@
 
 Launch has gone mobile!!
 
-1. Launch now lets you create mobile properties.  Within a mobile property, everything works like you'd expect - install extension, create data elements, build rules, publish, etc.
-2. Mobile extensions are available for Core, Profile, Adobe Analytics, Target, and Audience Manager.  Core and Profile are installed by default.
-3. Mobile source code is delivered by package manager.  Installation instructions will provide the code necessary to update your dependencies \(CocoaPods for iOS and Maven for Android are currently supported\) and get started.
-4. Adding new extensions will require you to recompile your app and go through the app store submission/approval.  Data elements, rules, and extension configs are delivered to your application dynamically, are updated at app launch, and do not require app store updates.
+Used by thousands of customers for web tag management, Adobe Launch can now be used to manage your mobile SDKs.
 
-See how to get started with mobile properties [here](mobile-1.md).
+Creating a mobile property in Launch allows you to:
+
+- Create data elements and build sophisticated rules that can combine actions across multiple solutions.
+- Manage mobile extensions:
+  - Mobile Core and Profile extensions are pre-installed with every mobile property.
+  - Extensions are available for other Adobe solutions including Adobe Analytics, Adobe Target and Adobe Audience Manager.
+  - Third party extensions are coming soon!
+- Mobile Core extension and all additional extensions can be downloaded and installed through a dependency managers such as Maven and CocoaPods.
+- When you add an extension, you must recompile your app and complete the app store submission/approval process.
+  
+  Data elements, rules, and extension configs are delivered to your application dynamically, are updated at app launch, and do not require app store updates. 
+  
+For more information about getting started with mobile properties, see [Mobile](getting-started/mobile-1).
 
 ## September 6, 2018
 
