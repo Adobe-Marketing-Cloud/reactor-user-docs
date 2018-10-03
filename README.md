@@ -6,6 +6,10 @@ Launch empowers anyone to build and maintain their own integrations with Launch,
 
 ## Key benefits
 
+{% hint style="info" %}
+All Adobe customers have access to Launch
+{% endhint %}
+
 Here are the benefits for using Adobe Launch:
 
 * Faster time to value with the ability to dynamically deploy changes to your website or mobile app
