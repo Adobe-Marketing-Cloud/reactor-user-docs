@@ -10,6 +10,16 @@ The APIs for the corresponding platforms dispatch an event that notifies the Ado
 
 ### Android
 
+{% tabs %}
+{% tab title="Android" %}
+213245324234
+{% endtab %}
+
+{% tab title="iOS" %}
+Sample COnt
+{% endtab %}
+{% endtabs %}
+
 ### Syntax
 
 ```java
