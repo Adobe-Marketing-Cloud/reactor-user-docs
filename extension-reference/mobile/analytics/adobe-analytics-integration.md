@@ -11,15 +11,15 @@ There are several Adobe provided extensions that can be integrated with Analytic
 
 ## Identity
 
-Identity is required when using Analytics. This integration will enable Analytics to send the Experience Cloud Organization ID (MID) and any additional identifiers that you synced before using the `syncIdentifiers` APIs within the analytics hits. For more information, see [Identity](https://docs.adobelaunch.com/extension-reference/mobile/identity).
+Identity is required when using Analytics. This integration will enable Analytics to send the Experience Cloud Organization ID (MID) and any additional identifiers that you synced before using the `syncIdentifiers` APIs within the analytics hits. For more information, see [Identity](../identity/README.md).
 
-##Audience Manager
+## Audience Manager
 
-If you want to share the Analytics Data with Adobe Audience Manager, you can enable this in Launch UI in the Analytics extension, by selecting “Audience Manager Forwarding” option and installing the Audience Manager extension. For more details, please consult the [Audience Manager](https://docs.adobelaunch.com/extension-reference/mobile/audience-manager) section.
+If you want to share the Analytics Data with Adobe Audience Manager, you can enable this in Launch UI in the Analytics extension, by selecting “Audience Manager Forwarding” option and installing the Audience Manager extension. For more details, please consult the [Audience Manager](../audience-manager/README.md) section.
 
 ## Lifecycle
 
-In order to track the application lifecycle details, you need to properly configure the lifecycle data collection. This will enable you to track information about application installs or upgrades, application crash events, application launch details (for example: number of launches, session length). In addition to that, every analytics hit will contain the default lifecycle metrics, which include information about the device being used, operating system, device resolution etc. For more details please check the [Lifecycle section](https://docs.adobelaunch.com/extension-reference/mobile/lifecycle) and the [Lifecycle metrics](https://docs.adobelaunch.com/extension-reference/mobile/lifecycle/lifecycle-metrics) page.
+In order to track the application lifecycle details, you need to properly configure the lifecycle data collection. This will enable you to track information about application installs or upgrades, application crash events, application launch details (for example: number of launches, session length). In addition to that, every analytics hit will contain the default lifecycle metrics, which include information about the device being used, operating system, device resolution etc. For more details please check the [Lifecycle section](../lifecycle/README.md) and the [Lifecycle metrics](../lifecycle/lifecycle-metrics.md) page.
 
 ## Target
 

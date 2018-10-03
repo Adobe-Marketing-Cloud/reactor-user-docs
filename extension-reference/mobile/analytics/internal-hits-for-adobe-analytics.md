@@ -45,25 +45,6 @@ Here are the Analytics hits that are triggered when the Identity extension is en
 
 The SDK tracks changes in the user's push notifications preference. A new hit is sent whenever the user opt-in/opt-out for push notifications.
 
-## Messages Extension
-
-Here are the Analytics hits that are triggered when the Messages extension is enabled:
-
-* In-App Message
-
-The SDK tracks the following metrics for your in-app messages:
-
-For Full Screen and Alert style in-app messages:
-
-* Impressions: when user triggers an in-app message.
-* Click throughs: when user pushes the Click-through button.
-* Cancels: when user pushes the Cancel button.
-
-For local \(remote\) notifications:
-
-* Impressions: when user triggers the notification.
-* Opens: when user opens app from the notification. This will be tracked with the `trackAdobeDeepLink` method.
-
 ## Target Extension
 
 Here is the Analytics hit in the Target extension:
