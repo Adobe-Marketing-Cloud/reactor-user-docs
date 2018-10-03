@@ -58,37 +58,31 @@ To get started in Mobile, complete the following tasks:
 
 **Important:** This version of the Adobe Experience Cloud Platform SDKs supports **Android 4.0 \(API 14\) or later.**
 
-The configuration can be retrieved remotely or bundled in the app.
-
-To retrieve the configuration remotely:
+The SDK configuration should be retrieved remotely from Launch:
 
 1. Get the App ID from Adobe Launch.
 2. Create MainActivity.java in the app.
-3. Add the following line:  `AdobeMobileMarketing.configureWithAppID("YOUR_APP_ID");` .
+3. Add the following line:  
+
+       MobileCore.configureWithAppID("YOUR_APP_ID");
+    
 4. Launch the app and it will send a remote config request to the Adobe Launch servers and configure the app using the remote config.
-
-To retrieve the configuration bundled in an app:
-
-1. Get the JSON configuration file from Adobe Launch.
-2. Add the ADBMobileConfig.json file to the assets folder in your project.
 
 ## Use the Adobe Cloud Platform SDKs in an iOS App
 
 **Important:** This version of the Adobe Cloud Platform SDKs supports **iOS 10 or later.**
 
-The configuration can be retrieved remotely or bundled in the app.
-
-To retrieve the bundle remotely:
+The SDK configuration should be retrieved remotely from Launch:
 
 1. Get the App ID from Adobe Launch. 
 2. Within your app, open AppDelegate.swift \(or AppDelegate.m if developing in Objective-C\). 
-3. Add this line: _Swift:_`ADBMobileMarketing.configure(withAppId: "YOUR_APP_ID")` or _Objective-C:_ `[ADBMobileMarketing configureWithAppId:@"YOUR_APP_ID"];`. 
+3. Add this line in your `didFinishLaunchingWithOptions` method: 
+
+       ACPCore.configure(withAppId: "YOUR_APP_ID") // swift
+       
+       [ACPCore configureWithAppId:@"YOUR_APP_ID"]; // obj-c 
 4. Launch the app and it will send a remote config request to the Adobe Launch servers and configure the app using the remote config.
 
-To retrieve the configuration as a bundle:
-
-1. Get the JSON configuration file from Adobe Launch.
-2. In **File Inspector**, add the ADBMobileConfig.json file to any targets in your project that will use the Adobe SDK.
 
 For more information about the mobile extensions, see [Mobile](../extension-reference/mobile/).
 
