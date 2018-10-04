@@ -190,10 +190,7 @@ This API is part of the ACPCore extension. Adobe Identity extension supports the
 
 If the IDFA was set in the SDK, the IDFA will be sent in lifecycle. It can also be accessed in Signals \(Postbacks\). This ID is preserved between app upgrades, is saved and restored during the standard application backup process, and is removed at uninstall.
 
-Remember the following information:
-
-* If the Adobe Experience Cloud Platform SDKs is configured with `identity.adidEnabled` set to `false`, the advertising identifier is not set or stored.
-* If the current SDK privacy status is `optedout`, the advertising identifier is not set.
+Remember, if the current SDK privacy status is `optedout`, the advertising identifier is not set.
 
 ### **Syntax**
 
