@@ -62,10 +62,12 @@ The SDK configuration should be retrieved remotely from Launch:
 
 1. Get the App ID from Adobe Launch.
 2. Create MainActivity.java in the app.
-3. Add the following line:  
+3. Add the following line:
 
-       MobileCore.configureWithAppID("YOUR_APP_ID");
-    
+   ```text
+   MobileCore.configureWithAppID("YOUR_APP_ID");
+   ```
+
 4. Launch the app and it will send a remote config request to the Adobe Launch servers and configure the app using the remote config.
 
 ## Use the Adobe Cloud Platform SDKs in an iOS App
@@ -76,13 +78,15 @@ The SDK configuration should be retrieved remotely from Launch:
 
 1. Get the App ID from Adobe Launch. 
 2. Within your app, open AppDelegate.swift \(or AppDelegate.m if developing in Objective-C\). 
-3. Add this line in your `didFinishLaunchingWithOptions` method: 
+3. Add this line in your `didFinishLaunchingWithOptions` method:
 
-       ACPCore.configure(withAppId: "YOUR_APP_ID") // swift
-       
-       [ACPCore configureWithAppId:@"YOUR_APP_ID"]; // obj-c 
+   ```text
+   ACPCore.configure(withAppId: "YOUR_APP_ID") // swift
+
+   [ACPCore configureWithAppId:@"YOUR_APP_ID"]; // obj-c 
+   ```
+
 4. Launch the app and it will send a remote config request to the Adobe Launch servers and configure the app using the remote config.
-
 
 For more information about the mobile extensions, see [Mobile](../extension-reference/mobile/).
 

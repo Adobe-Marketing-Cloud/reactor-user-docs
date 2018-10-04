@@ -18,14 +18,6 @@ Log in to DTM through the Experience Cloud, select your DTM property, then click
 
 ![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LAxHla2X11_-j5Ak32l%2F-LFJyF3ou47m7oJeaH9w%2F-LFJyJz_MpGT-AtrmEOs%2Fupgrade_to_launch.png?alt=media&token=5f5d841c-dcd2-4e91-a748-716bdc82d584)
 
-## Where is my upgrade button? {#where-is-my-upgrade-button}
-
-During this initial rollout phase of the Upgrade functionality, the upgrad button is available after you opt-in. It is impossible to test emitted Launch builds in all of the myriad scenarios and environments where customers deploy it.
-
-While the functionality is still new, Adobe wants to make sure those who use it know what to expect. Adobe asks users to test the emitted builds thoroughly in a dev state and inform Adobe of any issues you uncover.
-
-To opt-in, provide your Adobe Org ID [here](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=69K2XN) and agree to rigorously test the upgrade process.
-
 ## Why is my upgrade button grayed out? {#why-is-my-upgrade-button-greyed-out}
 
 If you mouse over the button, a message informs you why it is not available. There are a few typical reasons:
@@ -50,5 +42,5 @@ The upgrade is expected to succeed in nearly every scenario. There are a few rea
 * You don't have the Manage Properties right in Launch.  Ask your Org Admin \(or a Launch Product Admin\) to add you to a Product Profile with the Manage Properties right.
 * Your property has configuration issues.  If the upgrade fails for this reason, DTM informs you that you have property configuration issues. Please check the [Preparation Guide](upgrade-preparation-guide.md) and try again.
 
-In the rare case that your upgrade fails for any other reason, please contact Client Care and provide your DTM Company and Property Name. Client Care will troubleshoot the issue.
+In the rare case that your upgrade fails for any other reason, please contact Client Care and provide your DTM Company and Property Name. Client Care will work with the Launch team to help you out.
 
