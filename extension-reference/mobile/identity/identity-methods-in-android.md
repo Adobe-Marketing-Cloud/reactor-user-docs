@@ -153,10 +153,7 @@ This API is part of the MobileCore extension. Adobe Identity extension supports 
 
 This ID is preserved between app upgrades, is saved and restored during the standard application backup process, and is removed at uninstall.
 
-Remember the following information:
-
-* If the Adobe Cloud Platform SDK is configured with `identity.adidEnabled` set to `false`, then the advertising identifier is not set or stored.
-* If the current SDK privacy status is `optedout`, then the advertising identifier is not set.
+Remember, if the current SDK privacy status is `optedout`, then the advertising identifier is not set.
 
 ### **Syntax**
 
