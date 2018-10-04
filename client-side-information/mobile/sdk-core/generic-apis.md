@@ -8,18 +8,6 @@ By default, the APIs listed here will only generate events. To perform the corre
 
 The APIs for the corresponding platforms dispatch an event that notifies the Adobe SDK, and any extensions, that you might have enabled a track action, which is being requested. If an extension supports this event, the functionality will be carried out.
 
-### Android
-
-{% tabs %}
-{% tab title="Android" %}
-213245324234
-{% endtab %}
-
-{% tab title="iOS" %}
-Sample COnt
-{% endtab %}
-{% endtabs %}
-
 ### Syntax
 
 ```java
