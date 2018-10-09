@@ -36,9 +36,9 @@ The upgrade is not actually performed until you hit Save. At any time previous t
 
 Once the upgraded extension is installed on your property, you must include it in all Libraries from that point forward. A build failure message displays for any libraries that do not include it.
 
-Beyond that, adding the upgraded extension to your library is the same as [adding any other change](../publishing/web/libraries.md#add-to-a-library) to a library.
+Beyond that, adding the upgraded extension to your library is the same as [adding any other change](../publishing/libraries.md#add-to-a-library) to a library.
 
 From the Edit Library screen, you can use the "Add All Changed Resources" button or you can use the "Add a Resource" button and select the upgraded extension on its own.
 
-Once you have added the extension upgrade to your Library, you can follow the steps outlined in [Approval Workflow](../publishing/web/approval-workflow.md) to publish your library through to Production.
+Once you have added the extension upgrade to your Library, you can follow the steps outlined in [Approval Workflow](../publishing/approval-workflow.md) to publish your library through to Production.
 

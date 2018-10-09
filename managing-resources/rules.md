@@ -92,7 +92,7 @@ Create a rule by specifying what actions occur if a condition is met.
 
 When you edit or update an existing rule, a new version of the rule is created, which you can then deploy.
 
-When creating or editing rules, you can save and build to your [active library](../publishing/web/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed.
+When creating or editing rules, you can save and build to your [active library](../publishing/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed.
 
 ## Rule ordering
 

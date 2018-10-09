@@ -58,7 +58,7 @@ Once defined in a data element, you can use the element anywhere throughout Laun
 
 ### Libraries and builds
 
-Nothing in Launch is published automatically. Each set of changes you make is encapsulated into a [library](../publishing/web/libraries.md). Each library you create automatically inherits anything upstream \(published, approved, or submitted\) as a baseline, so all you need to do is define the changes you'd like to make. This library serves as the blueprint for a [build](../publishing/web/builds.md). A build is the actual set of JavaScript files that are deployed and used.
+Nothing in Launch is published automatically. Each set of changes you make is encapsulated into a [library](../publishing/libraries.md). Each library you create automatically inherits anything upstream \(published, approved, or submitted\) as a baseline, so all you need to do is define the changes you'd like to make. This library serves as the blueprint for a [build](../publishing/builds.md). A build is the actual set of JavaScript files that are deployed and used.
 
 To make sense of that process, there are a couple relationships between Launch, your web page, and your hosting location that you need to understand.
 
@@ -80,7 +80,7 @@ An adapter is a connection between Launch and your hosting location. Launch curr
 
 If you want to self-host, you can have Launch push directly to your servers through SFTP or you can push it to Akamai and download it \(using your environment's Archive option\).
 
-For more information, see [Adapters](../publishing/web/adapters.md).
+For more information, see [Adapters](../publishing/adapters.md).
 
 ### Environments
 
@@ -89,7 +89,7 @@ Each library is created inside an environment. An environment defines how you wa
 * **Adapter:** Each environment needs an adapter which determines where Launch will push any builds created in this environment
 * **Archive:** The default is to deploy your build as a minified .js file \(or if you're using custom code, multiple files which reference each other\). You can have wrap all these together into a zip file and encrypt it.
 
-Once you have saved your environment, it generates the embed code which you can copy and paste into your website. Note that the embed code will not work until you have actually created a library and produced a build. For more information, see [Environments](../publishing/web/environments.md).
+Once you have saved your environment, it generates the embed code which you can copy and paste into your website. Note that the embed code will not work until you have actually created a library and produced a build. For more information, see [Environments](../publishing/environments.md).
 
 ### Publish a build to Dev
 
@@ -113,7 +113,7 @@ Promoting a library all the way through to production will typically require coo
 
 You can assign all these rights to a single person.
 
-For more information about the different states and options available during the publishing process, see [Approval Workflow](../publishing/web/approval-workflow.md).
+For more information about the different states and options available during the publishing process, see [Approval Workflow](../publishing/approval-workflow.md).
 
 ## Additional resources
 

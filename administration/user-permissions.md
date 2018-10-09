@@ -41,7 +41,7 @@ You can set the following Property Rights:
 * **Approve:** Grants the ability to take a submitted library and build to the staging environment.  You can also approve a library for publishing once testing has been completed.
 * **Publish:** Grants the ability to publish approved libraries to the production environment.
 * **Manage Extensions:** Grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension.  More information on extensions is available [here](../managing-resources/extensions.md). This role typically belongs to IT or Marketing, depending on your organization.
-* **Manage Environments:** Grants the ability to create and modify environments. Read more about Environments [here](../publishing/web/environments.md). This role typically belongs to the IT group.
+* **Manage Environments:** Grants the ability to create and modify environments. Read more about Environments [here](../publishing/environments.md). This role typically belongs to the IT group.
 
 #### Company Rights
 

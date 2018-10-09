@@ -88,5 +88,5 @@ The SDK configuration should be retrieved remotely from Launch:
 
 4. Launch the app and it will send a remote config request to the Adobe Launch servers and configure the app using the remote config.
 
-For more information about the mobile extensions, see [Mobile](../extension-reference/mobile/).
+For more information about the mobile extensions, see [Mobile]().
 

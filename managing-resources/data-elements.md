@@ -71,7 +71,7 @@ Data elements are the building blocks for rules. Data elements let you create a 
 
 9. Click Save.
 
-When creating or editing elements, you can save and build to your [active library](../publishing/web/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the Active Library drop down.
+When creating or editing elements, you can save and build to your [active library](../publishing/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the Active Library drop down.
 
 ## Built-in data elements
 

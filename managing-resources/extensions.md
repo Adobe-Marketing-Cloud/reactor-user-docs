@@ -65,7 +65,7 @@ A common use of extensions is to create integrations with other applications. In
 
    These defaults are the basis for the custom rules you'll build to create your extension.
 
-When creating or editing elements, you can save and build to your [active library](../publishing/web/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the Active Library drop down.
+When creating or editing elements, you can save and build to your [active library](../publishing/libraries.md#active-library). This immediately saves your change to your library and executes a build. The status of the build is displayed. You can also create a new library from the Active Library drop down.
 
 ## Configure an extension
 

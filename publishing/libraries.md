@@ -115,5 +115,3 @@ You can save new and existing extensions, rules, and data elements directly to t
 4. Make your changes, then save and build the library.
 5. Test your changes, and repeat these steps as needed.
 
-
-

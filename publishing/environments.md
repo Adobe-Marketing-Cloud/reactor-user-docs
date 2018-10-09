@@ -2,7 +2,7 @@
 
 Extensions, rules, and data elements are building blocks. When you want to make your application do something, these building blocks are added to libraries and then a library is "built" into a build.
 
-When you create a library, you must assign it to an environment.  When the library is built, Launch uses the settings from the assigned environment to determine the following:
+When you create a library, you must assign it to an environment. When the library is built, Launch uses the settings from the assigned environment to determine the following:
 
 1. Destination - This is the location where you want your build to be deployed. It is controlled by selecting an adapter for the environment to use.
 2. Archive Format - You can get a deployable set of files or have it zipped up in an archive format. This is controlled by the archive settings.
@@ -18,9 +18,9 @@ When a build is created, Launch will deliver that build to whatever location you
 
 Most builds consist of multiple files. Multi-file builds contain a main library file \(linked in the embed code\) that contains internal references to the other files. Those other files are pulled in as needed.
 
-By default, the archive option is `off`, and the build is delivered in a format that executes at run-time as is.  For Web properties, this is .js.  For Mobile properties, this is .json.
+By default, the archive option is `off`, and the build is delivered in a format that executes at run-time as is. For Web properties, this is .js. For Mobile properties, this is .json.
 
-If you use the archive option, all build files are delivered as a .zip file \(optionally encrypted\) instead.  This can be useful if:
+If you use the archive option, all build files are delivered as a .zip file \(optionally encrypted\) instead. This can be useful if:
 
 1. You are self-hosting the library, but don't want to set up the SFTP adapter for delivery.
 2. You need to run code analysis on the build prior to deployment.
@@ -62,7 +62,7 @@ When the embed code changes in Launch, you'll need to update the embed codes in 
 
 ## Create an Environment
 
-New properties are created with three environments: one Development, one Staging, and one Production.  This is enough to run the publishing workflow.  If desired, you may add additional Development environments. This is most common on larger teams with multiple developers working on different projects at the same time.
+New properties are created with three environments: one Development, one Staging, and one Production. This is enough to run the publishing workflow. If desired, you may add additional Development environments. This is most common on larger teams with multiple developers working on different projects at the same time.
 
 1. Open the Environments tab.
 2. Click Create New Environment.
