@@ -1,5 +1,19 @@
 # Release Notes
 
+## October 9, 2018
+
+### Updates
+
+1. Conditions and exceptions have been combined in the rule builder, because order matters.  This more accurately reflects how they are treated within the system and at runtime. To make an exception, click the `Add` button under Conditions and choose Exception from the Logic Type selector.
+2. If you're using the Managed by Adobe adapter, older builds will now be cleaned up when new builds are published.
+3. There is now an icon next to the property name to indicate property type.
+
+### Bug Fixes
+
+1. When saving disabled resources in a library, there was a logical loop during the check for extension dependencies. That has been fixed.
+2. Org switcher now looks better on smaller screens.
+3. Certain build failure messages would fail to render.  Now they render.
+
 ## September 27, 2018
 
 ### Features
