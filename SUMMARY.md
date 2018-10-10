@@ -31,7 +31,7 @@
   * [Link DTM Embed Code](upgrade-from-dtm-to-launch/link-dtm-embed-code.md)
   * [Upgrade FAQ](upgrade-from-dtm-to-launch/upgrade-faq.md)
   * [Upgrade Preparation Guide](upgrade-from-dtm-to-launch/upgrade-preparation-guide.md)
-  * [Migrating from the v4 SDKs to the Adobe Cloud Platform SDKs](upgrade-from-dtm-to-launch/migrating-from-the-v4-sdks-to-the-adobe-experience-platform-sdks.md)
+  * [Migrating from the v4 SDKs to the Adobe Experience Platform SDKs](upgrade-from-dtm-to-launch/migrating-from-the-v4-sdks-to-the-adobe-experience-platform-sdks.md)
 * [Extension Reference](extension-reference/README.md)
   * [Adobe Extensions](extension-reference/web/README.md)
     * [Adobe Analytics Extension](extension-reference/web/adobe-analytics-extension.md)

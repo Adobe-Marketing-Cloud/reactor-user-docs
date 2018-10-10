@@ -1,6 +1,6 @@
 # Publishing
 
-This section contains informnation to help you understand the publishing process for Web extensions.
+This section contains information to help you understand the publishing process for Web extensions.
 
 For an introductory video, see [Publishing workflow](https://github.com/jiabingeng/mobile-launch/tree/b27aaefdfe0684053c696a8d3ba01c6dd6ef4903/publishing/getting-started/videos.md).
 

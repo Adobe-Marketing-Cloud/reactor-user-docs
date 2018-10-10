@@ -4,15 +4,15 @@
 
 ### Updates
 
-1. Conditions and exceptions have been combined in the rule builder, because order matters.  This more accurately reflects how they are treated within the system and at runtime. To make an exception, click the `Add` button under Conditions and choose Exception from the Logic Type selector.
-2. If you're using the Managed by Adobe adapter, older builds will now be cleaned up when new builds are published.
-3. There is now an icon next to the property name to indicate property type.
+* Conditions and exceptions have been combined in the rule builder, because order matters.  This more accurately reflects how they are treated within the system and at runtime. To make an exception, click the `Add` button under Conditions and choose Exception from the Logic Type selector.
+* If you're using the Managed by Adobe adapter, older builds will now be cleaned up when new builds are published.
+* There is now an icon next to the property name to indicate property type.
 
 ### Bug Fixes
 
-1. When saving disabled resources in a library, there was a logical loop during the check for extension dependencies. That has been fixed.
-2. Org switcher now looks better on smaller screens.
-3. Certain build failure messages would fail to render.  Now they render.
+* When saving disabled resources in a library, there was a logical loop during the check for extension dependencies. That has been fixed.
+* Org switcher now looks better on smaller screens.
+* Certain build failure messages would fail to render.  Now they render.
 
 ## September 27, 2018
 
@@ -404,7 +404,7 @@ Launch empowers anyone to build and maintain their own integrations with Launch,
 
 Launch enables you to:
 
-Launch is offered to Adobe Marketing Cloud customers as an included, value-add feature. Launch is an entirely new product with a new code base, designed to replace the previous Dynamic Tag Management \(DTM\) service. However, DTM will continue to be supported for the foreseeable future. Adobe will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy DTM.
+Launch is offered to Adobe Experience Cloud customers as an included, value-add feature. Launch is an entirely new product with a new code base, designed to replace the previous Dynamic Tag Management \(DTM\) service. However, DTM will continue to be supported for the foreseeable future. Adobe will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy DTM.
 
 ### Key benefits
 

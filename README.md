@@ -91,12 +91,12 @@ Launch provides several improvements over similar systems, including:
 
 #### What is Launch?
 
-Launch is the next-generation of the Adobe tag-management capability, built into the Adobe Cloud Platform. Launch enables clients to:
+Launch is the next-generation of the Adobe tag-management capability, built into the Adobe Experience Cloud. Launch enables clients to:
 
 * Deploy client-side web products using integrations called _extensions_
 * Consistently capture, define, manage, and share data between marketing and advertising products from other vendors and from Adobe
 
-Launch is an advanced JavaScript delivery system that evaluates conditions and executed actions to efficiently and effectively deploy client-side libraries and products. It provides a highly scalable approach to managing and building extensions, together with a robust set of APIs for programmatic interaction with the Adobe Cloud Platform.
+Launch is an advanced JavaScript delivery system that evaluates conditions and executed actions to efficiently and effectively deploy client-side libraries and products. It provides a highly scalable approach to managing and building extensions, together with a robust set of APIs for programmatic interaction with the Adobe Experience Cloud.
 
 #### Is Launch just an updated DTM?
 
@@ -120,7 +120,7 @@ If you'd like, you can link your DTM Production embed code with your Launch Prod
 
 #### I heard there are plug-ins now. What's that about?
 
-We call them [Extensions](./#extensions). Launch is built into the Adobe Cloud Platform and it is fully extensible. Customers, Adobe Partners, agencies, and marketing or advertising technology vendors will soon be able to build Launch extensions that add new functionality or modify existing functionality. The system allows partners and clients to build, manage, and update their own integrations. This is just one way Adobe is opening up the Adobe Cloud Platform so customers and partners can build products and businesses on the Platform, and so everyone can more easily connect Adobe technology to the marketing and advertising technologies from other vendors.
+We call them [Extensions](./#extensions). Launch is built into the Adobe Experience Cloud and it is fully extensible. Customers, Adobe Partners, agencies, and marketing or advertising technology vendors will soon be able to build Launch extensions that add new functionality or modify existing functionality. The system allows partners and clients to build, manage, and update their own integrations. This is just one way Adobe is opening up the Adobe Experience Cloud so customers and partners can build products and businesses on the Platform, and so everyone can more easily connect Adobe technology to the marketing and advertising technologies from other vendors.
 
 #### Will all third-party extensions be available right away?
 

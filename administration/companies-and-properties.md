@@ -14,7 +14,7 @@ For a video tutorial, see [Creating your first property](../getting-started/vide
 
 ## Companies
 
-In Launch, there is a 1:1 relationship between your companies and your Experience Cloud organizations.
+In Launch, there is a 1:1 relationship between your companies and your Experience Cloudorganizations.
 
 First, you can have one or several Launch company accounts. Companies contain properties. You can have one or several or any number of properties within a company account. Within a property, you can have one or any number of domains or subdomains.
 

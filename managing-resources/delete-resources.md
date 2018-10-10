@@ -15,7 +15,7 @@ Preparing a resource for deletion consists of two basic steps:
 1. Resolve Dependencies
 2. Remove from Libraries
 
-### Resolve Dependencies
+### Resolve dependencies
 
 Rules, data elements, and extensions are interdependent, so most of the time when you delete one, there is a cascading effect and you have other things you need to clean up.
 
@@ -39,7 +39,7 @@ Rule components and data elements depend on extensions for their behavior, but a
 
 For this reason, you should be very careful when deleting extensions and you should resolve dependencies before you delete them.
 
-### Remove from Libraries
+### Remove from libraries
 
 Before you can delete a resource, you must remove it from any libraries that contain it. This process is different depending on the state of the library.
 
@@ -53,7 +53,7 @@ Before you can delete a resource, you must remove it from any libraries that con
 #### Submitted or Approved
 
 1. Reject the library \(moves it back to Development\)
-2. Follow the above steps to remove a reaource from a development library
+2. Follow the above steps to remove a resource from a development library
 
 #### Production
 
