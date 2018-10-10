@@ -34,13 +34,13 @@ Click Add to exclude another path.
 
 ### Opt In
 
-Use the Opt-In options to determine whether or not to create cookies on a visitor's computer or device. If enabled, Opt-In waits for consent to track a visitor's activities on your website.
+Use the Does Opt In Apply options to determine whether or not to create cookies on a visitor's computer or device. The selected option determines whether your website waits for consent to track a visitor's activities on your website.
 
 There are three options:
 
-* **doesOptInApply=False:** Does not wait for consent to track the visitor
-* **doesOptInApply=True:** Waits for consent to track the visitor
-* **doesOptInApply=Callback:** Sets Opt-In to a function that resolves to a Boolean, after it does some calculations. If you select Callback, the Select Data Element field becomes available. Select the desired data element. For example, Opt-In can parse the website URL to see if it’s located in the EU. In this example, select a data element that contains your country.
+* **False:** Does not wait for consent to track the visitor. This is the default behavior if you do not select an option.
+* **True:** Waits for consent to track the visitor.
+* **Determined at runtime using function:** Programmatically determine whether the value is true or false at runtime. If you select this option, the Select Data Element field becomes available. Select a data element that can determine whether to wait for consent. This data element resolves to a boolean value. For example, you can select a data element that provides consent determined on whether the visitor's country is located in the EU. 
 
 ### Variables
 
