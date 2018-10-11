@@ -1,6 +1,6 @@
 # ECID Opt In Extension
 
-
+**Note:** The ECID Opt In extension is currently available for Beta users.
 
 Use this reference for information about configuring the Experience Cloud ID extension, and the options available when using this extension to build a rule.
 
