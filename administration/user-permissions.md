@@ -55,7 +55,7 @@ An individual user's total permissions are determined by their total membership 
 
 For example: Product Profile A grants Henry the Develop right for Property 1. Product Profile B grants Henry the Publish right for Property 2. Henry can Develop in Property 1 and Publish in Property 2, but he cannot Publish in Property 1 \(or Develop in Property 2\) because he has not been granted explicit rights to do so.
 
-## Rights scenarios
+## Rights Scenarios
 
 Different companies have different needs when creating new Product Profiles. These needs vary based on company size, org structure, number of sites, number of people involved in managing tags, and so on.
 
@@ -89,7 +89,81 @@ This is similar to Separation of Duties above, but organized by geographic areas
   * Develop group
   * Publish group
 
-## Assigning User Permissions
+## Examples
+
+A few examples of the types of roles you may have in your organization and which permissions you should assign them, may help to solidify this.
+
+Here are a few descriptions of different roles that may apply in your organization and a matrix to show what permissions they need to do their job.
+
+* The Manager - the manager wants to see what's going on, but shouldn't be able to make any changes.    
+* The Marketer - the marketer can install extensions and setup new tags for existing properties, but cannot publish to the staging or production environments. 
+* The Mobile App Developer - the mobile app developer is responsible for implementing Adobe and 3rd party solutions inside a native mobile app.
+* The IT Team - the IT team doesn't actually modify any tags, but they have full control over the staging and production environments and what is in them.
+* Jack of All Trades - the jack of all trades does everything.  
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Role</th>
+      <th style="text-align:left">Properties</th>
+      <th style="text-align:left">Company Rights</th>
+      <th style="text-align:left">Property Rights</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">The Manager</td>
+      <td style="text-align:left">Auto-include</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">The Marketer</td>
+      <td style="text-align:left">Auto-include</td>
+      <td style="text-align:left">Manage Properties</td>
+      <td style="text-align:left">Develop
+        <br />Manage Extensions</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">The Mobile App Developer</td>
+      <td style="text-align:left">Auto-include</td>
+      <td style="text-align:left">Manage Properties</td>
+      <td style="text-align:left">Develop
+        <br />Manage Extensions</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">The IT Team</td>
+      <td style="text-align:left">Auto-include</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>Approve</p>
+        <p>Publish</p>
+        <p>Manage Environments</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">The Jack of All Trades</td>
+      <td style="text-align:left">Auto-include</td>
+      <td style="text-align:left">Manage Properties</td>
+      <td style="text-align:left">
+        <p>Develop</p>
+        <p>Approve</p>
+        <p>Publish</p>
+        <p>Manage Extensions</p>
+        <p>Manage Environments</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">The Extension Developer</td>
+      <td style="text-align:left">Auto-include</td>
+      <td style="text-align:left">
+        <p>Manage Properties</p>
+        <p>Develop Extensions</p>
+      </td>
+      <td style="text-align:left">Develop</td>
+    </tr>
+  </tbody>
+</table>## Assigning User Permissions
 
 The steps below guide you through the process of assigning permissions. You can also view this process [on video](https://www.youtube.com/watch?v=ba28BHX8cwU).
 
