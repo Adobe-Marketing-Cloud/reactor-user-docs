@@ -28,11 +28,7 @@ If a specified event occurs, the conditions and exceptions are evaluated, then t
 
 * Conditions
 
-  Narrow the event by configuring any conditions that must be true for an event to trigger the rule.
-
-* Exceptions
-
-  Specify any exceptions that would keep the rule from firing, even if the events and conditions are met.
+  Narrow the event by configuring any conditions that must be true for an event to trigger the rule. Multiple conditions are joined by an AND.
 
 The events that are available depend on which extensions are installed. For information about the events in the Core extension, see [Core extension event types](../extension-reference/web/core-extension.md#core-extension-event-types).
 
@@ -72,21 +68,24 @@ Create a rule by specifying what actions occur if a condition is met.
 
      If you want it to run later, give it a number higher than 50. For more information about ordering, see [Rule ordering](rules.md#rule-ordering).
 
-6. Click the Conditions Add icon, then choose a condition type and configure the properties for your condition. Then Click Keep Changes.
+6. Click the Conditions Add icon, then choose a logic type, extension, condition type and configure the properties for your condition. Then Click Keep Changes.
 
-   You can add other conditions. Multiple conditions are joined with an OR. The rule's exceptions will be evaluated if any of the events are met, along with their conditions.
+  Logic type:
+  
+  * Regular logic type will allow actions to be executed if the condition is met
+  * Exception logic type will prevent actions from being executred if the condition is met
 
-7. Click the Exceptions Add icon, then choose an exception type and configure the properties for your exception. Then Click Keep Changes.
 
-   You can add other exceptions. Multiple exceptions are joined with an OR. The rule's actions will be evaluated if any of the events are met, along with their conditions and exceptions.
+   You can add other conditions. Multiple conditions within the same condition are joined with an OR, multiple conditions configurations are joined by AND. The rule's exceptions will be evaluated if any of the events are met, along with their conditions.
 
-8. Click the Actions Add icon, then choose your extension and one of the action types available for that extension, configure the properties for the action, then click Keep Changes. Note: The available action types are defined by the extension.
+
+7. Click the Actions Add icon, then choose your extension and one of the action types available for that extension, configure the properties for the action, then click Keep Changes. Note: The available action types are defined by the extension.
 
    ![](../.gitbook/assets/rule-action-config.jpg)
 
    You can add more event types. Multiple events are joined with an OR, so the rule's conditions will be evaluated if any of the events are met.
 
-9. Review your rule, then click Save Rule.
+8. Review your rule, then click Save Rule.
 
    Later, when you [publish](../publishing/), you'll add this rule to a library and deploy it.
 
