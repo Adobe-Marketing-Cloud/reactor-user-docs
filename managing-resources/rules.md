@@ -68,24 +68,22 @@ Create a rule by specifying what actions occur if a condition is met.
 
      If you want it to run later, give it a number higher than 50. For more information about ordering, see [Rule ordering](rules.md#rule-ordering).
 
-6. Click the Conditions Add icon, then choose a logic type, extension, condition type and configure the properties for your condition. Then Click Keep Changes.
+6. Click the Conditions Add icon, then choose a logic type, extension, condition type and configure the properties for your condition. Then click Keep Changes.
 
-  Logic type:
-  
-  * Regular logic type will allow actions to be executed if the condition is met
-  * Exception logic type will prevent actions from being executred if the condition is met
+   Logic type:
 
+   * Regular logic type will allow actions to be executed if the condition is met
+   * Exception logic type will prevent actions from being executred if the condition is met
 
-   You can add other conditions. Multiple conditions within the same condition are joined with an OR, multiple conditions configurations are joined by AND. The rule's exceptions will be evaluated if any of the events are met, along with their conditions.
+You can add other conditions. Multiple conditions within the same condition are joined with an OR, multiple conditions configurations are joined by AND. The rule's exceptions will be evaluated if any of the events are met, along with their conditions.
 
-
-7. Click the Actions Add icon, then choose your extension and one of the action types available for that extension, configure the properties for the action, then click Keep Changes. Note: The available action types are defined by the extension.
+1. Click the Actions Add icon, then choose your extension and one of the action types available for that extension, configure the properties for the action, then click Keep Changes. Note: The available action types are defined by the extension.
 
    ![](../.gitbook/assets/rule-action-config.jpg)
 
    You can add more event types. Multiple events are joined with an OR, so the rule's conditions will be evaluated if any of the events are met.
 
-8. Review your rule, then click Save Rule.
+2. Review your rule, then click Save Rule.
 
    Later, when you [publish](../publishing/), you'll add this rule to a library and deploy it.
 
