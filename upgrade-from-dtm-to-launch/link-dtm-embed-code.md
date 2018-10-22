@@ -2,7 +2,7 @@
 
 Linking embed codes primarily applies to DTM and Launch users who use built-in Akamai hosting. Those who are self-hosting, please see the [self-hosting section](link-dtm-embed-code.md#self-hosting) at the end of this article.
 
-## Embed Code {#embed-code}
+## Embed Code <a id="embed-code"></a>
 
 A DTM embed code is a `<script>` tag that you embed in the HTML of your web page.
 
@@ -16,7 +16,7 @@ In the diagram below, Step 1 shows DTM publishing the container tag to your spec
 
 ![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LAxHla2X11_-j5Ak32l%2F-LAyfZuSJ0NwVoeH8Fxx%2F-LAyfa5bqgTovB_vZ6yU%2Fdtm_publishing.png?generation=1524691284072582&alt=media)
 
-## Linking Embed Codes {#linking-embed-codes}
+## Linking Embed Codes <a id="linking-embed-codes"></a>
 
 The linking process allows you to take the DTM Production embed code, with its matching host location, and use that same embed code with your Launch production environment.
 
@@ -30,7 +30,7 @@ In the diagram below, Step 3 represents Launch publishing its container tag over
 
 **Important:** This overwriting works both ways. If you publish Launch, then subsequently publish from DTM, the DTM container tag overwrites the Launch one. You have two systems publishing to the same location. This means you don't have to change the code on your page, but it also means you need to be careful when you publish. It's recommended that you disable your DTM property to prevent this situation.
 
-## Linking Prerequisites {#linking-prerequisites}
+## Linking Prerequisites <a id="linking-prerequisites"></a>
 
 Before you link your embed code:
 
@@ -38,7 +38,7 @@ Before you link your embed code:
 * Your user account must have the Manage Environments right in Launch and the Admin right in DTM.
 * Your DTM property must not already be linked to a different Launch property.
 
-## How to Link the Embed Code {#how-to-link-the-embed-code}
+## How to Link the Embed Code <a id="how-to-link-the-embed-code"></a>
 
 1. In Launch, open the Environments tab.
 2. Create a new Production environment.
@@ -52,7 +52,7 @@ Launch validates a number of things and tells you whether linking was successful
 
 **Important:** You can only have one Production environment in Launch. If you have already created one on this property, you need to delete the existing Production environment so you can create a new linked environment. The new one does not have the same embed code as the old one, so don't do this unless you are familiar with the process.
 
-## Recommended Test Process {#recommended-test-process}
+## Recommended Test Process <a id="recommended-test-process"></a>
 
 If you use embed code linking, the process is mostly the same as without it, but with some highlighted differences:
 
@@ -66,7 +66,7 @@ If you use embed code linking, the process is mostly the same as without it, but
 
 Step 7 can be done any time after Step 3 has been performed.
 
-## Self-hosting {#self-hosting}
+## Self-hosting <a id="self-hosting"></a>
 
 DTM also supports self-hosting of the DTM container tag file. There are two methods to accomplish this:
 
@@ -75,13 +75,13 @@ DTM also supports self-hosting of the DTM container tag file. There are two meth
 
 In either case, it doesn't make much sense to migrate the embed code. Nothing will break if you try it. It's recommended that you not use this option and set up your adapters and environments manually.
 
-### FTP Delivery {#ftp-delivery}
+### FTP Delivery <a id="ftp-delivery"></a>
 
 Due to the differences in setup between FTP and SFTP, DTM and Launch cannot perform automated migrations of these settings.
 
 If you are using this method for delivery of the container tag, it's recommended that you move to SFTP in Launch. You can create an [SFTP adapter](../publishing/adapters.md#self-managed-adapter) and use this for any environment that you choose.
 
-### Library Download {#library-download}
+### Library Download <a id="library-download"></a>
 
 In Launch, downloading the library no longer exists as a separate option. If you use a library download in DTM, we recommend you skip the embed code migration and set up your Production environment with an Adobe Managed adapter and Archive enabled.
 

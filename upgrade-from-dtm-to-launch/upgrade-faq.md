@@ -1,6 +1,6 @@
 # Upgrade FAQ
 
-## What does the Launch Upgrade do? {#what-does-the-launch-upgrade-do}
+## What does the Launch Upgrade do? <a id="what-does-the-launch-upgrade-do"></a>
 
 The Launch Upgrade reads your DTM property and attempts to make a complete copy of that property in Launch. The resulting Launch property mimics the on-page behavior of your DTM property as closely as possible. To read about differences in structure, see [Upgrade Preparation Guide](upgrade-preparation-guide.md).
 
@@ -8,7 +8,7 @@ When the upgrade is complete, a new property appears in Launch and a link to the
 
 The upgrade does not make any changes to your DTM property.
 
-## How should I prepare to upgrade? {#how-do-i-start-the-upgrade}
+## How should I prepare to upgrade? <a id="how-do-i-start-the-upgrade"></a>
 
 Not everything you can do in DTM is compatible with Launch. A list of differences is available in the [preparation guide](upgrade-preparation-guide.md). Make any necessary changes to your DTM property before you attempt the upgrade.
 
@@ -18,7 +18,7 @@ Log in to DTM through the Experience Cloud, select your DTM property, then click
 
 ![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LAxHla2X11_-j5Ak32l%2F-LFJyF3ou47m7oJeaH9w%2F-LFJyJz_MpGT-AtrmEOs%2Fupgrade_to_launch.png?alt=media&token=5f5d841c-dcd2-4e91-a748-716bdc82d584)
 
-## Why is my upgrade button grayed out? {#why-is-my-upgrade-button-greyed-out}
+## Why is my upgrade button grayed out? <a id="why-is-my-upgrade-button-greyed-out"></a>
 
 If you mouse over the button, a message informs you why it is not available. There are a few typical reasons:
 
@@ -26,7 +26,7 @@ If you mouse over the button, a message informs you why it is not available. The
 * You did not sign in through the Experience Cloud - Your DTM Company must be connected to the same Experience Cloud Org as your Launch Company.  Log in through the Experience Cloud and try again.
 * You are not a DTM Admin - You must be have the DTM Admin right granted to you through Admin Console.  Ask an Org Admin to grant you this right or find someone who already has it to perform the Upgrade for you.
 
-## What does the recommended upgrade process look like? {#what-does-the-recommended-upgrade-process-look-like}
+## What does the recommended upgrade process look like? <a id="what-does-the-recommended-upgrade-process-look-like"></a>
 
 1. Complete the upgrade process in DTM.
 2. Go to Launch and make a new Development library with all your new changes.
@@ -35,7 +35,7 @@ If you mouse over the button, a message informs you why it is not available. The
 5. Promote changes through to the Launch Production environment.
 6. \(Optional\) Disable the DTM property any time after completing Step 1.
 
-## What do I do if the upgrade doesn't work? {#what-do-i-do-if-the-upgrade-doesnt-work}
+## What do I do if the upgrade doesn't work? <a id="what-do-i-do-if-the-upgrade-doesnt-work"></a>
 
 The upgrade is expected to succeed in nearly every scenario. There are a few reasons why it might fail, such as:
 

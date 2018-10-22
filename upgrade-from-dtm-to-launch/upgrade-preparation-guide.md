@@ -15,13 +15,13 @@ Examples of differences that are further defined below:
 * Many resources are called something new in Launch, so they are copied with the new name.  Example: `Page Top` events move to `Library Loaded` events.
 * Many very specific conditions have been replaced by a more generic `Value Comparison` condition in Launch.  This enables more options, provides consistency with all the comparison operators, and simplifies maintainance as well. Example: the `Cart Amount` condition has been replaced by the `Value Comparison` condition.
 
-## Properties {#properties}
+## Properties <a id="properties"></a>
 
-### Name {#name}
+### Name <a id="name"></a>
 
 The name of your DTM property is copied to Launch. "**\(DTM - yyyy-mm-dd hh:mm:ss\)"** is added to the end of the Launch property name so you know exactly when it was migrated. You can remove this timestamp from your Launch property name.
 
-### Domains {#domains}
+### Domains <a id="domains"></a>
 
 The domains on your DTM property are copied to Launch.
 
@@ -29,7 +29,7 @@ If you have the same domain listed multiple times in DTM, it only appears on you
 
 If you don't have at least one valid domain defined on your DTM property, it is not copied.
 
-### Advanced Settings {#advanced-settings}
+### Advanced Settings <a id="advanced-settings"></a>
 
 The advanced settings on your DTM property are copied to Launch.
 
@@ -37,9 +37,9 @@ The advanced settings on your DTM property are copied to Launch.
 
 When you upgrade to Launch, the most commonly used DTM tools are converted into an installed Launch extension on your property.
 
-### Adobe Analytics Tool {#adobe-analytics-tool}
+### Adobe Analytics Tool <a id="adobe-analytics-tool"></a>
 
-#### Tool Selection {#tool-selection}
+#### Tool Selection <a id="tool-selection"></a>
 
 DTM allows you to install multiple instances of the Analytics tool to your property. Launch only allows a single instance of each Extension to be installed. Thus, only one Analytics tool is copied to Launch during the upgrade.
 
@@ -47,13 +47,13 @@ The tool instance that is copied is determined by transforming the names to lowe
 
 You can control which tool instance to copy by changing the name of the tool.
 
-#### App Measurement Version {#app-measurement-version}
+#### App Measurement Version <a id="app-measurement-version"></a>
 
 DTM gives you several different options to deploy App Measurement. Each is supported in Launch, so whichever method you use, you'll get the same method in Launch.
 
 If you're using `Managed by Adobe` in the DTM tool, be aware that it lets you select any of the five most recent versions of App Measurement. The Adobe Analytics extension for Launch uses the latest version of App Measurement, so depending on your selection there, copying to Launch may result in a different version of App Measurement being used. If you want the version to match, modify your DTM tool to use the same version as Launch before you upgrade.
 
-#### Initial Beacon {#initial-beacon}
+#### Initial Beacon <a id="initial-beacon"></a>
 
 In DTM, an Analytics beacon is fired on every page when App Measurement loads, even if no rules have been defined. In Launch, this beacon call is controlled by a rule and does not happen automatically. The upgrade process creates this rule for you unless you use the `Page code is already present` option in DTM. This rule is called **Migrated from DTM: Adobe Analytics - Send beacon on every page** and has the following definition:
 
@@ -64,17 +64,17 @@ In DTM, an Analytics beacon is fired on every page when App Measurement loads, e
 
 The Upgrade Assistant creates this rule in Launch, as long as an Analytics tool is installed in DTM. If you used a `return false` inside custom code in DTM to suppress the initial beacon call, then you should leave the Launch rule out of your library \(or delete it\) after the upgrade is complete.
 
-#### Other {#other}
+#### Other <a id="other"></a>
 
 Analytics tools that don't define a production report suite are not copied to Launch.
 
 Evars that don't match the pattern of **eVar\#\#** are not copied to Launch.
 
-### Experience Cloud ID Tool {#experience-cloud-id-tool}
+### Experience Cloud ID Tool <a id="experience-cloud-id-tool"></a>
 
 The Experience Cloud ID tool is copied to Launch. There are a few things you should know about that tool.
 
-#### Extension Configuration {#extension-configuration}
+#### Extension Configuration <a id="extension-configuration"></a>
 
 Some variables in the DTM tool are not supported in the Launch extension. The following variables are copied to Launch:
 
@@ -111,7 +111,7 @@ Some variables in the DTM tool are not supported in the Launch extension. The fo
 
 Variables that do not have a value are not copied to Launch.
 
-#### Set Customer IDs {#set-customer-ids}
+#### Set Customer IDs <a id="set-customer-ids"></a>
 
 If the ECID tool configuration in DTM contains data in the `Customer Settings` section, that data is copied into a Launch rule. The Launch rule has the following definition:
 
@@ -124,9 +124,9 @@ Customer IDs that don't have names or values are not copied.
 
 If no valid customer IDs are found, no Launch rule is created.
 
-### Google Universal Analytics {#google-universal-analytics}
+### Google Universal Analytics <a id="google-universal-analytics"></a>
 
-#### Tool Selection {#tool-selection-1}
+#### Tool Selection <a id="tool-selection-1"></a>
 
 DTM allows you to install multiple instances of the Google Universal Analytics tool to your property. Launch only allows a single instance of each extension to be installed. Thus, only one tool is copied to Launch during the upgrade.
 
@@ -134,7 +134,7 @@ The tool instance that is copied is determined by transforming the names to lowe
 
 You can control which tool instance to copy by changing the name of the tool.
 
-#### Initial Beacon {#initial-beacon-1}
+#### Initial Beacon <a id="initial-beacon-1"></a>
 
 In DTM, a beacon is fired on every page even if no rules are defined. In Launch, this beacon call is controlled by a rule and does not happen automatically. The Upgrade process creates this rule for you unless you use the `Google Universal Analytics page code is already present` option. This rule is called **Migrated from DTM: Google Universal Analytics - Send beacon on every page** and has the following definition:
 
@@ -143,7 +143,7 @@ In DTM, a beacon is fired on every page even if no rules are defined. In Launch,
 * Exceptions: None
 * Actions: `Google Univeral Analytics - Send Page View`
 
-#### Hit Callback {#hit-callback}
+#### Hit Callback <a id="hit-callback"></a>
 
 If you have added any JavaScript code in the Hit Callback section inside the Google Universal Analytics tool, the Upgrade Assistant creates a matching rule for you in Launch. The rule is called `Migrated from DTM: Google Universal Analytics - Hit Callback` and has the following definition:
 
@@ -152,13 +152,13 @@ If you have added any JavaScript code in the Hit Callback section inside the Goo
 * Exceptions: None
 * Actions: `Core - Custom Code`
 
-#### Rules Definition {#rules-definition}
+#### Rules Definition <a id="rules-definition"></a>
 
 If you defined rules in DTM where **Event Category** or **Event Action** are missing from the rule definition, these event details are not copied to Launch.
 
 If you defined rules in DTM where **Event Value** is not a number, these event details are not copied to Launch.
 
-### Tools that are not copied {#tools-that-are-not-copied}
+### Tools that are not copied <a id="tools-that-are-not-copied"></a>
 
 The following DTM tools installed on your property are not copied to Launch extensions.
 
@@ -169,13 +169,13 @@ The following DTM tools installed on your property are not copied to Launch exte
 * Nielsen
 * Google Analytics
 
-## Data Elements {#data-elements}
+## Data Elements <a id="data-elements"></a>
 
-### Cookie {#cookie}
+### Cookie <a id="cookie"></a>
 
 `Cookie` data element types that don't contain a cookie name are not copied to Launch.
 
-### CSS Selector {#css-selector}
+### CSS Selector <a id="css-selector"></a>
 
 In Launch, the CSS Selector data element type is called DOM Attribute, so your CSS Selector data elements types are copied into DOM Attribute data element types.
 
@@ -183,23 +183,23 @@ In Launch, the CSS Selector data element type is called DOM Attribute, so your C
 
 `CSS Selector` data element types that use the `get the value of Other Attribute`, but have specified an empty string, are not copied to Launch.
 
-### JS Object {#js-object}
+### JS Object <a id="js-object"></a>
 
 `JS Object` data element types that don't contain a path are not copied to Launch.
 
-### URL Parameter {#url-parameter}
+### URL Parameter <a id="url-parameter"></a>
 
 `URL Parameter` data element types that don't contain a parameter name are not copied to Launch.
 
-## Rule Events {#rule-events}
+## Rule Events <a id="rule-events"></a>
 
-### Page Top {#page-top}
+### Page Top <a id="page-top"></a>
 
 In Launch, the DTM `Page Top` event type is called `Library Load`, so all your DTM rules with `Page Top` events become Launch rules with a `Library Load` event.
 
-## Rule Conditions {#rule-conditions}
+## Rule Conditions <a id="rule-conditions"></a>
 
-### Browser {#browser}
+### Browser <a id="browser"></a>
 
 The Browser condition in Launch has removed support for some older browsers that were supported in DTM. Only supported values are copied to Launch.
 
@@ -221,35 +221,35 @@ Unsupported values in Launch:
 
 If you use a Browser condition that contains only values that are now unsupported, the condition is not copied to Launch.
 
-### Cart Amount {#cart-amount}
+### Cart Amount <a id="cart-amount"></a>
 
 The DTM `Cart Amount` condition has been replaced by the `Value Comparison` condition in Launch, so any `Cart Amount` conditions are copied to Launch as `Value Comparison` conditions.
 
 DTM `Cart Amount` conditions that don't define a data element, or that define a data element that no longer exists, are not copied to Launch.
 
-### Cart Item Quantity {#cart-item-quantity}
+### Cart Item Quantity <a id="cart-item-quantity"></a>
 
 The DTM `Cart Item Quantity` condition has been replaced by the Launch `Value Comparison` condition, so any `Cart Item Quantity` conditions are copied to Launch as `Value Comparison` conditions.
 
 DTM `Cart Item Quantity` conditions that don't define a data element, or that define a data element that no longer exists, are not copied to Launch.
 
-### Data Element {#data-element}
+### Data Element <a id="data-element"></a>
 
 The DTM `Data Element` condition has been replaced by the Launch `Value Comparison` condition, so any `Data Element` conditions are copied to Launch as `Value Comparison` conditions.
 
 DTM `Data Element` conditions that don't define a data element \(or that define a data element that no longer exists\) are not copied to Launch.
 
-### Device {#device}
+### Device <a id="device"></a>
 
 This condition does not exist in Launch and is not copied over.
 
-### Logged In {#logged-in}
+### Logged In <a id="logged-in"></a>
 
 The DTM `Logged In` condition has been replaced by the `Value Comparison` condition in Launch, so any `Logged In` conditions are copied to Launch as `Value Comparison` conditions.
 
 DTM `Logged In` conditions that don't define a data element, or that define a data element that no longer exists, are not copied to Launch.
 
-### Operating System {#operating-system}
+### Operating System <a id="operating-system"></a>
 
 The Launch `Operating System` condition has removed support for some older operating systems that were supported in DTM. Only supported values are copied over to Launch.
 
@@ -270,17 +270,17 @@ Unsupported values in Launch:
 
 If you use an Operating System condition that contained only values that are now unsupported, the condition is not copied to Launch.
 
-### Previous Converter {#previous-converter}
+### Previous Converter <a id="previous-converter"></a>
 
 The DTM `Previous Converter` condition has been replaced by the `Value Comparison` condition in Launch, so any `Previous Converter` conditions are copied to Launch as `Value Comparison` conditions.
 
-### Registered User {#registered-user}
+### Registered User <a id="registered-user"></a>
 
 The DTM `Registered User` condition has been replaced by the `Value Comparison` condition in Launch, so any `Registered User` conditions are copied to Launch as `Value Comparison` conditions.
 
-## Rule Actions {#rule-actions}
+## Rule Actions <a id="rule-actions"></a>
 
-### Custom Scripts {#custom-scripts}
+### Custom Scripts <a id="custom-scripts"></a>
 
 The contents of custom scripts are copied over as is. The code is not inpected to determine its purpose. It is simply copied to custom code in Launch. There are a few things you should know about this process:
 

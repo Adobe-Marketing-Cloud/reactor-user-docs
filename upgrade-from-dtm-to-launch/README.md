@@ -1,6 +1,6 @@
 # Upgrade From a Previous Version
 
-## [Upgrade FAQ](upgrade-faq.md) {#upgrade-assistant-faq}
+## [Upgrade FAQ](upgrade-faq.md) <a id="upgrade-assistant-faq"></a>
 
 A list of common questions people have about the DTM to Launch upgrade process.
 
