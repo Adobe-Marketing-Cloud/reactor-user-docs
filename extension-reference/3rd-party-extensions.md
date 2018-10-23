@@ -5,7 +5,7 @@ description: >-
   the nav link in SUMMARY.md.
 ---
 
-# 3rd Party Extensions
+# Third-Party Extensions
 
-
+To build third-party mobile extensions in Launch, see [Building Mobile Extensions](https://aep-sdks.gitbook.io/docs/resources/building-mobile-extensions).
 

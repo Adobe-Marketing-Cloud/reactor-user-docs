@@ -43,7 +43,7 @@
     * [Core Extension](extension-reference/web/core-extension.md)
     * [Experience Cloud ID Service Extension](extension-reference/web/experience-cloud-id-service-extension.md)
     * [ECID Opt In Extension](extension-reference/web/ecid-opt-in-extension.md)
-  * [3rd Party Extensions](extension-reference/3rd-party-extensions.md)
+  * [Third-Party Extensions](extension-reference/3rd-party-extensions.md)
 * [Tutorials](contributing/README.md)
   * [Adapters](contributing/adapters.md)
   * [Companies](contributing/companies.md)
