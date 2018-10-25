@@ -70,3 +70,7 @@ Launch provides a toggle to turn on asynchronous loading when creating an embed 
 
    This code tells Launch that the browser parser has reached the bottom of the page. Since Launch likely will not have loaded and executed before this time, calling `_satellite.pageBottom()` results in an error and the Page Bottom event type may not behave as expected.
 
+## Adobe Target Consideration
+When the Launch embed codes are loaded asynchronously, the page may finish rendering the default content before the Target library is fully loaded and has performed its content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest hardcoding a special pre-hiding snippet immediately before Launch's asynchronous embed codes.
+
+For more details and to obtain the pre-hiding snippet, please see the [Adobe Target extension with an asynchronous deployment](https://docs.adobelaunch.com/extension-reference/web/adobe-target-extension#adobe-target-extension-with-an-asynchronous-deployment)
