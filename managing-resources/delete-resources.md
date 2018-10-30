@@ -1,47 +1,67 @@
-# Delete Resources
+# Deleting Resources
 
-You can delete data elements, rules, and extensions.
+Deleting a resource is a permanent removal of that resource from Launch. If you still want the resource to appear in Launch, but not be in your library, see [Remove Resources from a Library](remove-resources-from-library.md).
 
-Select the resource you want to delete. then click Delete.
+You can delete data elements, rules, extensions, adapters, environments, and properties. Once deleted these are not recoverable.
+
+Resources that are added to libraries \(data elements, rules, and extensions\) have special considerations when you delete them.
 
 ## Prepare a resource for deletion
 
-Before you delete a resource, you must make sure it is in a state where it can be deleted.
+Resources exist in different states and they depend on one another. Before you delete a resource, you must make sure it is in a state where it can be deleted.
 
-Resources exist in different states and they depend on one another. In some cases, you must resolve conflicts before you can delete a resource. In other cases, you can delete the resource, but you have to update any other resources that are dependent on the one you delete.
+Preparing a resource for deletion consists of two basic steps:
 
-For example:
+1. Resolve Dependencies
+2. Remove from Libraries
 
-* Deleting a data element affects the behavior of any rules that reference the data element.
-* Deleting an extension affects any data elements and any rules that include components provided by the extension.
+### Resolve dependencies
 
-## Update dependent resources
+Rules, data elements, and extensions are interdependent, so most of the time when you delete one, there is a cascading effect and you have other things you need to clean up.
 
-If you want to delete an extension or a data element, you must update dependent resources. You can do this before or after you delete.
+#### Rules
 
-### Update dependent resources for an extension
+Rules depend on other resources \(extensions and data elements\), but they do not have any resources that depend on them. Deleting a rule means you can no longer use it in a library or even view it, but you won't have any dependencies to clean up afterwards.
 
-Modify any rules that use components provided by the extension. Any data elements provided by the extension will be broken.
+#### Data elements
 
-### Update dependent resources for a data element
+Data elements depend on extensions, but unlike rules, data elements can have rules and extensions which depend on them. If you delete a data element, any rules or extensions which depend on this data element will be affected.
 
-1. Update any rule components that reference the data element.
-2. Modify any extension configurations that reference the data element.
+Once deleted, the data element will no longer return the correct value at run-time. It will either return an empty string or it will return the name of the data deleted data element wrapped in %% \(example: `%data-element-name%`\). This behavior is configurable within Property Settings.
 
-## Delete a resource published in Prod
+You can resolve these dependencies before or after you delete the data element.
 
-1. Disable the resource.
-2. Publish that change through to Prod.
-3. Delete.
+#### Extensions
 
-## Delete a resource from a library in Dev
+All other resources \(rules, rule components, and data elements\) are provided by extensions.
 
-1. Remove the resource from the library.
-2. Delete.
+Rule components and data elements depend on extensions for their behavior, but also just to be displayed in the Launch UI. If you delete the extension before you resolve dependencies, you'll no longer be able to view these orphaned resources in the UI. These orphaned resources will show in list views, but you'll receive a friendly error when you try to get to the detail view.
 
-## Delete a resource from a library in Stage
+For this reason, you should be very careful when deleting extensions and you should resolve dependencies before you delete them.
 
-1. Reject the library to move it back to Dev.
-2. Remove the resource from the library.
-3. Delete.
+### Remove from libraries
+
+Before you can delete a resource, you must remove it from any libraries that contain it. This process is different depending on the state of the library.
+
+#### Development
+
+1. Open the library
+2. Remove the resource
+3. Save the library
+4. Delete the resource
+
+#### Submitted or Approved
+
+1. Reject the library \(moves it back to Development\)
+2. Follow the above steps to remove a resource from a development library
+
+#### Production
+
+1. Disable the resource
+2. Publish the disabled resource through to Production
+3. Delete the resource
+
+## Delete a resource
+
+From the appropriate list view, select the resource you want to delete. Click the Delete button.
 

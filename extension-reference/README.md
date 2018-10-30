@@ -8,3 +8,5 @@ Use this reference to find information about the settings available in each exte
 
 We will be adding documentation highlighting the functionality of each extension featured in the catalog in the very near future."
 
+
+

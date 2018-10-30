@@ -1,12 +1,104 @@
 # Release Notes
 
+## October 9, 2018
+
+### Updates
+
+* Conditions and exceptions have been combined in the rule builder, because order matters.  This more accurately reflects how they are treated within the system and at runtime. To make an exception, click the `Add` button under Conditions and choose Exception from the Logic Type selector.
+* If you're using the Managed by Adobe adapter, older builds will now be cleaned up when new builds are published.
+* There is now an icon next to the property name to indicate property type.
+
+### Bug Fixes
+
+* When saving disabled resources in a library, there was a logical loop during the check for extension dependencies. That has been fixed.
+* Org switcher now looks better on smaller screens.
+* Certain build failure messages would fail to render.  Now they render.
+
+## September 27, 2018
+
+### Features
+
+Launch has gone mobile!!
+
+Used by thousands of customers for web tag management, Adobe Launch can now be used to manage your mobile SDKs.
+
+Creating a mobile property in Launch allows you to:
+
+* Create data elements and build sophisticated rules that can combine actions across multiple solutions.
+* Manage mobile extensions:
+  * Mobile Core and Profile extensions are pre-installed with every mobile property.
+  * Extensions are available for other Adobe solutions including Adobe Analytics, Adobe Target and Adobe Audience Manager.
+* Mobile Core extension and all additional extensions can be downloaded and installed through a dependency managers such as Maven and CocoaPods.
+* When you add an extension, you must recompile your app and complete the app store submission/approval process.
+
+  Data elements, rules, and extension configs are delivered to your application dynamically, are updated at app launch, and do not require app store updates.
+
+For more information about getting started with mobile properties, see [Mobile](https://docs.adobelaunch.com/getting-started/mobile-1).
+
+## September 6, 2018
+
+### Features
+
+When you save a library, Launch will now check all the resources in it and prompt you to add any required extensions that are missing.
+
+### Updates
+
+1. Rights in the Admin Console have been slightly rearranged.  Manage Properties now belongs to the Company Rights group.  All other permissions \(Manage Environments, Manage Extensions, Develop, Approve, and Publish\) are in the Property Rights group.
+2. Database improvements to improve API response times.
+
+### Bug Fixes
+
+There were some edge cases where the rule builder would not display rule components in the same order that the database was saving them in. Now rule builder always displays rule component order correctly.
+
+## August 23, 2018
+
+### Features
+
+Newly created Launch properties now come with a "Managed by Adobe" adapter and three environments \(one of each type\) by default.
+
+## August 14, 2018
+
+### Updates
+
+The extension catalog is now sorted by display name rather than name.
+
+### Bug Fixes
+
+* When switching properties, the cache was not clearing correctly and incorrect warnings displayed to users about which extensions were installed
+* Rules with modified actions now correctly show as changes when adding to a library in all cases
+
+## August 7, 2018
+
+### Features
+
+#### Extension Upgrade
+
+Launch users will now be notified when new versions of extensions are available and can install them on their own. Read more [here](../managing-resources/extension-upgrade.md).
+
+### Updates
+
+Embed codes have moved from the Environment detail page to an installation instructions modal. This modal is displayed automatically after you create a new environment and is accessible from the Environments List view.
+
+## July 24, 2018
+
+### Bug Fixes
+
+* In some scenarios, rules saved through the UI were not being saved with the correct order.  This has now been fixed.  In a future update, a data migration will fix all affected rules, but in the meantime manually editing the rule, making a change, and saving will fix an impacted rule.
+
+## July 10, 2018
+
+### Updates
+
+* Anchor Delay has been moved from Property Settings to configuration for the Core extension Click event
+* Tracking Cookie Name has been moved from Property Settings to the Adobe Analytics, Google Universal Analytics, and Cookie Optin condition settings
+
 ## June 15, 2018
 
 ### Features
 
 #### Target Extension v0.6.0
 
-Target Extension has been updated to use at.js v1.3.1.  When you deploy Target with Analytics, we now wait until all Target calls have resolved \(including redirect offers\) before Analytics fires, resolving the race condition that previously existed.
+Target Extension has been updated to use at.js v1.3.1. When you deploy Target with Analytics, we now wait until all Target calls have resolved \(including redirect offers\) before Analytics fires, resolving the race condition that previously existed.
 
 ## June 5, 2018
 
@@ -27,15 +119,15 @@ Target Extension has been updated to use at.js v1.3.1.  When you deploy Target w
 
 #### Launch and DTM libraries are now live in China
 
-The Launch and DTM libraries using Akamai are now available on CDN edge nodes in China.  This provides much faster library load speeds for end users in China.
+The Launch and DTM libraries using Akamai are now available on CDN edge nodes in China. This provides much faster library load speeds for end users in China.
 
 #### Improved error messages
 
-The information contained in error messages has been improved and expanded throughout the API and UI.  This should be especially useful for build failure messages.
+The information contained in error messages has been improved and expanded throughout the API and UI. This should be especially useful for build failure messages.
 
 #### Add All Changes Button
 
-Changed the behavior of the Add All Changes button on the Edit Library page.  Previously, a resource was only considered "changed" until you had added it to a Library and saved it.  Now a resource is considered "changed" until it has been published to the Production environment.
+Changed the behavior of the Add All Changes button on the Edit Library page. Previously, a resource was only considered "changed" until you had added it to a Library and saved it. Now a resource is considered "changed" until it has been published to the Production environment.
 
 #### Adobe Privacy extension
 
@@ -43,7 +135,7 @@ The Adobe Privacy extension provides functionality for collecting and/or removin
 
 #### Launch Core extension: Value Comparison condition
 
-The new Value Comparison condition Compares two values, using any of several available operators.  This replaces the functionality of several older conditions that were far too specific.
+The new Value Comparison condition Compares two values, using any of several available operators. This replaces the functionality of several older conditions that were far too specific.
 
 #### Launch Core extension: Max Frequency condition
 
@@ -55,11 +147,11 @@ This condition allows you to specify the number of times the condition should re
 
 #### Data Elements duration, "None" option
 
-Data Elements now have a "None" duration option.  Newly created Data Elements default to this setting.
+Data Elements now have a "None" duration option. Newly created Data Elements default to this setting.
 
 #### Environment pages default to display async embed codes
 
-Environment pages now display async embed codes as the default.  Toggling between sync and async works exactly as before.
+Environment pages now display async embed codes as the default. Toggling between sync and async works exactly as before.
 
 ## May 3, 2018
 
@@ -93,11 +185,11 @@ Improved warning messages.
 
 #### Rule ID enhancement
 
-Rule ID is now emitted for each rule in a build, and can be referenced in the browser. 
+Rule ID is now emitted for each rule in a build, and can be referenced in the browser.
 
-#### Page Load event order	
+#### Page Load event order
 
-Page Load events now execute in logical order in async deployments \(Library Loaded &gt; Page Bottom &gt; DOM Ready &gt; Window Loaded\).	
+Page Load events now execute in logical order in async deployments \(Library Loaded &gt; Page Bottom &gt; DOM Ready &gt; Window Loaded\).
 
 ## April 11, 2018
 
@@ -133,7 +225,7 @@ Minor style improvements.
 
 #### Adobe Analytics for Video Extension 1.0.0
 
-The [Adobe Analytics for Video Extension](../extension-reference/adobe-analytics-for-video-extension.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension \(VA Extension\) requires two additional extensions:
+The [Adobe Analytics for Video Extension](../extension-reference/web/adobe-analytics-for-video-extension.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension \(VA Extension\) requires two additional extensions:
 
 * Analytics Extension
 * Experience Cloud ID Extension
@@ -169,7 +261,7 @@ You can delete data elements, rules, and extensions. See [Delete Resources](../m
 
 #### Link DTM Embed Code to Launch
 
-When you link your DTM embed code to Launch, you can keep your DTM production embed code on a page, but serve Launch files there instead of DTM. See [Link DTM Embed Code to Launch]().
+When you link your DTM embed code to Launch, you can keep your DTM production embed code on a page, but serve Launch files there instead of DTM. See [Link DTM Embed Code to Launch](release-notes.md).
 
 ## March 6, 2018
 
@@ -312,7 +404,7 @@ Launch empowers anyone to build and maintain their own integrations with Launch,
 
 Launch enables you to:
 
-Launch is offered to Adobe Marketing Cloud customers as an included, value-add feature. Launch is an entirely new product with a new code base, designed to replace the previous Dynamic Tag Management \(DTM\) service. However, DTM will continue to be supported for the foreseeable future. Adobe will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy DTM.
+Launch is offered to Adobe Experience Cloud customers as an included, value-add feature. Launch is an entirely new product with a new code base, designed to replace the previous Dynamic Tag Management \(DTM\) service. However, DTM will continue to be supported for the foreseeable future. Adobe will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy DTM.
 
 ### Key benefits
 

@@ -32,9 +32,9 @@ Although the goal is to display content to visitors faster, and asynchronously l
 
 ### Timing
 
-As described above, in synchronous deployments, page rendering pauses while the Launch library is loaded and executed.  This means that events that happen after the library is loaded \(Page Bottom, DOM Ready, Window Loaded, etc\) always reliably happen after the `_satellite` object is available.
+As described above, in synchronous deployments, page rendering pauses while the Launch library is loaded and executed. This means that events that happen after the library is loaded \(Page Bottom, DOM Ready, Window Loaded, etc\) always reliably happen after the `_satellite` object is available.
 
-In asynchronous deployments, the page rendering does not pause for the library to be loaded.  This means that the sequence of events is less reliable and can even vary from one browser to another and even one page load to another depending on a number of factors \(cached libraries, bandwidth, etc\).
+In asynchronous deployments, the page rendering does not pause for the library to be loaded. This means that the sequence of events is less reliable and can even vary from one browser to another and even one page load to another depending on a number of factors \(cached libraries, bandwidth, etc\).
 
 If you see things occuring out of order - or occuring in different order inconsistently - it is likely that you have some timing issues to work through.
 
@@ -46,7 +46,7 @@ Another consideration is that Launch has always provided a Page Bottom event typ
 
 ## Loading the Launch embed code asynchronously
 
-Launch provides a toggle to turn on asynchronous loading when creating an embed code when you configure an [environment](../administration/environments.md). You can also configure asynchronous loading yourself:
+Launch provides a toggle to turn on asynchronous loading when creating an embed code when you configure an [environment](../publishing/environments.md). You can also configure asynchronous loading yourself:
 
 1. Add an async attribute to the `<script>` tag to load the script asynchronously.
 
@@ -70,3 +70,7 @@ Launch provides a toggle to turn on asynchronous loading when creating an embed 
 
    This code tells Launch that the browser parser has reached the bottom of the page. Since Launch likely will not have loaded and executed before this time, calling `_satellite.pageBottom()` results in an error and the Page Bottom event type may not behave as expected.
 
+## Adobe Target Consideration
+When the Launch embed codes are loaded asynchronously, the page may finish rendering the default content before the Target library is fully loaded and has performed its content swap. This can lead to what is known as "flicker" where the default content shows up briefly before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we suggest hardcoding a special pre-hiding snippet immediately before Launch's asynchronous embed codes.
+
+For more details and to obtain the pre-hiding snippet, please see the [Adobe Target extension with an asynchronous deployment](https://docs.adobelaunch.com/extension-reference/web/adobe-target-extension#adobe-target-extension-with-an-asynchronous-deployment)
