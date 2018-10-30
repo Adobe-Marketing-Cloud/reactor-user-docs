@@ -92,27 +92,6 @@ Embed codes have moved from the Environment detail page to an installation instr
 * Anchor Delay has been moved from Property Settings to configuration for the Core extension Click event
 * Tracking Cookie Name has been moved from Property Settings to the Adobe Analytics, Google Universal Analytics, and Cookie Optin condition settings
 
-## June 15, 2018
-
-### Features
-
-#### Target Extension v0.6.0
-
-Target Extension has been updated to use at.js v1.3.1. When you deploy Target with Analytics, we now wait until all Target calls have resolved \(including redirect offers\) before Analytics fires, resolving the race condition that previously existed.
-
-## June 5, 2018
-
-### Features
-
-* Updated Adobe Analytics extension to support [AppMeasurement 2.9](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/release/c_release_notes_mjs.html).
-* Added "Make tracker globally accessible" feature in the Adobe Analytics extension, which enables the tracker to be scoped globally under `windows.s`.
-
-### Bug Fixes
-
-* Fixed a bug that caused list view to reset when returning from detail view
-* Fixed a few bugs to improve loading of resources in the revision selector
-* Fixed a bug where multiple rules were overwriting s.events in the Adobe Analytics extension
-
 ## May 24, 2018
 
 ### Features
@@ -132,14 +111,6 @@ Changed the behavior of the Add All Changes button on the Edit Library page. Pre
 #### Adobe Privacy extension
 
 The Adobe Privacy extension provides functionality for collecting and/or removing user IDs assigned to end users by Adobe solutions.
-
-#### Launch Core extension: Value Comparison condition
-
-The new Value Comparison condition Compares two values, using any of several available operators. This replaces the functionality of several older conditions that were far too specific.
-
-#### Launch Core extension: Max Frequency condition
-
-This condition allows you to specify the number of times the condition should return true within a time period or event occurrence. Examples: 5 times per Day, 2 times per Visit.
 
 ## May 8, 2018
 
@@ -195,10 +166,6 @@ Page Load events now execute in logical order in async deployments \(Library Loa
 
 ### Features
 
-#### Core Extension enhancement
-
-Data elements can now reference other data elements.
-
 #### Interface enhancements
 
 Minor style improvements.
@@ -218,23 +185,6 @@ Minor style improvements.
 
 ### Features
 
-#### Analytics Extension 1.2.0
-
-* Updates AppMeasurement.js to 2.8.0
-* Adds support for server-side forwarding
-
-#### Adobe Analytics for Video Extension 1.0.0
-
-The [Adobe Analytics for Video Extension](../extension-reference/web/adobe-analytics-for-video-extension.md) adds the core Video Analytics JavaScript library. This library provides the functionality for adding the mediaHeartbeat instance to a Launch site or project. The Adobe Analytics for Video Extension \(VA Extension\) requires two additional extensions:
-
-* Analytics Extension
-* Experience Cloud ID Extension
-
-#### Experience Cloud ID Extension 3.1.0
-
-* Updates visitor.js to 3.1.0
-* Adds two configuration properties: `resetBeforeVersion` and `serverState`
-
 #### Exchange Link on Extension Cards \(Support for future use\)
 
 Support was added to extension cards on the catalog page for future Learn More links to more information on the Extension Detail page on adobeexchange.com
@@ -242,14 +192,6 @@ Support was added to extension cards on the catalog page for future Learn More l
 #### Client-side enhancement
 
 Event details are copied to the top-level event object \(`%event.detail%` in text fields and `event.detail` in custom code\)
-
-### Bug fixes
-
-Fixed the following issues in the Core extension:
-
-* Custom code windows were throwing `document.write` errors and not executing in async deployments
-* Main modules were not included in a library
-* Problems occurred with min and max values on the Random Number data element
 
 ## March 13, 2018
 
@@ -278,41 +220,14 @@ This release includes several interface enhancements:
 
 Fixed an issue that caused a database query to take a long time to run and cause occasional 502 errors on API queries
 
-## February 22, 2018
-
-### Features
-
-#### Adobe Target Extension 0.4.1
-
-* Added Adobe Exchange listing to extension.json
-* Added checks to see if Target is disabled and if Authoring is enabled
-
-### Bug fixes
-
-* Fixed an error in the Adobe Target Extension that prevented the Visual Experience Composer from unhiding the page when deployed through Launch.
-
 ## February 8, 2018
 
 ### Features
-
-#### Adobe Analytics Extension 1.1
-
-* AppMeasurement has been updated to version 2.6
-* The initialized Analytics tracker is now exposed through a shared module in the Launch extension so other extensions can include code to interact with it.
-
-#### Adobe Target Extension 0.4.0
-
-* Updated views in extension configuration screens
-* at.js has been updated to version 1.2.3 \(adds support for JSON offers\)
 
 #### Active Library enhancements
 
 * Enable/Disable actions ask if you want to add to your Active Library
 * Create a new library from the Active Library drop down
-
-### Bug fixes
-
-Fixed an error in the Adobe Analytics Extension that caused "Error, missing Report Suite ID in AppMeasurement initialization" to appear in the browser console.
 
 ## February 1, 2018
 
@@ -361,15 +276,6 @@ You can now pass actual objects to the log function and view them as objects in 
 * Async Toggle on Environments
 
   When retrieving the embed code for an environment, you can now flip a toggle switch to get the embed code if you want the library to load asynchronously.
-
-#### Core Extension enhancements
-
-The following have been added to the core extension:
-
-* Random Number Data Element
-* Page Info Data Element
-* Date Condition
-* Sampling Condition
 
 #### User interface enhancements
 

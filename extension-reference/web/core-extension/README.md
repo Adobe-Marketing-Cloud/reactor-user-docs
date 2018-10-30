@@ -8,7 +8,7 @@ Use this reference for information about the options available when using this e
 
 This topic describes the event types available in the Core extension.
 
-For information about options that can be set for several different event types, see [Options](core-extension.md#options).
+For information about options that can be set for several different event types, see [Options](./#options).
 
 ### Browser
 
@@ -30,19 +30,19 @@ There are no settings for this event type.
 
 Trigger the action when a form loses the focus.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 #### Focus
 
 Trigger the action when a form gains the focus.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 #### Submit
 
 Trigger the action when a form is submitted.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 ### Keyboard
 
@@ -50,7 +50,7 @@ See [Options](core-extension.md#options), below.
 
 Trigger the event if a key is pressed.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 ### Media
 
@@ -58,37 +58,37 @@ See [Options](core-extension.md#options), below.
 
 Trigger the event when the media ends.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 #### Media Loaded Data
 
 Trigger the event when the media loads data.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 #### Media Pause
 
 Trigger the event when the media is paused.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 #### Media Play
 
 Trigger the even when the media is played.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 #### Media Stalled
 
 Trigger the event if the media stalls.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 #### Media Time Played
 
 Trigger the event if the media is played for a specified length of time.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 In addition, specify that the event is triggered after a specific amount of time.
 
@@ -96,7 +96,7 @@ In addition, specify that the event is triggered after a specific amount of time
 
 Trigger the event if the volume is raised or lowered.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 ### Mobile
 
@@ -126,13 +126,13 @@ You can also specify whether to delay navigation until the rule runs if the elem
 
 In addition, specify that the event is triggered after a specific amount of time.
 
-For advanced options, see [Options](core-extension.md#options), below.
+For advanced options, see [Options](./#options), below.
 
 #### Hover
 
 Trigger the event if the user hovers over a specified element.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 In addition, configure whether the rule is triggered immediately or after a specified number of milliseconds.
 
@@ -144,7 +144,7 @@ Trigger the event if a custom event type occurs.
 
 You can name a JavaScript function that you've defined elsewhere and use it for the event.
 
-Specify the name of the custom event type, then configure the other settings as described in [Options](core-extension.md#options), below.
+Specify the name of the custom event type, then configure the other settings as described in [Options](./#options), below.
 
 #### Data Element Changed
 
@@ -164,13 +164,13 @@ Specify the `_satellite.track` string.
 
 Trigger the event if a specified element exists.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 #### Enters Viewport
 
 Trigger the event if the user enters a specified viewport.
 
-See [Options](core-extension.md#options), below.
+See [Options](./#options), below.
 
 In addition, configure whether the rule is triggered immediately or after a specified number of milliseconds.
 

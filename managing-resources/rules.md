@@ -30,7 +30,7 @@ If a specified event occurs, the conditions and exceptions are evaluated, then t
 
   Narrow the event by configuring any conditions that must be true for an event to trigger the rule. Multiple conditions are joined by an AND.
 
-The events that are available depend on which extensions are installed. For information about the events in the Core extension, see [Core extension event types](../extension-reference/web/core-extension.md#core-extension-event-types).
+The events that are available depend on which extensions are installed. For information about the events in the Core extension, see [Core extension event types](../extension-reference/web/core-extension/#core-extension-event-types).
 
 Note: DTM provided page load, event-based, and direct call event types. This is no longer true in Launch. Rather than event types, Launch extensions configure different individual events.
 

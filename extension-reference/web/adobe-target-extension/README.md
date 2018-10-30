@@ -10,7 +10,7 @@ If the Adobe Target extension is not yet installed, open your property, then cli
 
 To configure the extension, open the Extensions tab, hover over the extension, and then click Configure.
 
-![](../../.gitbook/assets/ext-target-config.png)
+![](../../../.gitbook/assets/ext-target-config.png)
 
 ### at.js Settings
 
@@ -106,7 +106,7 @@ Once the Target Extension is installed, you'll need to create at least one rule 
 
 A Target rule with this basic implementation looks like this:
 
-![](../../.gitbook/assets/basic_target_implementation.png)
+![](../../../.gitbook/assets/basic_target_implementation.png)
 
 Once you have saved this rule, you'll need to add it to a Library and build/deploy so that you can test the behavior.
 
