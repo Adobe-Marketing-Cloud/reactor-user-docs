@@ -287,9 +287,10 @@ Set one or more [props](https://marketing.adobe.com/resources/help/en_US/sc/impl
 Set one or more [events](https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-events.html).
 
 1. Select an event from the dropdown.
-2. \(Optional\) Select or specify a data element used for [event serialization](https://marketing.adobe.com/resources/help/en_US/sc/implement/event_serialization_impl.html).
-3. \(Optional\) Click Add event to set more props.
-4. Click Keep Changes.
+2. \(Optional\) Specify a value or data element to be used for the Event ID. See [event serialization](https://marketing.adobe.com/resources/help/en_US/sc/implement/event_serialization_impl.html) for more details.
+3. \(Optional\) Specify a value or data element to be used for the Event Value.
+4. \(Optional\) Click Add event to set more props.
+5. Click Keep Changes.
 
 #### Hierarchy
 

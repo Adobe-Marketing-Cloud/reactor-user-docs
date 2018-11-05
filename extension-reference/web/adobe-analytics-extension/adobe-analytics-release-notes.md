@@ -1,5 +1,19 @@
 # Adobe Analytics Release Notes
 
+## November 5, 2018
+
+### Adobe Analytics Extension 1.5
+
+#### Features
+
+* Updated the Adobe Analytics extension to support DIL 8.0 in Audience Manager
+* Separated the "Serialize from value" field into two, "Event ID" and "Event Value". This will fix the issue that was assigning a value instead of serializing an event
+  * Please note: if you are using the current field to add an ID by using a string \(ex. Event7=3:abc123\) you will need to update your input to reflect the ID in the "Event ID" field.
+
+#### Bug fixes
+
+* Fixed a bug that wasn't allowing the currency code to populate correctly
+
 ## October 11, 2018 <a id="october-11-2018"></a>
 
 ### Adobe Analytics Extension 1.4 <a id="adobe-analytics-extension-1-4"></a>
