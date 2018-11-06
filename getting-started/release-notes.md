@@ -2,7 +2,7 @@
 
 ## October 9, 2018
 
-### Updates
+### Updates hi
 
 * Conditions and exceptions have been combined in the rule builder, because order matters.  This more accurately reflects how they are treated within the system and at runtime. To make an exception, click the `Add` button under Conditions and choose Exception from the Logic Type selector.
 * If you're using the Managed by Adobe adapter, older builds will now be cleaned up when new builds are published.
