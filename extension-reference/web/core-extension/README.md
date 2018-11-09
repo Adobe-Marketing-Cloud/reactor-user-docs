@@ -408,6 +408,8 @@ Specify the maximum number of times the condition returns true. You can select f
 
 Specify the percentage of the time the condition returns true.
 
+**Persist Cohort option:** The option to persist a cohort keeps a user in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor.
+
 ### Technology
 
 #### Browser

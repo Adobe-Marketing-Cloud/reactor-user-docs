@@ -1,5 +1,30 @@
 # Release Notes
 
+## November 8, 2018
+
+### Updates
+
+#### Core extension:
+
+* **Persist Cohort option** The option to persist a cohort has been added to the Sampling condition. This has the effect of keeping a user in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor.
+* **Bug Fix** Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where Launch was being loaded synchronously but improperly installed \(no call to `_satellite.pageBottom()`\) would clear website content.
+
+#### Private Extensions:
+
+* Documentation has been updated for private extensions.
+
+#### Extension Uploader tool:
+
+* Added new verbose mode feature. 
+
+### Bug Fixes
+
+* Fixed an issue where attempting to use scrollbars within some dropdowns would close the dropdown.
+* Fixed an issue in Safari that prevented removing an item from a publishing library.
+* Fixed an issue where some buttons in Launch extensions were not spaced properly.
+* Fixed an issue where a rule using a Library Loaded event could not successfully trigger a separate rule \(usually attempting to trigger a separate rule by using `_satellite.track()`\).
+* Fixed an issue where the Enters Viewport event type would sometimes not function when Launch was loaded asynchronously.
+
 ## October 9, 2018
 
 ### Updates
