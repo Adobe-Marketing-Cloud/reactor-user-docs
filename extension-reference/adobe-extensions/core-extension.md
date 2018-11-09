@@ -406,7 +406,9 @@ Specify the maximum number of times the condition returns true. You can select f
 
 #### Sampling
 
-Specify the percentage of the time the condition returns true.
+Specify the percentage of time the condition returns true.
+
+Configure whether the cohort should be persisted. When selected, this has the effect of keeping a visitor in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor. Changing the sampling rate will effectively reset the cohort. 
 
 ### Technology
 
