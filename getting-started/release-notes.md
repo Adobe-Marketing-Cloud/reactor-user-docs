@@ -24,7 +24,6 @@
 * Fixed an issue in Safari that prevented removing an item from a publishing library.
 * Fixed an issue where some buttons in Launch extensions were not spaced properly.
 * Fixed an issue where a rule using a Library Loaded event could not successfully trigger a separate rule \(usually attempting to trigger a separate rule by using `_satellite.track()`\).
-* Fixed an issue where the Enters Viewport event type would sometimes not function when Launch was loaded asynchronously.
 
 ## October 9, 2018
 
