@@ -110,7 +110,7 @@ In addition, specify that the event is triggered after a specific amount of time
 
 #### Zoom Change
 
-pTrigger the event if the user zooms in or out.
+Trigger the event if the user zooms in or out.
 
 There are no settings for this event type.
 
@@ -208,7 +208,7 @@ There are no settings for this event type.
 
 #### Window Loaded
 
-Trigger the event when onLoad is called by the browser and the page has finished loading.
+Trigger the event when `onLoad` is called by the browser and the page has finished loading.
 
 There are no settings for this event type.
 
