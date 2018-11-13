@@ -174,7 +174,7 @@ Browser support in the Launch application interface:
 * Chrome \(latest\)
 * Safari \(latest\)
 * Firefox \(latest\)
-* Internet Explorer \(11 and above\)
+* Microsoft Edge \(latest\)
 
 Legacy DTM supported older versions of Internet Explorer, but over the last few years, the percentage of overall web users with older, outdated browsers has dropped to a small segment for our clients. Most Adobe clients now leverage more modern web platform features in current browsers and create better user experiences, including single page applications and interactive Ajax-heavy web sites and pages. As most clients move to more modern approaches with their sites, they demand a solution like Launch that enables those approaches.
 
