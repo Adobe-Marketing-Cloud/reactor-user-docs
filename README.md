@@ -162,19 +162,19 @@ Performance is very important to us. Launch is designed to deliver and run marke
 
 Browser support in the Launch client-side libraries:
 
-* Chrome \(latest\)
-* Safari \(latest\)
-* Firefox \(latest\)
-* Internet Explorer \(10 and above\)
-* iOS Safari \(latest\)
-* Android Chrome \(latest\)
+* Chrome: latest
+* Safari: latest
+* Firefox: latest
+* Internet Explorer: 10 and above \(support for IE 10 will be dropped in summer of 2019\)
+* iOS Safari: latest
+* Android Chrome: latest
 
 Browser support in the Launch application interface:
 
-* Chrome \(latest\)
-* Safari \(latest\)
-* Firefox \(latest\)
-* Microsoft Edge \(latest\)
+* Chrome: latest
+* Safari: latest
+* Firefox: latest
+* Edge: latest
 
 Legacy DTM supported older versions of Internet Explorer, but over the last few years, the percentage of overall web users with older, outdated browsers has dropped to a small segment for our clients. Most Adobe clients now leverage more modern web platform features in current browsers and create better user experiences, including single page applications and interactive Ajax-heavy web sites and pages. As most clients move to more modern approaches with their sites, they demand a solution like Launch that enables those approaches.
 
