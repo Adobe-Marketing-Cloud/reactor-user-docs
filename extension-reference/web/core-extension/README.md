@@ -612,7 +612,7 @@ Get the value of:
 
 #### Example:
 
-Consider the following object on window:
+Consider the following object on `window`:
 
 ```text
 window.dataLayer = {
