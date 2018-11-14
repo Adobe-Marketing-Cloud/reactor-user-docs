@@ -4,7 +4,7 @@ An extension is a packaged set of code that extends the Launch interface and the
 
 Adding an extension adds new data elements and new options for creating rules.
 
-Note: Extensions are similar to _tools_ in the previous Dynamic Tag Management.
+Note: Extensions are similar to _tools_ in DTM.
 
 Extensions determine the elements that are available when building properties, rules, and data elements. They provide:
 
@@ -22,21 +22,24 @@ By default, Adobe provides extensions that support common integrations. Extensio
 
 For a video introduction, see [Extensions](../getting-started/videos.md).
 
+## Extension Availability
+
+Whether an extension is visible and useable within a given property is determined by its `availability`.  There are currently three states of `availability`:
+
+* Development extensions are pre-release extensions that are being tested by the extension developer.  They are only visibile within properties in your company that have been configured for extension development.
+* Private extensions are released extensions that are only available within the company who developed the extension.  Any property within the same company can use a private extension.
+* Public extensions are extensions that are available to all Launch users in any company
+
+Beyond their visibility, nothing is different between these different extension types.  Once installed, they are indistinguishable from one another.
+
 ## Extension catalog
 
 Use the extension catalog to browse, configure, and deploy marketing and advertising technology built and maintained by independent software vendors, as well as extensions for Adobe solutions.
 
-The Extensions page provides three views:
+The Extensions page provides two views:
 
-* Installed
-
-  Shows all of your installed extensions.
-
-* Catalog
-* Shows all available extensions
-* Updates
-
-  Shows updates to installed extensions.
+* Installed - Shows all of your installed extensions
+* Catalog - Shows all available extensions including private extensions
 
 Click Extensions to see all your installed extensions. You can also use the catalog to see a list of all available extensions and which extensions have updates available.
 

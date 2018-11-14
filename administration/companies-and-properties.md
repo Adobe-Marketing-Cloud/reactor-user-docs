@@ -1,48 +1,30 @@
 # Companies and Properties
 
-### Web Properties
-
-A property, or web property, is a collection of rules, data elements, configured extensions, environments, and libraries. There is only one publish embed code per property.
-
-A property can be any grouping of one or more domains and subdomains. You can manage and track these assets similarly. For example, suppose that you have multiple websites based on one template, and you want to track the same assets on all of them. You can apply one property to multiple domains.
-
-### Mobile Properties
-
-A mobile property type can contain multiple applications. For example, in a mobile property you can manage the same set of rules and extensions across multiple iOS and Android applications.
-
-For a video tutorial, see [Creating your first property](../getting-started/videos.md).
-
 ## Companies
 
-In Launch, there is a 1:1 relationship between your companies and your Experience Cloudorganizations.
+In Launch, there is a 1:1 relationship between your companies and your Experience Cloud organizations.
 
-First, you can have one or several Launch company accounts. Companies contain properties. You can have one or several or any number of properties within a company account. Within a property, you can have one or any number of domains or subdomains.
+Companies contain properties. A company can have many properties and a property belongs to exactly one company. Within a property, you can have any number of domains or subdomains.
 
 Some customers have one company that contains all of their properties. Some have a company that contains many properties, one for each domain or application. Some have a company that contains several properties, one for each type of site or app they manage.
 
-## Separating the Launch environment for multiple entities
+## Properties
 
-There are a few ways to handle multiple geo markets, business units, domains, and subdomains in Launch.
+A property is a collection of rules, data elements, configured extensions, environments, and libraries. For web there is only one publish embed code per property. For mobile there is one configuration app ID per property.
 
-For example, you might have three properties within your company account where one contains all of your blog sites, another contains all of your ecommerce sites, and the third contains all of your lead-generation sites.
+A property can be any grouping of one or more domains and subdomains. You can manage and track these assets similarly. For example, suppose that you have multiple websites based on one template, and you want to track the same assets on all of them. You can apply one property to multiple domains.
 
-Note: Each property requires its own embed codes in your page templates. Any domains or subdomains you want included in a particular property would have the same embed codes in the page templates when Dynamic Tag Management is first installed on your site.
+The left side of the screen shows the companies in your organization. This is particularly useful if you manage multiple accounts. Select a company to see the properties and audit logs for that company.
 
-### Can we use separate instances for each?
+Each property is shown in the Properties list.
 
-As described above, you can use separate company accounts for your three entities, or you can combine the entities into one company account and split the domains/subdomains/apps into different properties within that company account.
+The Properties list shows the following information:
 
-### Is there a clear way to separate settings within the same Launch instance?
+* Property name
+* Platform
+* Status
 
-Within a company account, you can use multiple properties to separate settings, or you can put multiple domains or apps into the same property.
-
-### What are the pros and cons for using one Launch instance?
-
-With one property that contains multiple domains or applications, you may eventually want to add conditional logic to separate unique data collection and tracking needs that only apply to a specific domain or app.
-
-### What is the approach recommended by Adobe: one or separate companies?
-
-Multiple Launch companies are not recommended. Adobe strongly suggests multiple properties in a single company.
+Click a property to see an overview of that property. The overview shows any activity performed on the property. It also lists the metrics and extensions for the property.
 
 ## Best practices for planning properties
 
@@ -92,24 +74,6 @@ The User Management features allow you to assign different roles to different pe
 
 The ability to deactivate a property is planned for a future release.
 
-## Properties page
-
-A property is a collection of rules, data elements, configured extensions, environments, and libraries. For web there is only one publish embed code per property. For mobile there is one configuration app ID per property.
-
-A property can be any grouping of one or more domains and subdomains. You can manage and track these assets similarly. For example, suppose that you have multiple websites based on one template, and you want to track the same assets on all of them. You can apply one property to multiple domains.
-
-The left side of the screen shows the companies in your organization. This is particularly useful if you manage multiple accounts. Select a company to see the properties and audit logs for that company.
-
-Each property is shown in the Properties list.
-
-The Properties list shows the following information:
-
-* Property name
-* Platform
-* Status
-
-Click a property to see an overview of that property. The overview shows any activity performed on the property. It also lists the metrics and extensions for the property.
-
 ## Create or configure a property
 
 Create or configure a property in Launch.
@@ -131,17 +95,20 @@ Before beginning, review the [Best practices for planning properties](companies-
    **Domain:** The base URL of the property
 
 2. \(Optional\) **Return an empty string for undefined values of Data Elements:** Select this check box if you want undefined values to be empty, rather than to assign default values.
-3. Click Save.
+3. \(Optional\) **Configure for extension development:** Select this check box if you want to test your own pre-release extensions inside this property.
+4. Click Save.
 
    The extension is automatically installed into the new property.
 
-   **For Mobile**
+For a video tutorial, see [Creating your first property](../getting-started/videos.md).
 
-   1. Fill in the fields:
+### **For Mobile**
 
-   **Name:** The name of your property.
+1. Fill in the fields:
 
-   **Privacy:** By default the privacy setting is set to Opted In, meaning that you would like for the SDK to collect and send data to solutions. If you select Opted Out, the SDK by default will NOT send data to solutions. If you choose Unknown as the setting, the SDK will require that the application first propmpt the user to allow for data collection and sharing. Note: that these settings can be further controlled via API in the mobile application.
+**Name:** The name of your property.
+
+**Privacy:** By default the privacy setting is set to Opted In, meaning that you would like for the SDK to collect and send data to solutions. If you select Opted Out, the SDK by default will NOT send data to solutions. If you choose Unknown as the setting, the SDK will require that the application first propmpt the user to allow for data collection and sharing. Note: that these settings can be further controlled via API in the mobile application.
 
 **Use HTTPS:** Choose if all data communication should be sent over HTTP or HTTPS.
 

@@ -1,5 +1,23 @@
 # Release Notes
 
+## November 14, 2018
+
+### Features
+
+#### Private Extensions
+
+Private extensions are now available! Private extensions are extensions that are developed by your company and are only available for properties within your own company. No one else can see or use them. Other than that, they behave exactly like regular extensions.
+
+Would you like to provide a standard set of functionality that hundreds of your properties should use in the same way? Package that up into an extension and have all your properties use it. Writing the same custom code and using it over and over again? Put that into an extension and stop writing custom code.
+
+#### Development Properties
+
+When you create properties, there is now an advanced option to "Configure for extension development". This creates a "Development" property that can be used for testing your private extensions during development before you're ready to make them available on your regular properties.
+
+#### Rule Copy
+
+You can now make a copy of a rule within the same property. Before you ask, the answer is "Yes, copying it to another property is coming next."
+
 ## November 8, 2018
 
 ### Updates
@@ -9,14 +27,6 @@
 * **Persist Cohort option** The option to persist a cohort has been added to the Sampling condition. This has the effect of keeping a user in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor.
 * **Bug Fix** Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where Launch was being loaded synchronously but improperly installed \(no call to `_satellite.pageBottom()`\) would clear website content.
 * **Bug Fix** Fixed an issue where the Enters Viewport would not function if the Launch library was loaded asynchronously and finished loading after the browser's DOMContentLoaded event was fired.
-
-#### Private Extensions:
-
-* Documentation has been updated for private extensions.
-
-#### Extension Uploader tool:
-
-* Added new verbose mode feature. 
 
 ### Bug Fixes
 
