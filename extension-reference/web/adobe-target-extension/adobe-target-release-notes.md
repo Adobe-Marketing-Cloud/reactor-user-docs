@@ -1,5 +1,31 @@
 # Adobe Target Release Notes
 
+## November 15, 2018
+
+*  Updated at.js to version 1.6.3
+
+## October 24, 2018 <a id="june-15-2018"></a>
+
+*  Updated at.js to version 1.6.2
+
+## August 23, 2018 <a id="june-15-2018"></a>
+
+* Updated at.js to version 1.6.0
+
+## August 10, 2018 <a id="june-15-2018"></a>
+
+* Minor changes
+* Updated the `exchangeUrl` property in the `extension.json` file
+
+## August 1, 2018 <a id="june-15-2018"></a>
+
+* Minor fixes
+
+## June 16, 2018 <a id="june-15-2018"></a>
+
+* Updated at.js version to 1.5.0
+* Fixed an issue where Media Optimizer threw a null reference error in IE 11
+
 ## June 15, 2018 <a id="june-15-2018"></a>
 
 ### Adobe Target Extension 0.6.0 <a id="adobe-target-extension-0-6-0"></a>
