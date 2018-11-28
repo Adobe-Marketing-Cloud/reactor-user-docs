@@ -166,9 +166,11 @@ See [Options](./#options), below.
 
 #### Enters Viewport
 
-Trigger the event if the user enters a specified viewport.
+Trigger the event if the specified element enters the viewport (the user's visible area of a web page).
 
 See [Options](./#options), below.
+
+You can also specify whether the rule is triggered the first time the element enters the viewport or every time the element enters the viewport.
 
 In addition, configure whether the rule is triggered immediately or after a specified number of milliseconds.
 
