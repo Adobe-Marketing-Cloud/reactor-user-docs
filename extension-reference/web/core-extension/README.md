@@ -138,6 +138,26 @@ In addition, configure whether the rule is triggered immediately or after a spec
 
 ### Other
 
+#### Custom Code
+
+Specify custom code that you would like Launch to run once the library has been loaded. This code will typically watch for a particular user interaction or browser event. When the rule should be triggered, the custom code should call `trigger()`.
+
+You may also pass an object to `trigger` containing useful information about the event that occurred. For example:
+
+```
+trigger({
+  swipeAngle: 32
+});
+```
+
+This information can then be referenced from textfields in conditions or actions of the rule using the `%event.swipeAngle%` notation or from a Custom Code condition or Custom Code action using `event.swipeAngle`.
+
+Use the built-in code editor to enter the custom code.
+
+1. Click Open Editor.
+2. Type the custom code.
+3. Click Save.
+
 #### Custom Event
 
 Trigger the event if a custom event type occurs.
