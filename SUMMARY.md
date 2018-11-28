@@ -39,6 +39,7 @@
     * [Adobe Analytics for Video Extension](extension-reference/web/adobe-analytics-for-video-extension/README.md)
       * [Adobe Analytics for Video Release Notes](extension-reference/web/adobe-analytics-for-video-extension/adobe-analytics-for-video-release-notes.md)
     * [Adobe Audience Manager Extension](extension-reference/web/adobe-audience-manager-extension.md)
+    * [Adobe Livefyre Extension](extension-reference/web/adobe-livefyre-extension.md)
     * [Adobe ContextHub Extension](extension-reference/web/adobe-contexthub-extension.md)
     * [Adobe Privacy Extension](extension-reference/web/adobe-privacy-extension.md)
     * [Adobe Target Extension](extension-reference/web/adobe-target-extension/README.md)
