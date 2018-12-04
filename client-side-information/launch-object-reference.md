@@ -266,6 +266,26 @@ Removes a cookie from the user's browser.
 
 The following functions should not be accessed from production code. They are intended only for debugging purposes and will change over time as needed.
 
+### setDebug
+
+#### Code
+
+```javascript
+_satellite.setDebug(enableConsoleLogging: boolean)
+```
+
+#### Example
+
+```javascript
+_satellite.setDebug(true)
+```
+
+Enables any `_satellite.logger.*` or `_satellite.notify` calls to be displayed in the console.  Because there are multiple calls to `_satellite.logger.*` and `_satellite.notify` within the core library as well as within extensions, enabling debugging will allow you to view what rules, events, conditions, actions, extensions, etc. are firing or being evalutated.
+
+Internally, calling setDebug will set the localStorage item `com.adobe.reactor.debug` to `"true"` (or `"false"` if you call `_satellite.setDebug(false)`).
+
+Note: You will only be able to see calls made to `_satellite.logger.*` or `_satellite.notify` after you have called setDebug.  If you want to troubleshoot an event that happened earlier in the page lifecycle, you must reload the page. 
+
 ### container
 
 #### Code
