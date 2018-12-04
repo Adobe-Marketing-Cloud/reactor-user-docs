@@ -104,9 +104,11 @@ No. Launch is an entirely new product with a new code base. The system has been 
 
 #### Will the current DTM product remain available?
 
-Yes, legacy DTM \(the existing production version\) will continue to be supported for the foreseeable future. Adobe will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy DTM.
+Yes, legacy DTM \(the existing production version\) will continue to be supported until the end of 2020. Adobe will continue to fix any significant bugs and ensure consistent performance. At this time, no major feature enhancements are planned for legacy DTM.
 
-Many customers see Launch implementations as an opportunity to start from scratch and cleanup many issues they have with current implementations. If this does not describe you, you can copy an existing DTM property into Launch and save yourself a bunch of effort. [See the Upgrade FAQ](upgrade-from-dtm-to-launch/upgrade-faq.md) for more inormation.
+For information about the DTM sunsetting schedule, see [DTM Plans for a Sunset](https://forums.adobe.com/community/experience-cloud/platform/launch/blog/2018/10/05/dtm-plans-for-a-sunset) in the Adobe community forums.
+
+Many customers see Launch implementations as an opportunity to start from scratch and cleanup many issues they have with current implementations. If this does not describe you, you can copy an existing DTM property into Launch and save yourself a bunch of effort. [See the Upgrade FAQ](upgrade-from-dtm-to-launch/upgrade-faq.md) for more information.
 
 #### How much does Launch cost?
 
