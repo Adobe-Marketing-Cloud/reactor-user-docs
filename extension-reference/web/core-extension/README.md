@@ -144,7 +144,7 @@ Specify custom code that you would like Launch to run once the library has been 
 
 You may also pass an object to `trigger` containing useful information about the event that occurred. For example:
 
-```
+```text
 trigger({
   swipeAngle: 32
 });
@@ -354,7 +354,7 @@ Specify the JavaScript variable name and value that must exist for an event to t
 
 Example**:**
 
- Consider the following object on `window`:
+Consider the following object on `window`:
 
 ```text
 window.dataLayer = {
@@ -371,7 +371,7 @@ window.dataLayer = {
 };
 ```
 
- To reference the price of the shirt product, you would provide the following for the variable name: 
+To reference the price of the shirt product, you would provide the following for the variable name:
 
 `dataLayer.products.1.price`
 
@@ -451,7 +451,7 @@ Specify the maximum number of times the condition returns true. You can select f
 
 Specify the percentage of time the condition returns true.
 
-**Persist Cohort option:**  Configure whether the cohort should be persisted. The option to persist a cohort keeps a user in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor.  Changing the sampling rate will effectively reset the cohort.
+**Persist Cohort option:** Configure whether the cohort should be persisted. The option to persist a cohort keeps a user in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor. Changing the sampling rate will effectively reset the cohort.
 
 ### Technology
 
@@ -583,7 +583,7 @@ The validator used in the Launch code editor is designed to identify issues with
 
 ## Core extension data element types
 
- This section describes the data element types available in the Core extension.
+This section describes the data element types available in the Core extension.
 
 ### Cookie
 
@@ -626,9 +626,9 @@ Get the value of:
 
 ### JavaScript variable
 
- Specify the JavaScript variable name. This variable must be available on the `window` object.
+Specify the JavaScript variable name. This variable must be available on the `window` object.
 
- If a variable is nested within an object or array, you may use dot notation to reference the variable.
+If a variable is nested within an object or array, you may use dot notation to reference the variable.
 
 #### Example:
 
@@ -649,7 +649,7 @@ window.dataLayer = {
 };
 ```
 
- To reference the price of the shirt product, you would provide the following for the variable name: 
+To reference the price of the shirt product, you would provide the following for the variable name:
 
 `dataLayer.products.1.price`
 
