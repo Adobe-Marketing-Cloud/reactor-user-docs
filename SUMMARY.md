@@ -48,7 +48,6 @@
       * [Core Extension Release Notes](extension-reference/web/core-extension/core-extension-release-notes.md)
     * [Experience Cloud ID Service Extension](extension-reference/web/experience-cloud-id-service-extension/README.md)
       * [Experience Cloud ID Release Notes](extension-reference/web/experience-cloud-id-service-extension/experience-cloud-id-release-notes.md)
-    * [ECID Opt In Extension](extension-reference/web/ecid-opt-in-extension.md)
   * [Third-Party Extensions](extension-reference/3rd-party-extensions.md)
 * [Tutorials](contributing/README.md)
   * [Adapters](contributing/adapters.md)
