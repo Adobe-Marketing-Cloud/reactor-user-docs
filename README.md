@@ -47,7 +47,7 @@ Collect, organize, and deliver data across web-based marketing and advertising t
 
 ### Enterprise Publishing
 
-The publishing process enables teams to dynamically publish updates to both web pages and application. Different people can create an implementation, approve it, and publish.
+The publishing process enables teams to dynamically publish updates to both web pages and applications. Different people can create an implementation, approve it, and publish.
 
 Here are some benefits to this publishing process:
 
