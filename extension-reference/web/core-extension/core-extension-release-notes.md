@@ -1,5 +1,11 @@
 # Core Extension Release Notes
 
+## January 8, 2019
+
+* **Enters Viewport event** Previously the Enters Viewport event would only trigger one time per page.  This behavior has been changed so that it now triggers each time the element enters the viewport.
+* **Custom Event event** Custom Events can now contain contextual data that can be used inside of conditions and actions.
+* **Click event** When you set  a link delay on the Click event, that will now register properly for descendants of the anchor and not just on the anchor itself.
+
 ## November 8, 2018
 
 * **Persist Cohort option** The option to persist a cohort has been added to the Sampling condition. This has the effect of keeping a user in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor.

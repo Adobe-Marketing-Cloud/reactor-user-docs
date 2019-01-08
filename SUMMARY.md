@@ -2,7 +2,8 @@
 
 * [Overview](README.md)
 * [Getting Started](getting-started/README.md)
-  * [Release Notes](getting-started/release-notes.md)
+  * [2019 Release Notes](getting-started/2019-release-notes.md)
+  * [2018 Release Notes](getting-started/release-notes.md)
   * [Mobile](getting-started/mobile-1.md)
   * [Web](getting-started/web.md)
   * [Videos](getting-started/videos.md)
