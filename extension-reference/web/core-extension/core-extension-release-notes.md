@@ -2,7 +2,7 @@
 
 ## January 8, 2019
 
-* **Enters Viewport event** Previously the Enters Viewport event would only trigger one time per page.  This behavior has been changed so that it now triggers each time the element enters the viewport.
+* **Enters Viewport event** Previously the Enters Viewport event would only trigger one time per page.  This behavior can now be configured to trigger each time the element enters the viewport.
 * **Custom Event event** Custom Events can now contain contextual data that can be used inside of conditions and actions.
 * **Click event** When you set  a link delay on the Click event, that will now register properly for descendants of the anchor and not just on the anchor itself.
 

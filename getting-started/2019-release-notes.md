@@ -4,7 +4,7 @@
 
 ### Core Extension 1.4.2
 
-* The `Enters Viewport` event will now trigger each time that the element enters the viewport instead of just the first time.
+* The `Enters Viewport` event is now configurable to trigger each time that the element enters the viewport instead of just the first time.
 * Custom Events can now contain extra contextual data that can be used in conditions and actions.
 * Link Delay on the Click event will now trigger on descendants of the anchor and not just the anchor itself.
 
