@@ -180,6 +180,38 @@ This example demonstrates the object values:
 }
 ```
 
+### property
+
+#### Code
+
+```javascript
+_satellite.property
+```
+
+This object contains information about the related Launch property. The object contains the following properties:
+
+#### name
+
+The name of the property.
+
+#### settings
+
+Settings related to the property. These are intended to be used by Launch extensions.
+
+### company
+
+#### Code
+
+```javascript
+_satellite.company
+```
+
+This object contains information about the related Launch company. The object contains the following properties:
+
+#### orgId
+
+The company's organization ID.
+
 ### notify
 
 #### Code
