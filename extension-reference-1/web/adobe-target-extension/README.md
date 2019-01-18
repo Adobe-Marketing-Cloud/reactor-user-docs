@@ -4,7 +4,7 @@ Use this reference for information about the options available when using this e
 
 ## Configure the Adobe Target extension
 
-Important: The Adobe Target extension requires at.js. It does not support mbox.js.
+**Important:** The Adobe Target extension requires at.js. It does not support mbox.js.
 
 If the Adobe Target extension is not yet installed, open your property, then click Extensions &gt; Catalog, hover over the Target extension, and click Install.
 
@@ -120,7 +120,7 @@ Here are some things to keep in mind when using the pre-hiding snippet:
 
 * The snippet must be added before loading the Launch header embed code.
 * This code can't be managed by Launch, so it must be added to the page directly.
-* The page will be displayed when the earliest of the following events occur: 
+* The page will be displayed when the earliest of the following events occur:
   * When the global mbox response has been received
   * When the global mbox request times out
   * When the snippet itself times out
@@ -183,4 +183,3 @@ body {opacity: 0 !important}
 ```
 
 By default, the snippet times out at 3000ms or 3 seconds. This value can be customized.
-
