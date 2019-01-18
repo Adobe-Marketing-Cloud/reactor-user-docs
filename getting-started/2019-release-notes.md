@@ -1,5 +1,11 @@
 # 2019 Release Notes
 
+## January 17, 2019
+
+### Updates
+
+* Builds should be running ~15% faster than before.  Large builds \(hundreds of resources\) will have more dramatic improvements.
+
 ## January 8, 2019
 
 ### Core Extension 1.4.2
@@ -20,4 +26,4 @@
 * In certain scenarios, when you saved a library, the dependency checker would prompt you to add a new revision of an extension that was already in your Library. It doesn't do that anymore.
 * Tooltips will now reliably show up in Safari.
 * Searches in the search bar will now trigger a bit faster than before.
-* 
+
