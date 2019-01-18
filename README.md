@@ -78,7 +78,7 @@ Launch requires the following:
 
 ### Light, Modular Container tag
 
-The Launch container tag is 60% lighter than DTM and 40% lighter than Google Tag Manager. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact. See [Minification](publishing/builds.md).
+The Launch container tag is 60% lighter than DTM and 40% lighter than Google Tag Manager. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact. See [Minification](launch-reference/publishing/builds.md).
 
 Launch provides several improvements over similar systems, including:
 
@@ -108,7 +108,7 @@ Yes, legacy DTM \(the existing production version\) will continue to be supporte
 
 For information about the DTM sunsetting schedule, see [DTM Plans for a Sunset](https://forums.adobe.com/community/experience-cloud/platform/launch/blog/2018/10/05/dtm-plans-for-a-sunset) in the Adobe community forums.
 
-Many customers see Launch implementations as an opportunity to start from scratch and cleanup many issues they have with current implementations. If this does not describe you, you can copy an existing DTM property into Launch and save yourself a bunch of effort. [See the Upgrade FAQ](upgrade-from-dtm-to-launch/upgrade-faq.md) for more information.
+Many customers see Launch implementations as an opportunity to start from scratch and cleanup many issues they have with current implementations. If this does not describe you, you can copy an existing DTM property into Launch and save yourself a bunch of effort. [See the Upgrade FAQ](launch-reference/upgrade-from-dtm-to-launch/upgrade-faq.md) for more information.
 
 #### How much does Launch cost?
 
@@ -118,7 +118,7 @@ There is no additional charge for Launch. It is available for any Adobe Experien
 
 No, you won't have to change your production embed codes if you're currently using the existing \(legacy\) DTM system. You can continue to work in your current DTM Company and Web Properties without worrying about changing that embed code.
 
-If you'd like, you can link your DTM Production embed code with your Launch Production embed code so you don't have to change your page tags. See [Link DTM Embed Code](upgrade-from-dtm-to-launch/link-dtm-embed-code.md) for more information.
+If you'd like, you can link your DTM Production embed code with your Launch Production embed code so you don't have to change your page tags. See [Link DTM Embed Code](launch-reference/upgrade-from-dtm-to-launch/link-dtm-embed-code.md) for more information.
 
 #### I heard there are plug-ins now. What's that about?
 
