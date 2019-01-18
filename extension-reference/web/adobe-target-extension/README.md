@@ -183,3 +183,4 @@ body {opacity: 0 !important}
 ```
 
 By default, the snippet times out at 3000ms or 3 seconds. This value can be customized.
+

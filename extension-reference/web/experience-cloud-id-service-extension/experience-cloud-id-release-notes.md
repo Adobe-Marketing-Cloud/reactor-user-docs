@@ -1,7 +1,3 @@
----
-description: Release notes for the Experience Cloud ID extension.
----
-
 # Experience Cloud ID Release Notes
 
 ## March 20, 2018

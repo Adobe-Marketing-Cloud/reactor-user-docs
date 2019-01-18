@@ -1,7 +1,3 @@
----
-description: Release notes for the Core extension.
----
-
 # Core Release Notes
 
 ## January 8, 2019

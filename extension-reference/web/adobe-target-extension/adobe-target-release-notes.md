@@ -1,7 +1,3 @@
----
-description: Release notes for the Adobe Target extension.
----
-
 # Adobe Target Release Notes
 
 ## November 15, 2018

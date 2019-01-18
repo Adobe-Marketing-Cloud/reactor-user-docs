@@ -1,7 +1,3 @@
----
-description: Release notes for the Adobe Analytics extension
----
-
 # Adobe Analytics Release Notes
 
 ## November 9, 2018
