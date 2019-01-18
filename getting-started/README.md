@@ -1,18 +1,16 @@
 # Quick Start
 
-
-
 Launch is the next-generation of Adobe's tag management technology, built on the Adobe Experience Platform. It is built from the ground up to support an open and sustainable ecosystem where anyone can build their own integrations that Adobe customers can deploy to their sites. It is an API first application so anything you can do through the UI you can also do programmatically through an API.
 
 The basic Launch workflow:
 
-1. [Set up groups and users](web.md#1-set-up-groups-and-users). 
-2. [Log in](web.md#2-log-in). 
-3. [Create a property](web.md#3-create-a-property). 
-4. [Install extensions](web.md#4-install-extensions). 
-5. [Create data elements and rules](web.md#5-create-data-elements-and-rules). 
-6. [Test in your dev environment](web.md#6-test-in-your-dev-environment). 
-7. [Promote to production](web.md#7-promote-to-production). 
+1. [Set up groups and users](./#1-set-up-groups-and-users). 
+2. [Log in](./#2-log-in). 
+3. [Create a property](./#3-create-a-property). 
+4. [Install extensions](./#4-install-extensions). 
+5. [Create data elements and rules](./#5-create-data-elements-and-rules). 
+6. [Test in your dev environment](./#6-test-in-your-dev-environment). 
+7. [Promote to production](./#7-promote-to-production). 
 
 For an introductory video, see [Introduction to Launch, by Adobe](../videos.md).
 
@@ -38,7 +36,7 @@ For more about creating properties, see [Create a property](../launch-reference/
 
 Extensions are one of the core features of Launch. An extension is an integration built by Adobe or an Adobe partner that adds new and endless options for the tags that you can deploy to your sites. If you think of Launch as an operating system, extensions are the apps that you install so Launch can do the things you need it to do.
 
-All new properties come with the [Core extension](../extension-reference-1/web/core-extension.md) installed. This extension is built by the Launch team to provide a robust default set of data element types for your data layer and event types for your rules. Most actions you will want to perform \(get an ECID, send Adobe Analytics beacons, load the Target global mbox, etc\) will come from extensions that you install from the catalog.
+All new properties come with the [Core extension](../extension-reference-1/web/core-extension/) installed. This extension is built by the Launch team to provide a robust default set of data element types for your data layer and event types for your rules. Most actions you will want to perform \(get an ECID, send Adobe Analytics beacons, load the Target global mbox, etc\) will come from extensions that you install from the catalog.
 
 What makes Launch truly unique among tag management systems is that these extensions can be built by anyone. Do you need to drop a Facebook remarketing pixel on your site? Check out the extension that Facebook built. Do you want the same for Twitter or Linked In? Use those extensions. Do you need to run a survey? Look at Question Pro or Foresee. Do you need to manage privacy and consent from your end users to help out with GDPR? Take a good look at Evidon and Trust Arc. Would you like to see really granular insight into the behavior of individual users on your site? Maybe take a look at Clicktale. For more information, see [Add a new extension](../launch-reference/managing-resources/extensions/#add-a-new-extension).
 

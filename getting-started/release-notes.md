@@ -108,7 +108,7 @@ The extension catalog is now sorted by display name rather than name.
 
 #### Extension Upgrade
 
-Launch users will now be notified when new versions of extensions are available and can install them on their own. Read more [here](launch-reference/managing-resources/extensions/extension-upgrade.md).
+Launch users will now be notified when new versions of extensions are available and can install them on their own. Read more [here](../launch-reference/managing-resources/extensions/extension-upgrade.md).
 
 ### Updates
 
@@ -234,7 +234,7 @@ Event details are copied to the top-level event object \(`%event.detail%` in tex
 
 #### Delete resources
 
-You can delete data elements, rules, and extensions. See [Delete Resources](launch-reference/managing-resources/delete-resources.md).
+You can delete data elements, rules, and extensions. See [Delete Resources](../launch-reference/managing-resources/delete-resources.md).
 
 #### Link DTM Embed Code to Launch
 
@@ -306,7 +306,7 @@ You can now pass actual objects to the log function and view them as objects in 
 
 * On-page
 
-  The Launch library now includes support for running asynchronously. There are important ramifications for how this changes what happens in your library. You should read the [Async documentation](launch-reference/client-side-information/asynchronous-deployment.md) before you do anything.
+  The Launch library now includes support for running asynchronously. There are important ramifications for how this changes what happens in your library. You should read the [Async documentation](../launch-reference/client-side-information/asynchronous-deployment.md) before you do anything.
 
 * Async Toggle on Environments
 

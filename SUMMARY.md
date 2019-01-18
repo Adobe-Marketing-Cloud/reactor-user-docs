@@ -1,13 +1,12 @@
 # Table of contents
 
 * [Overview](README.md)
-* [2018 Release Notes](release-notes.md)
 * [Videos](videos.md)
 * [Quick Start](getting-started/README.md)
   * [2019 Release Notes](getting-started/2019-release-notes.md)
-  * [Web](getting-started/web.md)
+  * [2018 Release Notes](getting-started/release-notes.md)
 
-## Getting Started: Web
+## Getting Started
 
 * [Overview](getting-started-1/overview.md)
 * [Configure Launch](getting-started-1/general-launch-configuration-and-settings/README.md)
@@ -69,13 +68,18 @@
 ## Extension Reference
 
 * [Adobe Extensions](extension-reference-1/web/README.md)
-  * [Adobe Analytics Extension](extension-reference-1/web/adobe-analytics-extension.md)
-  * [Adobe Analytics for Video Extension](extension-reference-1/web/adobe-analytics-for-video-extension.md)
+  * [Adobe Analytics Extension](extension-reference-1/web/adobe-analytics-extension/README.md)
+    * [Adobe Analytics Release Notes](extension-reference-1/web/adobe-analytics-extension/adobe-analytics-release-notes.md)
+  * [Adobe Analytics for Video Extension](extension-reference-1/web/adobe-analytics-for-video-extension/README.md)
+    * [Adobe Analytics for Video Release Notes](extension-reference-1/web/adobe-analytics-for-video-extension/adobe-analytics-for-video-release-notes.md)
   * [Adobe Audience Manager Extension](extension-reference-1/web/adobe-audience-manager-extension.md)
   * [Adobe ContextHub Extension](extension-reference-1/web/adobe-contexthub-extension.md)
   * [Adobe Privacy Extension](extension-reference-1/web/adobe-privacy-extension.md)
-  * [Adobe Target Extension](extension-reference-1/web/adobe-target-extension.md)
-  * [Core Extension](extension-reference-1/web/core-extension.md)
-  * [Experience Cloud ID Service Extension](extension-reference-1/web/experience-cloud-id-service-extension.md)
+  * [Adobe Target Extension](extension-reference-1/web/adobe-target-extension/README.md)
+    * [Adobe Target Release Notes](extension-reference-1/web/adobe-target-extension/adobe-target-release-notes.md)
+  * [Core Extension](extension-reference-1/web/core-extension/README.md)
+    * [Core Release Notes](extension-reference-1/web/core-extension/core-release-notes.md)
+  * [Experience Cloud ID Service Extension](extension-reference-1/web/experience-cloud-id-service-extension/README.md)
+    * [Experience Cloud ID Release Notes](extension-reference-1/web/experience-cloud-id-service-extension/experience-cloud-id-release-notes.md)
 * [Third-Party Extensions](extension-reference-1/3rd-party-extensions.md)
 

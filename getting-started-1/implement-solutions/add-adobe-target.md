@@ -45,7 +45,7 @@ Reload your sample page. The page is hidden for three seconds before it displays
 * `body {opacity: 0 !important}` specifies the CSS definition to use for the prehiding until Target loads. By default, the entire body is hidden. If you have a consistent DOM structure with an easily identifiable container element wrapping all of the content below your navigation, for example, and you never want to test or personalize your navigation, you could use this setting to limit the prehiding to that container element.
 * `3E3` specifies the timeout setting for the prehiding. By default, if Target hasn't loaded in three seconds, the page is shown. This should be extremely rare.
 
-For more details, and to obtain the unminified prehiding snippet, see [Configure the Adobe Target extension with an asynchronous deployment​](../../extension-reference-1/web/adobe-target-extension.md#configure-the-adobe-target-extension)
+For more details, and to obtain the unminified prehiding snippet, see [Configure the Adobe Target extension with an asynchronous deployment​](../../extension-reference-1/web/adobe-target-extension/#configure-the-adobe-target-extension)
 
 ## Add the Target extension
 
