@@ -16,7 +16,8 @@ At the end of this lesson, you will be able to:
 ## Add the Experience Cloud ID Service Extension
 
 1. In the top navigation, click **Extensions**.
-2. Click **Catalog** to open the Extensions Catalog page. ![Go to the Extensions Catalog](../../.gitbook/assets/extensions-gotoextensionscatalog.png)
+2. Click **Catalog** to open the Extensions Catalog page.
+  ![Go to the Extensions Catalog](../../.gitbook/assets/extensions-gotoextensionscatalog.png)
 3. In the filter at the top, type “id” to filter the catalog, then on the card for the Experience Cloud ID Service, click **Install**. ![Install icon](../../.gitbook/assets/idservice-install.png)
 4. Leave all of the default settings and click  **Save to Library and Build**.  Note that your Experience Cloud Organization ID has been auto-detected for you.
 
@@ -55,7 +56,7 @@ In the Add Data Elements, Rules, and Libraries tutorial, you created a data elem
 
 Start by creating two data elements:
 
-* `Authentication State`: Captures whether the visitor is logged in 
+* `Authentication State`: Captures whether the visitor is logged in
 * `Email (Hashed)`: Captures the hashed version of the email address \(used as the customer ID\) from the data layer
 
 Create the data element for Authentication State:
@@ -120,4 +121,3 @@ Next, confirm the customer id is sent to the Service using the Debugger extensio
 Launch also has rich console logging features. To turn them on, go to the **Tools** tab in the Debugger and turn on the **Launch Console Logging** Toggle.
 
 This turns on console logging, both in your browser console and in the Logs tab of the Debugger. You should see the logging of all of the rules you have created so far. New log entries are added to the top of the list, so your rule "All Pages - Library Loaded - Authenticated - 10" should fire before the "All Pages - Library Loaded" rule and appear below it in the Debugger's Console Logging.
-
