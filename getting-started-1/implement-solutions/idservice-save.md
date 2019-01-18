@@ -17,7 +17,9 @@ At the end of this lesson, you will be able to:
 
 1. In the top navigation, click **Extensions**.
 2. Click **Catalog** to open the Extensions Catalog page.
+
   ![](../../.gitbook/assets/extensions-gotoextensionscatalog.png)
+  
 3. In the filter at the top, type “id” to filter the catalog, then on the card for the Experience Cloud ID Service, click **Install**.
   ![](../../.gitbook/assets/idservice-install.png)
 4. Leave all of the default settings and click  **Save to Library and Build**.  Note that your Experience Cloud Organization ID has been auto-detected for you.
