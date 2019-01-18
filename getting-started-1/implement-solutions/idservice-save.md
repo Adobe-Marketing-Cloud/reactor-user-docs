@@ -19,7 +19,7 @@ At the end of this lesson, you will be able to:
 2. Click **Catalog** to open the Extensions Catalog page.
 
   ![](../../.gitbook/assets/extensions-gotoextensionscatalog.png)
-  
+
 3. In the filter at the top, type “id” to filter the catalog, then on the card for the Experience Cloud ID Service, click **Install**.
   ![](../../.gitbook/assets/idservice-install.png)
 4. Leave all of the default settings and click  **Save to Library and Build**.  Note that your Experience Cloud Organization ID has been auto-detected for you.
@@ -28,7 +28,7 @@ At the end of this lesson, you will be able to:
 
 The ID Service is added to your installed extensions. For more details on the advanced options, see the [configuration options documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html).
 
-**Note:** Each version of the ID Service extension comes with a specific version of VisitorAPI.js which is noted in the extension description. You update the VisitorAPI.js version by updating the ID Service extension.
+**Note:** Each version of the ID Service extension comes with a specific version of `VisitorAPI.js` which is noted in the extension description. You update the `VisitorAPI.js` version by updating the ID Service extension.
 
 ### Validate the extension
 
@@ -68,7 +68,8 @@ Create the data element for Authentication State:
 2. Click **Add Data Element**. ![](../../.gitbook/assets/idservice-adddataelement1.png)
 3. Name the data element "Authentication State."
 4. For `Data Element Type`, select `Custom Code`.
-5. Click **Open Editor**, then in the Edit Code window, paste the following: `if (digitalData.user[0].profile[0].attributes.loggedIn)  return "logged in" else  return "logged out"`
+5. Click **Open Editor**, then in the Edit Code window, paste the following:
+  `if (digitalData.user[0].profile[0].attributes.loggedIn)  return "logged in" else  return "logged out"`
 6. Save the custom code.
 7. Leave all of the other settings on their default values.
 8. Save the data element. ![](../../.gitbook/assets/idservice-authenticationstate.png)
@@ -91,12 +92,24 @@ The Experience Cloud ID Service passes the customer IDs using a rule action call
 
    **TIP:** This naming convention indicates you are implementing this rule at the top of all pages when the user is authenticated and it will have an order of “10.” Using a naming convention like this, rather than naming it for the solutions triggered in the actions, minimizes the overall number of rules needed in this implementation.
 
-3. Under **Events**, click **Add**. a. For the **Event Type** select **Library Loaded \(Page Top\)**.  b. Specify the order “10”. The Order controls the sequence of rules that are triggered by the same event. Rules with a lower order fire before rules with a higher order. In this case, you want to set the customer ID before you fire the Target request, which you will do in the next lesson with a rule with an order of 50 . c.  Click **Keep Changes** to return to the Rule Builder.
-4.  Under **Conditions** click **Add**:  a.  For the **Condition Type** select **Value Comparison**.  b.  Click the icon to open the Data Element modal. c.  In the Data Element Modal, click on **Authentication State**, and then click **Select.**
+3. Under **Events**, click **Add**.
+  1. For the **Event Type** select **Library Loaded \(Page Top\)**.
+  2. Specify the order “10”. The Order controls the sequence of rules that are triggered by the same event. Rules with a lower order fire before rules with a higher order. In this case, you want to set the customer ID before you fire the Target request, which you will do in the next lesson with a rule with an order of 50 .
+  3. Click **Keep Changes** to return to the Rule Builder.
+4.  Under **Conditions** click **Add**:
+  1. For the **Condition Type** select **Value Comparison**.
+  2. Click the icon to open the Data Element modal.
+  3. In the Data Element Modal, click on **Authentication State**, and then click **Select.**
 5. Make sure Equals is the operator.
 6. Type "logged in" in the text field, which causes the rule to fire whenever the data element “Authentication State” has has a value of “logged in.”
 7. Click **Keep Changes.**
-8.  Under **Actions** click **Add**.  a. Select the “Experience Cloud ID Service” extension.  b. Select the “Set Customer IDs” Action Type. c.  For the **Integration Code** enter `crm_id`. d.  For the **Value** enter open the Data Element selector modal and select the Email \(Hashed\) option. e.  For the **Auth State** select **Authenticated**. f.  Click the **Keep Changes** button to save the action and return to the Rule Builder.
+8.  Under **Actions** click **Add**.
+  1. Select the Experience Cloud ID Service extension.
+  2. Select the “Set Customer IDs” Action Type.
+  3. For the **Integration Code** enter `crm_id`.
+  4. For the **Value** enter open the Data Element selector modal and select the Email \(Hashed\) option.
+  5. For the **Auth State** select **Authenticated**.
+  6. Click the **Keep Changes** button to save the action and return to the Rule Builder.
 9. Click **Save to Library and Build**.
 
 This rule sends the Customer ID as a variable `crm_id` when the visitor is authenticated. Because you specified the order as 10, this rule fires before the All Pages - Library Loaded rule created in the [Add Data Elements, Rules, and Libraries](../general-launch-configuration-and-settings/add-data-elements-and-rules.md) tutorial,which uses the default Order value of 50.
@@ -106,7 +119,7 @@ This rule sends the Customer ID as a variable `crm_id` when the visitor is authe
  To validate your work, log in to the We.Retail site to confirm the behavior of the new rule.
 
 1.  Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html).
-2. Make sure the Debugger is mapping the Launch property to your Development environment, as described in the [earlier lesson](https://docs-author-stg.corp.adobe.com/content/help/en/techmarketing-test/implementing-the-experience-cloud-in-websites-with-launch/configure-launch/launch-switch-environments.html).
+2. Make sure the Debugger is mapping the Launch property to your Development environment, as described earlier.
 3. Click the **Login** link and log in, using `test@adobe.com` as the username and `test` as the password.
 4. Click **Login**.
 5. Return to the Homepage.
@@ -115,8 +128,8 @@ Next, confirm the customer id is sent to the Service using the Debugger extensio
 
 1. Make sure the tab with the We.Retail site is in focus.
 2. Go to the Experience Cloud ID Service tab.
-3. Click on the cell with the Customer ID - crm\_id value.
-4. In the modal, note the customer id value and that the AUTHENTICATED state is reflected.
+3. Click on the cell with the Customer ID - `crm_id` value.
+4. In the modal, note the customer ID value and that the AUTHENTICATED state is reflected.
 5. Confirm the hashed email value by viewing the source code of the page and looking at the username property. It should match the value you see in the Debugger.
 
 ### Additional debugging tips
