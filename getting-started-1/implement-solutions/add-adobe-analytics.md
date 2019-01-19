@@ -49,7 +49,7 @@ You have already created an "All Pages - Library Loaded" rule in the Add a Data 
 3. Click **Events &gt; Add** to open the Event Configuration screen.
 4. Select **Event Type &gt; DOM Ready**. Note that the order of the rule is "50."
 5. Click **Keep Changes**.
-6. Under **Actions**, click the **Add** icon to add a new action.![](https://docs-author-stg.corp.adobe.com/content/dam/help/techmarketing-test.en/help/website-implementation/assets/images/analytics-addAction.png)
+6. Under **Actions**, click the **Add** icon to add a new action. ![](../../.gitbook/assets/analytics-ruleaddaction.png)
 7. Select **Extension &gt; Adobe Analytics**.
 8. Select **Action Type &gt; Send Beacon**.
 9. Leave Tracking set to `s.t()`.  **Note:** If you wanted to make an `s.tl()` call in a click-event rule, you could do that using the Send Beacon action as well.
@@ -62,9 +62,9 @@ After you have created a rule to send an Analytics beacon, you should be able to
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser.
 2. Click the Debugger icon ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-debuggerIcon.png) to open the **Adobe Experience Cloud Debugger**.
-3. Make sure the Debugger is mapping the Launch property to your Development environment, as described in the earlier lesson. ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/switchEnvironments-debuggerOnWeRetail.png)
+3. Make sure the Debugger is mapping the Launch property to your Development environment, as described in the earlier lesson. ![](../../.gitbook/assets/switchenvironments-debuggeronweretail%20%281%29.png)
 4. Open the Analytics tab, then expand your Report Suite name to show all of the requests made to it.
-5. Confirm the request has fired with the Page Name variable and value.![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-validatePageHit.png)
+5. Confirm the request has fired with the Page Name variable and value.![](../../.gitbook/assets/analytics-validatepagehit.png)
 
 **Note:** If the Page Name is not showing up for you, go back through the steps in this page to make sure that you haven't missed anything.
 
@@ -87,7 +87,7 @@ Product Detail Pages \(PDP\) are important points for data collection on retail 
 First, you need to identify which pages are the Product Detail pages. You do that with a Data Element.
 
 1. Click **Data Elements** in the top navigation.
-2. Click **Add Data Element**. ****![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-addDataElement.png)
+2. Click **Add Data Element**. ****![](../../.gitbook/assets/analytics-adddataelement.png)
 3. Name the data element Page Type.
 4. Select **Data Element Type &gt; JavaScript Variable**.
 5. Use digitalData.page.category.type as the Path to Variable.
@@ -98,7 +98,7 @@ First, you need to identify which pages are the Product Detail pages. You do tha
 
 Next, collect the product ID of the current Product Detail page with a Data Element.
 
-1. Click **Data Elements** in the top navigation, then click **Add Data Element**. ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-addDataElement.png)
+1. Click **Data Elements** in the top navigation, then click **Add Data Element**. ![](../../.gitbook/assets/analytics-adddataelement.png)
 2. Name the data element "Product ID."
 3. Select **Data Element Type &gt; JavaScript Variable**.
 4. Use digitalData.product.0.productInfo.sku as the Path to Variable.
@@ -113,9 +113,9 @@ If you are familiar with Adobe Analytics implementations, you are probably alrea
 In this section you will add an extension created by Adobe Consulting for use on the Product Detail page.
 
 1. Go to the Extensions &gt; Catalog page.
-2. Find the Adobe Analytics Product String extension by Adobe Consulting Services and click **Install**. **** ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-addProductStringExtension.png)
+2. Find the Adobe Analytics Product String extension by Adobe Consulting Services and click **Install**. **** ![](../../.gitbook/assets/analytics-addproductstringextension.png)
 3. Take a moment to read the instructions.
-4. Click **Save to Library and Build**. ****![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-addProductStringExtensionSave.png)
+4. Click **Save to Library and Build**. ****![](../../.gitbook/assets/analytics-addproductstringextensionsave.png)
 
 ### Create the Rule for Product Detail Pages
 
@@ -124,9 +124,9 @@ Use your new data elements and extension to build your Product Detail page rule.
 #### Set the event type and order
 
 1. Go to the **Rules** section in the top navigation, click **Add Rule**, then name the rule "Product Details - DOM Ready."
-2. Click **Events &gt; Add** to open the Event Configuration screen. ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-domReadyAddEvent.png)
+2. Click **Events &gt; Add** to open the Event Configuration screen. ![](../../.gitbook/assets/analytics-domreadyaddevent%20%281%29.png)
 3. Select **Event Type &gt; DOM Ready**.
-4. Set the **Order** to 40, so that the rule will run before the rule containing the Analytics &gt; Send Beacon action.  ****![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-configDOMReadyEvent.png)
+4. Set the **Order** to 40, so that the rule will run before the rule containing the Analytics &gt; Send Beacon action.  ****![](../../.gitbook/assets/analytics-configdomreadyevent.png)
 5. Click **Keep Changes**.
 
 #### Set the conditions
@@ -154,14 +154,14 @@ Use your new data elements and extension to build your Product Detail page rule.
 
 #### Add another action and save the rule
 
-1. Under Actions, click the Add icon to add a new action. ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-PDPaddProductStringAction.png)
+1. Under Actions, click the Add icon to add a new action. ![](../../.gitbook/assets/analytics-pdpaddproductstringaction.png)
 2. Select **Extension &gt; Adobe Analytics Product String**.
 3. Select **Action Type &gt; Set s.products**.
 4. Select **Action Type &gt; Set Variables**.
 5. In the **Analytics E-commerce Event** section, select **prodView**.
 6. In the **Data layer variables for product data** section, use the Data Element picker to choose the Product Id data element.
 7. Click **Keep Changes**.
-8. Click **Save to Library and Build**. ****![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-PDP-saveRule.png)
+8. Click **Save to Library and Build**. ****![](../../.gitbook/assets/analytics-pdp-saverule.png)
 
 ### Validate the Product Detail Page Data
 
@@ -191,12 +191,12 @@ You want to know if people are scrolling far enough down on the We.Retail home p
 
 1. Select **Rules** from the top navigation and click **Add Rule**.
 2. Name the rule "Homepage - New Arrivals enters Viewport."
-3. Click **Events &gt; Add** to open the Event Configuration screen.![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-newArrivalsRuleAdd2.png)
+3. Click **Events &gt; Add** to open the Event Configuration screen.![](../../.gitbook/assets/analytics-newarrivalsruleadd2.png)
 4. Select **Event Type &gt; Enters Viewport**.  This brings up a field where you enter the CSS selector that identifies the item on your page that should trigger the rule when becomes visible in the browser.
 5. Go back to the home page of We.Retail and scroll down to the New Arrivals section.
 6. Right-click on the space between the "NEW ARRIVALS" title and the items in this section, and select Inspect from the right-click menu.  This is near the section you want to be visible..
 7. In that area of the page, possibly right below the selected section, locate the &lt;div&gt; element with class="we-productgrid aem-GridColumn aem-GridColumn--default--12." 
-8. Right-click on this element and select **Copy &gt; Copy Selector**![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-copyElementSelector.png)
+8. Right-click on this element and select **Copy &gt; Copy Selector**![](../../.gitbook/assets/analytics-copyelementselector.png)
 9. Go back to Launch and paste this value from the clipboard into the field labeled **Elements** matching the CSS selector. It is up to you to decide how to identify CSS selectors. This method requires care, because certain changes on the page can break this selector. Consider this when using any CSS selectors in Launch.
 10. Click **Keep Changes**.
 
@@ -220,7 +220,7 @@ You want to know if people are scrolling far enough down on the We.Retail home p
 
 #### Create another action and save the rule
 
-1. Under Actions, click the **Add** icon to add another new action. ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-newArrivalsSendBeacon2.png)
+1. Under Actions, click the **Add** icon to add another new action. ![](../../.gitbook/assets/analytics-newarrivalssendbeacon2.png)
 2. Select **Extension &gt; Adobe Analytics**.
 3. Select **Action Type &gt; Send Beacon**.
 4. Choose the **s.tl\(\)** tracking option.
@@ -233,7 +233,7 @@ You want to know if people are scrolling far enough down on the We.Retail home p
 Make sure that this hit occurs when you scroll down to the New Arrivals section of the home page of the site. When you first load the home page the request shouldn't be made, but after you scroll down and the section comes into view, the hit should fire with the specified values.
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser, make sure you are at the top of the home page, then click the Debugger icon to open the Adobe Experience Cloud Debugger.
-2. Open the Analytics tab and expand the hit for your report suite. Notice the normal page view hit for the home page with the page name and other elements, but nothing in eVar3 or prop3. ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-debuggerPageView.png)
+2. Open the Analytics tab and expand the hit for your report suite. Notice the normal page view hit for the home page with the page name and other elements, but nothing in eVar3 or prop3. ![](../../.gitbook/assets/analytics-debuggerpageview.png)
 3. With the Debugger open, scroll down on your site until you can see the New Arrivals section.
 4. View the Debugger again. Another Analytics hit should appear. This hit should have the parameters associated with the s.tl\(\) hit that you set up, namely:
    * LinkType = "link\_o"  This means that the hit is a custom link hit, not a page view hit.
@@ -259,7 +259,7 @@ To implement plug-ins, there are three steps:
 If you are going to add the doPlugins function \(below\) and use plug-ins, you need to check a box to make the Analytics "s" object available globally in the Analytics implementation.
 
 1. Go to **Extensions &gt; Installed**.
-2. In the Adobe Analytics extension, Click **Configure**. ****![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-configureExtension.png)
+2. In the Adobe Analytics extension, Click **Configure**. ****![](../../.gitbook/assets/analytics-configureextension.png)
 3. Under **Library Management**, select the box labeled **Make tracker globally accessible**.  As you can see in the help bubble, this causes the tracker to be scoped globally under window.s, which is important when you refer to it in your customer JavaScript.
 
 ### Including the doPlugins function
@@ -303,7 +303,7 @@ The code for this plug-in is available in the [Analytics Documentation](https://
 2. Paste it into the code window in the Analytics extension, **completely below** the doPlugins function \(not inside of it\).  
    If you don't still have extension open, re-open it as per the previous step.
 
-   ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-doPluginsAndGeValOnceCode.png)
+   ![](../../.gitbook/assets/analytics-dopluginsandgevaloncecode.png)
 
 You can now call this plug-in from within doPlugins.
 
@@ -326,7 +326,7 @@ First, call a plug-in which has been incorporated into the AppMeasurement librar
    s.campaign=s.getValOnce(s.campaign,'s_cmp',30);
    ```
 
-   This code makes sure that the same value is not sent in more than once in a row for 30 days. See the documentation for ways to customize this code to your needs.![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-doPluginsWithPlugins.png)
+   This code makes sure that the same value is not sent in more than once in a row for 30 days. See the documentation for ways to customize this code to your needs.![](../../.gitbook/assets/analytics-dopluginswithplugins.png)
 
 4. Save the code window.
 5. Click **Save to Library and Build**.
@@ -337,8 +337,8 @@ First, call a plug-in which has been incorporated into the AppMeasurement librar
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser, then click the Debugger icon to open the **Adobe Experience Cloud Debugger**.
 2. Click to the Analytics tab and expand your report suite. Notice the Analytics hit does not have a Campaign variable
-3. Leaving the Debugger open, go back to the We.Retail site and add ?cid=1234 to the URL, then press **Enter** to refresh the page with that query string included. ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-cidAdded.png)
-4. Check the Debugger and confirm that there is a second Analytics request with a Campaign variable set to 1234. ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/analytics-getQueryParam1.png)
+3. Leaving the Debugger open, go back to the We.Retail site and add ?cid=1234 to the URL, then press **Enter** to refresh the page with that query string included. ![](../../.gitbook/assets/analytics-cidadded.png)
+4. Check the Debugger and confirm that there is a second Analytics request with a Campaign variable set to 1234. ![](../../.gitbook/assets/analytics-getqueryparam1.png)
 5. Go back and refresh the We.Retail page again, with the query string still in the URL.
 6. Check the next hit in the Debugger.  The Campaign variable should **not** be present, because the getValOnce plug-in has made sure that it isn't duplicated to look like another person came in from the campaign tracking code.
 
