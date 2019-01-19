@@ -33,17 +33,24 @@ The Analytics extension consists of two main parts:
 
 1. Go to **Extensions &gt; Catalog** and locate the Adobe Analytics extension.
 2. Click **Install**.
-3. Under **Library Management &gt; Report Suites**, enter the report suite IDs you want to use with each Launch environment. In this tutorial, you can use one report suite for all environments, but in production you would want to use separate report suites, as shown in the image below:
+3. Under **Library Management &gt; Report Suites**, enter the report suite IDs you want to use with each Launch environment.
+
+  In this tutorial, you can use one report suite for all environments, but in production you would want to use separate report suites, as shown in the image below:
 
   ![](../../.gitbook/assets/analytics-config-reportsuite.png)
 
   **Note:** Use the **Manage the library for me** option as the Library Management setting. This makes it much easier to keep the core AppMeasurement.js code up-to-date.
 
-4. Under **General &gt; Tracking Server**, enter your tracking server \(for example, `tmd.sc.omtrdc.net`\). Enter your SSL Tracking Server if your site supports `https://`.
+4. Under **General &gt; Tracking Server**, enter your tracking server \(for example, `tmd.sc.omtrdc.net`\).
+
+  Enter your SSL Tracking Server if your site supports `https://`.
 
   ![](../../.gitbook/assets/analytics-config-trackingserver.png)
 
-5.  In the Global Variables section, set the Page Name variable using your Page Name data element. Click the **Data Element** icon to open the modal and choose the page Page Name data element.
+5.  In the Global Variables section, set the Page Name variable using your Page Name data element. 
+
+  Click the **Data Element** icon to open the modal and choose the page Page Name data element.
+
 6. Click **Save to Library and Build**.
 
 **Note:** Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables with the extension configuration, the data layer must be defined before the Launch embed codes.
