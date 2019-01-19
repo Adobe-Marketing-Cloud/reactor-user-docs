@@ -29,6 +29,8 @@ The Analytics extension consists of two main parts:
   * Clear Variables
   * Send the Analytics Beacon
 
+
+
 1. Go to **Extensions &gt; Catalog** and locate the Adobe Analytics extension.
 2. Click **Install**.
 3. Under **Library Management &gt; Report Suites**, enter the report suite IDs you want to use with each Launch environment. In this tutorial, you can use one report suite for all environments, but in production you would want to use separate report suites, as shown in the image below:
