@@ -47,9 +47,7 @@ The Analytics extension consists of two main parts:
 
   ![](../../.gitbook/assets/analytics-config-trackingserver.png)
 
-5.  In the Global Variables section, set the Page Name variable using your Page Name data element. 
-
-  Click the **Data Element** icon to open the modal and choose the page Page Name data element.
+5.  In the Global Variables section, set the Page Name variable using your Page Name data element, then click the **Data Element** icon to open the modal and choose the page Page Name data element.
 
 6. Click **Save to Library and Build**.
 
@@ -124,8 +122,8 @@ First, you need to identify which pages are the Product Detail pages. You do tha
 
 3. Name the data element Page Type.
 4. Select **Data Element Type &gt; JavaScript Variable**.
-5. Use digitalData.page.category.type as the Path to Variable.
-6. Check the Clean Text and Force Lower Case options.
+5. Use `digitalData.page.category.type` as the Path to Variable.
+6. Check the **Clean Text** and **Force Lower Case** options.
 7. Click **Save to Library and Build**.
 
 ### Create Data Element for Product ID
@@ -149,7 +147,7 @@ If you are familiar with Adobe Analytics implementations, you are probably alrea
 
 In this section you will add an extension created by Adobe Consulting for use on the Product Detail page.
 
-1. Go to the Extensions &gt; Catalog page.
+1. Go to the **Extensions &gt; Catalog** page.
 2. Find the Adobe Analytics Product String extension by Adobe Consulting Services and click **Install**.
 
   ![](../../.gitbook/assets/analytics-addproductstringextension.png)
@@ -255,8 +253,11 @@ You want to know if people are scrolling far enough down on the We.Retail home p
   This brings up a field where you enter the CSS selector that identifies the item on your page that should trigger the rule when becomes visible in the browser.
 
 5. Go back to the home page of We.Retail and scroll down to the New Arrivals section.
-6. Right-click on the space between the "NEW ARRIVALS" title and the items in this section, and select Inspect from the right-click menu.  This is near the section you want to be visible..
-7. In that area of the page, possibly right below the selected section, locate the &lt;div&gt; element with `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"`.
+6. Right-click on the space between the "NEW ARRIVALS" title and the items in this section, and select Inspect from the right-click menu.
+
+  This is near the section you want to be visible.
+
+7. In that area of the page, possibly right below the selected section, locate the `&lt;div&gt;` element with `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"`.
 8. Right-click on this element and select **Copy &gt; Copy Selector**
 
   ![](../../.gitbook/assets/analytics-copyelementselector.png)
@@ -272,7 +273,10 @@ You want to know if people are scrolling far enough down on the We.Retail home p
 1. Under Conditions, click the **Add** icon to add a new condition.
 2. Select **Condition Type &gt; Value Comparison**
 3. Use the data element picker to choose Page Name in the first field.
-4. Select **Equals** from the comparison operator dropdown, then type `content:we-retail:us:en` in the next field. This is the page name of the home page as pulled from the data layer. This rule runs only on the home page.
+4. Select **Equals** from the comparison operator dropdown, then type `content:we-retail:us:en` in the next field.
+
+  This is the page name of the home page as pulled from the data layer. This rule runs only on the home page.
+
 5. Click **Keep Changes**.
 
 #### Create an action
@@ -309,6 +313,7 @@ Make sure that this hit occurs when you scroll down to the New Arrivals section 
 2. Open the Analytics tab and expand the hit for your report suite.
 
   Notice the normal page view hit for the home page with the page name and other elements, but nothing in eVar3 or prop3.
+
   ![](../../.gitbook/assets/analytics-debuggerpageview.png)
 
 3. With the Debugger open, scroll down on your site until you can see the New Arrivals section.
@@ -329,13 +334,13 @@ A plug-in is a piece of JavaScript code that you can add to your implementation 
 
 To implement plug-ins, there are three steps:
 
-1. Include the doPlugins function, where the plug-in is referenced.
+1. Include the `doPlugins` function, where the plug-in is referenced.
 2. Add the main function code for the plug-in.
 3. Include the code that calls the function and sets variables, etc.
 
 ### Make the Analytics object globally accessible
 
-If you are going to add the doPlugins function \(below\) and use plug-ins, you need to check a box to make the Analytics `s` object available globally in the Analytics implementation.
+If you are going to add the `doPlugins` function \(below\) and use plug-ins, you need to check a box to make the Analytics `s` object available globally in the Analytics implementation.
 
 1. Go to **Extensions &gt; Installed**.
 2. In the Adobe Analytics extension, Click **Configure**.
@@ -348,7 +353,7 @@ If you are going to add the doPlugins function \(below\) and use plug-ins, you n
 
 ### Including the doPlugins function
 
-To add plug-ins, you need to add a function called doPlugins. This function is not added by default, but once added, is handled by the AppMeasurement library. It is called last when a hit is sent to Adobe Analytics. Therefore, you can use this function to run some JavaScript to set variables that are easier set this way.
+To add plug-ins, you need to add a function called `doPlugins`. This function is not added by default, but once added, is handled by the AppMeasurement library. It is called last when a hit is sent to Adobe Analytics. Therefore, you can use this function to run some JavaScript to set variables that are easier set this way.
 
 1. While still in the Analytics extension, scroll down and expand the section titled Configure Tracking Using Custom Code.
 2. Click **Open Editor**.
@@ -385,7 +390,8 @@ The code for this plug-in is available in the [Analytics Documentation](https://
    ```
 
 2. Paste it into the code window in the Analytics extension, **completely below** the `doPlugins` function \(not inside of it\).
-   If you don't still have extension open, re-open it as per the previous step.
+
+  If you don't still have extension open, reopen it as per the previous step.
 
    ![](../../.gitbook/assets/analytics-dopluginsandgevaloncecode.png)
 
@@ -403,7 +409,10 @@ First, call a plug-in which has been incorporated into the AppMeasurement librar
    s.campaign = s.Util.getQueryParam("cid");
    ```
 
-2. Paste the code into the `doPlugins` function.  This looks for a parameter called `cid` in the current page URL and places it into the `s.campaign` variable.
+2. Paste the code into the `doPlugins` function.
+
+  This looks for a parameter called `cid` in the current page URL and places it into the `s.campaign` variable.
+
 3. Call the `getValOnce` function by copying the following code and pasting it in right below the call to `getQueryParam`:
 
    ```text
@@ -432,7 +441,7 @@ First, call a plug-in which has been incorporated into the AppMeasurement librar
 
 4. Check the Debugger and confirm that there is a second Analytics request with a Campaign variable set to 1234.
 
-![](../../.gitbook/assets/analytics-getqueryparam1.png)
+  ![](../../.gitbook/assets/analytics-getqueryparam1.png)
 
 5. Go back and refresh the We.Retail page again, with the query string still in the URL.
 6. Check the next hit in the Debugger.
