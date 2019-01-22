@@ -27,14 +27,14 @@ At the end of this lesson, you will be able to:
 
 Data elements are Launch’s version of a data layer. They can store values from your own data layer object, cookies, local storage objects, query string parameters, page elements, meta tags, and so on.
 
-**Note:**  Data element capabilities can be extended with Extensions. For example, the ContextHub extension allows you to add data elements using features of the extension.
+**Note:** Data element capabilities can be extended with Extensions. For example, the ContextHub extension allows you to add data elements using features of the extension.
 
 This exercise shows how to create a data element for Page Name, which will be used later in the Target and Analytics implementations.
 
 1. In the top navigation, click **Data Elements**.  Because you haven’t created any data elements yet in this property, a brief video appears with additional information on this topic. Watch this video, if you like.
 2. Click **Create New Data Element**.
 
-  ![Click the Create New Data Element button](../../.gitbook/assets/launch-newdataelement%20%282%29.png)
+   ![Click the Create New Data Element button](../../.gitbook/assets/launch-newdataelement%20%282%29.png)
 
 3. Name the data element \(for example, "Page Name"\).
 4. Use the JavaScript Variable Data Element type to point to a value in your sample page's data layer: `digitalData.page.pageInfo.pageName`.
@@ -52,27 +52,27 @@ Use the following steps to create a rule that outputs the Page Name data element
 1. In the top navigation, click **Rules**.  Because you haven’t created any rules yet in this property, a brief video appears with additional information on the topic. Watch this video, if you like.
 2. Click **Create New Rule**.
 
-  ![Click the Create New Rule button](../../.gitbook/assets/launch-newrule.png)
+   ![Click the Create New Rule button](../../.gitbook/assets/launch-newrule.png)
 
 3. Name the Rule \(for example, "All Pages - Library Loaded"\). This name uses a convention that indicates where and when the rule will fire, which makes it easier to identify and reuse as your Launch property matures.
 4. Under Events, click **Add**.
 
-  ![Name the Rule and Add an event](../../.gitbook/assets/launch-addeventtorule.png)
+   ![Name the Rule and Add an event](../../.gitbook/assets/launch-addeventtorule.png)
 
-  The Event tells Launch when the rule should fire and can be many things, including a page load, a click, a custom JavaScript event, and so on.
+   The Event tells Launch when the rule should fire and can be many things, including a page load, a click, a custom JavaScript event, and so on.
 
 5. As the Event Type, select **Library Loaded \(Page Top\)**. When you select the Event Type, Launch pre-populates a name for the event using your selection. The default order for the event is 50. Ordering is a powerful feature in Launch that gives you precise control over the sequence of actions when multiple rules are triggered by the same event. This feature is used later in the tutorial.
 6. Click **Keep Changes**.
 
-  ![Select an Event](../../.gitbook/assets/launch-ruleselectevent.png)
+   ![Select an Event](../../.gitbook/assets/launch-ruleselectevent.png)
 
-7. To fire this rule on all pages, leave **Conditions** blank.  If you open the Conditions modal, you will see that conditions can add both restrictions and exclusions based on a large variety of options, including URLs, data element values, date ranges, and more.
+7. To fire this rule on all pages, leave **Conditions** blank. If you open the Conditions modal, you will see that conditions can add both restrictions and exclusions based on a large variety of options, including URLs, data element values, date ranges, and more.
 8. As the Action Type, select **custom code**. At this point, this is the only option. Later in the tutorial, as you add extensions, more options will become available.
 9. Select **Open Editor**, then add the following to the code window:`console.log('The page name is '+_satellite.getVar('Page Name'));`
 
-  ![Select an Action](../../.gitbook/assets/launch-selectaction.png)
+   ![Select an Action](../../.gitbook/assets/launch-selectaction.png)
 
-  ![Enter custom code](../../.gitbook/assets/launch-customcodeaction.png)
+   ![Enter custom code](../../.gitbook/assets/launch-customcodeaction.png)
 
 10. Save the code window.
 11. On the Action configuration screen, click **Keep Changes**.
@@ -96,20 +96,20 @@ In an earlier lesson, you implemented the embed code of your development environ
 
 1. Go to the Publishing tab and click **Add New Library.**
 
-  ![Add New Library](../../.gitbook/assets/launch-addnewlibrary.png)
+   ![Add New Library](../../.gitbook/assets/launch-addnewlibrary.png)
 
 2. Name the library "Initial Setup."
 3. Select **Environment &gt; Development.**
 4. Click **Add All Changed Resources.** Launch summarizes the changes you just made.
-5.  Click **Save & Build for Development**
+5. Click **Save & Build for Development**
 
 ![](../../.gitbook/assets/launch-saveandbuild.png)
 
- After a few moments, the status turns green, indicating the library built successfully.
+After a few moments, the status turns green, indicating the library built successfully.
 
 ![](../../.gitbook/assets/launch-librarybuilt.png)
 
-##  Validate your rule
+## Validate your rule
 
 To validate that your rule is working as expected, reload your sample page. If you look at the **Developer Tools &gt; Network** tab, you should see a 200 response for your Launch Library.
 
@@ -124,28 +124,29 @@ When you are making a lot of changes in Launch, it is inconvenient to have to op
 1. Make a small change to the All Pages - Library Loaded rule.
 2. In the top navigation, click **Rules** and then click on the All Pages - Library Loaded rule to open it.
 
-  ![](../../.gitbook/assets/launch-reopenrule.png)
+   ![](../../.gitbook/assets/launch-reopenrule.png)
 
 3. On the Edit Rule page, click the **Select an option** dropdown to show the Working Library options. Select your Initial Setup library.
 
-  ![](../../.gitbook/assets/launch-setworkinglibrary.png)
+   ![](../../.gitbook/assets/launch-setworkinglibrary.png)
 
-  After you select the library, the **Save** button defaults to **Save to Library and Build**. When you make a change in Launch, you can use this option to automatically add the change directly to your working library and rebuild it.
+   After you select the library, the **Save** button defaults to **Save to Library and Build**. When you make a change in Launch, you can use this option to automatically add the change directly to your working library and rebuild it.
 
 4. To test this feature, open your Custom Code action and add a colon after the text "The page name is" so the entire code block reads:
 
-  ```text
-  console.log('The page name is: '+_satellite.getVar('Page Name'));
-  ```
+   ```text
+   console.log('The page name is: '+_satellite.getVar('Page Name'));
+   ```
 
 5. Save the code, keep the changes in the action, and click **Save to Library and Build**.
 
-  ![](../../.gitbook/assets/launch-workinglibrary-saveandbuild.png)
+   ![](../../.gitbook/assets/launch-workinglibrary-saveandbuild.png)
 
 6. Wait a moment until the green status reappears next to the Working Library dropdown, then reload your sample page.
 
-  You should see your change reflected in the console message. \(You might need to clear your browser cache and reload to see the change to the page.
+   You should see your change reflected in the console message. \(You might need to clear your browser cache and reload to see the change to the page.
 
-  ![](../../.gitbook/assets/samplepage-consolewithcolon.png)
+   ![](../../.gitbook/assets/samplepage-consolewithcolon.png)
 
- This is a much faster way of working. The rest of the implementation tutorials use this approach.
+   This is a much faster way of working. The rest of the implementation tutorials use this approach.
+

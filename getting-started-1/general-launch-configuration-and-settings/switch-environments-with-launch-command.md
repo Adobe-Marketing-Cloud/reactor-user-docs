@@ -24,7 +24,7 @@ At the end of this lesson, you will be able to:
 
 ## Replace the Launch URL on the We.Retail demo site
 
-Open the [We.Retail demo site](https://aem100-us.adobevlab.com/content/we-retail/us/en.html) in your Chrome browser, then open the [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) by clicking the ![](https://git.corp.adobe.com/pages/dwright/tutorial-test/assets/images/icon-debugger.png) icon.
+Open the [We.Retail demo site](https://aem100-us.adobevlab.com/content/we-retail/us/en.html) in your Chrome browser, then open the [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) by clicking the ![](../../.gitbook/assets/icon-debugger.png) icon.
 
 ![](../../.gitbook/assets/switchenvironments-opendebugger%20%281%29.png)
 
