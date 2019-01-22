@@ -1,6 +1,6 @@
 # Add Adobe Target
 
-In this tutorial, you will implement Adobe Target with a global mbox with custom parameters. 
+This tutorial shows how to implement Adobe Target with a global mbox with custom parameters.
 
 [Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/) is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
@@ -21,7 +21,7 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-To complete the exercises in this tutorial, you must first complete the exercises in [Configure Launch](../general-launch-configuration-and-settings/) and [Add the ID Service](idservice-save.md) .
+To complete the exercises in this tutorial, you must first complete the exercises in [Configure Launch](../general-launch-configuration-and-settings/) and [Add the ID Service](idservice-save.md).
 
 ## Add the Target prehiding snippet
 
@@ -45,7 +45,7 @@ Reload your sample page. The page is hidden for three seconds before it displays
 * `body {opacity: 0 !important}` specifies the CSS definition to use for the prehiding until Target loads. By default, the entire body is hidden. If you have a consistent DOM structure with an easily identifiable container element wrapping all of the content below your navigation, for example, and you never want to test or personalize your navigation, you could use this setting to limit the prehiding to that container element.
 * `3E3` specifies the timeout setting for the prehiding. By default, if Target hasn't loaded in three seconds, the page is shown. This should be extremely rare.
 
-For more details, and to obtain the unminified prehiding snippet, see [Configure the Adobe Target extension with an asynchronous deployment​]()
+For more details, and to obtain the unminified prehiding snippet, see [Adobe Target extension with an asynchronous deployment​](https://docs.adobelaunch.com/extension-reference/web/adobe-target-extension)
 
 ## Add the Target extension
 
@@ -62,8 +62,8 @@ The Target extension consists of two main parts:
 
 This first exercise adds the extension and examines the configurations. Later exercises use the actions defined in this exercise.
 
-1.  Go to **Extensions &gt; Catalog**, then type Target in the filter to quickly locate the Adobe Target extension.
-2. Click **Install**. ****When you add the extension, it imports many of your at.js settings from the Target interface.  One setting that is not imported is the Timeout, which is always 3000ms after adding the extension. For the tutorial, leave the default settings. Note that the at.js version that ships with the current version of the extension is shown on the left side of the screen. 
+1.  Go to **Extensions &gt; Catalog**, then type "Target" in the filter to quickly locate the Adobe Target extension.
+2. Click **Install**. When you add the extension, it imports many of your at.js settings from the Target interface.  One setting that is not imported is the Timeout, which is always 3000ms after adding the extension. For the tutorial, leave the default settings. Note that the at.js version that ships with the current version of the extension is shown on the left side of the screen.
 3.  Click **Save to Library and Build**.
 
  At this point, Target isn't doing anything yet, so there is nothing to validate.
@@ -76,9 +76,9 @@ Marketers use Target to control the visitor experience on the page when testing 
 
 ### Set up the rule
 
-You can use the All Pages - Library Loaded rule you created in "[Add a Data Elements, a Rule, and a Library](../general-launch-configuration-and-settings/add-data-elements-and-rules.md)" to implement Target because  it is already triggered on the first event that fires on a page load, the Library Loaded event.
+You can use the All Pages - Library Loaded rule you created in "[Add a Data Elements, a Rule, and a Library](../general-launch-configuration-and-settings/add-data-elements-and-rules.md)" to implement Target because it is already triggered on the first event that fires on a page load, the Library Loaded event.
 
-1. Go to the **Rules** in the top navigation, then click on All Pages - Library Loaded to open the rule editor. ![](../../.gitbook/assets/target-editrule.png) 
+1. Go to the **Rules** in the top navigation, then click on All Pages - Library Loaded to open the rule editor. ![](../../.gitbook/assets/target-editrule.png)
 2. Under Actions, click the **Add** icon to add a new action. ![](../../.gitbook/assets/target-addloadtargetaction.png)
 3. Select **Extension &gt; Adobe Target**.
 4. Select **Action Type &gt; Load Target**.
@@ -89,7 +89,7 @@ With the Load Target action added, at.js loads on the page. However, no Target r
 ### Add the Fire Global Mbox action
 
 1. Under Actions, click the **Add** icon again to add another action. ![](../../.gitbook/assets/target-addglobalmboxaction.png)
-2.  Select **Extension &gt; Adobe Target**.
+2. Select **Extension &gt; Adobe Target**.
 3. Select **Action Type &gt; Fire Global Mbox**.
 
    There are some configurations available for the global mbox related to whether to hide the page and CSS selector to use for prehiding. These settings work in conjunction with the prehiding snippet hard-coded on the page. Leave the default settings.
@@ -104,7 +104,8 @@ With the Load Target action added, at.js loads on the page. However, no Target r
 
 Now that you have added the Target extension and fired the Load Target and Fire Global Mbox actions, there should be a global mbox request from all pages where your Launch property is used.
 
-1. Reload your sample page.  You should no longer see a delay of three seconds before the page is visible. If you are loading the sample page using the `file://` protocol, you should do this step in a Firefox or Safari browser because Chrome does not fire a Target request when using the `file://` protocol.
+1. Reload your sample page.
+  You should no longer see a delay of three seconds before the page is visible. If you are loading the sample page using the `file://` protocol, you should do this step in a Firefox or Safari browser because Chrome does not fire a Target request when using the `file://` protocol.
 2. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html).
 3. Make sure the Debugger maps the Launch property to your Development environment, as described earlier.  ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/switchEnvironments-debuggerOnWeRetail.png)
 4. Go to the Summary tab of the Debugger.
@@ -149,11 +150,11 @@ Add the Page Name data element that we created earlier in [Add a Data Element, a
 
 ### Profile parameters
 
-Similar to mbox parameters, profile parameters are passed through the Target request. However, profile parameters are stored in Target's visitor profile database and persist for the [duration of the visitor's profile](https://marketing.adobe.com/resources/help/en_US/target/ov/c_visitor_profile_lifetime.html). You can set them on one page of your site and use them in Target activities on another page. 
+Similar to mbox parameters, profile parameters are passed through the Target request. However, profile parameters are stored in Target's visitor profile database and persist for the [duration of the visitor's profile](https://marketing.adobe.com/resources/help/en_US/target/ov/c_visitor_profile_lifetime.html). You can set them on one page of your site and use them in Target activities on another page.
 
-Here is an example from an automobile website. When a visitor goes to a vehicle page, you could pass a profile parameter "profile.lastViewed=sportscar" to record their interest in that particular vehicle. When the visitor browses to other, non-vehicle pages, you can target content based on their last vehicle viewed. 
+Here is an example from an automobile website. When a visitor goes to a vehicle page, you could pass a profile parameter "profile.lastViewed=sportscar" to record their interest in that particular vehicle. When the visitor browses to other, non-vehicle pages, you can target content based on their last vehicle viewed.
 
-Profile parameters are ideal for attributes that rarely change or are only available on certain pages. You won't pass any profile parameters in this tutorial, but the workflow is almost identical to what you did when passing the pageName mbox parameter. The one difference is you need to give profile parameter names a profile. prefix. 
+Profile parameters are ideal for attributes that rarely change or are only available on certain pages. You won't pass any profile parameters in this tutorial, but the workflow is almost identical to what you did when passing the pageName mbox parameter. The one difference is you need to give profile parameter names a profile. prefix.
 
 This is what a profile parameter called "userType" would look like in the Pass Parameters to Global Mbox action:
 
@@ -163,12 +164,12 @@ This is what a profile parameter called "userType" would look like in the Pass P
 
 Entity parameters are special parameters used in [Recommendations implementations](https://marketing.adobe.com/resources/help/en_US/target/recs/c_plan_implement.html) for three main reasons:
 
-* As a key to trigger product recommendations. 
+* As a key to trigger product recommendations.
 
   For example, when using a recommendations algorithm like "People who viewed Product X, also viewed Y," "X" is the "key" of the recommendation. It is usually the product sku \(entity.id\) or category \(entity.categoryId\) that the visitor is currently viewing.
 
 * To collect visitor behavior to power recommendations algorithms, such as "Recently Viewed Products" or "Most Viewed Products."
-* To populate the Recommendations catalog. 
+* To populate the Recommendations catalog.
 
   Recommendations contains a database of all of the products or articles on your website, so they can be served in the recommendation offer. For example, when recommending products, you typically want to display attributes like the product name \(entity.name\) and image \(entity.thumbnailUrl\). Some customers populate their catalog using backend feeds, but they can also be populated using entity parameters in Target requests.
 
@@ -205,7 +206,7 @@ In the previous tutorial, [Add the Experience Cloud ID Service](idservice-save.m
 
 **Note:**  This is an optional exercise for Target Premium customers.
 
-The property token is a reserved parameter used with the Premium [Enterprise User Permissions](https://marketing.adobe.com/resources/help/en_US/target/target/property_channel.html). It is used to define different properties so different members of an Experience Cloud Organization can be assigned different permissions to each property. For example, a group of users can set up activities on the web site, but not on the mobile application. 
+The property token is a reserved parameter used with the Premium [Enterprise User Permissions](https://marketing.adobe.com/resources/help/en_US/target/target/property_channel.html). It is used to define different properties so different members of an Experience Cloud Organization can be assigned different permissions to each property. For example, a group of users can set up activities on the web site, but not on the mobile application.
 
 Target properties are analogous to Launch properties and Analytics report suites. An enterprise with multiple brands, websites, and marketing teams might use a different Target property, Launch property, and Analytics report suite for each website or mobile app. Launch properties are differentiated by their embed codes, Analytics report suites are differentiated by their report suite ID, and Target properties are differentiated by their property token parameter.
 
@@ -274,7 +275,7 @@ Add the data elements and rule required to fire an order confirmation mbox on th
 
 1. Click **Add Data Element**.
 2. Name the data element Cart SKUs \(Target\).
-3. Select **Data Element Type &gt; Custom Code**. For Target, the skus must be a comma separated list. This custom code reformats the data layer array into the proper format. 
+3. Select **Data Element Type &gt; Custom Code**. For Target, the skus must be a comma separated list. This custom code reformats the data layer array into the proper format.
 4. In the custom code editor, paste the following:
 
    ```text
@@ -368,8 +369,3 @@ To learn more about use cases for custom headers and footers see the following r
 * [Use dataProviders to integrate third-party data into Adobe Target](https://helpx.adobe.com/target/kt/using/dataProviders-atjs-feature-video-use.html)
 * [Implement dataProviders to integrate third-party data into Adobe Target](https://helpx.adobe.com/target/kt/using/dataProviders-atjs-technical-video-implement.html)
 * [Use Response Tokens and at.js Custom Events with Adobe Target](https://helpx.adobe.com/target/kt/using/response-tokens-atjs-custom-events-technical-video-use.html)
-
-
-
-
-
