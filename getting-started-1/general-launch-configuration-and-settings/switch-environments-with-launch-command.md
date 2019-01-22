@@ -1,6 +1,6 @@
 # Switch Environments with the Experience Cloud Debugger
 
-This tutorial shows how to use the [Adobe Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) to replace the Launch property hardcoded on the [We.Retail demo site](https://aem.enablementadobe.com/content/we-retail/us/en.html) with your own property. 
+This tutorial shows how to use the [Adobe Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) to replace the Launch property hardcoded on the [We.Retail demo site](https://aem.enablementadobe.com/content/we-retail/us/en.html) with your own property.
 
 This technique is called environment switching. It will be helpful later, when you work with Launch on your own website. You can load your production website in your browser, but with your development Launch environment. This enables you to confidently make and validate Launch changes independently from your regular code releases. This separation of marketing tag releases from your regular code releases is one of the more common reasons why people use Launch.
 
@@ -24,7 +24,7 @@ At the end of this lesson, you will be able to:
 
 ## Replace the Launch URL on the We.Retail demo site
 
-Open the [We.Retail demo site](https://aem100-us.adobevlab.com/content/we-retail/us/en.html) in your Chrome browser, then open the [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) by clicking the ![](https://git.corp.adobe.com/pages/dwright/tutorial-test/assets/images/icon-debugger.png) icon.
+Open the [We.Retail demo site](https://aem100-us.adobevlab.com/content/we-retail/us/en.html) in your Chrome browser, then open the [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) by clicking the ![](../../.gitbook/assets/icon-debugger.png) icon.
 
 ![](../../.gitbook/assets/switchenvironments-opendebugger%20%281%29.png)
 
@@ -47,4 +47,3 @@ Reload the site and check the Summary tab of the Debugger. Under the Launch sect
 **Note:**  The Debugger saves this configuration and replaces the Launch embed codes whenever you come back to the We.Retail site. It does not impact other sites you visit in other open tabs. To stop the Debugger from replacing the embed code, click the X next to the embed code in the Tools tab of the Debugger.
 
 Use this technique of mapping the We.Retail site to your own Launch property to validate your Launch implementation. When you start using Launch on your production website, you can use this same technique to validate changes you make to your Development and Staging environments before you publish them to Production.
-
