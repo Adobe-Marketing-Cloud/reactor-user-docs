@@ -53,7 +53,7 @@ In a real-life scenario, the next step in the process would typically be to have
 
 7. Paste the Staging embed code that is in your clipboard, then click the disk icon to save.
 
-![](../.gitbook/assets/switchenvironments-debugger-save%20%281%29.png)
+  ![](../.gitbook/assets/switchenvironments-debugger-save%20%281%29.png)
 
 8. Reload and check the Summary tab of the Debugger.  Under the Launch section, you should see that your Staging Property is implemented, showing your property name \(for example, "Launch Tutorial" or whatever you named your property\).
 
