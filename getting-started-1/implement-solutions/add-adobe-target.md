@@ -17,8 +17,6 @@ At the end of this lesson, you will be able to:
 * Explain how to add advanced configurations such as Library Header and Library Footer code.
 * Validate a Target implementation.
 
-
-
 ## Prerequisites
 
 To complete the exercises in this tutorial, you must first complete the exercises in [Configure Launch](../general-launch-configuration-and-settings/) and [Add the ID Service](idservice-save.md).
@@ -36,7 +34,7 @@ This has already been done on the We.Retail site, but here's how it's done on th
 </script>
 ```
 
- Open the sample page and paste it just before your Launch embed code as pictured below:
+Open the sample page and paste it just before your Launch embed code as pictured below:
 
 ![](../../.gitbook/assets/target-prehidingsnippet.png)
 
@@ -62,11 +60,11 @@ The Target extension consists of two main parts:
 
 This first exercise adds the extension and examines the configurations. Later exercises use the actions defined in this exercise.
 
-1.  Go to **Extensions &gt; Catalog**, then type "Target" in the filter to quickly locate the Adobe Target extension.
+1. Go to **Extensions &gt; Catalog**, then type "Target" in the filter to quickly locate the Adobe Target extension.
 2. Click **Install**. When you add the extension, it imports many of your at.js settings from the Target interface.  One setting that is not imported is the Timeout, which is always 3000ms after adding the extension. For the tutorial, leave the default settings. Note that the at.js version that ships with the current version of the extension is shown on the left side of the screen.
-3.  Click **Save to Library and Build**.
+3. Click **Save to Library and Build**.
 
- At this point, Target isn't doing anything yet, so there is nothing to validate.
+   At this point, Target isn't doing anything yet, so there is nothing to validate.
 
 **Note:** Each version of the Target extension comes with a specific version of at.js, which is listed in the extension description. Update the at.js version by updating the Target extension.
 
@@ -105,13 +103,15 @@ With the Load Target action added, at.js loads on the page. However, no Target r
 Now that you have added the Target extension and fired the Load Target and Fire Global Mbox actions, there should be a global mbox request from all pages where your Launch property is used.
 
 1. Reload your sample page.
-  You should no longer see a delay of three seconds before the page is visible. If you are loading the sample page using the `file://` protocol, you should do this step in a Firefox or Safari browser because Chrome does not fire a Target request when using the `file://` protocol.
+
+   You should no longer see a delay of three seconds before the page is visible. If you are loading the sample page using the `file://` protocol, you should do this step in a Firefox or Safari browser because Chrome does not fire a Target request when using the `file://` protocol.
+
 2. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html).
-3. Make sure the Debugger maps the Launch property to your Development environment, as described earlier.  ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/switchEnvironments-debuggerOnWeRetail.png)
+3. Make sure the Debugger maps the Launch property to your Development environment, as described earlier.  ![](../../.gitbook/assets/switchenvironments-debuggeronweretail2.png)
 4. Go to the Summary tab of the Debugger.
 5. In the Launch section, confirm that Target appears under the Extensions heading.
-6. In the Target section, confirm that your client code, at.js library version, and global mbox name appear. ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/target-summaryTab.png)
-7. Finally, go to the Target tab, expand your client code, and confirm that the request for your global mbox appears: ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/target-debugger-globalMbox.png)
+6. In the Target section, confirm that your client code, at.js library version, and global mbox name appear. ![](../../.gitbook/assets/target-summarytab.png)
+7. Finally, go to the Target tab, expand your client code, and confirm that the request for your global mbox appears: ![](../../.gitbook/assets/target-debugger-globalmbox.png)
 
 ## Add parameters
 
@@ -192,7 +192,7 @@ In the previous tutorial, [Add the Experience Cloud ID Service](idservice-save.m
 
 #### Validate the customer ID
 
-1.  Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html).
+1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html).
 2. Make sure the Debugger is mapping the Launch property to your Development environment, as described in the [earlier lesson](../general-launch-configuration-and-settings/switch-environments-with-launch-command.md). ![](../../.gitbook/assets/switchenvironments-debuggeronweretail%20%281%29.png)
 3. Log in to the We.Retail site using the credentials test@adobe.com /test.
 4. Return to the [We.Retail homepage](https://aem.enablementadobe.com/content/we-retail/us/en.html).
@@ -204,7 +204,7 @@ In the previous tutorial, [Add the Experience Cloud ID Service](idservice-save.m
 
 ### Add the Property Token parameter
 
-**Note:**  This is an optional exercise for Target Premium customers.
+**Note:** This is an optional exercise for Target Premium customers.
 
 The property token is a reserved parameter used with the Premium [Enterprise User Permissions](https://marketing.adobe.com/resources/help/en_US/target/target/property_channel.html). It is used to define different properties so different members of an Experience Cloud Organization can be assigned different permissions to each property. For example, a group of users can set up activities on the web site, but not on the mobile application.
 
@@ -219,14 +219,14 @@ Here is an optional exercise, if you would like to implement a property token in
 3. In your Launch tab, go to the **Rules** in the top navigation, then click on All Pages - Library Loaded to open the rule editor.
 4. Under Actions, click the Adobe Target - Add Params to Global Mbox action top open the Action Configuration. ![](../../.gitbook/assets/target-openparamsaction.png)
 5. Under the pageName parameter, click **Add**. ![](../../.gitbook/assets/target-addatproperty.png)
-6.  Name the parameter at\_property and paste in the value you copied from the Target interface. ![](https://docs.adobe.com/content/dam/help/experience-cloud.en/help/website-implementation/images/target-addATProperty-keepChanges.png)
+6. Name the parameter at\_property and paste in the value you copied from the Target interface. ![](../../.gitbook/assets/target-addatproperty-keepchanges.png)
 7. Click **Keep Changes.**
-8.  Click **Save to Library and Build**.
+8. Click **Save to Library and Build**.
 
 #### **Validate the Property Token**
 
-1.  Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)**.**
-2. Make sure the Debugger is mapping the Launch property to your Development environment, as described in the [earlier lesson](https://docs-author-stg.corp.adobe.com/content/help/en/techmarketing-test/implementing-the-experience-cloud-in-websites-with-launch/configure-launch/launch-switch-environments.html). ![](../../.gitbook/assets/switchenvironments-debuggeronweretail%20%281%29.png)
+1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)**.**
+2. Make sure the Debugger is mapping the Launch property to your Development environment, as described in the [earlier lesson](https://docs-author-stg.corp.adobe.com/content/help/en/techmarketing-test/implementing-the-experience-cloud-in-websites-with-launch/configure-launch/launch-switch-environments.html). ![](../../.gitbook/assets/switchenvironments-debuggeronweretail2%20%281%29.png)
 3. Open the Debugger, go to the Target tab, and expand your client code.
 4. You should see the parameter for "at\_property" in every global mbox request:
 
@@ -304,13 +304,10 @@ Add the data elements and rule required to fire an order confirmation mbox on th
    1. Click **Conditions &gt; Add**, then select **Condition Type &gt; Path Without Query String**.
    2. For Path equals enter thank-you.html.
    3. Toggle on the Regex option to change the logic from equals to contains. You can use the Test feature to confirm the test will pass with the URL `https://aem.enablementadobe.com/content/we-retail/us/en/user/checkout/order/thank-you.html` ![](../../.gitbook/assets/target-orderconfirm-test.png)
-   4.  Click **Keep Changes**.
-5. Create an action.
-   1. Click **Actions &gt; Add**, then select **Action Type &gt; Custom Code**.
-   2. Click **Open Editor**.
-   3. Paste the following code into the Edit Code modal:
+   4. Click **Keep Changes**.
+5. Create an action. 1. Click **Actions &gt; Add**, then select **Action Type &gt; Custom Code**. 2. Click **Open Editor**. 3. Paste the following code into the Edit Code modal:
 
-      ```
+   ```text
       adobe.target.getOffer({
         "mbox": "orderConfirmPage",
         "params":{
@@ -328,17 +325,18 @@ Add the data elements and rule required to fire an order confirmation mbox on th
           console.log('Error', status, error);
         }
       });
-      ```
+   ```
 
-   4. Click **Save** to save the custom code.
-   5. Click **Keep Changes** to keep the action.
-6.  Click **Save to Library and Build**.
+   1. Click **Save** to save the custom code.
+   2. Click **Keep Changes** to keep the action.
+
+6. Click **Save to Library and Build**.
 
 #### **Validate the Order Confirmation Mbox**
 
 1. Open the We.Retail site**.**
 2. Make sure the Debugger is mapping the Launch property to your Development environment, as described [earlier](../general-launch-configuration-and-settings/switch-environments-with-launch-command.md). ![](../../.gitbook/assets/switchenvironments-debuggeronweretail%20%281%29.png)
-3.  Browse the site and add several products to your cart.
+3. Browse the site and add several products to your cart.
 4. Continue to checkout.
 5. During the checkout process the only required fields are First Name and Last Name. ![](../../.gitbook/assets/target-testordercart.png)
 6. On the Review Order page, be sure to click the Place Order button.
@@ -369,3 +367,4 @@ To learn more about use cases for custom headers and footers see the following r
 * [Use dataProviders to integrate third-party data into Adobe Target](https://helpx.adobe.com/target/kt/using/dataProviders-atjs-feature-video-use.html)
 * [Implement dataProviders to integrate third-party data into Adobe Target](https://helpx.adobe.com/target/kt/using/dataProviders-atjs-technical-video-implement.html)
 * [Use Response Tokens and at.js Custom Events with Adobe Target](https://helpx.adobe.com/target/kt/using/response-tokens-atjs-custom-events-technical-video-use.html)
+
