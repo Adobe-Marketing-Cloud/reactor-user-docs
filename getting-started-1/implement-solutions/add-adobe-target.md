@@ -68,7 +68,7 @@ This first exercise adds the extension and examines the configurations. Later ex
 1. Go to **Extensions &gt; Catalog**, then type "Target" in the filter to quickly locate the Adobe Target extension.
 2. Click **Install**.
 
-  When you add the extension, it imports many of your at.js settings from the Target interface.  One setting that is not imported is the Timeout, which is always 3000ms after adding the extension. For the tutorial, leave the default settings. Note that the at.js version that ships with the current version of the extension is shown on the left side of the screen.
+   When you add the extension, it imports many of your at.js settings from the Target interface. One setting that is not imported is the Timeout, which is always 3000ms after adding the extension. For the tutorial, leave the default settings. Note that the at.js version that ships with the current version of the extension is shown on the left side of the screen.
 
 3. Click **Save to Library and Build**.
 
@@ -86,11 +86,11 @@ You can use the All Pages - Library Loaded rule you created in "[Add a Data Elem
 
 1. Go to the **Rules** in the top navigation, then click on All Pages - Library Loaded to open the rule editor.
 
-  ![](../../.gitbook/assets/target-editrule.png)
+   ![](../../.gitbook/assets/target-editrule.png)
 
 2. Under Actions, click the **Add** icon to add a new action.
 
-  ![](../../.gitbook/assets/target-addloadtargetaction.png)
+   ![](../../.gitbook/assets/target-addloadtargetaction.png)
 
 3. Select **Extension &gt; Adobe Target**.
 4. Select **Action Type &gt; Load Target**.
@@ -102,7 +102,7 @@ With the Load Target action added, at.js loads on the page. However, no Target r
 
 1. Under Actions, click the **Add** icon again to add another action.
 
-  ![](../../.gitbook/assets/target-addglobalmboxaction.png)
+   ![](../../.gitbook/assets/target-addglobalmboxaction.png)
 
 2. Select **Extension &gt; Adobe Target**.
 3. Select **Action Type &gt; Fire Global Mbox**.
@@ -126,18 +126,17 @@ Now that you have added the Target extension and fired the Load Target and Fire 
 2. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html).
 3. Make sure the Debugger maps the Launch property to your Development environment, as described earlier.
 
-  ![](../../.gitbook/assets/switchenvironments-debuggeronweretail2.png)
+   ![](../../.gitbook/assets/switchenvironments-debuggeronweretail2.png)
 
 4. Go to the Summary tab of the Debugger.
 5. In the Launch section, confirm that Target appears under the Extensions heading.
 6. In the Target section, confirm that your client code, at.js library version, and global mbox name appear.
 
-  ![](../../.gitbook/assets/target-summarytab.png)
+   ![](../../.gitbook/assets/target-summarytab.png)
 
 7. Finally, go to the Target tab, expand your client code, and confirm that the request for your global mbox appears:
 
-  ![](../../.gitbook/assets/target-debugger-globalmbox.png)
-
+   ![](../../.gitbook/assets/target-debugger-globalmbox.png)
 
 ## Add parameters
 
@@ -158,11 +157,11 @@ Add the Page Name data element that we created earlier in [Add a Data Element, a
 
 1. Go to the **Rules** in the top navigation and then click on All Pages - Library Loaded to open the rule editor.
 
-  ![](../../.gitbook/assets/target-editrule.png)
+   ![](../../.gitbook/assets/target-editrule.png)
 
 2. Under Actions, click the **Add** icon to add a new action.
 
-  ![](../../.gitbook/assets/target-addparamsaction.png)
+   ![](../../.gitbook/assets/target-addparamsaction.png)
 
 3. Select **Extension &gt; Adobe Target**.
 4. Select **Action Type &gt; Add Params to Global Mbox**.
@@ -170,12 +169,12 @@ Add the Page Name data element that we created earlier in [Add a Data Element, a
 6. Click the **Data Elements** icon to open the data element modal.
 7. Click the Page Name data element, then click **Select**.
 
-  ![](../../.gitbook/assets/target-mboxparam-pagename.png)
+   ![](../../.gitbook/assets/target-mboxparam-pagename.png)
 
 8. Click **Keep Changes**.
 9. Click-and-drag the left edge of the Add Params to Global Mbox action to rearrange the actions so Add Params to Global Mbox is before Fire Global Mbox.
 
-  It can be either before or after Load Target.
+   It can be either before or after Load Target.
 
 10. Click **Save to Library and Build**.
 
@@ -184,7 +183,7 @@ Add the Page Name data element that we created earlier in [Add a Data Element, a
 1. Reload the We.Retail site with it mapped to your property with Experience Cloud Debugger.
 2. Go to the **Target** tab in the Debugger, then expand your client code and look at the requests.
 
-  You should see the new pageName parameter passed in the request:
+   You should see the new pageName parameter passed in the request:
 
 ![](../../.gitbook/assets/target-debugger-pagename.png)
 
@@ -192,7 +191,7 @@ Add the Page Name data element that we created earlier in [Add a Data Element, a
 
 Similar to mbox parameters, profile parameters are passed through the Target request. However, profile parameters are stored in Target's visitor profile database and persist for the [duration of the visitor's profile](https://marketing.adobe.com/resources/help/en_US/target/ov/c_visitor_profile_lifetime.html). You can set them on one page of your site and use them in Target activities on another page.
 
-Here is an example from an automobile website. When a visitor goes to a vehicle page, you could pass a profile parameter `"`profile.lastViewed=sportscar` to record their interest in that particular vehicle. When the visitor browses to other, non-vehicle pages, you can target content based on their last vehicle viewed.
+Here is an example from an automobile website. When a visitor goes to a vehicle page, you could pass a profile parameter `"`profile.lastViewed=sportscar\` to record their interest in that particular vehicle. When the visitor browses to other, non-vehicle pages, you can target content based on their last vehicle viewed.
 
 Profile parameters are ideal for attributes that rarely change or are only available on certain pages. You won't pass any profile parameters in this tutorial, but the workflow is almost identical to what you did when passing the pageName mbox parameter. The one difference is you need to give profile parameter names a `profile.` prefix.
 
@@ -235,13 +234,13 @@ In the previous tutorial, [Add the Experience Cloud ID Service](idservice-save.m
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html).
 2. Make sure the Debugger is mapping the Launch property to your Development environment, as described in the [earlier lesson](../general-launch-configuration-and-settings/switch-environments-with-launch-command.md).
 
-  ![](../../.gitbook/assets/switchenvironments-debuggeronweretail%20%281%29.png)
+   ![](../../.gitbook/assets/switchenvironments-debuggeronweretail%20%281%29.png)
 
 3. Log in to the We.Retail site using the credentials `test@adobe.com /test`.
 4. Return to the [We.Retail homepage](https://aem.enablementadobe.com/content/we-retail/us/en.html).
 5. Open the Debugger, then go to the Target tab and expand your client code.
 
-  You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address, and `vst.crm_id.authState` should have a value of 1 to represent authenticated. Note that `crm_id` is the Integration Code you specified in the ID Service configuration and must align with the key you use in your [Customer Attributes data file](https://marketing.adobe.com/resources/help/en_US/mcloud/t_crs_usecase.html):
+   You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address, and `vst.crm_id.authState` should have a value of 1 to represent authenticated. Note that `crm_id` is the Integration Code you specified in the ID Service configuration and must align with the key you use in your [Customer Attributes data file](https://marketing.adobe.com/resources/help/en_US/mcloud/t_crs_usecase.html):
 
 ![](../../.gitbook/assets/target-debugger-customerid.png)
 
@@ -262,20 +261,20 @@ Here is an optional exercise, if you would like to implement a property token in
 1. In a separate tab, open the Target user interface, go to **Setup &gt; Properties**, and identify the property that you want to use, then click the **&lt;/&gt;** \(or create a new property\).
 2. Copy the at\_property value to your clipboard.
 
-  ![](../../.gitbook/assets/target-addatproperty-targetproperties.png)
+   ![](../../.gitbook/assets/target-addatproperty-targetproperties.png)
 
 3. In your Launch tab, go to the **Rules** in the top navigation, then click on **All Pages - Library Loaded** to open the rule editor.
 4. Under Actions, click the **Adobe Target - Add Params to Global Mbox** action top open the Action Configuration.
 
-  ![](../../.gitbook/assets/target-openparamsaction.png)
+   ![](../../.gitbook/assets/target-openparamsaction.png)
 
 5. Under the pageName parameter, click **Add**.
 
-  ![](../../.gitbook/assets/target-addatproperty.png)
+   ![](../../.gitbook/assets/target-addatproperty.png)
 
 6. Name the parameter `at_property` and paste in the value you copied from the Target interface.
 
-  ![](../../.gitbook/assets/target-addatproperty-keepchanges.png)
+   ![](../../.gitbook/assets/target-addatproperty-keepchanges.png)
 
 7. Click **Keep Changes.**
 8. Click **Save to Library and Build**.
@@ -285,7 +284,7 @@ Here is an optional exercise, if you would like to implement a property token in
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html).
 2. Make sure the Debugger is mapping the Launch property to your Development environment, as described earlier.
 
-  ![](../../.gitbook/assets/switchenvironments-debuggeronweretail2%20%281%29.png)
+   ![](../../.gitbook/assets/switchenvironments-debuggeronweretail2%20%281%29.png)
 
 3. Open the Debugger, go to the Target tab, and expand your client code.
 4. You should see the parameter for `at_property` in every global mbox request:
@@ -337,7 +336,7 @@ Add the data elements and rule required to fire an order confirmation mbox on th
 2. Name the data element Cart SKUs \(Target\).
 3. Select **Data Element Type &gt; Custom Code**. For Target, the skus must be a comma separated list.
 
-  This custom code reformats the data layer array into the proper format.
+   This custom code reformats the data layer array into the proper format.
 
 4. In the custom code editor, paste the following:
 
@@ -364,23 +363,21 @@ Add the data elements and rule required to fire an order confirmation mbox on th
    2. Change the Order to 60 so that it fires after the Load Target action \(which is in the All Pages - Library Loaded rule where Order is set to 50\).
    3. Click **Keep Changes**.
 4. Create a condition.
-
    1. Click **Conditions &gt; Add**, then select **Condition Type &gt; Path Without Query String**.
    2. For Path equals enter thank-you.html.
    3. Toggle on the Regex option to change the logic from equals to contains.
 
-    You can use the Test feature to confirm the test will pass with the URL `https://aem.enablementadobe.com/content/we-retail/us/en/user/checkout/order/thank-you.html`
+      You can use the Test feature to confirm the test will pass with the URL `https://aem.enablementadobe.com/content/we-retail/us/en/user/checkout/order/thank-you.html`
 
       ![](../../.gitbook/assets/target-orderconfirm-test.png)
 
    4. Click **Keep Changes**.
 5. Create an action.
+   1. Click **Actions &gt; Add**, then select **Action Type &gt; Custom Code**.
+   2. Click **Open Editor**.
+   3. Paste the following code into the Edit Code modal:
 
-  1. Click **Actions &gt; Add**, then select **Action Type &gt; Custom Code**.
-  2. Click **Open Editor**.
-  3. Paste the following code into the Edit Code modal:
-
-    ```javascript
+      ```javascript
         adobe.target.getOffer({
           "mbox": "orderConfirmPage",
           "params":{
@@ -398,11 +395,10 @@ Add the data elements and rule required to fire an order confirmation mbox on th
             console.log('Error', status, error);
           }
         });
-    ```
+      ```
 
    4. Click **Save** to save the custom code.
    5. Click **Keep Changes** to keep the action.
-
 6. Click **Save to Library and Build**.
 
 #### **Validate the Order Confirmation Mbox**
@@ -410,18 +406,18 @@ Add the data elements and rule required to fire an order confirmation mbox on th
 1. Open the We.Retail site.
 2. Make sure the Debugger is mapping the Launch property to your Development environment, as described [earlier](../general-launch-configuration-and-settings/switch-environments-with-launch-command.md).
 
-  ![](../../.gitbook/assets/switchenvironments-debuggeronweretail%20%281%29.png)
+   ![](../../.gitbook/assets/switchenvironments-debuggeronweretail%20%281%29.png)
 
 3. Browse the site and add several products to your cart.
 4. Continue to checkout.
 5. During the checkout process the only required fields are First Name and Last Name.
 
-  ![](../../.gitbook/assets/target-testordercart.png)
+   ![](../../.gitbook/assets/target-testordercart.png)
 
 6. On the Review Order page, be sure to click the Place Order button.
 7. Open the Debugger, go to the **Target tab**, then expand your client code.
 
-  You should see the `orderConfirmPage` request as the latest Target request with the `orderId`, `orderTotal`, and `productPurchasedId` parameters populated with the details of your order.
+   You should see the `orderConfirmPage` request as the latest Target request with the `orderId`, `orderTotal`, and `productPurchasedId` parameters populated with the details of your order.
 
 ![](../../.gitbook/assets/target-debugger-orderconfirmpage.png)
 
@@ -448,3 +444,4 @@ To learn more about use cases for custom headers and footers see the following r
 * [Use dataProviders to integrate third-party data into Adobe Target](https://helpx.adobe.com/target/kt/using/dataProviders-atjs-feature-video-use.html)
 * [Implement dataProviders to integrate third-party data into Adobe Target](https://helpx.adobe.com/target/kt/using/dataProviders-atjs-technical-video-implement.html)
 * [Use Response Tokens and at.js Custom Events with Adobe Target](https://helpx.adobe.com/target/kt/using/response-tokens-atjs-custom-events-technical-video-use.html)
+

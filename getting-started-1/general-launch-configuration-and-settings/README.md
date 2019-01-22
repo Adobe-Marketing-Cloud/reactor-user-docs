@@ -19,10 +19,10 @@ To complete this lesson, you must have permission to Develop, Approve, Publish, 
 ### Go to Launch <a id="go-to-launch"></a>
 
 1. Log into the Experience Cloud.
-2. Open the Solution Switcher ![Solution Switcher Icon](https://git.corp.adobe.com/pages/dwright/tutorial-test/assets/images/launch-solutionSwitcher.png).
+2. Open the Solution Switcher.
 3. Select **Activation** from the menu.
 
-![](../../.gitbook/assets/launch-solutionswitcheractivation.png)
+![](../../.gitbook/assets/launch-solutionswitcheractivation%20%281%29.png)
 
 1.  Under **Launch, by Adobe**, click the **Go to Launch** button.
 

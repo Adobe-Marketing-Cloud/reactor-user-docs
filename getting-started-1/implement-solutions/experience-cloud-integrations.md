@@ -4,7 +4,7 @@ This tutorial reviews the key integrations between the solutions you have implem
 
 ## Objectives
 
- At the end of this lesson, you will be able to:
+At the end of this lesson, you will be able to:
 
 * Explain the use cases for Audience Sharing, Analytics for Target \(A4T\), and Customer Attributes integrations
 * Validate the basic client-side implementation aspects of these integrations
@@ -43,11 +43,11 @@ These validation steps focus on the critical part visible in the client-side imp
 3. Go to the Network tab of the Debugger, then click **Clear All Requests** to clean things up.
 4. Reload the We.Retail page, making sure that you see both the Target and Analytics requests in the Debugger.
 5. Reload the We.Retail page again. You should now see four requests in the Network tab of the Debugger—two for Target and two for Analytics.
-6. Look in the row labeled "Experience Cloud Visitor ID."  The IDs in every request by every solution should always be the same.
+6. Look in the row labeled "Experience Cloud Visitor ID." The IDs in every request by every solution should always be the same.
 
-  ![](../../.gitbook/assets/integrations-matchingecids.png)
+   ![](../../.gitbook/assets/integrations-matchingecids.png)
 
-  The IDs are unique per visitor, which you can confirm by asking a co-worker to repeat these steps.
+   The IDs are unique per visitor, which you can confirm by asking a co-worker to repeat these steps.
 
 ## Analytics for Target \(A4T\)
 
@@ -67,7 +67,7 @@ The best way to validate the A4T integration is to build a Target activity using
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html).
 2. Make sure the Debugger is mapping the Launch property to your Development environment, as described in the earlier lesson.
 
-  ![](../../.gitbook/assets/switchenvironments-debuggeronweretail2%20%281%29.png)
+   ![](../../.gitbook/assets/switchenvironments-debuggeronweretail2%20%281%29.png)
 
 3. Go to the Network tab of the Debugger.
 4. Click **Clear All Requests** to clean things up.
@@ -75,9 +75,9 @@ The best way to validate the A4T integration is to build a Target activity using
 6. Reload the We.Retail page again. You should see four requests in the Network tab of the Debugger, two for Target and two for Analytics.
 7. Look in the row labeled "Supplemental Data ID."
 
-  The IDs from the first page load should match between Target and Analytics. The IDs from the second page load should also match, but be different from the first page load.
+   The IDs from the first page load should match between Target and Analytics. The IDs from the second page load should also match, but be different from the first page load.
 
-  ![](../../.gitbook/assets/integrations-matchingsdids.png)
+   ![](../../.gitbook/assets/integrations-matchingsdids.png)
 
 If you make additional Target requests in the scope of a page load \(not including single-page apps\) that are part of A4T activities, give them unique names \(not target-global-mbox\) so that they continue to have the same SDIDs of the initial Target and Analytics requests.
 
@@ -99,17 +99,18 @@ You validated that the Customer IDs are passed to both the ID Service and to Tar
 3. Go to the Network tab.
 4. In the filter field, type b/ss, which limits what you see to the Adobe Analytics requests.
 
-  ![](../../.gitbook/assets/aam-openthejsconsole.png)
+   ![](../../.gitbook/assets/aam-openthejsconsole.png)
 
 5. Click the **LOGIN** link in the top right corner of the site, enter `test@adobe.com` as the username, and enter `test` as the password, then click **Login**.
 
-  You are returned to the home page, which triggers a beacon that you can see in the developer tools.
+   You are returned to the home page, which triggers a beacon that you can see in the developer tools.
 
 6. Click on the request and select the Headers tab.
 7. Scroll down until you see some nested parameters:
-  - `cid`: The standard delimiter for the Customer ID portion of the request
-  - `crm_id`: The custom integration code, which you specified in the ID Service lesson
-  - `id`: The Customer ID value coming from your Email \(Hashed\) data element
-  - `as`: The Authentication State, with "1" meaning logged in
+   * `cid`: The standard delimiter for the Customer ID portion of the request
+   * `crm_id`: The custom integration code, which you specified in the ID Service lesson
+   * `id`: The Customer ID value coming from your Email \(Hashed\) data element
+   * `as`: The Authentication State, with "1" meaning logged in
 
 ![](../../.gitbook/assets/integrations-analyticscustomeridvalidation.png)
+
