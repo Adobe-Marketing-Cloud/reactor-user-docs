@@ -13,7 +13,7 @@ New properties are created with three environments:
 
 These environments correspond to the typical stages in the code development and release process. If desired, you can add additional Development environments, which is common on larger teams with multiple developers working on different projects at the same time.
 
-The embed code is a `<script>` tag that you put on the pages of your site to load and execute the logic you build in Launch. If you load the library asynchronously, the browser continues to load the page, retrieves the Launch library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`.  When Launch is deployed synchronously, there are two embed codes, one which you put in the `<head>` and another which you put before the `</body>.`
+The embed code is a `<script>` tag that you put on the pages of your site to load and execute the logic you build in Launch. If you load the library asynchronously, the browser continues to load the page, retrieves the Launch library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`. When Launch is deployed synchronously, there are two embed codes, one which you put in the `<head>` and another which you put before the `</body>.`
 
 This lesson shows how to implement the asynchronous embed code of your Launch property's Development environment.
 
@@ -40,14 +40,14 @@ These are the only environments needed to complete the tutorial. Environments al
 
 1. In the Development row, click the **Install** icon to open the modal.
 
-    Launch defaults to the asynchronous embed codes.
+   Launch defaults to the asynchronous embed codes.
 
 2. Click the copy icon to copy the installation code to your clipboard.
 3. Click **Close** to close the modal.
 
 ![](../../.gitbook/assets/launch-copyinstallcode.png)
 
-### Implement the embed code in the `<head>` of the sample HTML page <a id="implement-the-install-code-in-the-head-of-the-sample-site"></a>
+### Implement the embed code in the `<head>` of the sample HTML page  <a id="implement-the-install-code-in-the-head-of-the-sample-site"></a>
 
 The embed code should be implemented in the `<head>` element of all HTML pages that share the property. You might have one or several template files that control the `<head>` globally across the site, making it a straightforward process to add Launch.
 
@@ -69,7 +69,7 @@ The 404 error is expected because you haven't built a library in this Launch env
 
 ### Launch implementation best practices
 
- Review some of the Launch implementation best practices that are demonstrated in the sample page:
+Review some of the Launch implementation best practices that are demonstrated in the sample page:
 
 * **Data Layer**:
   * Adobe _strongly_ recommends creating a digital data layer on your site, containing all of the attributes needed to populate variables in Analytics, Target, and other marketing solutions. This sample page only contains a very simple data layer, but a real data layer might contain many more details about the page, the visitor, their shopping cart details, etc. For more info on data layers, see [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf).
@@ -83,7 +83,7 @@ The 404 error is expected because you haven't built a library in this Launch env
 
 Here is a summary what these best practices look like in the suggested order. Placeholders are in ALL CAPS for account specific details:
 
-```html
+```markup
 <!doctype html>
 <html lang="en">
 <head>
@@ -131,3 +131,4 @@ Here is a summary what these best practices look like in the suggested order. Pl
 </body>
 </html>
 ```
+

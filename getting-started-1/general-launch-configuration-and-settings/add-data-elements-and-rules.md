@@ -32,7 +32,7 @@ Data elements are Launch’s version of a data layer. They can store values from
 This exercise shows how to create a data element for Page Name, which will be used later in the Target and Analytics implementations.
 
 1. In the top navigation, click **Data Elements**.  Because you haven’t created any data elements yet in this property, a brief video appears with additional information on this topic. Watch this video, if you like.
-2. Click **Create New Data Element**.  ![Click the Create New Data Element button](https://git.corp.adobe.com/pages/dwright/tutorial-test/assets/images/launch-newDataElement.png)
+2. Click **Create New Data Element**.  ![Click the Create New Data Element button](../../.gitbook/assets/launch-newdataelement%20%282%29.png)
 3. Name the data element \(for example, "Page Name"\).
 4. Use the JavaScript Variable Data Element type to point to a value in your sample page's data layer: `digitalData.page.pageInfo.pageName`.
 5. Use `not available` as the Default Value. The Default Value tells Launch what value to use for the data element if your JavaScript Variable specified above is not found.
@@ -47,14 +47,14 @@ Next, use the data element you created in a simple rule. Rules are one of the mo
 Use the following steps to create a rule that outputs the Page Name data element value to the browser console.
 
 1. In the top navigation, click **Rules**.  Because you haven’t created any rules yet in this property, a brief video appears with additional information on the topic. Watch this video, if you like.
-2. Click **Create New Rule**.  ![Click the Create New Rule button](https://git.corp.adobe.com/pages/dwright/tutorial-test/assets/images/launch-newRule.png)
+2. Click **Create New Rule**.  ![Click the Create New Rule button](../../.gitbook/assets/launch-newrule.png)
 3. Name the Rule \(for example, "All Pages - Library Loaded"\). This name uses a convention that indicates where and when the rule will fire, which makes it easier to identify and reuse as your Launch property matures. 
-4. Under Events, click **Add**. ![Name the Rule and Add an event](https://git.corp.adobe.com/pages/dwright/tutorial-test/assets/images/launch-addEventToRule.png) The Event tells Launch when the rule should fire and can be many things, including a page load, a click, a custom JavaScript event, and so on.
+4. Under Events, click **Add**. ![Name the Rule and Add an event](../../.gitbook/assets/launch-addeventtorule.png) The Event tells Launch when the rule should fire and can be many things, including a page load, a click, a custom JavaScript event, and so on.
 5. As the Event Type, select **Library Loaded \(Page Top\)**. When you select the Event Type, Launch pre-populates a name for the event using your selection. The default order for the event is 50. Ordering is a powerful feature in Launch that gives you precise control over the sequence of actions when multiple rules are triggered by the same event. This feature is used later in the tutorial.
-6. Click **Keep Changes**. ![Select an Event](https://git.corp.adobe.com/pages/dwright/tutorial-test/assets/images/launch-ruleSelectEvent.png)
+6. Click **Keep Changes**. ![Select an Event](../../.gitbook/assets/launch-ruleselectevent.png)
 7. To fire this rule on all pages, leave **Conditions** blank.  If you open the Conditions modal, you will see that conditions can add both restrictions and exclusions based on a large variety of options, including URLs, data element values, date ranges, and more.
 8. As the Action Type, select **custom code**. At this point, this is the only option. Later in the tutorial, as you add extensions, more options will become available.
-9. Select **Open Editor**, then add the following to the code window:`console.log('The page name is '+_satellite.getVar('Page Name'));`![Select an Action](https://git.corp.adobe.com/pages/dwright/tutorial-test/assets/images/launch-selectAction.png) ![Enter custom code](https://git.corp.adobe.com/pages/dwright/tutorial-test/assets/images/launch-customCodeAction.png)
+9. Select **Open Editor**, then add the following to the code window:`console.log('The page name is '+_satellite.getVar('Page Name'));`![Select an Action](../../.gitbook/assets/launch-selectaction.png) ![Enter custom code](../../.gitbook/assets/launch-customcodeaction.png)
 10. Save the code window. 
 11. On the Action configuration screen, click **Keep Changes**. 
 12. Save the rule.
@@ -75,7 +75,7 @@ After configuring a collection of extensions, data elements, and rules in the La
 
 In an earlier lesson, you implemented the embed code of your development environment on the sample page. When you loaded the sample page a 404 error was returned for the embed code URL because a Launch library had not been built yet and assigned to the environment. In this tutorial, you will put your new data element and rule in a library so that your sample page can do something.
 
-1. Go to the Publishing tab and click **Add New Library.** ![Add New Library](https://git.corp.adobe.com/pages/dwright/tutorial-test/assets/images/launch-addNewLibrary.png) 
+1. Go to the Publishing tab and click **Add New Library.** ![Add New Library](../../.gitbook/assets/launch-addnewlibrary.png) 
 2. Name the library "Initial Setup."
 3. Select **Environment &gt; Development.**
 4. Click **Add All Changed Resources.** Launch summarizes the changes you just made.
