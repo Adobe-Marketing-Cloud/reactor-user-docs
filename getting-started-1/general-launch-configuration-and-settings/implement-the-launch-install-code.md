@@ -5,7 +5,7 @@ This lesson introduces two of the main concepts of Launch:
 * Environments
 * Embed Codes
 
-New properties are created with three environments: 
+New properties are created with three environments:
 
 * Development
 * Staging
@@ -26,9 +26,9 @@ At the end of this lesson, you will be able to:
 * Add a Launch embed code to an HTML document
 * Explain the optimal location of the Launch embed code in relation to other code in the `<head>` of an HTML document
 
-## Copy the embed code 
+## Copy the embed code
 
-From the property Overview screen, click on the Environments tab to go to the environments page. Note that Development, Staging, and Production environments have already been created for you. 
+From the property Overview screen, click on the Environments tab to go to the environments page. Note that Development, Staging, and Production environments have already been created for you.
 
 ![](../../.gitbook/assets/launch-environments.png)
 
@@ -53,7 +53,7 @@ The embed code should be implemented in the `<head>` element of all HTML pages t
 
 If you haven’t already, download [the sample HTML page](https://www.enablementadobe.com/multi/web/basic-sample.html). Right-click on this link and click **Save Link As**. Then, open the page in a code editor.
 
-Replace the existing embed code on or around line 34 with the one on your clipboard and save the page. Next, open the page in a web browser. If you are loading the page using the file:// protocol, you need to add "https:" at the beginning of the embed code URL in your code editor. Lines 33-36 of your sample page might look something like this: 
+Replace the existing embed code on or around line 34 with the one on your clipboard and save the page. Next, open the page in a web browser. If you are loading the page using the file:// protocol, you need to add "https:" at the beginning of the embed code URL in your code editor. Lines 33-36 of your sample page might look something like this:
 
 ```text
     <!--Launch Header Embed Code: REPLACE LINE 39 WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
@@ -79,11 +79,11 @@ The 404 error is expected because you haven't built a library in this Launch env
 * **JavaScript helper libraries**: If you already have a library like JQuery implemented in the `<head>` of your pages, load it before Launch in order to leverage its syntax in Launch and Target.
 * **HTML5 doctype**: The HTML5 doctype is required for Target implementations.
 * **preconnect and dns-prefetch**: Use preconnect and dns-prefetch to improve the page load time. See also: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/).
-* **Pre-hiding snippet for asynchronous Target implementations**: To manage content flicker when Target is deployed via asynchronous Launch embed codes, you should hardcode a pre-hiding snippet on your pages before the Launch embed codes. Thi sis discussed in the Target tutorial. 
+* **Pre-hiding snippet for asynchronous Target implementations**: To manage content flicker when Target is deployed via asynchronous Launch embed codes, you should hardcode a pre-hiding snippet on your pages before the Launch embed codes. Thi sis discussed in the Target tutorial.
 
 Here is a summary what these best practices look like in the suggested order. Placeholders are in ALL CAPS for account specific details:
 
-```text
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -131,6 +131,3 @@ Here is a summary what these best practices look like in the suggested order. Pl
 </body>
 </html>
 ```
-
-
-
