@@ -27,7 +27,7 @@ Before you begin, you must make a slight update to the Launch embed codes. When 
 
 This has already been done on the We.Retail site, but here's how it's done on the sample page, so you understand the implementation. Copy the following lines of code:
 
-```text
+```javascript
 <script>
     //prehiding snippet for Adobe Target with asynchronous Launch deployment
     (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
@@ -40,8 +40,13 @@ Open the sample page and paste it just before your Launch embed code as pictured
 
 Reload your sample page. The page is hidden for three seconds before it displays. This behavior is temporary and goes away after you deploy Target. This behavior is controlled by two configurations at the end of the prehiding snippet, which can be customized but are usually best left on the default settings:
 
-* `body {opacity: 0 !important}` Specifies the CSS definition to use for the prehiding until Target loads. By default, the entire body is hidden. If you have a consistent DOM structure with an easily identifiable container element wrapping all of the content below your navigation, for example, and you never want to test or personalize your navigation, you could use this setting to limit the prehiding to that container element.
-* `3E3` Specifies the timeout setting for the prehiding. By default, if Target hasn't loaded in three seconds, the page is shown. This should be extremely rare.
+* `body {opacity: 0 !important}` Specifies the CSS definition to use for the prehiding until Target loads.
+
+  By default, the entire body is hidden. If you have a consistent DOM structure with an easily identifiable container element wrapping all of the content below your navigation, for example, and you never want to test or personalize your navigation, you could use this setting to limit the prehiding to that container element.
+
+* `3E3` Specifies the timeout setting for the prehiding.
+
+  By default, if Target hasn't loaded in three seconds, the page is shown. This should be extremely rare.
 
 For more details, and to obtain the unminified prehiding snippet, see [Adobe Target extension with an asynchronous deployment​](https://docs.adobelaunch.com/extension-reference/web/adobe-target-extension)
 
@@ -165,7 +170,7 @@ Add the Page Name data element that we created earlier in [Add a Data Element, a
 6. Click the **Data Elements** icon to open the data element modal.
 7. Click the Page Name data element, then click **Select**.
 
-![](../../.gitbook/assets/target-mboxparam-pagename.png)
+  ![](../../.gitbook/assets/target-mboxparam-pagename.png)
 
 8. Click **Keep Changes**.
 9. Click-and-drag the left edge of the Add Params to Global Mbox action to rearrange the actions so Add Params to Global Mbox is before Fire Global Mbox.
@@ -230,7 +235,7 @@ In the previous tutorial, [Add the Experience Cloud ID Service](idservice-save.m
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html).
 2. Make sure the Debugger is mapping the Launch property to your Development environment, as described in the [earlier lesson](../general-launch-configuration-and-settings/switch-environments-with-launch-command.md).
 
-![](../../.gitbook/assets/switchenvironments-debuggeronweretail%20%281%29.png)
+  ![](../../.gitbook/assets/switchenvironments-debuggeronweretail%20%281%29.png)
 
 3. Log in to the We.Retail site using the credentials `test@adobe.com /test`.
 4. Return to the [We.Retail homepage](https://aem.enablementadobe.com/content/we-retail/us/en.html).
@@ -266,7 +271,7 @@ Here is an optional exercise, if you would like to implement a property token in
 
 5. Under the pageName parameter, click **Add**.
 
-![](../../.gitbook/assets/target-addatproperty.png)
+  ![](../../.gitbook/assets/target-addatproperty.png)
 
 6. Name the parameter `at_property` and paste in the value you copied from the Target interface.
 
@@ -359,13 +364,14 @@ Add the data elements and rule required to fire an order confirmation mbox on th
    2. Change the Order to 60 so that it fires after the Load Target action \(which is in the All Pages - Library Loaded rule where Order is set to 50\).
    3. Click **Keep Changes**.
 4. Create a condition.
+
    1. Click **Conditions &gt; Add**, then select **Condition Type &gt; Path Without Query String**.
    2. For Path equals enter thank-you.html.
    3. Toggle on the Regex option to change the logic from equals to contains.
 
     You can use the Test feature to confirm the test will pass with the URL `https://aem.enablementadobe.com/content/we-retail/us/en/user/checkout/order/thank-you.html`
 
-    ![](../../.gitbook/assets/target-orderconfirm-test.png)
+      ![](../../.gitbook/assets/target-orderconfirm-test.png)
 
    4. Click **Keep Changes**.
 5. Create an action.
