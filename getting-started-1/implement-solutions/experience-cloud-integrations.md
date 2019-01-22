@@ -11,7 +11,7 @@ This tutorial reviews the key integrations between the solutions you have implem
 
 ## Prerequisites
 
-You should complete all of the previous Launch implementation tutorials before following the instructions in this tutorial. 
+You should complete all of the previous Launch implementation tutorials before following the instructions in this tutorial.
 
 **Note:** There are many user-permissions requirements, account configurations, and provisioning steps that are required to fully use these integrations and which are beyond the scope of this tutorial. If you are not already using these integrations in your current implementation of the Experience Cloud, you should consider the following:
 
@@ -43,7 +43,11 @@ These validation steps focus on the critical part visible in the client-side imp
 3. Go to the Network tab of the Debugger, then click **Clear All Requests** to clean things up.
 4. Reload the We.Retail page, making sure that you see both the Target and Analytics requests in the Debugger.
 5. Reload the We.Retail page again. You should now see four requests in the Network tab of the Debugger—two for Target and two for Analytics.
-6. Look in the row labeled "Experience Cloud Visitor ID."  The IDs in every request by every solution should always be the same. ![](../../.gitbook/assets/integrations-matchingecids.png) The IDs are unique per visitor, which you can confirm by asking a co-worker to repeat these steps.
+6. Look in the row labeled "Experience Cloud Visitor ID."  The IDs in every request by every solution should always be the same.
+
+  ![](../../.gitbook/assets/integrations-matchingecids.png)
+
+  The IDs are unique per visitor, which you can confirm by asking a co-worker to repeat these steps.
 
 ## Analytics for Target \(A4T\)
 
@@ -61,12 +65,19 @@ A4T works by stitching together a server-side request from Target to Analytics w
 The best way to validate the A4T integration is to build a Target activity using A4T and validate the reporting data. This is beyond the scope of this tutorial. This tutorial shows how to confirm that the supplemental data IDs match between the solution calls.
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html).
-2. Make sure the Debugger is mapping the Launch property to your Development environment, as described in the earlier lesson. ![](../../.gitbook/assets/switchenvironments-debuggeronweretail2%20%281%29.png)
+2. Make sure the Debugger is mapping the Launch property to your Development environment, as described in the earlier lesson.
+
+  ![](../../.gitbook/assets/switchenvironments-debuggeronweretail2%20%281%29.png)
+
 3. Go to the Network tab of the Debugger.
 4. Click **Clear All Requests** to clean things up.
 5. Reload the We.Retail page, making sure that you see both the Target and Analytics requests in the Debugger.
 6. Reload the We.Retail page again. You should see four requests in the Network tab of the Debugger, two for Target and two for Analytics.
-7. Look in the row labeled "Supplemental Data ID."  The IDs from the first page load should match between Target and Analytics. The IDs from the second page load should also match, but be different from the first page load. ![](../../.gitbook/assets/integrations-matchingsdids.png)
+7. Look in the row labeled "Supplemental Data ID."
+
+  The IDs from the first page load should match between Target and Analytics. The IDs from the second page load should also match, but be different from the first page load.
+
+  ![](../../.gitbook/assets/integrations-matchingsdids.png)
 
 If you make additional Target requests in the scope of a page load \(not including single-page apps\) that are part of A4T activities, give them unique names \(not target-global-mbox\) so that they continue to have the same SDIDs of the initial Target and Analytics requests.
 
@@ -86,12 +97,19 @@ You validated that the Customer IDs are passed to both the ID Service and to Tar
 1. Open the We.Retail site.
 2. Open your browser's developer tools.
 3. Go to the Network tab.
-4. In the filter field, type b/ss, which limits what you see to the Adobe Analytics requests. ![](../../.gitbook/assets/aam-openthejsconsole.png)
-5. Click the **LOGIN** link in the top right corner of the site, enter [test@adobe.com](mailto:test@adobe.com) as the username, and enter test as the password, then click **Login**. You are returned to the home page, which triggers a beacon that you can see in the developer tools.
+4. In the filter field, type b/ss, which limits what you see to the Adobe Analytics requests.
+
+  ![](../../.gitbook/assets/aam-openthejsconsole.png)
+
+5. Click the **LOGIN** link in the top right corner of the site, enter `test@adobe.com` as the username, and enter `test` as the password, then click **Login**.
+
+  You are returned to the home page, which triggers a beacon that you can see in the developer tools.
+
 6. Click on the request and select the Headers tab.
-7. Scroll down until you see some nested parameters: \* cid: The standard delimiter for the Customer ID portion of the request \* crm\_id: The custom integration code, which you specified in the ID Service lesson \* id: The Customer ID value coming from your Email \(Hashed\) data element \* as: The Authentication State, with "1" meaning logged in
+7. Scroll down until you see some nested parameters:
+  - `cid`: The standard delimiter for the Customer ID portion of the request
+  - `crm_id`: The custom integration code, which you specified in the ID Service lesson
+  - `id`: The Customer ID value coming from your Email \(Hashed\) data element
+  - `as`: The Authentication State, with "1" meaning logged in
 
 ![](../../.gitbook/assets/integrations-analyticscustomeridvalidation.png)
-
-
-
