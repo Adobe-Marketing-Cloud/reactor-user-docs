@@ -122,7 +122,7 @@ If you'd like, you can link your DTM Production embed code with your Launch Prod
 
 #### I heard there are plug-ins now. What's that about?
 
-We call them [Extensions](./#extensions). Launch is built into the Adobe Experience Cloud and it is fully extensible. Customers, Adobe Partners, agencies, and marketing or advertising technology vendors will soon be able to build Launch extensions that add new functionality or modify existing functionality. The system allows partners and clients to build, manage, and update their own integrations. This is just one way Adobe is opening up the Adobe Experience Cloud so customers and partners can build products and businesses on the Platform, and so everyone can more easily connect Adobe technology to the marketing and advertising technologies from other vendors.
+Launch uses plug-ins called [Extensions](./#extensions). Launch is built into the Adobe Experience Cloud and it is fully extensible. Customers, Adobe Partners, agencies, and marketing or advertising technology vendors will soon be able to build Launch extensions that add new functionality or modify existing functionality. The system allows partners and clients to build, manage, and update their own integrations. This is just one way Adobe is opening up the Adobe Experience Cloud so customers and partners can build products and businesses on the Platform, and so everyone can more easily connect Adobe technology to the marketing and advertising technologies from other vendors.
 
 #### Will all third-party extensions be available right away?
 
@@ -132,7 +132,7 @@ Each extension developer maintains their own roadmap and schedule for their exte
 
 #### When will clients or partners be able to build extensions?
 
-Anyone can build an extension now. To get started, go to [developer docs](https://developer.adobelaunch.com/guides/extensions/). Currently all extensions are open to all Launch users, but later this year we will add the ability to build an extension that can only be seen by your company and a whitelist of others that you specify.
+Anyone can build an extension now. To get started, go to [developer docs](https://developer.adobelaunch.com/guides/extensions/). Currently, all extensions are open to all Launch users, but later this year Adobe will add the ability to build an extension that can only be seen by your company and a whitelist of others that you specify.
 
 #### Will Launch meet my company's security standards?
 
