@@ -130,7 +130,7 @@ Before beginning, review the [Best practices for planning properties](companies-
 
    **Domain:** The base URL of the property
 
-2. \(Optional\) **Return an empty string for undefined values of Data Elements:** Select this check box if you want undefined values to be empty, rather than to assign default values.
+2. \(Optional\)  **Return an empty string when a data element's value is null or undefined:**  Select this check box if you want null or undefined values to be converted to empty strings.
 3. Click Save.
 
    The extension is automatically installed into the new property.
