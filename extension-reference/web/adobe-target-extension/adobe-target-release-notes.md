@@ -1,5 +1,10 @@
 # Adobe Target Release Notes
 
+## January 23, 2019
+
+* Updated at.js to version 1.6.4
+* Extension UI migrated to Adobe Spectrum
+
 ## November 15, 2018
 
 * Updated at.js to version 1.6.3
