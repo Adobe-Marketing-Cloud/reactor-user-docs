@@ -110,7 +110,7 @@ In addition, specify that the event is triggered after a specific amount of time
 
 #### Zoom Change
 
-pTrigger the event if the user zooms in or out.
+Trigger the event if the user zooms in or out.
 
 There are no settings for this event type.
 
