@@ -1,10 +1,11 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Videos](videos.md)
+* [Release Notes](release-notes/README.md)
+  * [2019 Release Notes](release-notes/2019-release-notes.md)
+  * [2018 Release Notes](release-notes/release-notes.md)
 * [Quick Start](getting-started/README.md)
-  * [2019 Release Notes](getting-started/2019-release-notes.md)
-  * [2018 Release Notes](getting-started/release-notes.md)
+  * [Videos](getting-started/videos.md)
 
 ## Getting Started
 

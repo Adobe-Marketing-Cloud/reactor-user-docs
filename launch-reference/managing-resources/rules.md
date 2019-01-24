@@ -4,7 +4,7 @@ Launch is a rule-based system. It looks for user interaction and associated data
 
 Build rules to integrate the data and functionality of marketing and ad tech that unifies disparate products into a single solution.
 
-For an introductory video, see [Rule builder](../../videos.md).
+For an introductory video, see [Rule builder](../../getting-started/videos.md).
 
 Events are where the majority of interactions on sites take place. You can measure and react to these interactions in real-time, without the need for JavaScript.
 

@@ -12,7 +12,7 @@ The basic Launch workflow:
 6. [Test in your dev environment](./#6-test-in-your-dev-environment). 
 7. [Promote to production](./#7-promote-to-production). 
 
-For an introductory video, see [Introduction to Launch, by Adobe](../videos.md).
+For an introductory video, see [Introduction to Launch, by Adobe](videos.md).
 
 ## 1. Set up groups and users
 

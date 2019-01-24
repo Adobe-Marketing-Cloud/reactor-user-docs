@@ -10,7 +10,7 @@ A property can be any grouping of one or more domains and subdomains. You can ma
 
 A mobile property type can contain multiple applications. For example, in a mobile property you can manage the same set of rules and extensions across multiple iOS and Android applications.
 
-For a video tutorial, see [Creating your first property](../../videos.md).
+For a video tutorial, see [Creating your first property](../../getting-started/videos.md).
 
 ## Companies
 

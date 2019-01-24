@@ -20,7 +20,7 @@ Important: Changes do not take effect until they are [published](../../publishin
 
 By default, Adobe provides extensions that support common integrations. Extensions can be modified with custom configurations. Configurations are provided through the extensions. To create a configuration, click the extension card, then click Add New Configuration.
 
-For a video introduction, see [Extensions](../../../videos.md).
+For a video introduction, see [Extensions](../../../getting-started/videos.md).
 
 ## Extension catalog
 
