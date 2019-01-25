@@ -28,11 +28,11 @@ If a specified event occurs, the conditions and exceptions are evaluated, then t
 
 * Conditions
 
-  Narrow the event by configuring any conditions that must be true for an event to trigger the rule. Multiple conditions are joined by an AND.
+  Narrow the event by configuring any conditions and exceptions that must be true for an event to trigger the rule. Multiple conditions are joined by an AND.
 
 The events that are available depend on which extensions are installed. For information about the events in the Core extension, see [Core extension event types](../../extension-reference/web/core-extension/#core-extension-event-types).
 
-Note: DTM provided page load, event-based, and direct call event types. This is no longer true in Launch. Rather than event types, Launch extensions configure different individual events.
+**Note:** DTM provided page load, event-based, and direct call event types. This is no longer true in Launch. Rather than event types, Launch extensions configure different individual events.
 
 Only events are required. The conditions and exceptions are optional.
 
@@ -48,7 +48,7 @@ Create a rule by specifying what actions occur if a condition is met.
 
 1. Open the Rules tab, then click Create New Rule.
 
-   ![](../../.gitbook/assets/rule-create.png)
+   ![](../../.gitbook/assets/launch-rule-builder.jpg)
 
 2. Name the rule.
 3. Click the Events Add icon.
@@ -72,12 +72,13 @@ Create a rule by specifying what actions occur if a condition is met.
 
    Logic type:
 
-   * Regular logic type will allow actions to be executed if the condition is met
-   * Exception logic type will prevent actions from being executred if the condition is met
+   * Regular logic type allows actions to be executed if the condition is met
+   * Exception logic type prevents actions from being executed if the condition is met
 
-You can add other conditions. Multiple conditions within the same condition are joined with an OR, multiple conditions configurations are joined by AND. The rule's exceptions will be evaluated if any of the events are met, along with their conditions.
+You can add other conditions. Multiple conditions within the same condition are joined with an OR, multiple conditions configurations are joined by AND. The rule's exceptions are evaluated if any of the events are met, along with their conditions.
 
-1. Click the Actions Add icon, then choose your extension and one of the action types available for that extension, configure the properties for the action, then click Keep Changes. Note: The available action types are defined by the extension.
+1. Click the Actions Add icon, then choose your extension and one of the action types available for that extension, configure the properties for the action, then click Keep Changes.   
+   **Note:** The available action types are defined by the extension.
 
    ![](../../.gitbook/assets/rule-action-config.jpg)
 
