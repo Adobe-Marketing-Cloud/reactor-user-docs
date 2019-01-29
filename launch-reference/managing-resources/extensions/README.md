@@ -73,5 +73,5 @@ Mouse over an installed extension and click Configure.
 
 Note: Some extensions do not require configuration and do not offer configuration options.
 
-Each configurable extension has unique options. Refer to [Extensions Reference]() for information about the options available for each Adobe extension.
+Each configurable extension has unique options. Refer to [Extensions Reference](../../../extension-reference/web) for information about the options available for each Adobe extension.
 
