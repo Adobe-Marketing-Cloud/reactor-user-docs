@@ -1,6 +1,6 @@
 # Asynchronous Deployment
 
-Performance and non-blocking deployment of the JavaScript libraries required by our products is increasingly important to Adobe Experience Cloud users. Tools like [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/) recommend that users change they way they deploy The Adobe libraries on their site. This article explains how to use the Adobe JavaScript libraries in an asynchronous fashion.
+Performance and non-blocking deployment of the JavaScript libraries required by our products is increasingly important to Adobe Experience Cloud users. Tools like [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/) recommend that users change they way they deploy the Adobe libraries on their site. This article explains how to use the Adobe JavaScript libraries in an asynchronous fashion.
 
 ## Synchronous vs asynchronous
 
@@ -14,11 +14,13 @@ Often, libraries are loaded synchronously in the `<head>` tag of a page. For exa
 
 By default, the browser parses the document and reaches this line, then starts to fetch the JavaScript file from the server. The browser waits until the file is returned, then it parses and executes the JavaScript file. Finally, it continues parsing the rest of the HTML document.
 
-If the parser comes across the `<script>` tag before rendering visible content, content display is delayed. If the JavaScript file being loaded is not absolutely necessary to show content to your users, you are unnecessarily requiring your visitors to wait for content. For this reason, website performance benchmark tools like Google PageSpeed or Lighthouse often flag synchronously loaded scripts.
+If the parser comes across the `<script>` tag before rendering visible content, content display is delayed. If the JavaScript file being loaded is not absolutely necessary to show content to your users, you are unnecessarily requiring your visitors to wait for content. The larger the library, the longer the delay.  For this reason, website performance benchmark tools like Google PageSpeed or Lighthouse often flag synchronously loaded scripts.
+
+Tag Management libraries can quickly grow large if you have a lot of tags to manage.
 
 ### Asynchronous deployment
 
-To load the JavaScript file asynchronously, add an async attribute to the `<script>` tag:
+You can load any library asynchronously by adding an `async` attribute to the `<script>` tag.  For example:
 
 ```markup
 <script src="example.js" async></script>
@@ -26,17 +28,22 @@ To load the JavaScript file asynchronously, add an async attribute to the `<scri
 
 This indicates to the browser that when this script tag is parsed, the browser should begin loading the JavaScript file, but instead of waiting for the library to be loaded and executed, it should continue to parse and render the rest of the document.
 
-## Drawbacks to asynchronous deployment
+## Considerations to asynchronous deployment
 
-Although the goal is to display content to visitors faster, and asynchronously loading the JavaScript achieves that goal, asynchronous deployment requires careful consideration under certain circumstances.
+If you choose to load Launch asynchronously, there are a few things to consider.
 
 ### Timing
 
 As described above, in synchronous deployments, page rendering pauses while the Launch library is loaded and executed. This means that events that happen after the library is loaded \(Page Bottom, DOM Ready, Window Loaded, etc\) always reliably happen after the `_satellite` object is available.
 
-In asynchronous deployments, the page rendering does not pause for the library to be loaded. This means that the sequence of events is less reliable and can even vary from one browser to another and even one page load to another depending on a number of factors \(cached libraries, bandwidth, etc\).
+In asynchronous deployments, the page rendering does not pause for the library to be loaded.  This means that the browser sequence of page load events may no longer occur where you expect them to - in relation to your library loading.  Some examples:
 
-If you see things occuring out of order - or occuring in different order inconsistently - it is likely that you have some timing issues to work through.
+1. A rule that uses `Core - Library Loaded` as an event may be triggered before your data layer is fully loaded.  This may result in Rule Actions executing with missing data because the data was not yet on the page.
+2. A rule that uses `Core - DOM Ready` as an event may be triggered before your library has been fully loaded.  In this case, the rule actions will be delayed until the Library is fully loaded.  Launch will make sure that rules still execute in the logical order, but it may be later than you expected.
+
+These kinds of problems can be mitigated by making tweaks to your rule configuration.  As an example, instead of having a rule triggered by `Core - Library Loaded`, you could instead use a Direct Call rule that is called as soon as your data layer finishes loading.
+
+If you see things occurring out of order - or occurring in different order inconsistently - it is likely that you have some timing issues to work through.
 
 Deployments that require precise timing may need to make more use of eventHandlers and direct call rules in order to make their implementations more robust and consistent.
 

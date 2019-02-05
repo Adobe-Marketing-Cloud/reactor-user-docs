@@ -40,7 +40,7 @@ The Extensions page provides three views:
 
 Click Extensions to see all your installed extensions. You can also use the catalog to see a list of all available extensions and which extensions have updates available.
 
-See [Extensions Reference]() for details about the Adobe-owned extensions.
+See [Extensions Reference](./) for details about the Adobe-owned extensions.
 
 ## Add a new extension
 
@@ -73,5 +73,5 @@ Mouse over an installed extension and click Configure.
 
 Note: Some extensions do not require configuration and do not offer configuration options.
 
-Each configurable extension has unique options. Refer to [Extensions Reference](../../../extension-reference/web) for information about the options available for each Adobe extension.
+Each configurable extension has unique options. Refer to [Extensions Reference](../../../extension-reference/web/) for information about the options available for each Adobe extension.
 
