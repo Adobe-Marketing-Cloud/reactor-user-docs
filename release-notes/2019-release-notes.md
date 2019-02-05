@@ -1,5 +1,11 @@
 # 2019 Release Notes
 
+## January 29, 2019
+
+### Features
+
+* Revision Compare - You can now compare one version of a resource with older versions.  This is available on Extensions, Data Elements, and Rules.  Read more about this new feature [here](../launch-reference/managing-resources/compare-resource-revisions.md).
+
 ## January 17, 2019
 
 ### Updates

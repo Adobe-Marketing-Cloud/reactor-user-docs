@@ -4,12 +4,11 @@ Testing: Spaghetti
 
 # Managing Resources
 
-Dynamic Tag Management was primarily designed to help you place tags and code on your web pages. Launch provides that capability, but enhances it with even more features:
+In Launch, the word "resources" refers to any of the following:
 
-* Collect any customer behavior based on select pages, or all pages
-* Easily deploy web apps
-* Browse, deploy, and activate the right marketing tool, such as a chat service, quickly and easily
-* Share data across your teams so the right people have access to the right data, ensuring delivery of better experiences
+* [Extensions](extensions/) - Extensions provide data element types and rules for you to work with
+* [Data Elements](data-elements.md) - Data elements are an easy way to reference any data that exists elsewhere.  They create shortcuts that can be used within rules and extension configurations.  When the location of the underlying data changes, they can be updated to point to the new location without having to update individual rules or extensions.
+* [Rules](rules.md) - Rules are a collection of Rule Components \(Events, Conditions, and Actions\) that control the behavior of the deployed tags.
 
-Launch provides a sophisticated but easy-to-use rule builder so you can customize extensions \(or even create your own\) and store your code in customized libraries. You can host your libraries yourself, or let Adobe do it for you.
+You can learn more about each of these resource types by clicking the links above.
 
