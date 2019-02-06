@@ -2,7 +2,7 @@
 
 Compare resource revisions to see the history of an individual resource.  You can compare the current state of the resource to older versions, or compare the currently published version of a resource to the most recent set of changes that have been saved.
 
-## Initiate a Comparison
+## Initiate a comparison
 
 Initiating a comparison is the same for all resource types.  Open the Edit view for an individual resource, then find the three dots icon next to the **Save** button to view available actions for that resource.  Select **Compare Revisions** from the list.
 
@@ -10,7 +10,7 @@ Initiating a comparison is the same for all resource types.  Open the Edit view 
 
 For extensions, access the detail view by clicking the **Configure** button when viewing your list of installed extensions.  For data elements and rules, select one from the list.
 
-## Using the Compare View
+## Using the Compare view
 
 When you initiate a comparison, the default view shows the latest version on the right.  This version includes any unsaved changes you've made to the resource within the Edit view. \(Notice the **Unsaved Changes** label on the right in the picture below.\)
 
@@ -26,7 +26,7 @@ Click **Use These Changes** to copy the settings from your selected revision \(l
 The initial release of Compare view displays settings in their raw form as JSON. Future enhancements will allow you to view versions in different ways, including detailed code comparisons and using the extension views provided by the extension developers.
 {% endhint %}
 
-## Comparing Extensions
+## Comparing extensions
 
 Extensions have a single screen to show the differences between versions.  
 
@@ -39,7 +39,7 @@ Above, you can see the following changes:
 * The Adobe Analytics extension is updated to a new version, indicated by the orange version numbers at the top.
 * The `orgID` and `currencyCode` are changed to the settings indicated by the expansion of the orange section in the settings.
 
-## Comparing Data Elements
+## Comparing data elements
 
 Data elements have a single screen to show differences, but because data elements have additional attributes besides their settings, additional information is shown.  Attributes that have changed are highlighted in orange.
 
@@ -56,7 +56,7 @@ Above, you can see the following changes:
 
 In cases where the settings block is large, you can expand the settings section so you can see it better.
 
-## Comparing Rules
+## Comparing rules
 
 Rules consist of many rule components.  To understand the changes to a rule, you need to know about the addition and removal of components as well as modifications to an individual component.  So, when you compare versions of a rule, there are actually two screens.
 
