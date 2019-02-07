@@ -118,11 +118,11 @@ Note: Only a user with sufficient rights can create a property. See [User Manage
 
 Before beginning, review the [Best practices for planning properties](companies-and-properties.md#best-practices-for-planning-properties) for properties.
 
-1. Navigate to your company page, then click New Property, or select an existing property from the list and click Configure.
-
-### For Web
+Navigate to your company page, then click Add Property, or select an existing property from the list and click Configure.
 
 ![](../../.gitbook/assets/property-create.jpg)
+
+### For Web
 
 1. Fill in the fields:
 
@@ -130,24 +130,18 @@ Before beginning, review the [Best practices for planning properties](companies-
 
    **Domain:** The base URL of the property
 
-2. \(Optional\)  **Return an empty string when a data element's value is null or undefined:**  Select this check box if you want null or undefined values to be converted to empty strings.
-3. Click Save.
+2. \(Advanced\)  **Return an empty string for undefined data elements:**  Select this check box if you want data elements that resolve to null or undefined values to be converted to empty strings.
+3. \(Advanced\) **Configure for extension development:** Select this check box if you plan to install development extensions that are being actively developed by your company
+4. Click Save.
 
    The extension is automatically installed into the new property.
 
-   **For Mobile**
+### **For Mobile**
 
-   1. Fill in the fields:
+1. Fill in the fields: **Name:** The name of your property. **Privacy:** By default the privacy setting is set to Opted In, meaning that you would like for the SDK to collect and send data to solutions. If you select Opted Out, the SDK by default will NOT send data to solutions. If you choose Unknown as the setting, the SDK will require that the application first propmpt the user to allow for data collection and sharing. Note: that these settings can be further controlled via API in the mobile application. **Use HTTPS:** Choose if all data communication should be sent over HTTP or HTTPS.
+2. Click Save.
 
-   **Name:** The name of your property.
-
-   **Privacy:** By default the privacy setting is set to Opted In, meaning that you would like for the SDK to collect and send data to solutions. If you select Opted Out, the SDK by default will NOT send data to solutions. If you choose Unknown as the setting, the SDK will require that the application first propmpt the user to allow for data collection and sharing. Note: that these settings can be further controlled via API in the mobile application.
-
-**Use HTTPS:** Choose if all data communication should be sent over HTTP or HTTPS.
-
-1. Click Save.
-
-   Once your mobile property is created, Launch will automatically add a default hosting adapter, a set of dev, stage and production environments and necessary extensions for the SDK to function.
+Once your property is created, Launch will automatically add a default hosting adapter, a set of  environments \(Development, Staging, and Production\) and the default extensions.
 
 ## Delete a property
 
