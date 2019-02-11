@@ -79,7 +79,7 @@ Review some of the Launch implementation best practices that are demonstrated in
 * **JavaScript helper libraries**: If you already have a library like JQuery implemented in the `<head>` of your pages, load it before Launch in order to leverage its syntax in Launch and Target.
 * **HTML5 doctype**: The HTML5 doctype is required for Target implementations.
 * **preconnect and dns-prefetch**: Use preconnect and dns-prefetch to improve the page load time. See also: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/).
-* **Pre-hiding snippet for asynchronous Target implementations**: To manage content flicker when Target is deployed via asynchronous Launch embed codes, you should hardcode a pre-hiding snippet on your pages before the Launch embed codes. Thi sis discussed in the Target tutorial.
+* **Pre-hiding snippet for asynchronous Target implementations**: To manage content flicker when Target is deployed via asynchronous Launch embed codes, you should hardcode a pre-hiding snippet on your pages before the Launch embed codes. This is discussed in the Target tutorial.
 
 Here is a summary what these best practices look like in the suggested order. Placeholders are in ALL CAPS for account specific details:
 
