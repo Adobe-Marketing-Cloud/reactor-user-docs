@@ -100,7 +100,7 @@ It is often important to have your rules fire in a specific order. Examples: \(1
 
 Ultimately, the responsibility for executing actions in order lie with the extension developer of the event type that you're using. For Adobe extensions, Adobe makes sure this works properly. For 3rd party extensions, Adobe provides guidance to extension developers to implement this properly, but it is up to them to do so.
 
-Adobe highly recommends that you order your rules with positive numbers between 1 and 100 \(default is 50\). Simpler is better. Remember you have to maintain your order. However, Adobe recognizes there might be edge cases where that will feel limiting, so other numbers are allowed. Launch supports negative numbers down to -1.79 \* 10^308, 0, and positive numbers \_\_up to 1.79 \* 10^308. You can also use up to 17 decimal places.
+Adobe highly recommends that you order your rules with positive numbers between 1 and 100 \(default is 50\). Simpler is better. Remember you have to maintain your order. However, Adobe recognizes there might be edge cases where that will feel limiting, so other numbers are allowed. Launch supports numbers between +/- 2,147,483,648.  You can also use about a dozen decimal places - but if you're in a scenario where you think you need to do that, you should rethink some of the decisions you've made to get to where you are now.
 
 ### Scenarios
 
