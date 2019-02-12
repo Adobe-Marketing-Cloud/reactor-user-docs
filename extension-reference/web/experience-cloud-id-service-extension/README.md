@@ -12,7 +12,7 @@ If the Experience Cloud ID extension is not yet installed, open your property, t
 
 To configure the extension, open the Extensions tab, hover over the extension, and then click Configure.
 
-![](../../../.gitbook/assets/ext-mcid-config.png)
+![](../../../.gitbook/assets/optin.jpg)
 
 The following configuration options are available:
 
@@ -29,6 +29,48 @@ The Experience Cloud ID does not load if the URL matches any of the specified pa
 \(Optional\) Enable Regex if this is a regular expression.
 
 Click Add to exclude another path.
+
+### Opt In
+
+Use the Opt In options to determine whether to require visitors to opt in Adobe services on your site, including whether to create cookies that track visitor activity.
+
+Opt In is the centralized point of reference for all Platform solution client-side libraries to determine if cookies can be created on a user's device or browser when visiting your site. Opt In does not provide support for either gathering or storing user consent preferences.
+
+**Enable Opt In?**
+
+The selected option determines whether your website waits for consent to track a visitor's activities on your website.
+
+There are three options:
+
+* **No:** Does not wait for consent to track the visitor. This is the default behavior if you do not select an option.
+* **Yes:** Waits for consent to track the visitor.
+* **Determined at runtime using function:** Programmatically determine whether the value is true or false at runtime. If you select this option, the Select Data Element field becomes available. Select a data element that can determine whether to wait for consent. This data element resolves to a boolean value. For example, you can select a data element that provides consent determined on whether the visitor's country is located in the EU.
+
+**Is Opt In Storage Enabled?**
+
+If enabled, consent is stored in a first-party cookie on your domain. If not enabled, consent settings are kept in your CMP or a cookie you manage.
+
+**Opt In Cookie Domain?**
+
+Use this optional setting to specify the domain where the Opt In cookie is stored if storage is enabled. You can enter a domain, or select a data element that contains the domain.
+
+**Opt In Storage Expiry?**
+
+Specify when the Opt In cookie expires if storage is enabled, in seconds.
+
+ Enter a number, then select a unit of time from the dropdown list. For example, enter 2 and select Weeks. Default is 13 months.
+
+**Permissions?**
+
+Pass previous consent to the Opt In library. Select a data element that contains the consent. The element type must be an object or a JSON string. Overrides Pre Opt In Approvals.
+
+Example:
+
+`"{"aa":true,"aam":true,"ecid":true}"`
+
+**Pre Opt In Approvals?**
+
+Define which categories are approved or denied when no preference has been set by the visitor. Consent is assumed for the selected solutions from the time the page is loaded. The element type must be an object or a JSON string \(example: `{aam: true}`\).
 
 ### Variables
 
