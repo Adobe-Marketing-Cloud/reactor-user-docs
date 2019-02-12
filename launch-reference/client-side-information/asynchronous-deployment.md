@@ -30,26 +30,37 @@ This indicates to the browser that when this script tag is parsed, the browser s
 
 ## Considerations to asynchronous deployment
 
-If you choose to load Launch asynchronously, there are a few things to consider.
+As described above, in synchronous deployments, the browser pauses parsing and rendering the page while the Launch library is loaded and executed. In asynchronous deployments, on the other hand, the browser continues parsing and rendering the page while the library loads. The variability of when the Launch library might finish loading in relation to page parsing and rendering must be taken into consideration.
 
-### Timing
+First, because the Launch library can finish loading before or after the bottom of the page has been parsed and executed, you should no longer call `_satellite.pageBottom()` from your page code \(`_satellite` won't be available until after the library has loaded\). This is explained in [Loading the Launch embed code asynchronously](asynchronous-deployment.md#loading-the-launch-embed-code-asynchronously).
 
-As described above, in synchronous deployments, page rendering pauses while the Launch library is loaded and executed. This means that events that happen after the library is loaded \(Page Bottom, DOM Ready, Window Loaded, etc\) always reliably happen after the `_satellite` object is available.
+Second, the Launch library can finish loading before or after the [`DOMContentLoaded`](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) browser event \(DOM Ready\) has occurred.
 
-In asynchronous deployments, the page rendering does not pause for the library to be loaded.  This means that the browser sequence of page load events may no longer occur where you expect them to - in relation to your library loading.  Some examples:
+Because of these two points, it's worth demonstrating how the [Library Loaded](../../extension-reference/web/core-extension/#library-loaded-page-top), [Page Bottom](../../extension-reference/web/core-extension/#page-bottom), [DOM Ready](../../extension-reference/web/core-extension/#page-bottom), and [Window Loaded](../../extension-reference/web/core-extension/#window-loaded) event types from the Core extension function when loading a Launch library asynchronously.
 
-1. A rule that uses `Core - Library Loaded` as an event may be triggered before your data layer is fully loaded.  This may result in Rule Actions executing with missing data because the data was not yet on the page.
-2. A rule that uses `Core - DOM Ready` as an event may be triggered before your library has been fully loaded.  In this case, the rule actions will be delayed until the Library is fully loaded.  Launch will make sure that rules still execute in the logical order, but it may be later than you expected.
+Let's assume your Launch property contains the following four rules:
 
-These kinds of problems can be mitigated by making tweaks to your rule configuration.  As an example, instead of having a rule triggered by `Core - Library Loaded`, you could instead use a Direct Call rule that is called as soon as your data layer finishes loading.
+* Rule A: uses the Library Loaded event type
+* Rule B: uses the Page Bottom event type
+* Rule C: uses the DOM Ready event type
+* Rule D: uses the Window Loaded event type
 
-If you see things occurring out of order - or occurring in different order inconsistently - it is likely that you have some timing issues to work through.
+Regardless of when the Launch library finishes loading, all the rules are guaranteed to be executed and they will be executed in the following order:
 
-Deployments that require precise timing may need to make more use of eventHandlers and direct call rules in order to make their implementations more robust and consistent.
+Rule A → Rule B → Rule C → Rule D
 
-### Page Bottom event type
+Although the order is always enforced, some rules might be executed immediately when the Launch library finishes loading, while others might be executed later. The following occurs when the Launch library finishes loading:
 
-Another consideration is that Launch has always provided a Page Bottom event type that allows users to fire a rule at the precise moment the bottom of the body tag is reached by the browser parser. Because the Launch runtime will likely finish loading after the page bottom has been reached, the Page Bottom event type may not fire associated rules at the time you may expect. For this reason, when loading Launch asynchronously, you should not use the Page Bottom event type. Instead, consider the Library Loaded, DOM Ready, Window Loaded, or other event types.
+1. Rule A is executed immediately.
+2. If the `DOMContentLoaded` browser event \(DOM Ready\) has already occurred, Rule B and Rule C are executed immediately. Otherwise, Rule B and Rule C are executed later when the [`DOMContentLoaded`](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) browser event occurs.
+3. If the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event \(Window Loaded\) has already occurred, Rule D is executed immediately. Otherwise, Rule D will be executed later when the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event occurs. Note that if you've installed the Launch library according to the instructions, the Launch library _always_ finishes loading before the [`load`](https://developer.mozilla.org/en-US/docs/Web/Events/load) browser event occurs.
+
+When applying these principles to your own website, consider the following:
+
+* **A rule using the Library Loaded event type might execute before your data layer is fully loaded.**  This can result in the rule's actions executing with missing data because the data was not yet available on the page. These types of issues can be mitigated by tweaking your rule configuration. As an example, instead of having a rule triggered by the Library Loaded event type, you could instead use the Custom Event or Direct Call event type that are triggered by your page code as soon as your data layer finishes loading.
+* **The Page Bottom event type doesn't particularly provide value when the library is loaded asynchronously.**  Instead, consider the Library Loaded, DOM Ready, Window Loaded, or other event types.
+
+If you see things occurring out of order, it is likely that you have some timing issues to work through. Deployments requiring precise timing might need to use event listeners and the Custom Event or Direct Call event type to make their implementations more robust and consistent.
 
 ## Loading the Launch embed code asynchronously
 
