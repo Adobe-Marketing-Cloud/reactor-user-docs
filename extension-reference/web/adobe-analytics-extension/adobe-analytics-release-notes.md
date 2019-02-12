@@ -1,5 +1,18 @@
 # Adobe Analytics Release Notes
 
+## February 11, 2019
+
+### Adobe Analytics Extension 1.6
+
+#### Features
+
+* Updated the Adobe Analytics extension to DIL 9.0 which will support opt-in. 
+* Updated the Adobe Analytics extension to AppMeasurement 2.11 to support opt-in.
+
+#### Bug fixes
+
+* Fixed a conflict with Prototype JS. The Analytics extension will now support standard prototype.js libraries.
+
 ## November 9, 2018
 
 ### Adobe Analytics Extension 1.5.1

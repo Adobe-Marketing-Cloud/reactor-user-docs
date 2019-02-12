@@ -47,7 +47,7 @@ These are the only environments needed to complete the tutorial. Environments al
 
 ![](../../.gitbook/assets/launch-copyinstallcode.png)
 
-### Implement the embed code in the `<head>` of the sample HTML page  <a id="implement-the-install-code-in-the-head-of-the-sample-site"></a>
+### Implement the embed code in the `<head>` of the sample HTML page   <a id="implement-the-install-code-in-the-head-of-the-sample-site"></a>
 
 The embed code should be implemented in the `<head>` element of all HTML pages that share the property. You might have one or several template files that control the `<head>` globally across the site, making it a straightforward process to add Launch.
 
