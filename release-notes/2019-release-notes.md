@@ -1,5 +1,11 @@
 # 2019 Release Notes
 
+## February 12, 2019
+
+### Features
+
+* Cross-property Copy - You can now copy resources from one property to another.  After selecting a resource and clicking the **Copy** button, you can select a target property to copy to.  This is available on Extensions, Data elements, and Rules.  Read more about copying resources [here](../launch-reference/managing-resources/copying-resources.md).
+
 ## January 29, 2019
 
 ### Features

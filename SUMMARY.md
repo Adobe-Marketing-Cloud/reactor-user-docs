@@ -30,6 +30,7 @@
     * [Extension Upgrade](launch-reference/managing-resources/extensions/extension-upgrade.md)
   * [Data Elements](launch-reference/managing-resources/data-elements.md)
   * [Rules](launch-reference/managing-resources/rules.md)
+  * [Copying Resources](launch-reference/managing-resources/copying-resources.md)
   * [Compare Resource Revisions](launch-reference/managing-resources/compare-resource-revisions.md)
   * [Deleting Resources](launch-reference/managing-resources/delete-resources.md)
   * [Remove Resources from a Library](launch-reference/managing-resources/remove-resources-from-library.md)
