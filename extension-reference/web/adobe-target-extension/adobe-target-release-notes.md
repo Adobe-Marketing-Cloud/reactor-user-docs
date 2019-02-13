@@ -1,5 +1,14 @@
 # Adobe Target Release Notes
 
+## February 12, 2019
+
+### Adobe Target Extension 0.9.1
+
+#### **Features**
+
+* Updated Extension to use at.js 1.7.0 that has Opt-in privacy functionality supported via Adobe Launch to control how and when the Target tag is fired. Please check Launch Documentation on how to setup your implementation of Opt-in. Added possibility to customize if an mbox parameter that has an empty value should be sent to Target or not.
+
+
 ## January 23, 2019
 
 * Updated at.js to version 1.6.4
