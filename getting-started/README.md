@@ -24,7 +24,7 @@ For detailed instructions on how to create groups and add users for Launch, see 
 
 ## 2. Log in
 
-Once Launch rights have been added to your Adobe ID, you need to log in to Launch. You can do this by navigating directly to [https://launch.adobe.com](https://launch.adobe.com) or by logging in to the [Experience Cloud \(https://marketing.adobe.com\)](https://marketing.adobe.com), navigating to the Activation page, and clicking on Launch.
+Once Launch rights have been added to your Adobe ID, you need to log in to Launch. You can do this by navigating directly to [https://launch.adobe.com](https://launch.adobe.com) or by logging in to the [Experience Cloud \(https://experiencecloud.adobe.com\)](https://experiencecloud.adobe.com), navigating to the Activation page, and clicking on Launch.
 
 ## 3. Create a property
 

@@ -4,7 +4,7 @@ With the Audience Manager extension, you can integrate the DIL code used by Audi
 
 Use this reference for information about the options available when using this extension to build a rule.
 
-Note: This extension is not meant to be used for server-side forwarding of Adobe Analytics data. For server-side forwarding, use the [Adobe Analytics extesnion](https://docs.adobelaunch.com/extension-reference/web/adobe-analytics-extension). 
+Note: This extension is not meant to be used for server-side forwarding of Adobe Analytics data. For server-side forwarding, use the [Adobe Analytics extension](https://docs.adobelaunch.com/extension-reference/web/adobe-analytics-extension). 
 
 ## Configure the Adobe Audience Manager extension
 
@@ -34,7 +34,7 @@ Enable Regex if the URL is a regular expression.
 
 #### Use DIL Site Catalyst Module
 
-The [SiteCatalyst module](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_sc_init.html) works with DIL to send Analytics tag elements to Audience Manager.
+The [SiteCatalyst module](https://experiencecloud.adobe.com/resources/help/en_US/aam/r_dil_sc_init.html) works with DIL to send Analytics tag elements to Audience Manager.
 
 Use the Code Editor to configure the siteCatalyst.init file.
 
@@ -42,15 +42,15 @@ You can also create a note containing information about this configuration.
 
 #### Use DIL Google Analytics Module
 
-Enable the [Google Analytics module](https://marketing.adobe.com/resources/help/en_US/aam/dil-google-universal-analytics.html).
+Enable the [Google Analytics module](https://experiencecloud.adobe.com/resources/help/en_US/aam/dil-google-universal-analytics.html).
 
 #### DIL.create Initialization Properties
 
-Add initialization properties used by [DIL.create](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_create.html) and the namespace subproperty for the [visitorService object](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_visitor_service.html). Two sample use cases are included in the code comments, in the Code Editor.
+Add initialization properties used by [DIL.create](https://experiencecloud.adobe.com/resources/help/en_US/aam/r_dil_create.html) and the namespace subproperty for the [visitorService object](https://experiencecloud.adobe.com/resources/help/en_US/aam/r_dil_visitor_service.html). Two sample use cases are included in the code comments, in the Code Editor.
 
 Click Choose an Item to add additional properties.
 
-Hover over the "i" icons to learn what each property does. You can find more information for the properties in the [Audience Manager DIL documentation](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_create.html).
+Hover over the "i" icons to learn what each property does. You can find more information for the properties in the [Audience Manager DIL documentation](https://experiencecloud.adobe.com/resources/help/en_US/aam/r_dil_create.html).
 
 Click Save when you have finished configuring the extension.
 
