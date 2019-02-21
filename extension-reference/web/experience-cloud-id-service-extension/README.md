@@ -74,7 +74,7 @@ Define which categories are approved or denied when no preference has been set b
 
 ### Variables
 
-Set name-value pairs as Experience Cloud ID instance properties. Use the drop-down to select a variable, then type or select a value. For information about each variable, refer to the [Experience Cloud ID Service documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html).
+Set name-value pairs as Experience Cloud ID instance properties. Use the drop-down to select a variable, then type or select a value. For information about each variable, refer to the [Experience Cloud ID Service documentation](https://experiencecloud.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html).
 
 ## Experience Cloud ID extension action types
 
