@@ -1,8 +1,16 @@
-# Adobe Analytics for Video Release Notes
+# Adobe Media Analytics for Audio and Video Release Notes
+
+## February 25, 2019
+
+### Adobe Media Analytics for Audio and Video Extension 1.2
+
+* Renamed extension name
+* Support for tracking audio content.
+* Update MediaSDK.js to 2.2.0
 
 ## March 20, 2018
 
-### Adobe Analytics for Video Extension 1.0.0
+### Adobe Analytics for Video Extension 1.0
 
 #### **Features**
 
