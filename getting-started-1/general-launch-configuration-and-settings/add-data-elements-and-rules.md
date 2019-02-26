@@ -45,7 +45,7 @@ This exercise shows how to create a data element for Page Name, which will be us
 
 ## Create a Rule
 
-Next, use the data element you created in a simple rule. Rules are one of the most powerful features in Launch. They tell specify what happens when a visitor interacts with your website. When the criteria outlined in your rules are met, the rule triggers the specified action.
+Next, use the data element you created in a simple rule. Rules are one of the most powerful features in Launch. They tell specifically what happens when a visitor interacts with your website. When the criteria outlined in your rules are met, the rule triggers the specified action.
 
 Use the following steps to create a rule that outputs the Page Name data element value to the browser console.
 
