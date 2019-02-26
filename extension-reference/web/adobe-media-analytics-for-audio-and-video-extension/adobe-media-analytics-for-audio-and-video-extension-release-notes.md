@@ -6,7 +6,14 @@
 
 * Renamed extension name
 * Support for tracking audio content.
-* Update MediaSDK.js to 2.2.0
+* Update MediaSDK library to 2.2.0
+
+## June 15, 2018
+
+### Adobe Analytics for Video Extension 1.1
+
+* Allow tracking directly from webpage by exporting MediaHeartbeat APIs to global variable.
+* Update VideoHeartbeat library to 2.1.0
 
 ## March 20, 2018
 

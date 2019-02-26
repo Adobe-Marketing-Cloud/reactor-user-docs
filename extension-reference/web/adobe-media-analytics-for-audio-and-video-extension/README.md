@@ -32,7 +32,7 @@ After you have included all three of the extensions mentioned above in your Laun
 
 | Option | Description |
 | :--- | :--- |
-| Tracking Server | Defines the server for tracking media heartbeats\(this is not the same server as your analytics tracking server\) |
+| Tracking Server | Defines the server for tracking media heartbeats \(this is not the same server as your analytics tracking server\) |
 | Application Version | The version of the media player app/SDK |
 | Player Name | Name of the media player in use \(e.g., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer"\) |
 | Channel | Channel name property |
@@ -67,7 +67,7 @@ The MA extension exports the MediaHeartbeat APIs in the global window object by 
 
    This exposes all of the constants and static methods from the [`MediaHeartbeat`](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) class.
 
-   You can obtain the sample player here: [MA Sample Player](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/samples/Launch/VideoHeartbeatSample). The sample player acts as a reference to showcase how to use the MA extension to support Media Analytics directly from a webapp.
+   You can obtain the sample player here: [MA Sample Player](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/samples/Launch/MediaExtensionSample). The sample player acts as a reference to showcase how to use the MA extension to support Media Analytics directly from a webapp.
 
 ### Using from other extensions
 
