@@ -119,7 +119,7 @@ The Experience Cloud ID Service passes the customer IDs using a rule action call
    1. Select the Experience Cloud ID Service extension.
    2. Select the “Set Customer IDs” Action Type.
    3. For the **Integration Code** enter `crm_id`.
-   4. For the **Value** enter open the Data Element selector modal and select the Email \(Hashed\) option.
+   4. For the **Value** open the Data Element selector modal and select the Email \(Hashed\) option.
    5. For the **Auth State** select **Authenticated**.
    6. Click the **Keep Changes** button to save the action and return to the Rule Builder.
 9. Click **Save to Library and Build**.
