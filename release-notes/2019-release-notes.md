@@ -1,5 +1,15 @@
 # 2019 Release Notes
 
+## February 20, 2019
+
+### Updates
+
+* Support for custom code has been added to Compare View.
+
+### Bug Fixes
+
+* The cross-property workflow is now a bit smoother.
+
 ## February 12, 2019
 
 ### Features
