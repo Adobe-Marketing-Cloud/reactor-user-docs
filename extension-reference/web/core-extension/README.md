@@ -859,7 +859,7 @@ Any available domain cookie can be referenced in the cookie name field.
 
 Custom JavaScript can be entered into the UI by clicking Open Editor and inserting code into the editor window.
 
-A return statement is necessary in the editor window in order to indicate what value should be used as the data element value. If a return statement is not included or the value `null` or `undefined` is returned, the data element's default value will be returned as the data element value.
+A return statement is necessary in the editor window in order to indicate what value should be used as the data element value. If a return statement is not included or the value `null` or `undefined` is returned, the data element's default value will be used as the data element value.
 
 **Example:**
 
