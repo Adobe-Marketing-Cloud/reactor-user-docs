@@ -1,58 +1,56 @@
-# Adobe Analytics for Video Extension
+# Adobe Media Analytics for Audio and Video Extension
 
-Use this documentation for information on installing, configuring, and implementing the Adobe Analytics for Video extension \(Video Analytics extension\). Included are the options available when using this extension to build a rule, along with examples and links to samples.
+Use this documentation for information on installing, configuring, and implementing the Adobe Media Analytics for Audio and Video extension \(Media Analytics extension\). Included are the options available when using this extension to build a rule, along with examples and links to samples.
 
-The Video Analytics \(VA\) extension adds the core VA JavaScript library \(VA 2.x SDK\). This extension provides the functionality for adding the `MediaHeartbeat` tracker instance to a Launch site or project. The VA extension requires two additional extensions:
+The Media Analytics \(MA\) extension adds the core JavaScript Media SDK \(Media 2.x SDK\). This extension provides the functionality for adding the `MediaHeartbeat` tracker instance to a Launch site or project. The MA extension requires two additional extensions:
 
 * [Analytics Extension](https://docs.adobelaunch.com/~/edit/drafts/-LNQre1_XrQVLOEWB0Jz/extension-reference/web/adobe-analytics-extension)
 * [Experience Cloud ID Extension](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension) 
 
+**Important:** Audio tracking requires Analytics Extension v1.6 or higher.
+
 After you have included all three of the extensions mentioned above in your Launch project, you can proceed in one of two ways:
 
 * Use `MediaHeartbeat` APIs from your web app
-* Include, or build, a player-specific extension that maps specific video player
+* Include, or build, a player-specific extension that maps specific media player events to the APIs on the `MediaHeartbeat` tracker instance. This instance is exposed through the MA extension.
 
-  events to the Video Analytics APIs on the `MediaHeartbeat` tracker instance.
+## Install and configure the MA extension
 
-  This instance is exposed through the VA extension.
+* **Install -** To install the MA extension, open your extension property,
 
-## Install and configure the VA extension
-
-* **Install -** To install the VA extension, open your extension property,
-
-  click _Extensions &gt; Catalog_, hover over the _Adobe Analytics for Video_
+  click _Extensions &gt; Catalog_, hover over the _Adobe Media Analytics for Audio and Video_
 
   extension, and click _Install_.
 
-* **Configure -** To configure the VA extension, open the _Extensions_ tab,
+* **Configure -** To configure the MA extension, open the _Extensions_ tab,
 
   hover over the extension, and then click _Configure_:
 
-![VA Extension Configuration](../../../.gitbook/assets/ext-va-config.jpg)
+![MA Extension Configuration](../../../.gitbook/assets/ext-va-config.jpg)
 
 #### Configuation options:
 
 | Option | Description |
 | :--- | :--- |
 | Tracking Server | Defines the server for tracking media heartbeats \(this is not the same server as your analytics tracking server\) |
-| Application Version | The version of the video player app/SDK |
-| Player Name | Name of the video player in use \(e.g., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer"\) |
+| Application Version | The version of the media player app/SDK |
+| Player Name | Name of the media player in use \(e.g., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer"\) |
 | Channel | Channel name property |
 | Online Video Provider | Name of the online video platform through which content gets distributed |
 | Debug Logging | Enable or Disable logging |
 | Enable SSL | Enable or Disable sending pings over HTTPS |
-| Export APIs to Window Object | Enable or Disable exporting Video Analytics APIs to global scope |
-| Variable Name | A variable you use to export Video Analytics APIs under the `window` object |
+| Export APIs to Window Object | Enable or Disable exporting Media Analytics APIs to global scope |
+| Variable Name | A variable you use to export Media Analytics APIs under the `window` object |
 
-**Reminder:** The VA extension requires the [Analytics Extension](https://docs.adobelaunch.com/~/edit/drafts/-LNQre1_XrQVLOEWB0Jz/extension-reference/web/adobe-analytics-extension) and [Experience Cloud ID](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension) extensions. You must also add these extensions to your extension property and configure them.
+**Reminder:** The MA extension requires the [Analytics Extension](https://docs.adobelaunch.com/~/edit/drafts/-LNQre1_XrQVLOEWB0Jz/extension-reference/web/adobe-analytics-extension) and [Experience Cloud ID](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension) extensions. You must also add these extensions to your extension property and configure them.
 
-## Using the VA extension
+## Using the MA extension
 
 ### Using from a webpage/JS-app
 
-The VA extension exports the MediaHeartbeat APIs in the global window object by enabling the _"Export APIs to Window Object"_ setting in the Configuration page. It exports the APIs under the configured variable name. For example, if the variable name is configured to be `ADB` then MediaHeartbeat can be accessed by `window.ADB.MediaHeartbeat`.
+The MA extension exports the MediaHeartbeat APIs in the global window object by enabling the _"Export APIs to Window Object"_ setting in the Configuration page. It exports the APIs under the configured variable name. For example, if the variable name is configured to be `ADB` then MediaHeartbeat can be accessed by `window.ADB.MediaHeartbeat`.
 
-**Important:** The VA extension exports the APIs only when `window["CONFIGURED_VARIABLE_NAME"]` is undefined and does not override existing variables.
+**Important:** The MA extension exports the APIs only when `window["CONFIGURED_VARIABLE_NAME"]` is undefined and does not override existing variables.
 
 1. **Create MediaHeartbeat Instance:** `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance`
 
@@ -67,13 +65,13 @@ The VA extension exports the MediaHeartbeat APIs in the global window object by 
 
 2. **Access MediaHeartbeat Constants:** `window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat`
 
-   This exposes all of the constants and static methods from the [`MediaHeartbeat`](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html) class.
+   This exposes all of the constants and static methods from the [`MediaHeartbeat`](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) class.
 
-   You can obtain the sample player here: [VA Sample Player](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/tree/master/sdks/js/samples/Launch/VideoHeartbeatSample). The sample player acts as a reference to showcase how to use the VA extension to support Video Analytics directly from a webapp.
+   You can obtain the sample player here: [MA Sample Player](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/samples/Launch/MediaExtensionSample). The sample player acts as a reference to showcase how to use the MA extension to support Media Analytics directly from a webapp.
 
 ### Using from other extensions
 
-The VA extension exposes the `get-instance` and `media-heartbeat` shared modules to other extensions. \(For additional information on Shared Modules, see [Shared Modules documentation](https://developer.adobelaunch.com/guides/extensions/shared-modules/).\)
+The MA extension exposes the `get-instance` and `media-heartbeat` shared modules to other extensions. \(For additional information on Shared Modules, see [Shared Modules documentation](https://developer.adobelaunch.com/guides/extensions/shared-modules/).\)
 
 **Important:** Shared Modules can only be accessed from other extensions. That is, a webpage/JS app cannot access the shared modules, or use `turbine` \(see code sample below\) outside of an extension.
 
@@ -93,14 +91,14 @@ The VA extension exposes the `get-instance` and `media-heartbeat` shared modules
      | Property | Description | Required |
      | :--- | :--- | :--- |
      | Online Video Provider | Name of the online video platform through which content is distributed. | No. If present, overrides the value defined during extension configuration. |
-     | Player Name | Name of the video player in use \(e.g., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer"\) | No. If present, overrides the value defined during extension configuration. |
+     | Player Name | Name of the media player in use \(e.g., "AVPlayer", "HTML5 Player", "My Custom VideoPlayer"\) | No. If present, overrides the value defined during extension configuration. |
      | Channel | Channel name property | No. If present, overrides the value defined during extension configuration. |
 
    **Return Value:** A promise which either resolves with a `MediaHeartbeat` instance or rejects with an error message.
 
 2. **Access MediaHeartbeat Constants:** `media-heartbeat` Shared Module
 
-   This module exposes all of the constants and static methods from this class: [https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/MediaHeartbeat.html).
+   This module exposes all of the constants and static methods from this class: [https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html).
 
 3. Create MediaHeartbeat tracker instance as follows:
 
@@ -136,13 +134,13 @@ The VA extension exposes the `get-instance` and `media-heartbeat` shared modules
     ...
    ```
 
-4. Using the Media Heartbeat instance, follow the [VHL SDK JS documentation](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/js_2.0/) and [JS API documentation](https://adobe-marketing-cloud.github.io/video-heartbeat-v2/reference/javascript/index.html) to implement video tracking.
+4. Using the Media Heartbeat instance, follow the [Media SDK JS documentation](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/set-up-js.html) and [JS API documentation](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html) to implement media tracking.
 
 **Note: Testing -** For this release, to test your extension you must upload it to [Adobe Launch](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/73a73bd5ff53162339ce5ded3f4bba4712146d20/extension-reference/launch.adobe.com), where you have access to all dependent extensions.
 
 ## Leveraging the sample HTML5 player
 
-You can obtain the VA extension sample HTML5 player here: [HTML5 Sample Player](https://github.com/adobe/reactor-adobe-va-sample-player). The sample player acts as a reference to create video player extensions and to showcase using the VA extension to support Adobe Analytics for Video.
+You can obtain the MA extension sample HTML5 player here: [HTML5 Sample Player](https://github.com/adobe/reactor-adobe-va-sample-player). The sample player acts as a reference to create video player extensions and to showcase using the MA extension to support media tracking.
 
 ### Sample player extension action types
 
