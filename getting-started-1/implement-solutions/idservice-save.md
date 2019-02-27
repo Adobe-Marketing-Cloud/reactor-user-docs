@@ -75,7 +75,7 @@ Create the data element for Authentication State:
 4. For `Data Element Type`, select `Custom Code`.
 5. Click **Open Editor**, then in the Edit Code window, paste the following:
 
-   `if (digitalData.user[0].profile[0].attributes.loggedIn)  return "logged in" else  return "logged out"`
+   `if (digitalData.user[0].profile[0].attributes.loggedIn) return "logged in" else return "logged out"`
 
 6. Save the custom code.
 7. Leave all of the other settings on their default values.
@@ -104,10 +104,7 @@ The Experience Cloud ID Service passes the customer IDs using a rule action call
 
    **TIP:** This naming convention indicates you are implementing this rule at the top of all pages when the user is authenticated and it will have an order of “10.” Using a naming convention like this, rather than naming it for the solutions triggered in the actions, minimizes the overall number of rules needed in this implementation.
 
-3. Under **Events**, click **Add**.
-   1. For the **Event Type** select **Library Loaded \(Page Top\)**.
-   2. Specify the order “10”. The Order controls the sequence of rules that are triggered by the same event. Rules with a lower order fire before rules with a higher order. In this case, you want to set the customer ID before you fire the Target request, which you will do in the next lesson with a rule with an order of 50 .
-   3. Click **Keep Changes** to return to the Rule Builder.
+3. Under **Events**, click **Add**. 1. For the **Event Type** select **Library Loaded \(Page Top\)**. 2. Specify the order “10”. The Order controls the sequence of rules that are triggered by the same event. Rules with a lower order fire before rules with a higher order. In this case, you want to set the customer ID before you fire the Target request, which you will do in the next lesson with a rule with an order of 50 . 3. Click **Keep Changes** to return to the Rule Builder.
 4. Under **Conditions** click **Add**:
    1. For the **Condition Type** select **Value Comparison**.
    2. Click the icon to open the Data Element modal.
