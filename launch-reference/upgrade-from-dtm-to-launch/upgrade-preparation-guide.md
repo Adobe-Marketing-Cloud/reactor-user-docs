@@ -171,6 +171,8 @@ The following DTM tools installed on your property are not copied to Launch exte
 
 ## Data Elements  <a id="data-elements"></a>
 
+In DTM, if a data element resolves to an empty string, the data element will fall back to the configured default value. In Launch, an empty string is considered a legitimate value. As such, if a data element resolves to an empty string, the empty string will be used and the data element will _not_ fall back to the configured default value. In Launch, a data element will only fall back to the configured default value if the resolved value is `null` or `undefined`.
+
 ### Cookie  <a id="cookie"></a>
 
 `Cookie` data element types that don't contain a cookie name are not copied to Launch.
