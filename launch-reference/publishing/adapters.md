@@ -34,7 +34,7 @@ If you do not want your builds delivered to Akamai, your other option is to have
 Launch connects to your SFTP site using an encrypted key. There are a few steps to set this up correctly:
 
 1. You must have a public/private key pair installed on your SFTP server.  You can generate these keys on your server or generate them somewhere else and install them to your server.  See [here ](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key)for an example of how to generate keys.
-2. You must encrypt the private key with Launch's public GPG key so that you can provide your private key to Launch during the SFTP adapter creation process.  See [here](https://developer.adobelaunch.com/guides/api/encrypting_values/) for instructions and Launch's public GPG keys.  Unless you _know_ you need a different one, use the Production Environment's GPG key.  Finally, you can encrypt your private key form any  machine, you do not need to install GPG on your server in order to complete this step.
+2. You must encrypt the private key with Launch's public GPG key so that you can provide your private key to Launch during the SFTP adapter creation process.  See [here](https://developer.adobelaunch.com/api/guides/encrypting_values/) for instructions and Launch's public GPG keys.  Unless you _know_ you need a different one, use the Production Environment's GPG key.  Finally, you can encrypt your private key form any  machine, you do not need to install GPG on your server in order to complete this step.
 3. You may need to whitelist the Launch IP address with your company firewall to allow Launch to be able to reach your SFTP server and connect to it.
 
 ### Create an SFTP adapter
