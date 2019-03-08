@@ -171,7 +171,7 @@ The following DTM tools installed on your property are not copied to Launch exte
 
 ## Data Elements  <a id="data-elements"></a>
 
-In DTM, if a data element resolves to a value that is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) \(e.g., an empty string or the number 0\), the data element will fall back to the configured default value. In Launch, the data element will only fall back to the configured default value if the resolved value is `null` or `undefined` . As such, if a data element resolves to a falsy value like an empty string or the number 0 \(any value other than `null` or `undefined`\), Launch will use that value and will not _not_ fall back to the data element's configured default value.
+In DTM, if a data element resolves to a value that is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) \(e.g., an empty string, the number 0, `null`, `undefined`\), the data element will fall back to the configured default value. In Launch, the data element will _only_ fall back to the configured default value if the resolved value is `null` or `undefined` .
 
 ### Cookie  <a id="cookie"></a>
 
