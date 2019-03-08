@@ -1,5 +1,13 @@
 # Adobe Analytics Release Notes
 
+## March 7, 2019
+
+### Adobe Analytics Extension 1.7.1
+
+#### Bug Fixes
+
+* Rolled back the extension to version 1.6 after a bug was found in 1.7.
+
 ## February 11, 2019
 
 ### Adobe Analytics Extension 1.6
