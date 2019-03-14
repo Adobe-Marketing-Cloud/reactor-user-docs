@@ -140,7 +140,7 @@ Launch is SOC-2 and Gramm-Leach-Bliley Act ready. Launch also offers the capabil
 
 #### I have a project coming up very soon. Should I use Launch or DTM?
 
-Launch. Any new deployments done with DTM will need to be migrated eventually as DTM reaches it's sunset phase.
+Launch. Any new deployments done with DTM will need to be migrated eventually as DTM reaches its sunset phase.
 
 #### Does Launch support single page apps \(SPAs\) and my favorite framework?
 
