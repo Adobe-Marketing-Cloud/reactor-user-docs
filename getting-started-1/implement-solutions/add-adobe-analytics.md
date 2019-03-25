@@ -13,7 +13,7 @@ At the end of this lesson, you will be able to:
 * Add click-tracking and other event-based beacons
 * Add Analytics plugins
 
-There are many things that could be implemented for Analytics in Launch. This tutoroal is not exhaustive, but should give you a solid overview of the main techniques you need for implementing Analytics on your own site.
+There are many things that could be implemented for Analytics in Launch. This tutorial is not exhaustive, but should give you a solid overview of the main techniques you need for implementing Analytics on your own site.
 
 ## Prerequisites
 
