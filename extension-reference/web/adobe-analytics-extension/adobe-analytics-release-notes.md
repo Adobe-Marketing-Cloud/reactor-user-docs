@@ -1,5 +1,13 @@
 # Adobe Analytics Release Notes
 
+## April 12, 2019
+
+### Adobe Analytics Extension 1.7.3
+
+#### Bug Fixes
+
+* Updated the Adobe Analytics Extension to appMeasurement 2.13 which includes a fix to a known clearVars issue.
+
 ## March 21, 2019
 
 ### Adobe Analytics Extension 1.7.2
@@ -7,7 +15,7 @@
 #### Features
 
 * Updated the Adobe Analytics extension to DIL 9.1. 
-* Updated the Adobe Analytics extension to AppMeasurement 2.12.
+* Updated the Adobe Analytics extension to appMeasurement 2.12.
 * Upgraded the Adobe Analytics extension view to React-Spectrum.
 * When configuring your report suites in the configuration page you will now see a dropdown to all of the report suites in your company to make it easier for you to select the appropriate report suite. 
 
