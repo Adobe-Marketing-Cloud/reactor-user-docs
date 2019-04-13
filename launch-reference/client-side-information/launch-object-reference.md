@@ -231,7 +231,7 @@ Sets a cookie in the user's browser. The cookie will persist for the number of d
 #### Code
 
 ```javascript
-_satellite.getCookie(name: string) => string
+_satellite.readCookie(name: string) => string
 ```
 
 #### Example
@@ -239,7 +239,7 @@ _satellite.getCookie(name: string) => string
 Note: This method has been deprecated. Please use `_satellite.cookie.get()` instead.
 
 ```javascript
-var product = _satellite.getCookie('product');
+var product = _satellite.readCookie('product');
 ```
 
 Reads a cookie from the user's browser.
