@@ -1,12 +1,20 @@
 # Adobe Analytics Release Notes
 
+## April 15, 2019
+
+### Adobe Analytics Extension 1.7.4
+
+#### Bug Fixes
+
+* Rolled extension back after a bug was found in appMeasurement 2.13.0.
+
 ## April 12, 2019
 
 ### Adobe Analytics Extension 1.7.3
 
 #### Bug Fixes
 
-* Updated the Adobe Analytics Extension to appMeasurement 2.13 which includes a fix to a known clearVars issue.
+* Updated the Adobe Analytics Extension to appMeasurement 2.13.0 which includes a fix to a known clearVars issue.
 
 ## March 21, 2019
 
