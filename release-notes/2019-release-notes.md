@@ -1,5 +1,29 @@
 # 2019 Release Notes
 
+## April 8, 2019
+
+### Bug Fixes
+
+* Improved a few build error messages
+* Better reporting for failed SFTP adapters
+
+### Other
+
+* Updated the way that Rule Components and Data Elements relate to extensions.  When you delete an extension and reinstall an extension, you no longer have to manually update your resources to point to the newly installed extension.
+* Rule Components are now under Property instead of Rule.  This lays a foundation for future enhancements to Rule Components.
+
+## March 20, 2019
+
+### Updates
+
+* Visual updates to the resource copy tool, including status indicators and a cancel button.
+
+## March 5, 2019
+
+### Bug Fixes
+
+* Builds stored on Akamai will use a new folder structure.  Embed codes do not change. This will mediate many issues we've seen with builds to Akamai.
+
 ## February 20, 2019
 
 ### Updates
