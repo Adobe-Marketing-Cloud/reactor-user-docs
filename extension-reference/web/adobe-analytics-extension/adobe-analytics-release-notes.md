@@ -6,7 +6,7 @@
 
 #### Bug Fixes
 
-* Rolled extension back after a bug was found in appMeasurement 2.13.0.
+* Rolled extension back after a bug was found in appMeasurement 2.13.0. appMeasurement 2.13.0 was causing an issue that wasn't sending the ECID, so if you installed 1.7.3 we recommend upgrading to 1.7.4 to avoid this problem. Note that the clearVars will continue until an updated version of appMeasurement is released.
 
 ## April 12, 2019
 

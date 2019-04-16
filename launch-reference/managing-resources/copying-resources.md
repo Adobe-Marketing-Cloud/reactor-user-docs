@@ -1,6 +1,6 @@
 # Copying Resources
 
-Copy a resource creates a duplicate of that resource in the specified destination.  This is a discreet, one-time action and there is no ongoing relationship between the original resource and any copies that have been made.
+Copy a resource creates a duplicate of that resource in the specified destination. This is a discreet, one-time action and there is no ongoing relationship between the original resource and any copies that have been made.
 
 ## Initiate a copy
 
@@ -12,7 +12,7 @@ For Rules and Data Elements, simply select the resource you want to copy and the
 
 ![Copying my Analytics rule](../../.gitbook/assets/copy-initiate-rule.png)
 
-Once inside the copy dialog, you may use the drop-down menu to select a Destination Property you want to copy to.  Rules and Data Elements will select the current property by default.  Extensions cannot be copied to the same property, so those will not have a default selection. 
+Once inside the copy dialog, you may use the drop-down menu to select a Destination Property you want to copy to. Rules and Data Elements will select the current property by default. Extensions cannot be copied to the same property, so those will not have a default selection.
 
 **Note:** In the Launch user interface, it is not possible to copy resources to another Property if one Property is configured for extension development and the other Property is not.
 
@@ -31,7 +31,7 @@ All Rules and Data Elements are provided by an extension, so when you copy acros
 
 ![Copying a Rule to my Demo Property](../../.gitbook/assets/copy-rules-dialog%20%281%29.png)
 
-An explanation of exactly what Launch is planning on doing is available inside the Copy dialog before you actually begin copying.  The above dialog is for a Rule, but the same applies to Data Elements.
+An explanation of exactly what Launch is planning on doing is available inside the Copy dialog before you actually begin copying. The above dialog is for a Rule, but the same applies to Data Elements.
 
 1. **Extensions required by these rules will be copied** - this is just letting you know that required extensions will go along with the rule.  These copies will follow the same rules as a regular Extension copy outlined above.
 2. **Extension settings will NOT be copied if the extension is already installed** - This means if the required extensions already exist on the Destination property, that we'll just leave the extension alone.  If you wish to copy the Extension settings as well, you can use the **Replace extension settings on destination property** toggle and the explanation will be updated accordingly.
