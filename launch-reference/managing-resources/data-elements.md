@@ -46,10 +46,7 @@ Data elements are the building blocks for rules. Data elements let you create a 
    The available data element types are determined by the extension. For information about the types available with the Launch Core extension, refer to [Types of data elements](data-elements.md#types-of-data-elements).
 
 4. Provide any requested information about the chosen type in the fields provided.
-5. \(Optional\) Enter a default value.
-
-   If you do not provide a value, no value is sent. Some people choose to enter something like "none" or "n/a" so they can determine what is sent if there isn't a value. Different solutions deal with an empty variable differently. This creates consistency even if a value doesn't exist.
-
+5. \(Optional\) Enter a default value. If the data element resolves to `null` or `undefined`, the data element will fall back to the configured default value. The default value begins as an empty string \(`""`\), but you are welcome to change it to a different value. When using data elements to send data to solutions like Adobe Analytics, be aware that each solution deals with empty strings differently. Because of this, people often choose to configure a default value of `none` or `n/a` so they can more easily identify when a data element did not resolve to a legitimate value.
 6. Select whether to force a lowercase value and whether to remove line breaks and spaces.
 7. Select whether to use clean text. The Clean Text option removes any whitespace from the beginning and end and replaces any successive spaces in the middle with single spaces. Use this option to normalize element values for easier matching.
 8. Select a duration.
