@@ -1,4 +1,25 @@
-# Copying Resources
+# Copying resources
+
+For rules and data elements, simply select the resource you want to copy and then click the **Copy** button in the actions menu.
+
+Once inside the copy dialog, use the drop-down menu to select a destination property you want to copy to.  Rules and data elements select the current property by default.  Extensions cannot be copied to the same property, so those do not have a default selection.
+
+## Copying extensions
+
+* If the destination property does not have the extension installed, it will be installed using the same settings as the origin property.
+* If the destination property already has the extension installed, then only the settings will be copied.
+* If the destination property has a lower version of the extension installed, you'll receive a notice that you need to upgrade the extension on the destination property before you can perform the copy.  Extension developers can add settings to their extensions over time, so settings from a newer extension cannot be reliably applied to older versions.
+* If the destination property has a higher version of the extension installed, then the settings are copied over, but no downgrade is performed.  The destination property still retains its current version number.
+
+## Copying rules and data elements
+
+All rules and data elements are provided by an extension, so when you copy across properties, Launch must account for these underlying extensions.
+
+An explanation of exactly what Launch is planning to do is available inside the Copy dialog before you actually begin copying.  The above dialog is for a rule, but the same applies to data elements.
+
+1. **Extensions required by these rules are copied.** This lets you know that required extensions will go along with the rule.  These copies follow the same rules as a regular extension copy outlined above.
+2. **Extension settings will NOT be copied if the extension is already installed.** This means if the required extensions already exist on the destination property, the extension remains as is.  If you wish to copy the extension settings as well, you can use the **Replace extension settings on destination property** toggle and the explanation is updated accordingly.
+3. **Data Elements required by these Rules will NOT be copied.** This explanation only applies to rules.  Rules often rely on data elements to function correctly.  If you copy a rule to a new property, you'll also need to copy any required data elements as a separate action.
 
 Copy a resource creates a duplicate of that resource in the specified destination. This is a discreet, one-time action and there is no ongoing relationship between the original resource and any copies that have been made.
 

@@ -81,7 +81,7 @@ Available actions for a library in Approved state are:
 
   Unassigns the library from the staging environment, assigns the library to the production environment, and deploys it.
 
-  Important: When this option is selected, your library becomes live in your production environment, so be sure before you click the button.
+  **Important:** When this option is selected, your library becomes live in your production environment, so be sure before you click the button.
 
 * Reject
 

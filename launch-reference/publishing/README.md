@@ -22,15 +22,15 @@ There are a few components and relationships that are important to understand in
 
   An adapter represents the connection details for the environment to deliver the build. You can choose to let Launch manage the hosting of your build, or you can provide information for your own host servers.
 
-* [Embed Code](../upgrade-from-dtm-to-launch/link-dtm-embed-code.md)
+* [Client-side code](../upgrade-from-dtm-to-launch/link-dtm-embed-code.md)
 
-  The embed code is the set of script tags that you place within the HTML on your site. These tags tell each browser where to retrieve the build. The embed code is attached to an environment and can change when you make changes to your environment configuration.
+  The client-side code is the set of script code that you place on your site or in your application. This code tells each client device where to retrieve the build. The code is attached to an environment and can change when you make changes to your environment configuration.
 
 The publishing process consists of:
 
 1. Creating and editing libraries.
 2. Testing the functionality of those libraries where you need to test them.
-3. Deploying those libraries to your production site.
+3. Deploying those libraries to your production environment.
 
 ![](../../.gitbook/assets/publishing.jpg)
 

@@ -1,4 +1,4 @@
-# Self-hosting Libraries
+# Self-hosting libraries
 
 Everything you do in Launch has the ultimate goal of producing a set of files to control the behavior of your application at run-time. This set of files is called a [build](builds.md).
 
@@ -40,7 +40,7 @@ The cache control headers Adobe uses for managed hosting are as follows:
 
 **Note:** It is up to browsers to receive and respect the cache control headers. Some browsers might ignore them.
 
-Important: Cache control headers were added in Spring of 2018. Environments that do not have "-development" or "-staging" in their Environment embed codes were created prior to that time. These environments will need to be recreated if you want to take advantage of these new cache control headers. If you don't re-create the environments, you'll have the same 60-minute cache control as the production libraries.
+**Important:** Cache control headers were added in Spring of 2018. Environments that do not have "-development" or "-staging" in their Environment embed codes were created prior to that time. These environments will need to be recreated if you want to take advantage of these new cache control headers. If you don't re-create the environments, you'll have the same 60-minute cache control as the production libraries.
 
 ### How to use managed hosting
 

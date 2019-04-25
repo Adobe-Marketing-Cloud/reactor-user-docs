@@ -1,5 +1,21 @@
 # Overview
 
+Launch empowers anyone to build and maintain their own integrations with Launch, called extensions. These extensions are available to web and mobile Launch customers in an app-store experience, so customers can quickly install, configure, and deploy their integrations.
+
+### Extension catalog
+
+### Rule builder
+
+### Data elements
+
+### Enterprise publishing
+
+### Light, modular container tag
+
+Performance is very important to Adobe. Launch is designed to deliver and run marketing and advertising technologies on your web site as efficiently as possible using today's best practices. Adobe technologies deployed together through Launch are faster than any other deployment method. You can read more about performance and our perspective in the [Performance Whitepaper](https://medium.com/launch-by-adobe/adobe-web-browser-technology-performance-477c2bfeaa98).
+
+These are the questions received most often from customers and partners since the Launch announcement. If you have other questions, please ask in the Adobe Community on the main Launch page located at [https://adobe.com/go/launchme](https://adobe.com/go/launchme).
+
 Launch is the next generation of website tag and mobile SDK management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising integrations necessary to power relevant customer experiences.
 
 Launch empowers anyone to build and maintain their own integrations with Launch, called Extensions. These extensions are available to web and mobile Launch customers in an app-store experience, so customers can quickly install, configure, and deploy their integrations.

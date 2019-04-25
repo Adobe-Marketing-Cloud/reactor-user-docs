@@ -1,4 +1,4 @@
-# Compare Resource Revisions
+# Compare resource revisions
 
 Compare resource revisions to see the history of an individual resource.  You can compare the current state of the resource to older versions, or compare the currently published version of a resource to the most recent set of changes that have been saved.
 
@@ -49,7 +49,7 @@ Above, you can see the following changes:
 
 * The name changed from "Page Name 2" to "My Special Page Name," as indicated by the orange bar.
 * The type changed from JavaScript Variable to Page Info.
-* The Default Value of "b" was added.
+* The default value of "b" was added.
 * "Force lowercase value" was selected.
 * "Clean text" was selected.
 * The settings changed. \(The settings for the JavaScript Variable type are different from the Page Info type.\)

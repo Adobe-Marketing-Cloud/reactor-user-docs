@@ -1,12 +1,12 @@
 # Rules
 
-Launch is a rule-based system. It looks for user interaction and associated data. When the criteria outlined in your rules are met, the rule triggers the extension, script, or HTML you identified.
+Launch is a rule-based system. It looks for user interaction and associated data. When the criteria outlined in your rules are met, the rule triggers the extension, script, or client-side code you identified.
 
 Build rules to integrate the data and functionality of marketing and ad tech that unifies disparate products into a single solution.
 
 For an introductory video, see [Rule builder](../../getting-started/videos.md).
 
-Events are where the majority of interactions on sites take place. You can measure and react to these interactions in real-time, without the need for JavaScript.
+Events are where the majority of interactions take place. You can measure and react to these interactions in real-time, without the need for client-side code.
 
 **Events \(If\):** The event is what you want the rule to look for. This is defined by choosing an event, any applicable conditions, and any exceptions.
 
@@ -16,7 +16,7 @@ You can add more event types. Multiple events are joined with an OR, so the rule
 
 Important: Changes do not take effect until they are [published](../publishing/).
 
-## Events and Conditions \(if\)
+## Events and conditions \(if\)
 
 Events with any conditions are the _If_ portion of a rule.
 
@@ -52,7 +52,8 @@ Create a rule by specifying what actions occur if a condition is met.
 
 2. Name the rule.
 3. Click the Events Add icon.
-4. Choose your extension and one of the event types available for that extension, then configure the properties for the event. Note: The available event types are defined by the extension.
+4. Choose your extension and one of the event types available for that extension, then configure the properties for the event.   
+   Note: The available event types are defined by the extension.
 
    ![](../../.gitbook/assets/rule-event-config.png)
 
@@ -104,12 +105,12 @@ Adobe highly recommends that you order your rules with positive numbers between 
 
 ### Scenarios
 
-* Five rules share an event. All have default priority. I want one of them to run last. I just need to edit that one Rule Component and give it a number higher than 50 \(60 for example\).
-* Five rules share an event. All have default priority. I want one of them to run first. I just need to edit that one Rule Component and give it a number lower than 50 \(40 for example\).
+* Five rules share an event. All have default priority. I want one of them to run last. I just need to edit that one rule component and give it a number higher than 50 \(60 for example\).
+* Five rules share an event. All have default priority. I want one of them to run first. I just need to edit that one rule component and give it a number lower than 50 \(40 for example\).
 
 ### Client-side rule handling
 
-The load order for rules depends on whether the rule action is configured with JavaScript or HTML, and whether the rules uses a page bottom or top event, or a different type of event.
+The load order for rules depends on whether the rule action is configured with JavaScript, HTML, or other client-side code, and whether the rules uses a page bottom or top event, or a different type of event.
 
 You can use `document.write` within your custom scripts regardless of the events configured for the rule.
 

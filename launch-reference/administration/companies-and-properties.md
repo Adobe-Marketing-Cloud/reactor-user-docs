@@ -1,12 +1,12 @@
-# Companies and Properties
+# Companies and properties
 
-### Web Properties
+### Web properties
 
 A property, or web property, is a collection of rules, data elements, configured extensions, environments, and libraries. There is only one publish embed code per property.
 
 A property can be any grouping of one or more domains and subdomains. You can manage and track these assets similarly. For example, suppose that you have multiple websites based on one template, and you want to track the same assets on all of them. You can apply one property to multiple domains.
 
-### Mobile Properties
+### Mobile properties
 
 A mobile property type can contain multiple applications. For example, in a mobile property you can manage the same set of rules and extensions across multiple iOS and Android applications.
 
@@ -14,7 +14,7 @@ For a video tutorial, see [Creating your first property](../../getting-started/v
 
 ## Companies
 
-In Launch, there is a 1:1 relationship between your companies and your Experience Cloudorganizations.
+In Launch, there is a 1:1 relationship between your companies and your Experience Cloud organizations.
 
 First, you can have one or several Launch company accounts. Companies contain properties. You can have one or several or any number of properties within a company account. Within a property, you can have one or any number of domains or subdomains.
 
@@ -26,11 +26,11 @@ There are a few ways to handle multiple geo markets, business units, domains, an
 
 For example, you might have three properties within your company account where one contains all of your blog sites, another contains all of your ecommerce sites, and the third contains all of your lead-generation sites.
 
-Note: Each property requires its own embed codes in your page templates. Any domains or subdomains you want included in a particular property would have the same embed codes in the page templates when Dynamic Tag Management is first installed on your site.
+**Note:** Each property requires its own client-side code in your templates. Any domains or subdomains you want included in a particular property would have the same code in the page templates when Dynamic Tag Management is first installed on your site.
 
 ### Can we use separate instances for each?
 
-As described above, you can use separate company accounts for your three entities, or you can combine the entities into one company account and split the domains/subdomains/apps into different properties within that company account.
+As described above, you can use separate company accounts for your three entities, or you can combine the entities into one company account and split the domains, subdomains, and apps into different properties within that company account.
 
 ### Is there a clear way to separate settings within the same Launch instance?
 
@@ -48,17 +48,22 @@ Multiple Launch companies are not recommended. Adobe strongly suggests multiple 
 
 Each implementation can be very different in Launch, with a wide variety of data-collection needs, variable usage, extensions, third-party tags, other systems and technologies, people, teams, geographic regions, and so on. Using the flexible User Management features and properties, you can create a configuration that matches your workflow and processes.
 
-### Web Property Groupings
+### Web property groupings
 
 If the scenarios you are tracking, the data you are collecting, the extensions you are deploying, and the variables you are setting are similar across all or some of your domains and subdomains, it is easier to have those domains and subdomains grouped into the same property in Launch. If those are unique for each domain and subdomain, it is easier to have those domains and subdomains in their own property. If you choose to group domains and subdomains in a single property now, you can always change your mind and later create several web properties.
 
-### Mobile Property Groupings
+### Mobile property groupings
 
 For mobile applications, if you are planning to send data to the same report suites, use the same 3rd party extensions and utilizie the same rules and data elements, it would make sense to group all of these mobile apps into the same property. If however, you need to send data to different report suites, or you wish to configure different extensions, then it would make sense to create separate properties. If you choose to group applications in a single property now, you can always change your mind and later create several properties.
 
 Considering the following when planning properties:
 
-#### Data
+* Data
+* Variables
+* Extensions, tags, and systems
+* People
+
+### Data
 
 For all of your websites or applications, is the data you are going to collect very similar, somewhat similar, or unique?
 
@@ -66,13 +71,13 @@ If the data you need to collect is similar, it might make sense to group those s
 
 If your data collection needs are unique for each site or application, it might make sense to separate out into their own properties. This method lets you control the data collection more specifically, without using large amounts of conditional logic in custom scripts.
 
-#### Variables
+### Variables
 
 Similar to data, are the variables you are going to set in your Analytics and other extensions very similar, somewhat similar, or unique?
 
 For example, if eVar27 is used for the same source value across all of your websites or applications, it might make sense to group those sites or applications together so you can set those common variables in just one property.
 
-#### Extensions, Tags, and Systems
+### Extensions, tags, and systems
 
 Are the extensions, tags and systems you are going to deploy through Launch very similar, somewhat similar, or unique?
 
@@ -82,7 +87,7 @@ If you are deploying Adobe Analytics on only one site or application, and your o
 
 For example, If you are deploying Adobe Analytics, Target, and the same 3rd-party extensions across all of your sites or applications, that is a reason to group together.
 
-#### People
+### People
 
 For the individuals, teams, and organizations that are working in Launch, will they need access to all of your websites and applications, some of them, or just one?
 
@@ -114,7 +119,7 @@ Click a property to see an overview of that property. The overview shows any act
 
 Create or configure a property in Launch.
 
-Note: Only a user with sufficient rights can create a property. See [User Management](user-permissions.md).
+**Note:** Only a user with sufficient rights can create a property. See [User Management](user-permissions.md).
 
 Before beginning, review the [Best practices for planning properties](companies-and-properties.md#best-practices-for-planning-properties) for properties.
 
@@ -147,7 +152,7 @@ Once your property is created, Launch will automatically add a default hosting a
 
 Delete a property from Launch.
 
-Note: Property removal cannot be reversed. The requestor must be an admin-level user. This request cannot be undone.
+**Note:** Property removal cannot be reversed. The requestor must be an admin-level user. This request cannot be undone.
 
 1. In the Properties list, select the property you want to delete.
 

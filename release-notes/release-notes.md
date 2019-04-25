@@ -1,16 +1,16 @@
-# 2018 Release Notes
+# 2018 release notes
 
 ## November 14, 2018
 
 ### Features
 
-#### Private Extensions
+#### Private extensions
 
 Private extensions are now available! Private extensions are extensions that are developed by your company and are only available for properties within your own company. No one else can see or use them. Other than that, they behave exactly like regular extensions.
 
 Would you like to provide a standard set of functionality that hundreds of your properties should use in the same way? Package that up into an extension and have all your properties use it. Writing the same custom code and using it over and over again? Put that into an extension and stop writing custom code.
 
-#### Development Properties
+#### Development properties
 
 When you create properties, there is now an advanced option to "Configure for extension development". This creates a "Development" property that can be used for testing your private extensions during development before you're ready to make them available on your regular properties.
 
@@ -25,10 +25,10 @@ You can now make a copy of a rule within the same property. Before you ask, the 
 #### Core extension:
 
 * **Persist Cohort option** The option to persist a cohort has been added to the Sampling condition. This has the effect of keeping a user in or out of the sample cohort across sessions. For example, if the “persist cohort” checkbox is checked and the condition returns true the first time it is run for a given visitor, it will return true on all subsequent runs of the condition for the same visitor. Similarly, if the “persist cohort” checkbox is checked and the condition returns false the first time it is run for a given visitor, it will return false on all subsequent runs of the condition for the same visitor.
-* **Bug Fix** Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where Launch was being loaded synchronously but improperly installed \(no call to `_satellite.pageBottom()`\) would clear website content.
-* **Bug Fix** Fixed an issue where the Enters Viewport would not function if the Launch library was loaded asynchronously and finished loading after the browser's DOMContentLoaded event was fired.
+* **Bug fix** Fixed an issue where a rule using a Page Bottom event and a Custom Code action on a page where Launch was being loaded synchronously but improperly installed \(no call to `_satellite.pageBottom()`\) would clear website content.
+* **Bug fix** Fixed an issue where the Enters Viewport would not function if the Launch library was loaded asynchronously and finished loading after the browser's DOMContentLoaded event was fired.
 
-### Bug Fixes
+### Bug fixes
 
 * Fixed an issue where attempting to use scrollbars within some dropdowns would close the dropdown.
 * Fixed an issue in Safari that prevented removing an item from a publishing library.
@@ -43,7 +43,7 @@ You can now make a copy of a rule within the same property. Before you ask, the 
 * If you're using the Managed by Adobe adapter, older builds will now be cleaned up when new builds are published.
 * There is now an icon next to the property name to indicate property type.
 
-### Bug Fixes
+### Bug fixes
 
 * When saving disabled resources in a library, there was a logical loop during the check for extension dependencies. That has been fixed.
 * Org switcher now looks better on smaller screens.
@@ -81,7 +81,7 @@ When you save a library, Launch will now check all the resources in it and promp
 1. Rights in the Admin Console have been slightly rearranged.  Manage Properties now belongs to the Company Rights group.  All other permissions \(Manage Environments, Manage Extensions, Develop, Approve, and Publish\) are in the Property Rights group.
 2. Database improvements to improve API response times.
 
-### Bug Fixes
+### Bug fixes
 
 There were some edge cases where the rule builder would not display rule components in the same order that the database was saving them in. Now rule builder always displays rule component order correctly.
 
@@ -97,7 +97,7 @@ Newly created Launch properties now come with a "Managed by Adobe" adapter and t
 
 The extension catalog is now sorted by display name rather than name.
 
-### Bug Fixes
+### Bug fixes
 
 * When switching properties, the cache was not clearing correctly and incorrect warnings displayed to users about which extensions were installed
 * Rules with modified actions now correctly show as changes when adding to a library in all cases
@@ -106,7 +106,7 @@ The extension catalog is now sorted by display name rather than name.
 
 ### Features
 
-#### Extension Upgrade
+#### Extension upgrade
 
 Launch users will now be notified when new versions of extensions are available and can install them on their own. Read more [here](../launch-reference/managing-resources/extensions/extension-upgrade.md).
 
@@ -116,7 +116,7 @@ Embed codes have moved from the Environment detail page to an installation instr
 
 ## July 24, 2018
 
-### Bug Fixes
+### Bug fixes
 
 * In some scenarios, rules saved through the UI were not being saved with the correct order.  This has now been fixed.  In a future update, a data migration will fix all affected rules, but in the meantime manually editing the rule, making a change, and saving will fix an impacted rule.
 
@@ -139,7 +139,7 @@ The Launch and DTM libraries using Akamai are now available on CDN edge nodes in
 
 The information contained in error messages has been improved and expanded throughout the API and UI. This should be especially useful for build failure messages.
 
-#### Add All Changes Button
+#### Add All Changes button
 
 Changed the behavior of the Add All Changes button on the Edit Library page. Previously, a resource was only considered "changed" until you had added it to a Library and saved it. Now a resource is considered "changed" until it has been published to the Production environment.
 
@@ -268,7 +268,7 @@ Fixed an issue that caused a database query to take a long time to run and cause
 
 ### Features
 
-#### Akamai Cache Control Headers
+#### Akamai cache control headers
 
 Cache control headers are now automatically set for libraries hosted on Akamai \(assets.adobedtm.com\). Previously, we did not set cache control headers for any files hosted on assets.adobedtm.com.
 
@@ -286,11 +286,11 @@ Important: Launch developers who do not have "-development" or "-staging" in the
 
 ### Features
 
-#### Rule Ordering
+#### Rule ordering
 
 Events in rules can now be assigned an order. When an event is triggered, any rules that use that event are executed in the order defined. Lower numbers run first \(1 comes before 10\). See [Rule ordering](release-notes.md#rule-ordering) for more information.
 
-#### Set Active Library
+#### Set active library
 
 Set a new or existing library as your active library. When creating/editing rules, data elements, or extensions, you'll now have an option to save and build to your active library. This will immediately save your change to your library and execute a build. The status of the build can also be seen.
 
@@ -302,7 +302,7 @@ You can now pass actual objects to the log function and view them as objects in 
 
 ### Features
 
-#### Asynchronous Deploy of Launch
+#### Asynchronous deploy of Launch
 
 * On-page
 
@@ -359,11 +359,11 @@ Launch is offered to Adobe Experience Cloud customers as an included, value-add 
 
 An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the Launch UI and client functionality. ​Build, manage, and update your integrations using a virtually self-service interface. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
 
-#### Extension Catalog
+#### Extension catalog
 
 Browse, configure, and deploy marketing/advertising tools built and maintained by independent software vendors.
 
-#### Rule Builder
+#### Rule builder
 
 Create robust rules that combine multiple events, sequenced in the way that you determine using if/then logic with conditions and exceptions. Extensions provide options for:
 
@@ -376,11 +376,11 @@ The rule builder includes real-time error checking and syntax highlighting for y
 
 When the criteria outlined in your rules are met and conditions are satisfied, the actions you define are executed in order.
 
-#### Data Elements
+#### Data elements
 
 Collect, organize, and deliver data across web-based marketing and advertising technology.
 
-#### Enterprise Publishing
+#### Enterprise publishing
 
 The publishing process enables teams to publish code to pages. Different people can create an implementation, approve it, and publish it to your pages.
 
@@ -399,7 +399,7 @@ Automate implementations of individual technologies, or a group of technologies.
 * Integrate the Launch APIs with your own internal systems ​
 * You can build your own user interface, if desired ​
 
-#### Light, Modular Container tag
+#### Light, modular container tag
 
 The Launch container tag is 60% lighter than Adobe Tag Manager and 40% lighter than Google Tag Manager. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact.
 

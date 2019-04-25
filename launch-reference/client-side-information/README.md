@@ -1,4 +1,4 @@
-# Client-side Information
+# Client-side information
 
 This section contains information that is useful when managing client-side operations of Launch.
 

@@ -10,7 +10,7 @@ Extensions determine the elements that are available when building properties, r
 
 * Events, conditions, and exceptions
 * Data elements
-* JavaScript
+* Client-side code
 
 Use the links at the top of the Extensions list to view installed extensions, the extensions catalog, or updates.
 
@@ -61,7 +61,7 @@ A common use of extensions is to create integrations with other applications. In
 
    * Default event
    * Default conditions and exceptions
-   * Default JavaScript
+   * Default client-side code
 
    These defaults are the basis for the custom rules you'll build to create your extension.
 

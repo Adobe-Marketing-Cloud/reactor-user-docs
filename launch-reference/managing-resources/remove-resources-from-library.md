@@ -1,8 +1,8 @@
-# Remove Resources from a Library
+# Remove resources from a library
 
-When you no longer want a resource to have an effect inside of a build, you must remove it from the library that contains that resource and create a new build.
+When you no longer want a resource to have an effect inside a build, you must remove it from the library that contains that resource and create a new build.
 
-Note that resources in libraries are interdependent. Removing a resource from a build may change the behavior of other resources in the build.
+**Important:** Resources in libraries are interdependent. Removing a resource from a build may change the behavior of other resources in the build.
 
 The removal process works a little differently depending on which state the library is in.
 
@@ -20,7 +20,7 @@ Resources in Development libraries can be directly manipulated.
 Resources that are in Submitted or Approved libraries cannot be directly manipulated. You'll have to move the library back to Development state.
 
 1. Reject the library \(moves library back to Development\).
-2. Follow steps in Development Libraries, above, to remove from Development libraries.
+2. Follow the steps in "Development libraries," above, to remove resources from Development libraries.
 
 ## Production libraries
 

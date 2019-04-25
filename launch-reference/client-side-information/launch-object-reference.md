@@ -1,4 +1,16 @@
-# Launch Object Reference
+# Launch object reference
+
+In many form fields in the Launch user interface, you can use the `%%` syntax to reference variables, reducing the need to call `_satellite.getVar()`. For example, using %product% will access the value of the product data element or custom variable.
+
+**Note:** This method has been deprecated. Please use `_satellite.logger.log()` instead.
+
+**Note:** This method has been deprecated. Please use `_satellite.cookie.set()` instead.
+
+**Note:** This method has been deprecated. Please use `_satellite.cookie.get()` instead.
+
+**Note:** This method has been deprecated. Please use `_satellite.cookie.remove()` instead.
+
+**Note:** A monitor doesn't have to specify all three methods \(`ruleTriggered`, `ruleCompleted`, and `ruleConditionFailed`\). Launch works with whatever supported methods have been provided by the monitor.
 
 ## Launch Object Reference
 

@@ -2,7 +2,7 @@
 
 This implementation guide is for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions in their website.
 
-A detailed guide to setup Launch for use inside a mobile app with the Adobe Experience Platform SDK v5 is available [here](https://aep-sdks.gitbook.io/docs/).  
+A detailed guide to set up Launch for use inside a mobile app with the Adobe Experience Platform SDK v5 is available [here](https://aep-sdks.gitbook.io/docs/).  
 
 Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value. Callouts are provided to highlight information which might be useful to customers migrating from the older tag manager, Dynamic Tag Management \(DTM\). Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be comfortable implementing these solutions as well as non-Adobe marketing tags on your own website.
 

@@ -1,20 +1,38 @@
 # Environments
 
-Extensions, rules, and data elements are building blocks. When you want to make your application do something, these building blocks are added to libraries and then a library is "built" into a build.
+Extensions, rules, and data elements are building blocks. When you want to make your application do something, these building blocks are added to a Library.  This Library is then built to produce the actual artifacts that are used by your application.
 
-When you create a library, you must assign it to an environment. When the library is built, Launch uses the settings from the assigned environment to determine the following:
+When you create a Library, you must assign it to an Environment. Each Environment corresponds to a different state in the Publishing workflow.
+
+* Development Environments go with the Development column
+* The Staging Environment goes with the Submitted and Approved columns
+* The Production Environment goes with the Published column
+
+Different Launch artifacts can exist in each Environment.  This allows you to test different Libraries in different environments as you push them through your Workflow.
+
+## Installation Instructions
+
+Each Environment has a set of instructions used to connect it to your application.  For web properties, these instructions provide embed codes.  For mobile properties, these instructions provide the code necessary to instantiate the libraries you're using and retrieve the configuration at run-time.
+
+Installation instuctions can be accessed by clicking the Install Icon on the Environments list page.
+
+![](../../.gitbook/assets/install_instructions.png)
+
+## Web Configuration
+
+For web properties, Launch also uses the settings from the assigned Environment to determine the following:
 
 1. Destination - This is the location where you want your build to be deployed. It is controlled by selecting an adapter for the environment to use.
 2. Archive Format - You can get a deployable set of files or have it zipped up in an archive format. This is controlled by the archive settings.
 3. Embed Code - This is the code you'll use to deploy your build at run-time and will be different based on property type.
 
-## Destination
+### Destination
 
 On the environment screen, you have a drop-down menu to select from the existing adapters on your property.
 
 When a build is created, Launch will deliver that build to whatever location you've specified with the assigned adapter.
 
-## Archive
+### Archive
 
 Most builds consist of multiple files. Multi-file builds contain a main library file \(linked in the embed code\) that contains internal references to the other files. Those other files are pulled in as needed.
 
@@ -26,33 +44,29 @@ If you use the archive option, all build files are delivered as a .zip file \(op
 2. You need to run code analysis on the build prior to deployment.
 3. You just want to look at the build contents to see what's in it.
 
-## Embed code
+### Embed code
 
 The embed code is a `<script>` tag that you put on the pages of your site to load and execute the code you build in Launch.
 
-You can choose to have this tag be synchronous or [asynchronous](../client-side-information/asynchronous-deployment.md).
+When you view the installation instructions, you can choose to have this tag be synchronous or [asynchronous](../client-side-information/asynchronous-deployment.md).  This setting is not persistent and does not reflect how you actually have implemented Launch on your site.  It is only to show different ways to install it.
 
-The embed code is generated for you based on the environment configuration, so the only required action for you is to copy and paste them into your site on the pages where you want Launch to run.
+The embed code\(s\) is generated for you based on the environment configuration, so the only required action for you is to copy and paste it into your site on the pages where you want Launch to run.
 
-Embed codes are generated and updated when you save the environment.
-
-### Synchronous
+#### Synchronous
 
 If you load the library synchronously, when the browser reads the embed code, it retrieves the Launch library and executes it before continuing to load the page. This is also how [DTM](https://marketing.adobe.com/resources/help/en_US/dtm/) works.
 
 In a synchronous deployment, the embed code consists of two `<script>` tags that you need to put within the HTML of your website. One `<script>` tag goes in the `<head>` and one goes at the footer in the bottom of the .
 
-### Asynchronous
+#### Asynchronous
 
-If you load the library asynchronously, the browser continues to load the page, retrieves the Launch library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`. Depending on what's in your Launch library, the switch from sync to async can change the behavior of your rules and other elements, so be sure to thoroughly test any changes.
+If you load the library asynchronously, the while the library is being retrieved, the browser will continue to load the rest of the page in parallel. If you implement this way, there is only one embed code, which you put in the `<head>`. Depending on what's in your Launch library, the switch from sync to async can change the behavior of your rules and other elements, so be sure to thoroughly test any changes.
 
 For more information about asynchronous deployment, see [Asynchronous Deployment of Experience Cloud JavaScript](../client-side-information/asynchronous-deployment.md).
 
-### Switching embed codes
+#### Switching embed codes
 
-The paths contained in the embed code depend on the configuration of the environment, so if you update the environment configuration, it is possible the embed codes will change.
-
-Configuration changes that change your embed codes are:
+The embed code depends on the configuration of the environment.  Some Environment configuration changes will also update your embed code.  These changes are:
 
 * Switching from an Akamai adapter to an SFTP adapter \(or vice versa\)
 * Marking the Archive box

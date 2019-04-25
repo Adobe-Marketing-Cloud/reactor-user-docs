@@ -1,8 +1,8 @@
 # Libraries
 
-A library is a set of instructions for how extensions, data elements, and rules will interact with one another once they've been deployed.
+A library is a set of instructions for how extensions, data elements, and rules interact with one another after they are deployed.
 
-When creating a library, you will specify the changes you want to make to your library.
+When creating a library, you specify the changes you want to make to your library.
 
 At build time, these changes are combined with everything that has been submitted, approved, or published in previous libraries.
 
@@ -30,7 +30,8 @@ A library moves between several environments as it makes its way through the pub
 
 3. Name the library.
 4. Assign the library to a Dev environment.
-5. Add a change to the library. To add an item, click Add a Change, then choose the items you want to add. Any item that has been edited or deleted is available to add to the chosen library.
+5. Add a change to the library.   
+   To add an item, click Add a Change, then choose the items you want to add. Any item that has been edited or deleted is available to add to the chosen library.
 
    ![](../../.gitbook/assets/library-add-change.jpg)
 
@@ -76,7 +77,7 @@ Once a library is created, use the drop down menu for that library to select one
 
 Changes to the library are shown in the Library Contents change log.
 
-Note: Data elements can depend upon extensions. Rules can depend on both data elements and extensions. If you do not include all the necessary components in your library, the build will fail at build time and you'll need to add the necessary components before you complete a successful build. A future release will check dependencies when making changes to a library.
+**Note:** Data elements can depend upon extensions. Rules can depend on both data elements and extensions. If you do not include all the necessary components in your library, the build will fail at build time and you'll need to add the necessary components before you complete a successful build. A future release will check dependencies when making changes to a library.
 
 ## Remove from a library
 

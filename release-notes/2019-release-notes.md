@@ -1,4 +1,4 @@
-# 2019 Release Notes
+# 2019 release notes
 
 ## April 8, 2019
 
@@ -30,7 +30,7 @@
 
 * Support for custom code has been added to Compare View.
 
-### Bug Fixes
+### Bug fixes
 
 * The cross-property workflow is now a bit smoother.
 
@@ -66,7 +66,7 @@
 * OrgID is now available on the \_satellite object.
 * Use of the Launch UI is no longer supported in IE11, you'll receive a warning if you login with IE 11.
 
-### Bug Fixes
+### Bug fixes
 
 * Better support for long Library names in your Active Library and the Publishing view.
 * In certain scenarios, when you saved a library, the dependency checker would prompt you to add a new revision of an extension that was already in your Library. It doesn't do that anymore.

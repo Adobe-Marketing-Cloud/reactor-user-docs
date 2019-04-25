@@ -1,6 +1,6 @@
-# User Permissions
+# User permissions
 
-## Permission Types
+## Permission types
 
 To work in Launch, there are two user permissions to understand:
 
@@ -9,7 +9,7 @@ To work in Launch, there are two user permissions to understand:
 
 This article examines these different permissions types in detail.
 
-### Experience Cloud Permissions
+### Experience Cloud permissions
 
 This section discusses factors that are important to understand when using Launch. See [Administrative Roles in the Enterprise User Guide](https://helpx.adobe.com/au/enterprise/using/admin-roles.html) for a comprehensive view of Experience Cloud permissions.
 
@@ -23,19 +23,19 @@ Enterprise Org Admins do not inherit any rights in Launch. They must add themsel
 
 A Product Administrator \(or Product Admin\) is similar to an Org Admin, but is narrower in scope. A Product Admin only has the permission to modify Product Profiles for a specific Adobe product, rather than all Adobe products the company has access to.
 
-### Launch Permissions
+### Launch permissions
 
 Within the Experience Cloud, no rights or permissions are assigned to individual users. They are assigned to a Product Profile \(see [Experience Cloud Permissions](user-permissions.md#experience-cloud-permissions) above\). Individual users are then assigned to one or more Product Profile.
 
-Within a Product Profile, Launch permissions are divided into two categories, Property Rights and Company Rights.
+Within a Product Profile, Launch permissions are divided into two categories, property rights and company rights.
 
-#### Property Rights
+#### Property rights
 
-Any properties you create in Launch become available in the Admin Console for you to assign permissions. If a given Product Profile does not have access to Property A1, users who belong to that Profile cannot see or modify any settings within Property A1.
+Any properties you create in Launch become available in the Admin Console for you to assign permissions. If a given Product Profile does not have access to Property A1, users who belong to that profile cannot see or modify any settings within Property A1.
 
-Assuming that a user belongs to a Profile with access to Property A1, what they can do within Property A1 is determined by the rights they have been granted. Users with permissions to Property A1, but no assigned rights, have read-only access.
+Assuming that a user belongs to a profile with access to Property A1, what they can do within Property A1 is determined by the rights they have been granted. Users with permissions to Property A1, but no assigned rights, have read-only access.
 
-You can set the following Property Rights:
+You can set the following property rights:
 
 * **Develop:** Grants the ability to create rules and data elements. You can also create libraries and build them in existing development environments. You can submit a library for approval when ready.  Most day-to-day tasks in Launch require this right.
 * **Approve:** Grants the ability to take a submitted library and build to the staging environment.  You can also approve a library for publishing once testing has been completed.
@@ -43,29 +43,29 @@ You can set the following Property Rights:
 * **Manage Extensions:** Grants the abilities to install new extensions to a property, to modify the extension configuration for an already installed extension, and to delete an extension.  More information on extensions is available [here](../managing-resources/extensions/). This role typically belongs to IT or Marketing, depending on your organization.
 * **Manage Environments:** Grants the ability to create and modify environments. Read more about Environments [here](../publishing/environments.md). This role typically belongs to the IT group.
 
-#### Company Rights
+#### Company rights
 
-Currently, there is one available Company Right:
+Currently, there is one available company right:
 
 * **Manage Properties:** Grants the ability to create new properties in Launch and to modify the metadata and settings at the property level. You can also delete properties.  Read more about properties [here](companies-and-properties.md). Administrators usually perform this role.
 
-### Total User Permissions
+### Total user permissions
 
 An individual user's total permissions are determined by their total membership in different Product Profiles. If a user belongs to multiple Product Profiles, the permissions from each profile are added together rather than multiplied.
 
-For example: Product Profile A grants Henry the Develop right for Property 1. Product Profile B grants Henry the Publish right for Property 2. Henry can Develop in Property 1 and Publish in Property 2, but he cannot Publish in Property 1 \(or Develop in Property 2\) because he has not been granted explicit rights to do so.
+For example: Product Profile A grants Henry the Develop right for Property 1. Product Profile B grants Henry the Publish right for Property 2. Henry can Develop in Property 1 and Publish in Property 2, but he cannot Publish in Property 1 or Develop in Property 2 because he has not been granted explicit rights to do so.
 
-## Rights Scenarios
+## Rights scenarios
 
 Different companies have different needs when creating new Product Profiles. These needs vary based on company size, org structure, number of sites, number of people involved in managing tags, and so on.
 
 Below are a few common scenarios and a recommended starting point as you think about creating Product Profiles and adding users to them.
 
-### 1\) One-person Show
+### One-person show
 
 If you run a small company that has one person in charge of everything, grant this user permission to all Properties and assign them all rights listed above.
 
-### 2\) Separation of Duties
+### Separation of duties
 
 Many people are involved in tagging. You have one set of people \(maybe an external consultant\) that creates rules and data elements, but you don't want them to have access to the production environment. You want to make sure that nobody deploys to Production except the IT team.
 
@@ -73,11 +73,11 @@ Many people are involved in tagging. You have one set of people \(maybe an exter
 2. The consultant builds and tests within the confines you set.
 3. If the consultant wants a new extension, or is ready to go live, a representative from your organization \(with the appropriate rights\), performs those actions.
 
-### 3\) Enterprise
+### Enterprise
 
 An enterprise company might have multiple sites divided geographically, with different teams responsible for each geo. Within those teams, different individuals develop and publish.
 
-This is similar to Separation of Duties above, but organized by geographic areas.
+This is similar to "Separation of duties" above, but organized by geographic areas.
 
 * North America
   * Develop group
@@ -91,15 +91,15 @@ This is similar to Separation of Duties above, but organized by geographic areas
 
 ## Examples
 
-A few examples of the types of roles you may have in your organization and which permissions you should assign them, may help to solidify this.
+A few examples of the types of roles you might have in your organization, and which permissions you should assign them, could help to clarify this concept.
 
-Here are a few descriptions of different roles that may apply in your organization and a matrix to show what permissions they need to do their job.
+Here are a few descriptions of different roles that could apply in your organization and a matrix to show what permissions they need to do their job.
 
-* The Manager - the manager wants to see what's going on, but shouldn't be able to make any changes.    
-* The Marketer - the marketer can install extensions and setup new tags for existing properties, but cannot publish to the staging or production environments. 
-* The Mobile App Developer - the mobile app developer is responsible for implementing Adobe and 3rd party solutions inside a native mobile app.
-* The IT Team - the IT team doesn't actually modify any tags, but they have full control over the staging and production environments and what is in them.
-* Jack of All Trades - the jack of all trades does everything.  
+* The Manager: Wants to see what's going on, but shouldn't be able to make any changes.    
+* The Marketer: Can install extensions and setup new tags for existing properties, but cannot publish to the staging or production environments. 
+* The Mobile App Developer: Is responsible for implementing Adobe and 3rd party solutions inside a native mobile app.
+* The IT Team: Doesn't actually modify any tags, but they have full control over the staging and production environments and what is in them.
+* Jack of All Trades: Does everything.  
 
 <table>
   <thead>
@@ -163,7 +163,7 @@ Here are a few descriptions of different roles that may apply in your organizati
       <td style="text-align:left">Develop</td>
     </tr>
   </tbody>
-</table>## Assigning User Permissions
+</table>## Assigning user permissions
 
 The steps below guide you through the process of assigning permissions. You can also view this process [on video](https://www.youtube.com/watch?v=ba28BHX8cwU).
 
@@ -289,15 +289,15 @@ Once you've added users, they receive an email letting them know that they now h
 
 ### Error loading account
 
-When you login to launch, you receive a message saying "Error Loading Account".
+When you log in to launch, you receive a message saying "Error Loading Account".
 
 ![](../../.gitbook/assets/profile-error.png)
 
 Resolution: Your user does not belong to any Launch product profiles. See the steps above to create a profile and assign rights to it, and to assign a user to a profile.
 
-### Grayed-out Property Button
+### Grayed-out Property button
 
-Once you've logged in, you can't add any Properties.
+Once you've logged in, you can't add any properties.
 
 Resolution: Your user account does not belong to a product configuration that has the Manage Properties right. Go back to Step 5 above.
 
