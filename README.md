@@ -1,28 +1,10 @@
 # Overview
 
-Launch empowers anyone to build and maintain their own integrations with Launch, called extensions. These extensions are available to web and mobile Launch customers in an app-store experience, so customers can quickly install, configure, and deploy their integrations.
+Adobe Experience Platform Launch is the Experience Platform's client-side touchpoint for your web and mobile applications. It is the next generation of website tag and mobile SDK management capabilities. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising integrations necessary to power relevant customer experiences.
 
-### Extension catalog
-
-### Rule builder
-
-### Data elements
-
-### Enterprise publishing
-
-### Light, modular container tag
-
-Performance is very important to Adobe. Launch is designed to deliver and run marketing and advertising technologies on your web site as efficiently as possible using today's best practices. Adobe technologies deployed together through Launch are faster than any other deployment method. You can read more about performance and our perspective in the [Performance Whitepaper](https://medium.com/launch-by-adobe/adobe-web-browser-technology-performance-477c2bfeaa98).
-
-These are the questions received most often from customers and partners since the Launch announcement. If you have other questions, please ask in the Adobe Community on the main Launch page located at [https://adobe.com/go/launchme](https://adobe.com/go/launchme).
-
-Launch is the next generation of website tag and mobile SDK management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising integrations necessary to power relevant customer experiences.
-
-Launch empowers anyone to build and maintain their own integrations with Launch, called Extensions. These extensions are available to web and mobile Launch customers in an app-store experience, so customers can quickly install, configure, and deploy their integrations.
+Launch empowers anyone to extend Launch functionality by building and maintain their own extensions. These extensions make it easier to use Launch to manage the technologyies you need to deploy.  Extensions available for web and native apps so Launch users can quickly install, configure, and deploy their integrations.
 
 ## Key benefits
-
-Here are the benefits for using Adobe Launch:
 
 * Faster time to value with the ability to dynamically deploy changes to your website or mobile app
 * Trustworthy data through centralized collection, organization, and delivery using data elements
@@ -32,55 +14,12 @@ Here are the benefits for using Adobe Launch:
 
 Here are the key features that are available in Launch:
 
-### Extensions
-
-* **Web**
-
-  An extension is a package of code \(JavaScript, HTML, and CSS\) that extends the Launch UI and client functionality. You can build, manage, and update your integrations using a virtually self-service interface. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
-
-* **Mobile**
-
-  Mobile extensions are comprised of a Launch UI configuration screen and native SDK components that work with the core Adobe Experience Platform SDKs to deliver functionality to mobile apps.
-
-**Important**: In Android and iOS extensions, only contents on secure http connections \(`https`\) are served. When a URL that contains `http://` is passed in, the connections are blocked.
-
-### Extension Catalog
-
-Browse, configure, and deploy marketing/advertising tools built and maintained by independent software vendors.
-
-### Rule Builder
-
-Create robust rules that combine multiple events, sequenced in the way that you determine using if/then logic with conditions and exceptions. Extensions provide options for:
-
-* Events
-* Conditions
-* Exceptions
-* Actions
-
-### Data Elements
-
-Collect, organize, and deliver data across web-based marketing and advertising technology.
-
-### Enterprise Publishing
-
-The publishing process enables teams to dynamically publish updates to both web pages and applications. Different people can create an implementation, approve it, and publish.
-
-Here are some benefits to this publishing process:
-
-* Changes to your implementation are encapsulated within libraries you define ​
-* You specify where and when you want your changes deployed ​
-* Multiple libraries can be built in parallel by different teams ​
-* Unlimited development environments ​
-* Deliberate, permissioned process for merging libraries together ​
-
-### Open APIs
-
-Automate implementations of individual technologies, or a group of technologies.
-
-* Launch interacts with the Reactor APIs ​
-* Deployments can be automated through APIs ​
-* Integrate the Launch APIs with your own internal systems ​
-* You can build your own user interface, if desired ​
+* Extension catalog - browse, configure, and deploy marketing/advertising tools built and maintained by independent software vendors.
+* Private extensions - build your own extensions to make it easier to deploy technologies and maintain standard implementations across multiple properties
+* Rule builder - use if/then logic to define an event \(usually a user action\), conditions to evaluate, and the actions to execute
+* Data elements - used to tell rules where to look for specific data that will exist on the client device
+* Publishing - encapsulate your changes together in Libraries and push them through your testing and publish process together
+* Open APIs - Use the Reactor API to programatically manage your implementations​
 
 ## Requirements
 
