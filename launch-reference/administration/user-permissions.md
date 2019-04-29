@@ -45,9 +45,10 @@ You can set the following property rights:
 
 #### Company rights
 
-Currently, there is one available company right:
+Company rights apply to permissions that span multiple properties.  There are currently two:
 
 * **Manage Properties:** Grants the ability to create new properties in Launch and to modify the metadata and settings at the property level. You can also delete properties.  Read more about properties [here](companies-and-properties.md). Administrators usually perform this role.
+* **Develop Extensions:** Grants the ability to create and modify extension packages that are owned by the Company including private releases and requests for public release.
 
 ### Total user permissions
 
