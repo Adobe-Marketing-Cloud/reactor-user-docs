@@ -14,7 +14,7 @@ The primary CDN provider is Akamai. Files hosted on Akamai have a domain of [ass
 
 ### Why use managed hosting?
 
-The primary reason to use managed hosting is convenience. It is easier to create the required adapter, and you don't have to worry about maintenance.
+The primary reason to use managed hosting is convenience. It is easier to create the required host, and you don't have to worry about maintenance.
 
 ### About Akamai
 
@@ -44,7 +44,7 @@ The cache control headers Adobe uses for managed hosting are as follows:
 
 ### How to use managed hosting
 
-To have Adobe manage your hosting, you need to create a Managed by Adobe adapter, then assign your environments to use this adapter. See [Adapters](adapters.md) for more info.
+To have Adobe manage your hosting, you need to create a Managed by Adobe host, then assign your environments to use this host. See [Hosts](hosts.md) for more info.
 
 ## Self-hosting
 
@@ -73,11 +73,11 @@ There are two methods you can use to acquire completed builds so that you can se
 
 You can have Launch deliver builds as a packaged .zip file \(encryption optional\). You can then unzip the package and insert the contents into your release cycle to place them on your own servers.
 
-Use a [Managed by Adobe](adapters.md#managed-by-adobe) adapter and select the [Archive](environments.md#archive) option on your environment. The environment provides a download link. Whenever a build is created, you can retrieve it from the provided download link.
+Use a [Managed by Adobe](hosts.md#managed-by-adobe) host and select the [Archive](environments.md#archive) option on your environment. The environment provides a download link. Whenever a build is created, you can retrieve it from the provided download link.
 
 #### Direct Delivery
 
 You can have Launch deliver builds directly to an SFTP server that you created. You take responsibility to get these filed into your release cycle and push them live.
 
-To perform a direct delivery, you should create an [SFTP adapter](adapters.md#sftp) and assign that adapter to your environment. Whenever you build a library in that environment, the files are delivered to your SFTP server.
+To perform a direct delivery, you should create an [SFTP host](hosts.md#sftp) and assign that host to your environment. Whenever you build a library in that environment, the files are delivered to your SFTP server.
 

@@ -35,7 +35,7 @@
   * [Deleting resources](launch-reference/managing-resources/delete-resources.md)
   * [Remove resources from a library](launch-reference/managing-resources/remove-resources-from-library.md)
 * [Publishing](launch-reference/publishing/README.md)
-  * [Adapters](launch-reference/publishing/adapters.md)
+  * [Hosts](launch-reference/publishing/hosts.md)
   * [Approval Workflow](launch-reference/publishing/approval-workflow.md)
   * [Builds](launch-reference/publishing/builds.md)
   * [Environments](launch-reference/publishing/environments.md)
@@ -57,7 +57,7 @@
 ## Launch Tutorials
 
 * [Tutorials](launch-tutorials/contributing/README.md)
-  * [Adapters](launch-tutorials/contributing/adapters.md)
+  * [Hosts](launch-tutorials/contributing/hosts.md)
   * [Companies](launch-tutorials/contributing/companies.md)
   * [Data Elements](launch-tutorials/contributing/data-elements.md)
   * [Environments](launch-tutorials/contributing/environments.md)

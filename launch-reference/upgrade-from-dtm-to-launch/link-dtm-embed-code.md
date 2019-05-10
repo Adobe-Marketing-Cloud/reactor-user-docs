@@ -73,17 +73,17 @@ DTM also supports self-hosting of the DTM container tag file. There are two meth
 * FTP Delivery
 * Library Download
 
-In either case, it doesn't make much sense to migrate the embed code. Nothing will break if you try it. It's recommended that you not use this option and set up your adapters and environments manually.
+In either case, it doesn't make much sense to migrate the embed code. Nothing will break if you try it. It's recommended that you not use this option and set up your hosts and environments manually.
 
 ### FTP Delivery <a id="ftp-delivery"></a>
 
 Due to the differences in setup between FTP and SFTP, DTM and Launch cannot perform automated migrations of these settings.
 
-If you are using this method for delivery of the container tag, it's recommended that you move to SFTP in Launch. You can create an [SFTP adapter](../publishing/adapters.md#self-managed-adapter) and use this for any environment that you choose.
+If you are using this method for delivery of the container tag, it's recommended that you move to SFTP in Launch. You can create an [SFTP host](../publishing/hosts.md#sftp) and use this for any environment that you choose.
 
 ### Library Download <a id="library-download"></a>
 
-In Launch, downloading the library no longer exists as a separate option. If you use a library download in DTM, we recommend you skip the embed code migration and set up your Production environment with an Adobe Managed adapter and Archive enabled.
+In Launch, downloading the library no longer exists as a separate option. If you use a library download in DTM, we recommend you skip the embed code migration and set up your Production environment with an Adobe Managed host and Archive enabled.
 
 You can continue to use the same embed code that you use with DTM, but you are responsible for moving the library to your own servers with the correct file name.
 

@@ -22,15 +22,15 @@ Installation instuctions can be accessed by clicking the Install Icon on the Env
 
 For web properties, Launch also uses the settings from the assigned Environment to determine the following:
 
-1. Destination - This is the location where you want your build to be deployed. It is controlled by selecting an adapter for the environment to use.
+1. Destination - This is the location where you want your build to be deployed. It is controlled by selecting a host for the environment to use.
 2. Archive Format - You can get a deployable set of files or have it zipped up in an archive format. This is controlled by the archive settings.
 3. Embed Code - This is the code you'll use to deploy your build at run-time and will be different based on property type.
 
 ### Destination
 
-On the environment screen, you have a drop-down menu to select from the existing adapters on your property.
+On the environment screen, you have a drop-down menu to select from the existing hosts on your property.
 
-When a build is created, Launch will deliver that build to whatever location you've specified with the assigned adapter.
+When a build is created, Launch will deliver that build to whatever location you've specified with the assigned host.
 
 ### Archive
 
@@ -40,7 +40,7 @@ By default, the archive option is `off`, and the build is delivered in a format 
 
 If you use the archive option, all build files are delivered as a .zip file \(optionally encrypted\) instead. This can be useful if:
 
-1. You are self-hosting the library, but don't want to set up the SFTP adapter for delivery.
+1. You are self-hosting the library, but don't want to set up the SFTP host for delivery.
 2. You need to run code analysis on the build prior to deployment.
 3. You just want to look at the build contents to see what's in it.
 
@@ -68,7 +68,7 @@ For more information about asynchronous deployment, see [Asynchronous Deployment
 
 The embed code depends on the configuration of the environment.  Some Environment configuration changes will also update your embed code.  These changes are:
 
-* Switching from an Akamai adapter to an SFTP adapter \(or vice versa\)
+* Switching from an Akamai host to an SFTP host \(or vice versa\)
 * Marking the Archive box
 * Updating the path field \(the embed code changes in real time as you update the path\)
 
@@ -92,7 +92,7 @@ New properties are created with three environments: one Development, one Staging
    * Production
 
      The environment where your embed codes are placed in the pages or applications that are available to the public.
-4. Select your adapter.
+4. Select your host.
 5. \(Optional\) Enable Create Archive if you want your build delivered as a .zip package. If you want to encrypt the .zip file, enable Encrypt Archive and enter an encryption password. Enter the location where the library is hosted. The path can be either a full URL or a relative path that can be used across multiple domains. This is important because most builds have multiple files that contain internal references to one another.
 6. Click Save.
 7. In the Web Install Instructions dialog box, select whether to load the library asynchronously. If you choose to load the library asynchronously, copy the embed code provided in the dialog box.  You can also install your embed code later by clicking the Install icon for that environment in your Environments list.  Refer to the information below.

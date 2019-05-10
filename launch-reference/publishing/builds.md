@@ -4,7 +4,7 @@ A build is the set of files containing all the code that runs on the client devi
 
 It is a composite of the changes you specified within your Library, as well as everything that has been submitted, approved, or published before it.
 
-The build consists of client-side code files that reference each other. These files are delivered to your hosting location using the environment and adapter that you have chosen for the library. The code that you deploy on your site points to this same location so the files can load when a user accesses your site or application.
+The build consists of client-side code files that reference each other. These files are delivered to your hosting location using the environment and host that you have chosen for the library. The code that you deploy on your site points to this same location so the files can load when a user accesses your site or application.
 
 ## File Contents
 
@@ -31,7 +31,7 @@ However, in certain cases, you might prefer a .zip archive of the files rather t
 
 **Note:** Nothing exists in that location until you make a build.
 
-Regardless of file format, the build is always delivered to the location specified by the Adapter.
+Regardless of file format, the build is always delivered to the location specified by the Host.
 
 To complete a build, select a library and click the Build option that is available at that level of the publishing process \(Build for Development, Build for Staging, and so on..
 

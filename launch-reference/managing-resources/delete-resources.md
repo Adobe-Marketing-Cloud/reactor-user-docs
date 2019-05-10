@@ -2,7 +2,7 @@
 
 Deleting a resource is a permanent removal of that resource from Launch. If you still want the resource to appear in Launch, but not be in your library, see [Remove Resources from a Library](remove-resources-from-library.md).
 
-You can delete data elements, rules, extensions, adapters, environments, and properties. Once deleted, these resources are not recoverable.
+You can delete data elements, rules, extensions, hosts, environments, and properties. Once deleted, these resources are not recoverable.
 
 Resources that are added to libraries \(data elements, rules, and extensions\) have special considerations when you delete them.
 

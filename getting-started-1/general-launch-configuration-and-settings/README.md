@@ -1,6 +1,6 @@
 # Configure Launch
 
-This lesson gets you familiar with some of the basic components within Launch–properties, adapters, environments, data elements, and rules.
+This lesson gets you familiar with some of the basic components within Launch–properties, hosts, environments, data elements, and rules.
 
 ## Objectives
 

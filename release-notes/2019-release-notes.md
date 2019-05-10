@@ -5,7 +5,7 @@
 ### Bug Fixes
 
 * Improved a few build error messages
-* Better reporting for failed SFTP adapters
+* Better reporting for failed SFTP Hosts
 
 ### Other
 

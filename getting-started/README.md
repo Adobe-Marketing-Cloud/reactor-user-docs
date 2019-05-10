@@ -66,27 +66,27 @@ To make sense of that process, there are a couple relationships between Launch, 
 
 1. Launch publishes a build to your host server.
 
-   As mentioned above, a build is the actual JavaScript file\(s\) that Launch produces. This relationship between Launch and your host location is defined by an adapter. Read more about Adapters below.
+   As mentioned above, a build is the actual JavaScript file\(s\) that Launch produces. This relationship between Launch and your host location is defined by a host. Read more about Hosts below.
 
 2. Launch provides an embed code `<script>` tag that goes onto your site.
 
-   When you create an environment and attach an adapter, the environment provides this `<script>` tag for you to put on your pages.
+   When you create an environment and attach a host, the environment provides this `<script>` tag for you to put on your pages.
 
 3. When a user browses your site, the Embed Code `<script>` tag retrieves the Build from your host server and performs your defined actions within the browser.
 
-### Adapters
+### Hosts
 
-An adapter is a connection between Launch and your hosting location. Launch currently supports an Akamai adapter and an SFTP adapter. Whenever you produce a build, Launch connects to the server defined by your adapter.
+An host is a connection between Launch and your hosting location. Launch currently supports an Akamai host and an SFTP host. Whenever you produce a build, Launch connects to the server defined by your host and delivers the build.
 
 If you want to self-host, you can have Launch push directly to your servers through SFTP or you can push it to Akamai and download it \(using your environment's Archive option\).
 
-For more information, see [Adapters](../launch-reference/publishing/adapters.md).
+For more information, see [Hosts](../launch-reference/publishing/hosts.md).
 
 ### Environments
 
 Each library is created inside an environment. An environment defines how you want your build to look when it is published. You can specify:
 
-* **Adapter:** Each environment needs an adapter which determines where Launch will push any builds created in this environment
+* **Host:** Each environment needs a host which determines where Launch will push any builds created in this environment
 * **Archive:** The default is to deploy your build as a minified .js file \(or if you're using custom code, multiple files which reference each other\). You can have wrap all these together into a zip file and encrypt it.
 
 Once you have saved your environment, it generates the embed code which you can copy and paste into your website. Note that the embed code will not work until you have actually created a library and produced a build. For more information, see [Environments](../launch-reference/publishing/environments.md).
@@ -95,15 +95,15 @@ Once you have saved your environment, it generates the embed code which you can 
 
 Now that you understand the basic components, the publishing process should make more sense. You need to:
 
-1. Create an adapter.
-2. Create a dev environment using the adapter you created.
+1. Create an host.
+2. Create a dev environment using the host you created.
 3. Deploy the embed code from your dev environment to your dev test site.
 4. Create a library and assign it to the dev environment you created.
 5. Build your library.
 
 ## 7. Promote to production
 
-Once you've tested your build in your dev environment, the promotion process is pretty straightforward. Before you try it out, make sure to create your stage and production environments and put the embed codes in the necessary places. \(You can reuse existing adapters.\)
+Once you've tested your build in your dev environment, the promotion process is pretty straightforward. Before you try it out, make sure to create your stage and production environments and put the embed codes in the necessary places. \(You can reuse existing hosts.\)
 
 Promoting a library all the way through to production will typically require coordination among different people with the appropriate rights.
 

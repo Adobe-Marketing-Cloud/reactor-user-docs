@@ -40,7 +40,7 @@ You can now make a copy of a rule within the same property. Before you ask, the 
 ### Updates
 
 * Conditions and exceptions have been combined in the rule builder, because order matters.  This more accurately reflects how they are treated within the system and at runtime. To make an exception, click the `Add` button under Conditions and choose Exception from the Logic Type selector.
-* If you're using the Managed by Adobe adapter, older builds will now be cleaned up when new builds are published.
+* If you're using the Managed by Adobe host, older builds will now be cleaned up when new builds are published.
 * There is now an icon next to the property name to indicate property type.
 
 ### Bug fixes
@@ -89,7 +89,7 @@ There were some edge cases where the rule builder would not display rule compone
 
 ### Features
 
-Newly created Launch properties now come with a "Managed by Adobe" adapter and three environments \(one of each type\) by default.
+Newly created Launch properties now come with a "Managed by Adobe" host and three environments \(one of each type\) by default.
 
 ## August 14, 2018
 
