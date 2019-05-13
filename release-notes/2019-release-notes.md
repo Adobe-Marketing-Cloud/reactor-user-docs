@@ -1,5 +1,21 @@
 # 2019 release notes
 
+## May 8, 2019
+
+The Reactor API that powers Launch is officially reaching 1.0 status today.  This comes with a commitment to maintaining backwards compatibility within this major version \(the 1.x series\).  To get started working with the Reactor API, please visit [https://developer.adobelaunch.com/api/\#](https://developer.adobelaunch.com/api/#).
+
+### Updates
+
+* A number of API changes have been made for this 1.0 release.  API release notes will be posted with the API documentation at [https://developer.adobelaunch.com/api/release\_notes/2019-release-notes/](https://developer.adobelaunch.com/api/release_notes/2019-release-notes/).
+* `Adapter` has been renamed to `Host`. Audit events will contain the following items related to this change.
+  * For each Adapter, you'll see a `Host.created` event.
+  * For each Environment, you'll see an `Environment.updated` event to remove the relationship with the Adapter and add the relationship to the Host.
+  * For each adapter, you'll see an `Adapter.deleted` event.
+
+### Bug Fixes
+
+* Fixed some inconsistencies with the Regular Expression tester used by various extensions.
+
 ## April 8, 2019
 
 ### Bug Fixes

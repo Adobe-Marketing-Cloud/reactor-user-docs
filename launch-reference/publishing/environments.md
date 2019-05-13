@@ -1,6 +1,6 @@
 # Environments
 
-Extensions, rules, and data elements are building blocks. When you want to make your application do something, these building blocks are added to a Library.  This Library is then built to produce the actual artifacts that are used by your application.
+Extensions, rules, and data elements are building blocks. When you want to make your application do something, these building blocks are added to a Library. This Library is then built to produce the actual artifacts that are used by your application.
 
 When you create a Library, you must assign it to an Environment. Each Environment corresponds to a different state in the Publishing workflow.
 
@@ -8,11 +8,11 @@ When you create a Library, you must assign it to an Environment. Each Environmen
 * The Staging Environment goes with the Submitted and Approved columns
 * The Production Environment goes with the Published column
 
-Different Launch artifacts can exist in each Environment.  This allows you to test different Libraries in different environments as you push them through your Workflow.
+Different Launch artifacts can exist in each Environment. This allows you to test different Libraries in different environments as you push them through your Workflow.
 
 ## Installation Instructions
 
-Each Environment has a set of instructions used to connect it to your application.  For web properties, these instructions provide embed codes.  For mobile properties, these instructions provide the code necessary to instantiate the libraries you're using and retrieve the configuration at run-time.
+Each Environment has a set of instructions used to connect it to your application. For web properties, these instructions provide embed codes. For mobile properties, these instructions provide the code necessary to instantiate the libraries you're using and retrieve the configuration at run-time.
 
 Installation instuctions can be accessed by clicking the Install Icon on the Environments list page.
 
@@ -48,7 +48,7 @@ If you use the archive option, all build files are delivered as a .zip file \(op
 
 The embed code is a `<script>` tag that you put on the pages of your site to load and execute the code you build in Launch.
 
-When you view the installation instructions, you can choose to have this tag be synchronous or [asynchronous](../client-side-information/asynchronous-deployment.md).  This setting is not persistent and does not reflect how you actually have implemented Launch on your site.  It is only to show different ways to install it.
+When you view the installation instructions, you can choose to have this tag be synchronous or [asynchronous](../client-side-information/asynchronous-deployment.md). This setting is not persistent and does not reflect how you actually have implemented Launch on your site. It is only to show different ways to install it.
 
 The embed code\(s\) is generated for you based on the environment configuration, so the only required action for you is to copy and paste it into your site on the pages where you want Launch to run.
 
@@ -66,7 +66,7 @@ For more information about asynchronous deployment, see [Asynchronous Deployment
 
 #### Switching embed codes
 
-The embed code depends on the configuration of the environment.  Some Environment configuration changes will also update your embed code.  These changes are:
+The embed code depends on the configuration of the environment. Some Environment configuration changes will also update your embed code. These changes are:
 
 * Switching from an Akamai host to an SFTP host \(or vice versa\)
 * Marking the Archive box

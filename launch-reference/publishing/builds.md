@@ -12,7 +12,7 @@ A Library defines a discreet set of Launch resources \(Extensions, Rules, and Da
 
 A Build contains all the module code \(provided by the extension developers\) and the configuration \(entered by you\) that is needed to power the resources contained within the Library. For example, if an extension provides actions that are not used within your rules, then the code to perform those actions is not contained within the Build.
 
-Builds are divided into the main library file and potentially many smaller files.  The main library file is referenced in your embed code and loaded onto the page at run-time.  It contains:
+Builds are divided into the main library file and potentially many smaller files. The main library file is referenced in your embed code and loaded onto the page at run-time. It contains:
 
 * The rules engine
 * All Extension configuration
@@ -21,13 +21,13 @@ Builds are divided into the main library file and potentially many smaller files
 * All Condition code and configuration
 * Event code and configuration for any rules that have Library Loaded or Page Bottom as the event \(since we know we'll need that right away\).
 
-The smaller files contain code and configuration for individual Actions that are loaded onto the page as needed.  When a Rule is triggered and its Conditions are evaluated such that the Actions need to be executed, the necessary code and configuration for that specific action is retrieved from one of the smaller files.  This means that only the code needed to perform the necessary Actions is ever loaded onto the page, making the main library as small as possible.
+The smaller files contain code and configuration for individual Actions that are loaded onto the page as needed. When a Rule is triggered and its Conditions are evaluated such that the Actions need to be executed, the necessary code and configuration for that specific action is retrieved from one of the smaller files. This means that only the code needed to perform the necessary Actions is ever loaded onto the page, making the main library as small as possible.
 
 ## File Format
 
 The default file format for builds is a package of files that contain all the required code for your extensions, data elements, and rules to run in the way that you want them to.
 
-However, in certain cases, you might prefer a .zip archive of the files rather than the executable client-side code file. For example, you might want to create an archive if you host your build yourself and want to use the build in another deployment. If you provide anything in the self-hosted path to library field, you can save your environment. Along with your new code, a link to the archived download becomes available. Launch still builds your library and deploys it, but instead of deploying a bunch of code files, you can deploy a zip file to Akamai, and download it from assets.adobedtm.com/... 
+However, in certain cases, you might prefer a .zip archive of the files rather than the executable client-side code file. For example, you might want to create an archive if you host your build yourself and want to use the build in another deployment. If you provide anything in the self-hosted path to library field, you can save your environment. Along with your new code, a link to the archived download becomes available. Launch still builds your library and deploys it, but instead of deploying a bunch of code files, you can deploy a zip file to Akamai, and download it from assets.adobedtm.com/...
 
 **Note:** Nothing exists in that location until you make a build.
 

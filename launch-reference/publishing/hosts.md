@@ -51,4 +51,5 @@ There is a full guide on how to setup SFTP servers for Launch delivery [on the L
 5. Enter the host, path, port, username, and encrypted private key.
 6. Click Save.
 
-When you click Save, Launch will test whether it is able to connect to - and deliver files to - your SFTP server.  It will create a folder, write a file within that folder, and then check to make sure the file is there, then cleanup after itself.  If the user account on your SFTP server \(the one attached to the secure certificate you provided to Launch\) does not have the necessary permissions to perform this action, then the Host will go into a "Failed" status.
+When you click Save, Launch will test whether it is able to connect to - and deliver files to - your SFTP server. It will create a folder, write a file within that folder, and then check to make sure the file is there, then cleanup after itself. If the user account on your SFTP server \(the one attached to the secure certificate you provided to Launch\) does not have the necessary permissions to perform this action, then the Host will go into a "Failed" status.
+

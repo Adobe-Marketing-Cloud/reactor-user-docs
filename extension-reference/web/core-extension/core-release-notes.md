@@ -1,6 +1,17 @@
 # Core Release Notes
 
+## May 8, 2019
+
+v1.4.3
+
+* **Input Fields** - Input fields are much longer now!
+* **Custom Event** - Custom event type can now be used with events dispatched off of window.
+* **Bug Fix** - fixed a bug where the Value Comparison Condition wouldn't hold a 0 value.
+* **Bug Fix** - exchange\_url field has been updated, so you can now see the Core Extension listing in Adobe Exchange.
+
 ## January 8, 2019
+
+v1.4.2
 
 * **Enters Viewport event** - Previously the Enters Viewport event would only trigger one time per page. This behavior can now be configured to trigger each time the element enters the viewport.
 * **Custom Event event** - Custom Events can now contain contextual data that can be used inside of conditions and actions.

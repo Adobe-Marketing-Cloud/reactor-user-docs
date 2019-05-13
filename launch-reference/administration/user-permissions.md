@@ -170,9 +170,9 @@ The steps below guide you through the process of assigning permissions. You can 
 
 Steps 1-3 below can be bypassed by navigating directly to [Adobe Admin Console](https://adminconsole.adobe.com/enterprise/products). If you belong to more than one organization, select the correct org from the top nav on the right.
 
-### 1. Sign in to [http://marketing.adobe.com](http://marketing.adobe.com)
+### 1. Sign in to [https://experiencecloud.adobe.com/](http://experiencecloud.adobe.com/)
 
-Sign in to [http://marketing.adobe.com](http://marketing.adobe.com) with your Adobe ID, then choose the organization to use within Launch from the Navigation menu.
+Sign in to [https://experiencecloud.adobe.com/](http://experiencecloud.adobe.com/) with your Adobe ID, then choose the organization to use within Launch from the Navigation menu.
 
 ![](../../.gitbook/assets/nav-menu.png)
 

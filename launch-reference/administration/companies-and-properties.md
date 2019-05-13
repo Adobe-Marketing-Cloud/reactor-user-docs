@@ -135,7 +135,7 @@ Navigate to your company page, then click Add Property, or select an existing pr
 
    **Domain:** The base URL of the property
 
-2. \(Advanced\)  **Return an empty string for undefined data elements:**  Select this check box if you want data elements that resolve to null or undefined values to be converted to empty strings.
+2. \(Advanced\) **Return an empty string for undefined data elements:** Select this check box if you want data elements that resolve to null or undefined values to be converted to empty strings.
 3. \(Advanced\) **Configure for extension development:** Select this check box if you plan to install development extensions that are being actively developed by your company
 4. Click Save.
 
@@ -146,7 +146,7 @@ Navigate to your company page, then click Add Property, or select an existing pr
 1. Fill in the fields: **Name:** The name of your property. **Privacy:** By default the privacy setting is set to Opted In, meaning that you would like for the SDK to collect and send data to solutions. If you select Opted Out, the SDK by default will NOT send data to solutions. If you choose Unknown as the setting, the SDK will require that the application first propmpt the user to allow for data collection and sharing. Note: that these settings can be further controlled via API in the mobile application. **Use HTTPS:** Choose if all data communication should be sent over HTTP or HTTPS.
 2. Click Save.
 
-Once your property is created, Launch will automatically add a default host, a set of  environments \(Development, Staging, and Production\) and the default extensions.
+Once your property is created, Launch will automatically add a default host, a set of environments \(Development, Staging, and Production\) and the default extensions.
 
 ## Delete a property
 
