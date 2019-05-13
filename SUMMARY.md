@@ -45,6 +45,7 @@
   * [Asynchronous deployment](launch-reference/client-side-information/asynchronous-deployment.md)
   * [Launch object reference](launch-reference/client-side-information/launch-object-reference.md)
   * [Deploy JavaScript tags to opt in to Launch](launch-reference/client-side-information/deploy-javascript-tags-to-opt-in-to-launch.md)
+  * [Content Security Policy \(CSP\)](launch-reference/client-side-information/content-security-policy-csp.md)
 * [Administration](launch-reference/administration/README.md)
   * [Companies and properties](launch-reference/administration/companies-and-properties.md)
   * [User permissions](launch-reference/administration/user-permissions.md)
