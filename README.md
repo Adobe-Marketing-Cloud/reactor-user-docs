@@ -141,3 +141,10 @@ These are the questions we've received most often from customers and partners si
 
 Launch is just one example of where our platform is headed: more open, more integrated and as always dedicated to customer success.
 
+## Contributing
+
+Contributions are welcomed! Read the [Contributing Guide](CONTRIBUTING.md) for more information.
+
+## Licensing
+
+This project is licensed under the Apache V2 License. See [LICENSE](LICENSE) for more information.
