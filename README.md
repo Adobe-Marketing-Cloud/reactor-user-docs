@@ -2,7 +2,7 @@
 
 Adobe Experience Platform Launch is the Experience Platform's client-side touchpoint for your web and mobile applications. It is the next generation of website tag and mobile SDK management capabilities. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising integrations necessary to power relevant customer experiences.
 
-Launch empowers anyone to extend Launch functionality by building and maintain their own extensions. These extensions make it easier to use Launch to manage the technologyies you need to deploy.  Extensions available for web and native apps so Launch users can quickly install, configure, and deploy their integrations.
+Launch empowers anyone to extend Launch functionality by building and maintain their own extensions. These extensions make it easier to use Launch to manage the technologyies you need to deploy. Extensions available for web and native apps so Launch users can quickly install, configure, and deploy their integrations.
 
 ## Key benefits
 
@@ -143,8 +143,9 @@ Launch is just one example of where our platform is headed: more open, more inte
 
 ## Contributing
 
-Contributions are welcomed! Read the [Contributing Guide](CONTRIBUTING.md) for more information.
+Contributions are welcomed! Read the [Contributing Guide](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/407e34ff46d6b470f63369e57d5b41805125e36e/CONTRIBUTING.md) for more information.
 
 ## Licensing
 
-This project is licensed under the Apache V2 License. See [LICENSE](LICENSE) for more information.
+This project is licensed under the Apache V2 License. See [LICENSE](https://github.com/Adobe-Marketing-Cloud/reactor-user-docs/tree/407e34ff46d6b470f63369e57d5b41805125e36e/LICENSE/README.md) for more information.
+

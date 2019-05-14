@@ -53,7 +53,7 @@
   * [Upgrade FAQ](launch-reference/upgrade-from-dtm-to-launch/upgrade-faq.md)
   * [Upgrade Preparation Guide](launch-reference/upgrade-from-dtm-to-launch/upgrade-preparation-guide.md)
   * [Link DTM Embed Code](launch-reference/upgrade-from-dtm-to-launch/link-dtm-embed-code.md)
-  * [Link DTM to Experience Cloud](/launch-reference/upgrade-from-dtm-to-launch/link-dtm-to-experience-cloud.md)
+  * [Link DTM to Experience Cloud](launch-reference/upgrade-from-dtm-to-launch/link-dtm-to-experience-cloud.md)
 
 ## Launch Tutorials
 
