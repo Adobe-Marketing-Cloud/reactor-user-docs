@@ -50,10 +50,10 @@
   * [Companies and properties](launch-reference/administration/companies-and-properties.md)
   * [User permissions](launch-reference/administration/user-permissions.md)
 * [Upgrade From DTM to Launch](launch-reference/upgrade-from-dtm-to-launch/README.md)
-  * [Link DTM Embed Code](launch-reference/upgrade-from-dtm-to-launch/link-dtm-embed-code.md)
   * [Upgrade FAQ](launch-reference/upgrade-from-dtm-to-launch/upgrade-faq.md)
   * [Upgrade Preparation Guide](launch-reference/upgrade-from-dtm-to-launch/upgrade-preparation-guide.md)
-  * [Migrating from the v4 SDKs to the Adobe Experience Platform SDKs](launch-reference/upgrade-from-dtm-to-launch/migrating-from-the-v4-sdks-to-the-adobe-experience-platform-sdks.md)
+  * [Link DTM Embed Code](launch-reference/upgrade-from-dtm-to-launch/link-dtm-embed-code.md)
+  * [Link DTM to Experience Cloud](/launch-reference/upgrade-from-dtm-to-launch/link-dtm-to-experience-cloud.md)
 
 ## Launch Tutorials
 

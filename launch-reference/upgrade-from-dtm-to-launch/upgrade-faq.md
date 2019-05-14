@@ -23,7 +23,7 @@ Log in to DTM through the Experience Cloud, select your DTM property, then click
 If you mouse over the button, a message informs you why it is not available. There are a few typical reasons:
 
 * Your Property is Disabled - Enable the DTM Property first before you try to Upgrade.
-* You did not sign in through the Experience Cloud - Your DTM Company must be connected to the same Experience Cloud Org as your Launch Company.  Log in through the Experience Cloud and try again.
+* You did not sign in through the Experience Cloud - Your DTM Company [must be connected](/launch-reference/upgrade-from-dtm-to-launch/link-dtm-to-experience-cloud.md) to the same Experience Cloud Org as your Launch Company.  Log in through the Experience Cloud and try again.
 * You are not a DTM Admin - You must be have the DTM Admin right granted to you through Admin Console.  Ask an Org Admin to grant you this right or find someone who already has it to perform the Upgrade for you.
 
 ## What does the recommended upgrade process look like? <a id="what-does-the-recommended-upgrade-process-look-like"></a>

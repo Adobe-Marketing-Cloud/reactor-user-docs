@@ -12,3 +12,7 @@ Details about the differences between your DTM property and the upgraded version
 
 How linking embed codes works and how to do it.
 
+## [Link DTM to Experience Cloud](link-dtm-to-experience-cloud.md)
+
+What you need to know about linking DTM to the Experience Cloud for migration.
+
