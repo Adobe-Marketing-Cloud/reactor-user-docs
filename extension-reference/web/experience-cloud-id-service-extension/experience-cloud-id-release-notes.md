@@ -4,7 +4,7 @@ For release notes on the Experience Cloud ID Service itself and not just the Lau
 
 ## May 13, 2019
 
-### Experience Cloud ID Extension 4.3.0
+### Experience Cloud ID Extension 4.3.1
 
 #### **Features**
 
