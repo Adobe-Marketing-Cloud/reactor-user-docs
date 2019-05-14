@@ -2,6 +2,17 @@
 
 For release notes on the Experience Cloud ID Service itself and not just the Launch Extension, please reference: [https://marketing.adobe.com/resources/help/en\_US/mcvid/mcvid-release-notes.html](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-release-notes.html)
 
+## May 13, 2019
+
+### Experience Cloud ID Extension 4.3.0
+
+#### **Features**
+
+* Updated visitor.js to 4.3
+* Added data element type for ECID as part of Launch Extension
+
+  ![](../../../.gitbook/assets/ecid-data-element.png)
+
 ## April 9, 2019
 
 ### Experience Cloud ID Extension 4.2.0
