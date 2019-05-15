@@ -81,6 +81,7 @@
   * [Adobe Privacy Extension](extension-reference/web/adobe-privacy-extension.md)
   * [Adobe Target Extension](extension-reference/web/adobe-target-extension/README.md)
     * [Adobe Target Release Notes](extension-reference/web/adobe-target-extension/adobe-target-release-notes.md)
+  * [Adobe Target Extension v2](extension-reference/web/adobe-target-extension-v2.md)
   * [Core Extension](extension-reference/web/core-extension/README.md)
     * [Core Release Notes](extension-reference/web/core-extension/core-release-notes.md)
   * [Experience Cloud ID Service Extension](extension-reference/web/experience-cloud-id-service-extension/README.md)
