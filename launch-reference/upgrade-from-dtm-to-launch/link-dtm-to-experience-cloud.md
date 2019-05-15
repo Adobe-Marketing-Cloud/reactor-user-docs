@@ -18,7 +18,7 @@ Once the accounts are linked, DTM will rely on the Experience Cloud to tell it w
 
 Depending on how many users you have and the complexity of your permissions structure, this can either go very quickly or take you some time.
 
-**Note**: For users who belong to multiple DTM companies, please note that an individual email can only be associated with one type of account (linked DTM accounts or standalone DTM accounts).  If you need to access one or more linked DTM companies and one or more standalone DTM companies, you'll need to use different email addresses.
+**Note**: For users who belong to multiple DTM companies, please note that an individual email can only be associated with one type of account \(linked DTM accounts or standalone DTM accounts\). If you need to access one or more linked DTM companies and one or more standalone DTM companies, you'll need to use different email addresses.
 
 ## How do I link my company's DTM account to Experience Cloud?
 

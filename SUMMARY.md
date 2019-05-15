@@ -35,8 +35,8 @@
   * [Deleting resources](launch-reference/managing-resources/delete-resources.md)
   * [Remove resources from a library](launch-reference/managing-resources/remove-resources-from-library.md)
 * [Publishing](launch-reference/publishing/README.md)
-  * [Hosts](launch-reference/publishing/hosts.md)
   * [Approval Workflow](launch-reference/publishing/approval-workflow.md)
+  * [Hosts](launch-reference/publishing/hosts.md)
   * [Builds](launch-reference/publishing/builds.md)
   * [Environments](launch-reference/publishing/environments.md)
   * [Libraries](launch-reference/publishing/libraries.md)
@@ -58,8 +58,8 @@
 ## Launch Tutorials
 
 * [Tutorials](launch-tutorials/contributing/README.md)
-  * [Hosts](launch-tutorials/contributing/hosts.md)
   * [Companies](launch-tutorials/contributing/companies.md)
+  * [Hosts](launch-tutorials/contributing/hosts.md)
   * [Data Elements](launch-tutorials/contributing/data-elements.md)
   * [Environments](launch-tutorials/contributing/environments.md)
   * [Extensions](launch-tutorials/contributing/extensions.md)
@@ -85,5 +85,6 @@
     * [Core Release Notes](extension-reference/web/core-extension/core-release-notes.md)
   * [Experience Cloud ID Service Extension](extension-reference/web/experience-cloud-id-service-extension/README.md)
     * [Experience Cloud ID Release Notes](extension-reference/web/experience-cloud-id-service-extension/experience-cloud-id-release-notes.md)
+  * [Adobe Experience Platform Extension](extension-reference/web/adobe-experience-platform-extension.md)
 * [Third-Party Extensions](extension-reference/3rd-party-extensions.md)
 
