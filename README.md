@@ -27,7 +27,7 @@ Launch requires the following:
 
 * You must be an Adobe Experience Cloud customer.
 * You must deploy the Launch or DTM embed code on your web pages.
-* For mobile, you must integrate the Adobe Experience Platform Mobile SDKs into your application.
+* For mobile, you must integrate the [Adobe Experience Platform Mobile SDKs](https://app.gitbook.com/@aep-sdks/s/docs/) into your application.
 
 ## Additional highlights for Web
 
