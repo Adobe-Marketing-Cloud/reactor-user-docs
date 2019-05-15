@@ -1,4 +1,4 @@
-# Adobe Target Extension v2
+# Adobe Target v2 Extension
 
-Information about Adobe Target extension version 2 will be available soon.
+Information about the new Adobe Target extension will be available soon.
 
