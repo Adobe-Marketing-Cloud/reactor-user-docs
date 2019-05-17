@@ -1,5 +1,23 @@
 # Adobe Target Release Notes
 
+## May 4, 2019
+
+### Adobe Target Extension 0.10.0
+
+* Fixed a data elements issue caused by the latest Google Chrome changes
+
+## March 14, 2019
+
+### Adobe Target Extension 0.9.3
+
+* Updated extension version to use at.js 1.7.1
+
+## February 20, 2019
+
+### Adobe Target Extension 0.9.2
+
+* Fixed race conditions between Target and Analytics extensions
+
 ## February 12, 2019
 
 ### Adobe Target Extension 0.9.1
@@ -10,31 +28,45 @@
 
 ## January 23, 2019
 
+### Adobe Target Extension 0.8.4
+
 * Updated at.js to version 1.6.4
 * Extension UI migrated to Adobe Spectrum
 
 ## November 15, 2018
 
+### Adobe Target Extension 0.8.2
+
 * Updated at.js to version 1.6.3
 
 ## October 24, 2018
+
+### Adobe Target Extension 0.8.1
 
 * Updated at.js to version 1.6.2
 
 ## August 23, 2018
 
+### Adobe Target Extension 0.8.0
+
 * Updated at.js to version 1.6.0
 
 ## August 10, 2018
+
+### Adobe Target Extension 0.7.2
 
 * Minor changes
 * Updated the `exchangeUrl` property in the `extension.json` file
 
 ## August 1, 2018
 
+### Adobe Target Extension 0.7.1
+
 * Minor fixes
 
-## June 16, 2018
+## June 18, 2018
+
+### Adobe Target Extension 0.7.0
 
 * Updated at.js version to 1.5.0
 * Fixed an issue where Media Optimizer threw a null reference error in IE 11
