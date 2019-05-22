@@ -1,0 +1,8 @@
+root: ./
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+
+redirects:
+  launch-tutorials/contributing/miscellaneous: https://docs.adobe.com/content/help/en/target/using/target-home.html
