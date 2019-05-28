@@ -66,7 +66,7 @@
   * [Properties](launch-tutorials/contributing/properties.md)
   * [Publishing](launch-tutorials/contributing/publishing.md)
   * [Rules](launch-tutorials/contributing/rules.md)
-  * [Miscellaneous](https://developer.adobelaunch.com/extensions/guides/quickstart/)
+  * [Miscellaneous](launch-tutorials/contributing/miscellaneous.md)
   * [Example Tutorial](launch-tutorials/contributing/template.md)
 
 ## Extension Reference
