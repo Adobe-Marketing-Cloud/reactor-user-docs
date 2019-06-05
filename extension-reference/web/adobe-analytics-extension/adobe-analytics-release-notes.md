@@ -1,5 +1,19 @@
 # Adobe Analytics Release Notes
 
+## June 4, 2019
+
+### Adobe Analytics Extension 1.7.5
+
+#### Features
+
+* Added an Exchange link to the extension. The Exchange listing can be reached by clicking on the dropdown and selecting "extension info"
+
+#### Bug fixes
+
+* Fixed a bug in the UI that showed the incorrect evar being deleted when making a deletion from a list.
+* Fixed a bug that was requiring an SSL tracking server when trying to add multiple report suites. When adding multiple report suites a tracking server is required but the SSL tracking server field is optional. 
+* Updated the Adobe Analytics Extension to appMeasurement 2.14.0 which includes a fix to a known clearVars issue.
+* 
 ## April 15, 2019
 
 ### Adobe Analytics Extension 1.7.4
