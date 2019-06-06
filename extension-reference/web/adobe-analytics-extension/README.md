@@ -26,6 +26,8 @@ Specify one or more report suites for each of the following environments:
 * Staging
 * Production
 
+If you enter multiple report suites for one environment you will also need enter a tracking server and a SSL tracking server if applicable.
+
 ### Use the library already installed on the page
 
 #### Set the following report suites on tracker
