@@ -93,6 +93,10 @@ If the Adobe Experience Cloud ID extension is installed on the property, this me
 #### Code
 
 ```javascript
+_satellite.logger.debug(message: string)
+```
+
+```javascript
 _satellite.logger.log(message: string)
 ```
 
@@ -115,6 +119,8 @@ _satellite.logger.error('No product ID found.');
 ```
 
 Logs a message to the browser console. The message will only be displayed if Launch debugging is enabled by the user \(by calling `_satellite.setDebug(true)` or using an appropriate browser extension\).
+
+Note that messages from `_satellite.logger.debug` will only show in the console if both Launch debugging is enabled and Verbose log level has been selected within the browser console. Also note that for older browsers which do not natively support `console.debug`, these messages will revert to being logged as if they were sent using `_satellite.logger.info`.
 
 ### cookie
 
