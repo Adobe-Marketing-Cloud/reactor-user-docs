@@ -6,6 +6,7 @@
   * [2018 release notes](release-notes/release-notes.md)
 * [Quick Start](getting-started/README.md)
   * [Videos](getting-started/videos.md)
+* [Additional Material](additional-material.md)
 
 ## Getting Started
 
@@ -54,20 +55,6 @@
   * [Upgrade Preparation Guide](launch-reference/upgrade-from-dtm-to-launch/upgrade-preparation-guide.md)
   * [Link DTM Embed Code](launch-reference/upgrade-from-dtm-to-launch/link-dtm-embed-code.md)
   * [Link DTM to Experience Cloud](launch-reference/upgrade-from-dtm-to-launch/link-dtm-to-experience-cloud.md)
-
-## Launch Tutorials
-
-* [Tutorials](launch-tutorials/contributing/README.md)
-  * [Companies](launch-tutorials/contributing/companies.md)
-  * [Hosts](launch-tutorials/contributing/hosts.md)
-  * [Data Elements](launch-tutorials/contributing/data-elements.md)
-  * [Environments](launch-tutorials/contributing/environments.md)
-  * [Extensions](launch-tutorials/contributing/extensions.md)
-  * [Properties](launch-tutorials/contributing/properties.md)
-  * [Publishing](launch-tutorials/contributing/publishing.md)
-  * [Rules](launch-tutorials/contributing/rules.md)
-  * [Example Tutorial](launch-tutorials/contributing/template.md)
-  * [Miscellaneous](launch-tutorials/contributing/miscellaneous.md)
 
 ## Extension Reference
 
