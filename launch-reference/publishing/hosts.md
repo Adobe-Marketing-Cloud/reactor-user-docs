@@ -17,7 +17,7 @@ When you choose the Adobe-managed option, libraries that Launch builds will be d
 
 Today, the primary CDN provider is Akamai. Files hosted on Akamai have a domain of [assets.adobedtm.com](https://assets.adobedtm.com). This can be referenced securely or not securely \(http:// or https://\) based on how you call it in your `<script>` code.
 
-When you create a new property through the Launch UI, a default host of this type is created for you.
+When you create a new property through the Launch UI, a default host of this type is created for you.  Note that with this host type, the very first published library to any new environment can take up to 5 minutes to propogate out to the global CDN.
 
 ### Create Managed by Adobe host
 
