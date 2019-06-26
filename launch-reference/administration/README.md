@@ -1,12 +1,5 @@
 # Administration
 
-This section contains information that is useful for Launch administrators.
+This content has permanently moved to [https://docs.adobe.com/content/help/en/launch/using/reference/admin/overview.html](https://docs.adobe.com/content/help/en/launch/using/reference/admin/overview.html) so that it can be in the same place as other Adobe Experience Cloud content and be translated into several languages.
 
-* [**User Permissions**](user-permissions.md)
-
-  This topic describes the user management process and available rights.
-
-* [**Companies and Properties**](companies-and-properties.md)
-
-  A property, or web property, is a collection of rules, data elements, configured extensions, environments, and libraries.
-
+Please update your bookmarks.

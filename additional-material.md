@@ -1,3 +1,5 @@
 # Additional Material
 
-Our community is full of talented professionals who share useful tips, tutorials, and tools across the web. To learn more, we invite you to peruse [Awesome Adobe Launch](https://github.com/MisterPhilip/awesome-adobe-launch), a community-curated list of material related to Adobe Experience Platform Launch.
+This content has permanently moved to [https://docs.adobe.com/content/help/en/launch/using/intro/additional-resources.html](https://docs.adobe.com/content/help/en/launch/using/intro/additional-resources.html) so that it can be in the same place as other Adobe Experience Cloud content and be translated into several languages.
+
+Please update your bookmarks.

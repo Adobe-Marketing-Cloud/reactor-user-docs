@@ -1,13 +1,5 @@
 # Videos
 
-These videos introduce you to Launch concepts and tasks.
+This content has permanently moved to [https://docs.adobe.com/content/help/en/launch/using/intro/get-started/videos.html](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/videos.html) so that it can be in the same place as other Adobe Experience Cloud content and be translated into several languages.
 
-* [Introduction to Launch, by Adobe](https://www.youtube.com/embed/rwqqkG1SERU)
-* [User management](https://www.youtube.com/embed/ba28BHX8cwU)
-* [Creating your first property](https://www.youtube.com/embed/Fb2pcbAYjIE)
-* [Extensions](https://www.youtube.com/embed/yD0tBqZX4fA)
-* [Data elements](https://www.youtube.com/embed/-tGcKA0tp-I)
-* [Rule builder](https://www.youtube.com/embed/u0ohTL6hI1w)
-* [Publishing workflow](https://www.youtube.com/embed/Pe-YSn26_xI)
-* [Adobe Cloud Platform Launch Mobile Capability](https://video.tv.adobe.com/v/23741/) 
-
+Please update your bookmarks.
