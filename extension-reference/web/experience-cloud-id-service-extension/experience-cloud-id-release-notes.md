@@ -2,6 +2,30 @@
 
 For release notes on the Experience Cloud ID Service itself and not just the Launch Extension, please reference: [https://marketing.adobe.com/resources/help/en\_US/mcvid/mcvid-release-notes.html](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-release-notes.html)
 
+## September 19, 2019
+
+### Experience Cloud ID Extension 4.4.1
+
+#### **Features**
+
+* Updated visitor.js to 4.4.1
+* Fixed a bug for get Opt-In preApprovals Input
+* Renamed VIDEO_ANALYTICS to MEDIA_ANALYTICS in preOptInApprovals
+
+  ![](../../../.gitbook/assets/ecid-media-analytics.png)
+
+## July 17, 2019
+
+### Experience Cloud ID Extension 4.4.0
+
+#### **Features**
+
+* Updated visitor.js to 4.4.0
+* Added SHA256 hashing support for setCustomerIDs
+
+  ![](../../../.gitbook/assets/ecid-setCustomerIDs-hash.png)
+
+
 ## May 13, 2019
 
 ### Experience Cloud ID Extension 4.3.1
@@ -20,6 +44,14 @@ For release notes on the Experience Cloud ID Service itself and not just the Lau
 #### **Features**
 
 * Updated visitor.js to 4.2 which included support for Audience Manager IAB TCF Plug-in
+
+## February 25, 2019
+
+### Experience Cloud ID Extension 4.1.0
+
+#### **Features**
+
+* Updated visitor.js to 4.1 which updated publishDestinations per new API change. With this update the referrer information of the page can be exposed during ID - sync if desired.
 
 ## February 15, 2019
 
